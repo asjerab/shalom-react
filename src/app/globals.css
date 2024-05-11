@@ -2,32 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #0d0d0d;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  transition: all 0.2s ease-in-out;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* @font faces for the whole site*/
+
+@font-face {
+  font-family: "SF Pro Display Light";
+  src: url(./assets/fonts/SF-Pro-Display-Light.otf);
+}
+
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url(./assets/fonts/SF-Pro-Display-Regular.otf);
+}
+
+@font-face {
+  font-family: "SF Pro Display Bold";
+  src: url(./assets/fonts/SF-Pro-Display-Bold.otf);
+}
+
+.primaryLight {
+  font-family: "SF Pro Display Light";
+}
+
+.primaryRegular {
+  font-family: "SF Pro Display Regular";
+}
+
+.primaryBold {
+  font-family: "SF Pro Display Bold";
+}
+
+/* YouthNav-bg holder*/
+
+.youthNav-bg {
+  background-image: url(./images/nav-bg-3.jpg);
+  width: 100%;
+  height: 100dvh;
+}
+
+/* youtube-bg holder*/
+
+.youtube-bg-holder {
+  background-image: url(./images/youtube-bg.JPG);
+  width: 1325px;
+  height: 600px;
+}
+
+
+
+
+
+
+/* 768px Media Query*/
+
+@media screen and (max-width: 768px) {
+  .links-youth-nav {
+    display: none;
   }
+
+  .nav-res-button {
+    display: block;
+  }
+
+  .p-text-hero-youth {
+    font-size: 10px !important;
+  }
+
+  .grupper-container-home {
+    padding: 100px 25px;
+  }
+
+  .grupper-wrapper-home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hidden-grupper-img {
+    display: none;
+  }
+
+  .yotube-container {
+    padding: 0;
+  }
+
+  .youtube-bg-holder {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+  }
+
 }
