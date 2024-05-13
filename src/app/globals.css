@@ -22,30 +22,30 @@ html {
 /* @font faces for the whole site*/
 
 @font-face {
-  font-family: "SF Pro Display Light";
-  src: url(./assets/fonts/SF-Pro-Display-Light.otf);
+  font-family: "Onest-Light";
+  src: url(./assets/fonts/Onest-Light.ttf);
 }
 
 @font-face {
-  font-family: "SF Pro Display Regular";
-  src: url(./assets/fonts/SF-Pro-Display-Regular.otf);
+  font-family: "Onest-Regular";
+  src: url(./assets/fonts/Onest-Regular.ttf);
 }
 
 @font-face {
-  font-family: "SF Pro Display Bold";
-  src: url(./assets/fonts/SF-Pro-Display-Bold.otf);
+  font-family: "Onest-Bold";
+  src: url(./assets/fonts/Onest-Bold.ttf);
 }
 
 .primaryLight {
-  font-family: "SF Pro Display Light";
+  font-family: "Onest-Light";
 }
 
 .primaryRegular {
-  font-family: "SF Pro Display Regular";
+  font-family: "Onest-Regular";
 }
 
 .primaryBold {
-  font-family: "SF Pro Display Bold";
+  font-family: "Onest-Bold";
 }
 
 /* YouthNav-bg holder*/
@@ -70,6 +70,13 @@ html {
 
 
 /* 768px Media Query*/
+
+@media screen and (max-width: 1100px) {
+  .gupper-page-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media screen and (max-width: 768px) {
   .links-youth-nav {
@@ -105,6 +112,26 @@ html {
     width: 100%;
     max-width: 100%;
     border-radius: 0;
+  }
+
+  .påmeldingHomeInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .gupper-page-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .nav-menu {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
   }
 
 }

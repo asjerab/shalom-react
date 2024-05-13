@@ -1,3 +1,4 @@
+import Link from "next/link";
 import alphaKursImg from "../grupperImages/alpha-kurs-img.png";
 import bibelStudieImg from "../grupperImages/bible-studie-img.png";
 import connectImg from "../grupperImages/connect-img.png";
@@ -36,7 +37,19 @@ export default function YouthGrupperHome() {
               alt="tjenestekurs img"
             />
           </div>
-          <button className="btn btn-lg btn-active btn-neutral my-10">Flere grupper</button>
+          <div className="påmeldingHomeInfoContainer flex gap-16 justify-between items-center my-14">
+            <p
+              className="primaryRegular text-slate-50 max-w-[600px]"
+              style={{ fontSize: "clamp(14px, 4vw, 22px)" }}
+            >
+              Trykk på "Alle Grupper" for og se alle grupper vi tilbyr i vårt fellesskap.
+            </p>
+            <Link href="/youthGrupper">
+              <button className="btn btn-neutral btn-wide">
+                Alle Grupper
+              </button>
+            </Link>
+          </div>{" "}
         </div>
       </div>
     </main>

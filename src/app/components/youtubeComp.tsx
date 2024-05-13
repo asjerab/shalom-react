@@ -19,7 +19,7 @@ export default function youtubeComp() {
               Klikk på lenken nedenfor for å omdirigere til vår YouTube-kanal
             </p>
             <Link target="_blank" href="https://www.youtube.com/@shalomyouth_newcreation">
-              <button className="btn btn-wide">Youtube</button>
+              <button className="btn btn-neutral btn-wide">Youtube</button>
             </Link>
           </div>
         </div>

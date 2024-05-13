@@ -1,110 +1,237 @@
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
 import YouthLogo from "../images/ShalomYouth-Logo.png";
 
-export default function YouthNav() {
+export default function TestNav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <main>
-      <nav className="h-dvh bg-cover bg-no-repeat bg-center youthNav-bg pb-[100px]">
-        {/* Kom tilbake til denne når siden er ferdig*/}
-        <div className="res-menu"></div>
-        <div className="nav flex justify-between items-center p-[50px]">
+      <nav>
+        <div className="p-[45px] flex justify-between">
           <img
             className="w-full max-w-[200px]"
             src={YouthLogo.src}
-            alt="Shalom Youth Logo"
+            alt="YouthLogo"
           />
-          <div className="links-youth-nav flex items-center gap-2">
-            <a href="/">
-              <p className="primaryBold font-bold	 text-slate-50 hover:scale-[97%] ease-in-out duration-200 uppercase text-sm/[17px]">
-                Utrustning
-              </p>
-            </a>
-            <a href="/">
-              <p className="primaryBold font-bold	 text-slate-50 hover:scale-[97%] ease-in-out duration-200 uppercase text-sm/[17px]">
-                Påmelding
-              </p>
-            </a>{" "}
-            <a href="/">
-              <p className="primaryBold font-bold	 text-slate-50 hover:scale-[97%] ease-in-out duration-200 uppercase text-sm/[17px]">
-                Kontakt
-              </p>
-            </a>{" "}
-            <a href="/">
-              <p className="primaryBold font-bold	 text-slate-50 hover:scale-[97%] ease-in-out duration-200 uppercase text-sm/[17px]">
-                om oss
-              </p>
-            </a>{" "}
-            <a
-              href="/"
-              className="bg-[#333] px-3 py-2 rounded-md hover:scale-[97%] ease-in-out duration-200"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="w-6 h-6 text-slate-50 hover:scale-[97%] ease-in-out duration-200"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9"
-                />
-              </svg>
-            </a>{" "}
-          </div>
-          <div className="nav-res-button hidden">
+          <div className="flex justify-between items-center w-full max-w-[170px]">
+            <button className="btn rounded-full px-10" onClick={toggleMenu}>
+              Menu
+            </button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
-              className="w-8 h-8 text-slate-50 cursor-pointer"
+              className="w-6 h-6 text text-slate-50 cursor-pointer"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 9h16.5m-16.5 6.75h16.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
               />
             </svg>
           </div>
         </div>
-        <div className="heroTextYouth w-full h-4/5  flex justify-center items-center flex-col">
-          <h1
-            className="primaryRegular text-slate-50 font-[700] uppercase"
-            style={{ fontSize: "clamp(10px, 8.2vw, 155px)" }}
-          >
-            Shalom Youth
-          </h1>
-          <p
-            className="primaryRegular p-text-hero-youth text-slate-50 font-medium max-w-[750px] w-full text-center px-[50px]"
-            style={{ fontSize: "clamp(18px, 2vw, 22px)" }}
-          >
-            La ingen forakte deg fordi du er ung, men vær et forbilde for de
-            troende i ord og livsførsel, i kjærlighet, tro og renhet. 1.Timoteus
-            4:12
-          </p>
-          <a href="#grupper-a">
-            <button className="btn btn-neutral m-5">
-              Utforsk{" "}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="w-6 h-6 "
+        {menuOpen && (
+          <div className="nav-menu w-[95%] h-[95%] fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#111] z-50 rounded-[32px] flex flex-col justify-between items-center">
+            <div className="flex justify-between items-center p-[50px] w-full">
+              <h1
+                className="primaryLight text-slate-50"
+                style={{ fontSize: "clamp(25px, 7vw, 56px)" }}
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                />
-              </svg>
-            </button>
-          </a>
-        </div>
+                Navigasjon
+              </h1>
+              <div
+                className="p-3 bg-[#252727] rounded-full hover:p-5 duration-150 ease-out cursor-pointer"
+                onClick={toggleMenu}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="close-button w-6 h-6 cursor-pointer text-slate-50"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div className="flex flex-col items-start gap-1 p-[50px] w-full">
+              <Link
+                href="/"
+                className="flex justify-between items-center w-full"
+              >
+                <h1
+                  className="primaryRegular text-slate-50 hover:translate-x-2 duration-100"
+                  style={{ fontSize: "clamp(25px, 7vw, 46px)" }}
+                >
+                  Velg fellesskap
+                </h1>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="flex items-center justify-between w-5 h-5 text-slate-50 cursor-pointer"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </Link>
+              <Link
+                href="/shalomYouth"
+                className="flex justify-between items-center w-full"
+              >
+                <h1
+                  className="primaryRegular text-slate-50 hover:translate-x-2 duration-100"
+                  style={{ fontSize: "clamp(25px, 7vw, 46px)" }}
+                >
+                  Hjem
+                </h1>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="flex items-center justify-between w-5 h-5 text-slate-50 cursor-pointer"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </Link>
+              <Link
+                href="/youthGrupper"
+                className="flex justify-between items-center w-full"
+              >
+                <h1
+                  className="primaryRegular text-slate-50 hover:translate-x-2 duration-100"
+                  style={{ fontSize: "clamp(25px, 7vw, 46px)" }}
+                >
+                  Grupper
+                </h1>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="flex items-center justify-between w-5 h-5 text-slate-50 cursor-pointer"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </Link>
+              <Link
+                href="/youthForms"
+                className="flex justify-between items-center w-full"
+              >
+                <h1
+                  className="primaryRegular text-slate-50 hover:translate-x-2 duration-100"
+                  style={{ fontSize: "clamp(25px, 7vw, 46px)" }}
+                >
+                  Påmelding
+                </h1>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="flex items-center justify-between w-5 h-5 text-slate-50 cursor-pointer"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </Link>
+              <Link
+                href=""
+                className="flex justify-between items-center w-full"
+              >
+                <h1
+                  className="primaryRegular text-slate-50 hover:translate-x-2 duration-100"
+                  style={{ fontSize: "clamp(25px, 7vw, 46px)" }}
+                >
+                  Om Oss
+                </h1>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="flex items-center justify-between w-5 h-5 text-slate-50 cursor-pointer"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </Link>
+              <Link
+                href=""
+                className="flex justify-between items-center w-full"
+              >
+                <h1
+                  className="primaryRegular text-slate-50 hover:translate-x-2 duration-100"
+                  style={{ fontSize: "clamp(25px, 7vw, 46px)" }}
+                >
+                  Kontakt
+                </h1>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="flex items-center justify-between w-5 h-5 text-slate-50 cursor-pointer"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </Link>
+            </div>
+            <div className="flex justify-start items-end gap-10 p-[50px] w-full">
+              <div className="flex flex-col gap-2">
+                <p className="primaryLight text-gray-400 text-[13px]">
+                  Følg oss på
+                </p>
+                <p className="primaryLight text-slate-50">Instagram</p>
+              </div>
+              <p className="primaryLight text-slate-50">Youtube</p>
+              <p className="primaryLight text-slate-50">Facebook</p>
+            </div>
+          </div>
+        )}
       </nav>
     </main>
   );

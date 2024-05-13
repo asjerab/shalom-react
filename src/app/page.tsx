@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="w-full h-dvh	flex justify-center items-center">
       <div className="choose-group-container p-[35px] w-full max-w-[901px]">
-        <span className="badge rounded-md p-4 bg-[#333] border-none text-slate-50">Velg fellesskap</span>
+        <span className="badge rounded-md p-4 bg-[#1b1b1b] border-none text-slate-50">Velg fellesskap</span>
         <Link href="/shalomYouth">
           <h1
             className="primaryRegular text-slate-50  py-[25px] uppercase transform hover:translate-x-2 ease-in-out duration-200"
