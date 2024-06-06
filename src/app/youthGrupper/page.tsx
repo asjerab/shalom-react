@@ -9,23 +9,23 @@ import dap from "../grupperImages/dap.png";
 import evangelisering from "../grupperImages/evangelisering-img.png";
 import james from "../grupperImages/James-img.png";
 import dypereImg from "../grupperImages/dypere-img.png";
+import Loading from "../components/loading";
+import AlphakursModal from "../components/ModalComponents/AlphakursModal"
+import BibelstudieModal from "../components/ModalComponents/BibelstudieModal"
+import TjenesteModal from "../components/ModalComponents/TjenesteModal"
+import ConnectModal from "../components/ModalComponents/ConnectModal"
+import DåpModal from "../components/ModalComponents/DåpModal"
+import BønnModal from "../components/ModalComponents/BønnModal"
+import TheUpperRoom from "../components/ModalComponents/TheUpperRoom"
+import Evangelisering from "../components/ModalComponents/Evangelisering"
+import JamesModal from "../components/ModalComponents/JamesModal"
 
 export default function YouthGrupper() {
-  const openModal = (modalId: string) => {
-    const modal = document.getElementById(modalId);
-    if (modal instanceof HTMLDialogElement) {
-      modal.showModal();
-    } else {
-      console.error(
-        `Modal with id '${modalId}' not found or is not a dialog element.`
-      );
-    }
-  };
-
   return (
     <main className="h-full">
+      <Loading />
       <YouthNav />
-      <div className="p-[35px]">
+      <div className="Gruper-wrapper p-[35px]">
         <div className="mb-10">
           <h1
             className="primaryBold text-slate-50"
@@ -44,7 +44,7 @@ export default function YouthGrupper() {
         </div>
         <div>
           <ul className="gupper-page-container grid grid-cols-3 gap-5">
-            <li className="flex py-[100px] flex-col gap-5">
+            <li className="grupper-img flex py-[100px] flex-col gap-5">
               <img
                 className="w-full"
                 src={alphaKursImg.src}
@@ -59,10 +59,10 @@ export default function YouthGrupper() {
                 Alphakurs
               </h1>
               <hr className="opacity-50" />
-              <button className="btn btn-neutral btn-wide">Les mer</button>
+              <AlphakursModal />
             </li>
 
-            <li className="flex py-[100px] flex-col gap-5">
+            <li className="grupper-img flex py-[100px] flex-col gap-5">
               <img
                 className="w-full"
                 src={bibelStudieImg.src}
@@ -77,10 +77,10 @@ export default function YouthGrupper() {
                 Bibelstudie
               </h1>
               <hr className="opacity-50" />
-              <button className="btn btn-neutral btn-wide">Les mer</button>
+              <BibelstudieModal />
             </li>
 
-            <li className="flex py-[100px] flex-col gap-5">
+            <li className="grupper-img flex py-[100px] flex-col gap-5">
               <img
                 className="w-full"
                 src={tjenesteKursImg.src}
@@ -95,10 +95,10 @@ export default function YouthGrupper() {
                 Tjenestekurs
               </h1>
               <hr className="opacity-50" />
-              <button className="btn btn-neutral btn-wide">Les mer</button>
+              <TjenesteModal />
             </li>
 
-            <li className="flex py-[100px] flex-col gap-5">
+            <li className="grupper-img flex py-[100px] flex-col gap-5">
               <img className="w-full" src={connectImg.src} alt="connectImg" />
               <h1
                 className="primaryLight text-slate-50 uppercase"
@@ -109,10 +109,10 @@ export default function YouthGrupper() {
                 Connect
               </h1>
               <hr className="opacity-50" />
-              <button className="btn btn-neutral btn-wide">Les mer</button>
+              <ConnectModal />
             </li>
 
-            <li className="flex py-[100px] flex-col gap-5">
+            <li className="grupper-img flex py-[100px] flex-col gap-5">
               <img className="w-full" src={dap.src} alt="dapImg" />
               <h1
                 className="primaryLight text-slate-50 uppercase"
@@ -123,10 +123,10 @@ export default function YouthGrupper() {
                 Dåp
               </h1>
               <hr className="opacity-50" />
-              <button className="btn btn-neutral btn-wide">Les mer</button>
+              <DåpModal />
             </li>
 
-            <li className="flex py-[100px] flex-col gap-5">
+            <li className="grupper-img flex py-[100px] flex-col gap-5">
               <img className="w-full" src={bonn.src} alt="bønnImg" />
               <h1
                 className="primaryLight text-slate-50 uppercase"
@@ -137,10 +137,10 @@ export default function YouthGrupper() {
                 Bønn
               </h1>
               <hr className="opacity-50" />
-              <button className="btn btn-neutral btn-wide">Les mer</button>
+              <BønnModal />
             </li>
 
-            <li className="flex py-[100px] flex-col gap-5">
+            <li className="grupper-img flex py-[100px] flex-col gap-5">
               <img
                 className="w-full"
                 src={dypereImg.src}
@@ -155,10 +155,10 @@ export default function YouthGrupper() {
                 The upper room
               </h1>
               <hr className="opacity-50" />
-              <button className="btn btn-neutral btn-wide">Les mer</button>
+              <TheUpperRoom />
             </li>
 
-            <li className="flex py-[100px] flex-col gap-5">
+            <li className="grupper-img flex py-[100px] flex-col gap-5">
               <img
                 className="w-full"
                 src={evangelisering.src}
@@ -173,15 +173,11 @@ export default function YouthGrupper() {
                 Evangelisering
               </h1>
               <hr className="opacity-50" />
-              <button className="btn btn-neutral btn-wide">Les mer</button>
+              <Evangelisering />
             </li>
 
-            <li className="flex py-[100px] flex-col gap-5">
-              <img
-                className="w-full"
-                src={james.src}
-                alt="James1:27Img"
-              />
+            <li className="grupper-img flex py-[100px] flex-col gap-5">
+              <img className="w-full" src={james.src} alt="James1:27Img" />
               <h1
                 className="primaryLight text-slate-50 uppercase"
                 style={{
@@ -191,7 +187,7 @@ export default function YouthGrupper() {
                 James 1:27 Ministry
               </h1>
               <hr className="opacity-50" />
-              <button className="btn btn-neutral btn-wide">Les mer</button>
+              <JamesModal />
             </li>
           </ul>
         </div>

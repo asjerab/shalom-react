@@ -1,0 +1,227 @@
+import YouthNav from "../components/youthNav";
+import Loading from "../components/loading";
+
+export default function youthKontakt() {
+  return (
+    <main className="w-full h-full">
+      <Loading />
+      <YouthNav />
+      <div className="kontakt-wrapper p-[50px]">
+        <h1
+          className="primaryBold text-slate-50"
+          style={{ fontSize: "clamp(50px, 10vw, 200px)" }}
+        >
+          Kontakt.
+        </h1>
+        <p
+          className="primaryRegular text-slate-50 max-w-[1000px]"
+          style={{ fontSize: "clamp(15px, 2vw, 25px)" }}
+        >
+          Har du noen spørsmål? Ta gjerne kontakt med oss på:{" "}
+          <span className="text-zinc-500 underline">
+            {" "}
+            E-post: Shalomoslo@gmail.com
+          </span>{" "}
+          Besøksadresse: Shalom Youth <span className="text-zinc-500 underline">St. Olavs Gate</span> 24 0166 Oslo Vennligst
+          kontakt en spesifikk leder nedenfor hvis du har spesifikke spørsmål.
+        </p>
+      </div>{" "}
+      <div className="kontakt-children p-[50px] max-w-[1325px]">
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
+        <div className="py-[65px] flex flex-col gap-5">
+          <div className="flex row-kontakt justify-between items-center">
+            <h1
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 5vw, 30px)" }}
+            >
+              Nahom Zenawi
+            </h1>
+            <p
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+            >
+              Hovedleder
+            </p>
+          </div>
+          <p
+            className="primaryLight text-[#8f8f92]"
+            style={{ fontSize: "clamp(15px, 2vw, 25px)" }}
+          >
+            shalomyouthoslo@gmail.com
+          </p>
+        </div>
+
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
+        <div className="py-[65px] flex flex-col gap-5">
+          <div className="flex row-kontakt justify-between items-center">
+            <h1
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 5vw, 30px)" }}
+            >
+              Belen Asgedom
+            </h1>
+            <p
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+            >
+              Forsamlingsleder
+            </p>
+          </div>
+          <p
+            className="primaryLight text-[#8f8f92]"
+            style={{ fontSize: "clamp(15px, 2vw, 25px)" }}
+          >
+            shalomyouthoslo@gmail.com
+          </p>
+        </div>
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
+        <div className="py-[65px] flex flex-col gap-5">
+          <div className="flex row-kontakt justify-between items-center">
+            <h1
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 5vw, 30px)" }}
+            >
+              Lydia Ayelegn
+            </h1>
+            <p
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+            >
+              Forsamlingsleder
+            </p>
+          </div>
+          <p
+            className="primaryLight text-[#8f8f92]"
+            style={{ fontSize: "clamp(15px, 2vw, 25px)" }}
+          >
+            shalomyouthoslo@gmail.com
+          </p>
+        </div>
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
+
+        <div className="py-[65px] flex flex-col gap-5">
+          <div className="flex row-kontakt justify-between items-center">
+            <h1
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 5vw, 30px)" }}
+            >
+              Becky Mebrahtu
+            </h1>
+            <p
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+            >
+              Forsamlingsleder
+            </p>
+          </div>
+          <p
+            className="primaryLight text-[#8f8f92]"
+            style={{ fontSize: "clamp(15px, 2vw, 25px)" }}
+          >
+            shalomyouthoslo@gmail.com
+          </p>
+        </div>
+
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
+
+
+        <div className="py-[65px] flex flex-col gap-5">
+          <div className="flex row-kontakt justify-between items-center">
+            <h1
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 5vw, 30px)" }}
+            >
+              Kedy Mebrahtu
+            </h1>
+            <p
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+            >
+              Forsamlingsleder
+            </p>
+          </div>
+          <p
+            className="primaryLight text-[#8f8f92]"
+            style={{ fontSize: "clamp(15px, 2vw, 25px)" }}
+          >
+            shalomyouthoslo@gmail.com
+          </p>
+        </div>
+
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
+
+        <div className="py-[65px] flex flex-col gap-5">
+          <div className="flex row-kontakt justify-between items-center">
+            <h1
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 5vw, 30px)" }}
+            >
+              Naod Mesfun
+            </h1>
+            <p
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+            >
+              Leder for connect
+            </p>
+          </div>
+          <p
+            className="primaryLight text-[#8f8f92]"
+            style={{ fontSize: "clamp(15px, 2vw, 25px)" }}
+          >
+            shalomyouthoslo@gmail.com
+          </p>
+        </div>
+
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
+
+        <div className="py-[65px] flex flex-col gap-5">
+          <div className="flex row-kontakt justify-between items-center">
+            <h1
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 5vw, 30px)" }}
+            >
+              Sem Aman
+            </h1>
+            <p
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+            >
+              Leder for Bibelstudie
+            </p>
+          </div>
+          <p
+            className="primaryLight text-[#8f8f92]"
+            style={{ fontSize: "clamp(15px, 2vw, 25px)" }}
+          >
+            shalomyouthoslo@gmail.com
+          </p>
+        </div>
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
+
+        <div className="py-[65px] flex flex-col gap-5">
+          <div className="flex row-kontakt justify-between items-center">
+            <h1
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 5vw, 30px)" }}
+            >
+              Noah Samuel
+            </h1>
+            <p
+              className="primaryRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+            >
+              Leder for evangelisering
+            </p>
+          </div>
+          <p
+            className="primaryLight text-[#8f8f92]"
+            style={{ fontSize: "clamp(15px, 2vw, 25px)" }}
+          >
+            shalomyouthoslo@gmail.com
+          </p>
+        </div>
+      </div>
+    </main>
+  );
+}

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function youtubeComp() {
   return (
     <main>
-      <div className="yotube-container flex justify-center py-[100px] px-[35px]">
+      {/* <div className="yotube-container flex justify-center py-[100px] px-[35px]">
         <div className="youtube-bg-holder bg-cover bg-no-repeat bg-center rounded-[25px]">
           <div className="flex flex-col justify-center h-full p-[35px] gap-5 max-w-[700px]">
             <h1
@@ -19,9 +19,15 @@ export default function youtubeComp() {
               Klikk på lenken nedenfor for å omdirigere til vår YouTube-kanal
             </p>
             <Link target="_blank" href="https://www.youtube.com/@shalomyouth_newcreation">
-              <button className="btn btn-neutral btn-wide">Youtube</button>
+              <button className="btn btn-wide">Youtube</button>
             </Link>
           </div>
+        </div>
+      </div> */}
+      <div className="flex justify-center items-center py-[75px] px-[25px] animation-scroll">
+        <div className="youtube-bg-holder bg-cover bg-no-repeat bg-center rounded-[16px] flex justify-end flex-col p-16 gap-2">
+          <h1 className="Onest-Bold text-slate-50 uppercase font-semibold" style={{fontSize:"clamp(40px, 5vw, 75px)"}}>Youtube</h1>
+          <Link href="https://www.youtube.com/@shalomyouth_newcreation" target="_blank"><button className="youtube-button btn btn-wide flex self-start font-bold bg-[#FF0000] text-slate-50 border-none hover:bg-[#a34242]">Shalom Youth</button></Link>
         </div>
       </div>
     </main>

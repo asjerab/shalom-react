@@ -23,7 +23,7 @@ export default function YouthNav() {
             4:12
           </p>
           <a href="#grupper-a">
-            <button className="btn btn-neutral m-5">
+            <button className="btn m-5 rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">
               Utforsk{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"

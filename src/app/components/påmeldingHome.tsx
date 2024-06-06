@@ -11,43 +11,43 @@ export default function PaameldingHome() {
           >
             Påmelding.
           </h1>{" "}
-          <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
-          <div className="flex justify-between items-center py-[75px]  hover:scale-[98.5%] duration-150">
+          <div className="w-full h-[2px] bg-[#67686c] opacity-50 animation-scroll"></div>
+          <div className="flex justify-between items-center py-[55px]  hover:scale-[98.5%] duration-150 animation-scroll">
             <h1
-              className="primaryBold text-slate-50"
+              className="primaryRegular text-slate-50"
               style={{ fontSize: "clamp(22px, 5vw, 35px)" }}
             >
               Connect
             </h1>
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSesbn9kHSXX_Yb5uK5ovpKd9xiZ57p5DGpClDozOTZma3ZgrQ/viewform">
-              <button className="btn btn-neutral">Meld deg</button>
+            <button className="btn rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">Meld deg</button>
             </Link>
           </div>
-          <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
-          <div className="flex justify-between items-center py-[75px]  hover:scale-[98.5%] duration-150">
+          <div className="w-full h-[2px] bg-[#67686c] opacity-50 animation-scroll"></div>
+          <div className="flex justify-between items-center py-[55px]  hover:scale-[98.5%] duration-150 animation-scroll">
             <h1
-              className="primaryBold text-slate-50"
+              className="primaryRegular text-slate-50"
               style={{ fontSize: "clamp(22px, 5vw, 35px)" }}
             >
               Bibelstudie
             </h1>
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdDbsu-p-7rR353roJfZuUF-l8oNqjkdHXiT8WY2y9E3kZ7Bw/viewform">
-              <button className="btn btn-neutral">Meld deg</button>
+            <button className="btn rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">Meld deg</button>
             </Link>
           </div>
-          <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
-          <div className="flex justify-between items-center py-[75px]  hover:scale-[98.5%] duration-150">
+          <div className="w-full h-[2px] bg-[#67686c] opacity-50 animation-scroll"></div>
+          <div className="flex justify-between items-center py-[55px]  hover:scale-[98.5%] duration-150 animation-scroll">
             <h1
-              className="primaryBold text-slate-50"
+              className="primaryRegular text-slate-50"
               style={{ fontSize: "clamp(22px, 5vw, 35px)" }}
             >
               Tjenestekurs
             </h1>
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSerL_wsSXphDQfwW-WZY9al7T8Ply6C9yRb-DSES4a2Ds0dfA/viewform">
-              <button className="btn btn-neutral">Meld deg</button>
+              <button className="btn rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">Meld deg</button>
             </Link>
           </div>
-          <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
+          <div className="w-full h-[2px] bg-[#67686c] opacity-50 animation-scroll"></div>
           <div className="påmeldingHomeInfoContainer flex gap-16 justify-between items-center my-14">
             <p
               className="primaryRegular text-slate-50 max-w-[600px]"
@@ -57,7 +57,7 @@ export default function PaameldingHome() {
               kan melde deg på.
             </p>
             <Link href="/youthForms">
-              <button className="btn btn-neutral btn-wide">
+              <button className="btn btn-wide rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">
                 Alle påmeldinger
               </button>
             </Link>

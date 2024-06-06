@@ -16,38 +16,45 @@ export default function YouthGrupperHome() {
             Grupper.
           </h1>
           <div className="grupper-wrapper-home grid grid-cols-2 gap-10">
-            <img
-              className="w-full max-w-[648px] rounded-[4px] cursor-pointer"
-              src={alphaKursImg.src}
-              alt="alphakurs img"
-            />
-            <img
-              className="hidden-grupper-img w-full max-w-[648px] rounded-[4px] cursor-pointer"
-              src={bibelStudieImg.src}
-              alt="bibel studie img"
-            />
-            <img
-              className="w-full max-w-[648px] rounded-[4px] cursor-pointer"
-              src={connectImg.src}
-              alt="connect img"
-            />
-            <img
-              className="hidden-grupper-img w-full max-w-[648px] rounded-[4px] cursor-pointer"
-              src={tjenesteKursImg.src}
-              alt="tjenestekurs img"
-            />
+            <Link href="/youthGrupper" className="animation-scroll">
+              <img
+                className="w-full max-w-[648px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
+                src={alphaKursImg.src}
+                alt="alphakurs img"
+              />
+            </Link>
+            <Link href="/youthGrupper" className="animation-scroll">
+              <img
+                className="hidden-grupper-img w-full max-w-[648px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
+                src={bibelStudieImg.src}
+                alt="bibel studie img"
+              />
+            </Link>
+            <Link href="/youthGrupper" className="animation-scroll">
+              <img
+                className="w-full max-w-[648px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
+                src={connectImg.src}
+                alt="connect img"
+              />
+            </Link>
+            <Link href="/youthGrupper" className="animation-scroll">
+              <img
+                className="hidden-grupper-img w-full max-w-[648px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
+                src={tjenesteKursImg.src}
+                alt="tjenestekurs img"
+              />
+            </Link>
           </div>
           <div className="påmeldingHomeInfoContainer flex gap-16 justify-between items-center my-14">
             <p
               className="primaryRegular text-slate-50 max-w-[600px]"
               style={{ fontSize: "clamp(14px, 4vw, 22px)" }}
             >
-              Trykk på "Alle Grupper" for og se alle grupper vi tilbyr i vårt fellesskap.
+              Trykk på "Alle Grupper" for og se alle grupper vi tilbyr i vårt
+              fellesskap.
             </p>
             <Link href="/youthGrupper">
-              <button className="btn btn-neutral btn-wide">
-                Alle Grupper
-              </button>
+              <button className="btn btn-wide rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">Alle Grupper</button>
             </Link>
           </div>{" "}
         </div>
