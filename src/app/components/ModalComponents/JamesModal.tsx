@@ -14,7 +14,7 @@ export default function Modal() {
   return (
     <main>
       <button
-        className="btn btn-wide rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]"
+        className="Modal-button-view btn btn-wide rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]"
         onClick={openModal}
       >
         Les mer

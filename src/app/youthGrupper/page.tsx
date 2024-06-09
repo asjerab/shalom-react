@@ -10,15 +10,24 @@ import evangelisering from "../grupperImages/evangelisering-img.png";
 import james from "../grupperImages/James-img.png";
 import dypereImg from "../grupperImages/dypere-img.png";
 import Loading from "../components/loading";
-import AlphakursModal from "../components/ModalComponents/AlphakursModal"
-import BibelstudieModal from "../components/ModalComponents/BibelstudieModal"
-import TjenesteModal from "../components/ModalComponents/TjenesteModal"
-import ConnectModal from "../components/ModalComponents/ConnectModal"
-import DåpModal from "../components/ModalComponents/DåpModal"
-import BønnModal from "../components/ModalComponents/BønnModal"
-import TheUpperRoom from "../components/ModalComponents/TheUpperRoom"
-import Evangelisering from "../components/ModalComponents/Evangelisering"
-import JamesModal from "../components/ModalComponents/JamesModal"
+import AlphakursModal from "../components/ModalComponents/AlphakursModal";
+import BibelstudieModal from "../components/ModalComponents/BibelstudieModal";
+import TjenesteModal from "../components/ModalComponents/TjenesteModal";
+import ConnectModal from "../components/ModalComponents/ConnectModal";
+import DåpModal from "../components/ModalComponents/DåpModal";
+import BønnModal from "../components/ModalComponents/BønnModal";
+import TheUpperRoom from "../components/ModalComponents/TheUpperRoom";
+import Evangelisering from "../components/ModalComponents/Evangelisering";
+import JamesModal from "../components/ModalComponents/JamesModal";
+import AlphakursMobileModal from "../components/MobileModal/AlphakursMobileModal";
+import BibelstudieMobileModal from "../components/MobileModal/BibelstudieMobileModal"
+import TjenesteMobileModal from "../components/MobileModal/TjenesteMobileModal"; 
+import ConnectMobileModal from "../components/MobileModal/ConnectMobileModal";
+import DåpMobileModal from "../components/MobileModal/DåpMobileModal";
+import BønnMobileModal from "../components/MobileModal/BønnMobileModal";
+import EvangeliseringMobileModal from "../components/MobileModal/EvangeliseringMobileModal";
+import TheUpperRoomMobileModal from "../components/MobileModal/TheUpperRoomMobileModal";
+import JamesMobileModal from "../components/MobileModal/JamesMobileModal";
 
 export default function YouthGrupper() {
   return (
@@ -60,6 +69,7 @@ export default function YouthGrupper() {
               </h1>
               <hr className="opacity-50" />
               <AlphakursModal />
+              <AlphakursMobileModal /> 
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -78,6 +88,7 @@ export default function YouthGrupper() {
               </h1>
               <hr className="opacity-50" />
               <BibelstudieModal />
+              <BibelstudieMobileModal />
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -96,6 +107,7 @@ export default function YouthGrupper() {
               </h1>
               <hr className="opacity-50" />
               <TjenesteModal />
+              <TjenesteMobileModal />
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -110,6 +122,7 @@ export default function YouthGrupper() {
               </h1>
               <hr className="opacity-50" />
               <ConnectModal />
+              <ConnectMobileModal />
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -124,6 +137,7 @@ export default function YouthGrupper() {
               </h1>
               <hr className="opacity-50" />
               <DåpModal />
+              <DåpMobileModal />
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -138,6 +152,7 @@ export default function YouthGrupper() {
               </h1>
               <hr className="opacity-50" />
               <BønnModal />
+              <BønnMobileModal />
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -156,6 +171,7 @@ export default function YouthGrupper() {
               </h1>
               <hr className="opacity-50" />
               <TheUpperRoom />
+              <TheUpperRoomMobileModal />
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -174,6 +190,7 @@ export default function YouthGrupper() {
               </h1>
               <hr className="opacity-50" />
               <Evangelisering />
+              <EvangeliseringMobileModal />
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -188,6 +205,7 @@ export default function YouthGrupper() {
               </h1>
               <hr className="opacity-50" />
               <JamesModal />
+              <JamesMobileModal />
             </li>
           </ul>
         </div>

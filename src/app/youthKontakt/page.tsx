@@ -27,8 +27,8 @@ export default function youthKontakt() {
         </p>
       </div>{" "}
       <div className="kontakt-children p-[50px] max-w-[1325px]">
-        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
-        <div className="py-[65px] flex flex-col gap-5">
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50 animation-scroll"></div>
+        <div className="py-[65px] flex flex-col gap-5 animation-scroll">
           <div className="flex row-kontakt justify-between items-center">
             <h1
               className="primaryRegular text-slate-50"
@@ -51,8 +51,8 @@ export default function youthKontakt() {
           </p>
         </div>
 
-        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
-        <div className="py-[65px] flex flex-col gap-5">
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50 animation-scroll"></div>
+        <div className="py-[65px] flex flex-col gap-5 animation-scroll">
           <div className="flex row-kontakt justify-between items-center">
             <h1
               className="primaryRegular text-slate-50"
@@ -74,8 +74,8 @@ export default function youthKontakt() {
             shalomyouthoslo@gmail.com
           </p>
         </div>
-        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
-        <div className="py-[65px] flex flex-col gap-5">
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50 animation-scroll"></div>
+        <div className="py-[65px] flex flex-col gap-5 animation-scroll">
           <div className="flex row-kontakt justify-between items-center">
             <h1
               className="primaryRegular text-slate-50"
@@ -97,9 +97,9 @@ export default function youthKontakt() {
             shalomyouthoslo@gmail.com
           </p>
         </div>
-        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50 animation-scroll"></div>
 
-        <div className="py-[65px] flex flex-col gap-5">
+        <div className="py-[65px] flex flex-col gap-5 animation-scroll">
           <div className="flex row-kontakt justify-between items-center">
             <h1
               className="primaryRegular text-slate-50"
@@ -122,10 +122,10 @@ export default function youthKontakt() {
           </p>
         </div>
 
-        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50 animation-scroll"></div>
 
 
-        <div className="py-[65px] flex flex-col gap-5">
+        <div className="py-[65px] flex flex-col gap-5 animation-scroll">
           <div className="flex row-kontakt justify-between items-center">
             <h1
               className="primaryRegular text-slate-50"
@@ -148,9 +148,9 @@ export default function youthKontakt() {
           </p>
         </div>
 
-        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50 animation-scroll"></div>
 
-        <div className="py-[65px] flex flex-col gap-5">
+        <div className="py-[65px] flex flex-col gap-5 animation-scroll">
           <div className="flex row-kontakt justify-between items-center">
             <h1
               className="primaryRegular text-slate-50"
@@ -173,9 +173,9 @@ export default function youthKontakt() {
           </p>
         </div>
 
-        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50 animation-scroll"></div>
 
-        <div className="py-[65px] flex flex-col gap-5">
+        <div className="py-[65px] flex flex-col gap-5 animation-scroll">
           <div className="flex row-kontakt justify-between items-center">
             <h1
               className="primaryRegular text-slate-50"
@@ -197,9 +197,9 @@ export default function youthKontakt() {
             shalomyouthoslo@gmail.com
           </p>
         </div>
-        <div className="w-full h-[2px] bg-[#67686c] opacity-50"></div>
+        <div className="w-full h-[2px] bg-[#67686c] opacity-50 animation-scroll"></div>
 
-        <div className="py-[65px] flex flex-col gap-5">
+        <div className="py-[65px] flex flex-col gap-5 animation-scroll">
           <div className="flex row-kontakt justify-between items-center">
             <h1
               className="primaryRegular text-slate-50"

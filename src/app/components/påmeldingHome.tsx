@@ -12,7 +12,7 @@ export default function PaameldingHome() {
             Påmelding.
           </h1>{" "}
           <div className="w-full h-[2px] bg-[#67686c] opacity-50 animation-scroll"></div>
-          <div className="flex justify-between items-center py-[55px]  hover:scale-[98.5%] duration-150 animation-scroll">
+          <div className="flex justify-between items-center py-[40px]  hover:scale-[98.5%] duration-150 animation-scroll">
             <h1
               className="primaryRegular text-slate-50"
               style={{ fontSize: "clamp(22px, 5vw, 35px)" }}
@@ -24,7 +24,7 @@ export default function PaameldingHome() {
             </Link>
           </div>
           <div className="w-full h-[2px] bg-[#67686c] opacity-50 animation-scroll"></div>
-          <div className="flex justify-between items-center py-[55px]  hover:scale-[98.5%] duration-150 animation-scroll">
+          <div className="flex justify-between items-center py-[40px]  hover:scale-[98.5%] duration-150 animation-scroll">
             <h1
               className="primaryRegular text-slate-50"
               style={{ fontSize: "clamp(22px, 5vw, 35px)" }}
@@ -36,7 +36,7 @@ export default function PaameldingHome() {
             </Link>
           </div>
           <div className="w-full h-[2px] bg-[#67686c] opacity-50 animation-scroll"></div>
-          <div className="flex justify-between items-center py-[55px]  hover:scale-[98.5%] duration-150 animation-scroll">
+          <div className="flex justify-between items-center py-[40px]  hover:scale-[98.5%] duration-150 animation-scroll">
             <h1
               className="primaryRegular text-slate-50"
               style={{ fontSize: "clamp(22px, 5vw, 35px)" }}

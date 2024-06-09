@@ -25,8 +25,8 @@ export default function youthPåmelding() {
               på, vil vi ta kontakt med deg.
             </p>
           </div>
-          <div className="w-full h-[2px] bg-[#67686c] opacity-25"></div>
-          <div className="flex justify-between items-center py-[50px]  hover:scale-[98.5%] duration-150">
+          <div className="w-full h-[2px] bg-[#67686c] opacity-25 animation-scroll"></div>
+          <div className="animation-scroll flex justify-between items-center py-[50px]  hover:scale-[98.5%] duration-150">
             <h1
               className="primaryBold text-slate-50"
               style={{ fontSize: "clamp(22px, 5vw, 30px)" }}
@@ -38,9 +38,9 @@ export default function youthPåmelding() {
             </Link>
           </div>
 
-          <div className="w-full h-[2px] bg-[#67686c] opacity-25"></div>
+          <div className="w-full h-[2px] bg-[#67686c] opacity-25 animation-scroll"></div>
 
-          <div className="flex justify-between items-center py-[50px]  hover:scale-[98.5%] duration-150">
+          <div className="animation-scroll flex justify-between items-center py-[50px]  hover:scale-[98.5%] duration-150">
             <h1
               className="primaryBold text-slate-50"
               style={{ fontSize: "clamp(22px, 5vw, 30px)" }}
@@ -52,9 +52,9 @@ export default function youthPåmelding() {
             </Link>
           </div>
 
-          <div className="w-full h-[2px] bg-[#67686c] opacity-25"></div>
+          <div className="w-full h-[2px] bg-[#67686c] opacity-25 animation-scroll"></div>
 
-          <div className="flex justify-between items-center py-[50px]  hover:scale-[98.5%] duration-150">
+          <div className="animation-scroll flex justify-between items-center py-[50px]  hover:scale-[98.5%] duration-150">
             <h1
               className="primaryBold text-slate-50"
               style={{ fontSize: "clamp(22px, 5vw, 30px)" }}
@@ -66,9 +66,9 @@ export default function youthPåmelding() {
             </Link>
           </div>
 
-          <div className="w-full h-[2px] bg-[#67686c] opacity-25"></div>
+          <div className="w-full h-[2px] bg-[#67686c] opacity-25 animation-scroll"></div>
 
-          <div className="flex justify-between items-center py-[50px]  hover:scale-[98.5%] duration-150">
+          <div className="animation-scroll flex justify-between items-center py-[50px]  hover:scale-[98.5%] duration-150">
             <h1
               className="primaryBold text-slate-50"
               style={{ fontSize: "clamp(22px, 5vw, 30px)" }}
@@ -80,9 +80,9 @@ export default function youthPåmelding() {
             </Link>
           </div>
 
-          <div className="w-full h-[2px] bg-[#67686c] opacity-25"></div>
+          <div className="animation-scroll w-full h-[2px] bg-[#67686c] opacity-25 animation-scroll"></div>
 
-          <div className="flex justify-between items-center py-[50px]  hover:scale-[98.5%] duration-150">
+          <div className="animation-scroll flex justify-between items-center py-[50px]  hover:scale-[98.5%] duration-150">
             <h1
               className="primaryBold text-slate-50"
               style={{ fontSize: "clamp(22px, 5vw, 30px)" }}
@@ -94,9 +94,9 @@ export default function youthPåmelding() {
             </Link>
           </div>
 
-          <div className="w-full h-[2px] bg-[#67686c] opacity-25"></div>
+          <div className="w-full h-[2px] bg-[#67686c] opacity-25 animation-scroll"></div>
 
-          <div className="flex justify-between items-center py-[50px]  hover:scale-[98.5%] duration-150">
+          <div className="animation-scroll flex justify-between items-center py-[50px]  hover:scale-[98.5%] duration-150">
             <h1
               className="primaryBold text-slate-50"
               style={{ fontSize: "clamp(22px, 5vw, 30px)" }}

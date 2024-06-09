@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Modal() {
@@ -13,12 +14,19 @@ export default function Modal() {
 
   return (
     <main>
-      <button className="btn btn-wide rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]" onClick={openModal}>Les mer</button>
+      <button
+        className="Modal-button-view btn btn-wide rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]"
+        onClick={openModal}
+      >
+        Les mer
+      </button>
       {isOpen && (
         <div className="modal-container modal-container fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[900px] max-w-full m-[auto 0] z-50">
           <div className="modal-content modal-content bg-[#1a1a1a] rounded-[25px] p-[3em] m-[1em]">
             <nav className="py-5 flex justify-between items-center">
-              <h1 className="Onest-Bold font-bold text-slate-50 text-3xl">Alphakurs</h1>
+              <h1 className="Onest-Bold font-bold text-slate-50 text-3xl">
+                Alphakurs
+              </h1>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -49,7 +57,11 @@ export default function Modal() {
               dersom du ønsker å delta.
             </p>
             <div className="py-5">
-              <button className="button-modal btn btn-wide rounded-xl bg-[#ffffff] text-[#111] border-none hover:bg-[#d3d2d2]">Påmelding</button>
+              <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdxWO95fkpaN8Y5My2L3Ii5lCKK49Q910fl9HXcR9JsASCjOg/viewform">
+                <button className="button-modal btn btn-wide rounded-xl bg-[#ffffff] text-[#111] border-none hover:bg-[#d3d2d2]">
+                  Påmelding
+                </button>
+              </Link>
             </div>
           </div>
         </div>

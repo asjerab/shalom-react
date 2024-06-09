@@ -1,9 +1,10 @@
-import YouthNav from "../components/youthNavHome";
+import YouthNav from "../components/youthHeroHome";
 import YouthGrupperHome from "../components/youthGrupperHome"
 import YoutubeComp from "../components/youtubeComp"
 import PaameldingHome from "../components/påmeldingHome"
 import Footer from "../components/footer"
 import Loading from "../components/loading"
+import Kalender from "../components/kalender"
 
 
 

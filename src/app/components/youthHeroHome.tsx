@@ -1,6 +1,6 @@
 import Link from "next/link";
 import YouthLogo from "../images/ShalomYouth-Logo.png";
-import YouthNavHome from "../components/youthNav"
+import YouthNavHome from "./youthNav"
 
 export default function YouthNav() {
   return (

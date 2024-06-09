@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Modal() {
@@ -14,7 +15,7 @@ export default function Modal() {
   return (
     <main>
       <button
-        className="btn btn-wide rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]"
+        className="Modal-button-view btn btn-wide rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]"
         onClick={openModal}
       >
         Les mer
@@ -52,11 +53,14 @@ export default function Modal() {
               Dersom du ønsker å la deg døpe kan du melde deg på nedenfor, så
               vil vi ta kontakt med deg.
             </p>
-            <div className="py-5">
+            <Link
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdWBP7yJddqmqgW5XaienN-GCqKIykNCsh3NPig-9UnIFVbmw/viewform"
+            >
               <button className="button-modal btn btn-wide rounded-xl bg-[#ffffff] text-[#111] border-none hover:bg-[#d3d2d2]">
                 Påmelding
               </button>
-            </div>
+            </Link>
           </div>
         </div>
       )}
