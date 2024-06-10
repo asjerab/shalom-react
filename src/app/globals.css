@@ -161,11 +161,22 @@ html {
   .grupper-img {
     padding-bottom: 55px;
     padding-top: 55px;
-  
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
 }
 
 @media screen and (max-width: 768px) {
+
+  .footer-container {
+      margin-top: 100px;
+  }
+
+
   .links-youth-nav {
     display: none;
   }
@@ -182,15 +193,6 @@ html {
     padding: 100px 25px;
   }
 
-  .grupper-wrapper-home {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .hidden-grupper-img {
-    display: none;
-  }
 
   .yotube-container {
     padding: 0;
@@ -264,5 +266,33 @@ html {
     padding-bottom: 75px;
     padding-top: 75px;
   }
+
+  
+  .hidden-grupper-img {
+    display: none;
+  }
+
+
+  .grupper-wrapper-home {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .lenker-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .shalom-footer,
+  .oslo-footer {
+    font-size: 75px;
+  }
+
+  .footer-footer {
+    padding-top: 5px;
+  }
+
 
 }

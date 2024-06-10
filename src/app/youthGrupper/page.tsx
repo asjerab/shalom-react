@@ -28,6 +28,9 @@ import BønnMobileModal from "../components/MobileModal/BønnMobileModal";
 import EvangeliseringMobileModal from "../components/MobileModal/EvangeliseringMobileModal";
 import TheUpperRoomMobileModal from "../components/MobileModal/TheUpperRoomMobileModal";
 import JamesMobileModal from "../components/MobileModal/JamesMobileModal";
+import Footer from "../components/footer"
+
+
 
 export default function YouthGrupper() {
   return (
@@ -210,6 +213,7 @@ export default function YouthGrupper() {
           </ul>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }

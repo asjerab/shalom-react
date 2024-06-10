@@ -22,8 +22,8 @@ export default function YouthNav() {
             troende i ord og livsførsel, i kjærlighet, tro og renhet. 1.Timoteus
             4:12
           </p>
-          <a href="#grupper-a">
-            <button className="btn m-5 rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">
+          <a href="#grupper-a" className="flex justify-center">
+            <button className="btn w-full max-w-[125px] m-5 rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">
               Utforsk{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"

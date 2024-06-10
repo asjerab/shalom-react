@@ -23,7 +23,7 @@ export default function TestNav() {
                 [CLOSE]
               </button>
             </div>
-            <div className="py-10">
+            <div className="py-10 flex flex-col gap-2">
               <Link className="Onest-Bold font-bold flex justify-between items-center" href="/shalomYouth">
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"

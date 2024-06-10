@@ -1,5 +1,8 @@
 import YouthNav from "../components/youthNav";
 import Loading from "../components/loading";
+import Footer from "../components/footer"
+
+
 
 export default function youthKontakt() {
   return (
@@ -222,6 +225,7 @@ export default function youthKontakt() {
           </p>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }

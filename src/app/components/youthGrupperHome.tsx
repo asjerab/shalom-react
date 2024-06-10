@@ -15,7 +15,7 @@ export default function YouthGrupperHome() {
           >
             Grupper.
           </h1>
-          <div className="grupper-wrapper-home grid grid-cols-2 gap-10">
+          <div className="grupper-wrapper-home grid grid-cols-2 gap-7">
             <Link href="/youthGrupper" className="animation-scroll">
               <img
                 className="w-full max-w-[648px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"

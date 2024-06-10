@@ -1,5 +1,7 @@
 import YouthNav from "../components/youthNav";
 import Loading from "../components/loading";
+import Footer from "../components/footer"
+
 
 export default function omOss() {
   return (
@@ -109,6 +111,7 @@ export default function omOss() {
           </p>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }
