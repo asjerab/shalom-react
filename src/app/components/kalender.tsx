@@ -6,19 +6,65 @@ interface DateType {
   year: string;
 }
 
+interface Event {
+  month: string;
+  title: string;
+  day: string;
+  date: string;
+}
+
 export default function Kalender() {
   const [currentDate, setCurrentDate] = useState<DateType>({
     month: "",
     year: "",
   });
 
+  const [visibleMonth, setVisibleMonth] = useState<string>("");
+  const [visibleCount, setVisibleCount] = useState<number>(5);
+  const [showMore, setShowMore] = useState<boolean>(true);
+
   useEffect(() => {
     const date = new Date();
-    const month = date.toLocaleString("default", { month: "long" });
-    const year = date.getFullYear().toString(); // Ensure year is a string
+    const month = date.toLocaleString("nb-NO", { month: "long" });
+    const year = date.getFullYear().toString();
 
     setCurrentDate({ month, year });
+    setVisibleMonth(month.charAt(0).toUpperCase() + month.slice(1)); // Capitalize the first letter to match event month format
   }, []);
+
+  const handleMonthClick = (month: string) => {
+    const year = new Date().getFullYear().toString();
+    setVisibleMonth(month);
+    setVisibleCount(5); // Reset visible count when switching months
+    setShowMore(true);
+    setCurrentDate({ month, year });
+  };
+
+  const handleToggleClick = () => {
+    if (showMore) {
+      setVisibleCount((prevCount) => prevCount + 5);
+    } else {
+      setVisibleCount(5);
+    }
+    setShowMore(!showMore);
+  };
+
+  const events: Event[] = [
+    { month: "Desember", title: "Gudstjeneste", day: "lør", date: "juni 04" },
+    { month: "Juni", title: "Connect", day: "ons", date: "juni 05" },
+    { month: "Juni", title: "Connect", day: "ons", date: "juni 05" },
+    { month: "Juni", title: "Connect", day: "ons", date: "juni 05" },
+    { month: "Juni", title: "Connect", day: "ons", date: "juni 05" },
+    { month: "Juni", title: "Evangelisering", day: "fre", date: "juni 07" },
+    { month: "Juni", title: "Alpha kurs & Dypere", day: "søn", date: "juni 09" },
+    { month: "Juli", title: "Summer Camp", day: "man", date: "juli 15" },
+    { month: "Juli", title: "Youth Meeting", day: "fre", date: "juli 20" },
+    { month: "August", title: "Workshop", day: "tir", date: "august 12" },
+    { month: "August", title: "Community Service", day: "tor", date: "august 22" },
+    // Add more events as needed
+  ];
+
+  const filteredEvents = events.filter((event) => event.month === visibleMonth);
 
   return (
     <>
@@ -26,10 +72,16 @@ export default function Kalender() {
         <div className="w-full max-w-[1325px] py-[100px] pb-[200px]">
           <nav className="nav-kalender flex justify-between items-end">
             <div>
-              <h1 className="primaryFontBold uppercase text-slate-50" style={{fontSize: "clamp(35px, 10vw, 100px)"}}>
+              <h1
+                className="primaryFontBold uppercase text-slate-50"
+                style={{ fontSize: "clamp(35px, 10vw, 100px)" }}
+              >
                 Kalender
               </h1>
-              <p className="primaryFontRegular font-[300] w-full max-w-[682px] text-slate-50" style={{fontSize: "clamp(15px, 2.5vw, 25px)"}}>
+              <p
+                className="primaryFontRegular font-[300] w-full max-w-[682px] text-slate-50"
+                style={{ fontSize: "clamp(15px, 2.5vw, 25px)" }}
+              >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                 maximus, orci eget finibus varius, eros turpis laoreet mauris,
                 quis blandit risus dui a erat.
@@ -45,23 +97,47 @@ export default function Kalender() {
             </div>
           </nav>
           <div className="flex gap-3 py-10 flex-wrap">
-            <button className="btn btn-responsive rounded-full bg-[#191919] border-none text-slate-50 hover:bg-slate-50 hover:text-[#191919]">Juni</button>
-            <button className="btn btn-responsive rounded-full bg-[#191919] border-none text-slate-50 hover:bg-slate-50 hover:text-[#191919]">Juli</button>
-            <button className="btn btn-responsive rounded-full bg-[#191919] border-none text-slate-50 hover:bg-slate-50 hover:text-[#191919]">August</button>
-            <button className="btn btn-responsive rounded-full bg-[#191919] border-none text-slate-50 hover:bg-slate-50 hover:text-[#191919]">September</button>
-            <button className="btn btn-responsive rounded-full bg-[#191919] border-none text-slate-50 hover:bg-slate-50 hover:text-[#191919]">Oktober</button>
-            <button className="btn btn-responsive rounded-full bg-[#191919] border-none text-slate-50 hover:bg-slate-50 hover:text-[#191919]">November</button>
-            <button className="btn btn-responsive rounded-full bg-[#191919] border-none text-slate-50 hover:bg-slate-50 hover:text-[#191919]">Desember</button>
-          </div >
+            {["Juni", "Juli", "August", "September", "Oktober", "November", "Desember"].map((month) => (
+              <button
+                key={month}
+                onClick={() => handleMonthClick(month)}
+                className="btn btn-responsive rounded-full bg-[#191919] border-none text-slate-50 hover:bg-slate-50 hover:text-[#191919]" style={{fontSize:"clamp(10px, 3vw, 20px)"}}
+              >
+                {month}
+              </button>
+            ))}
+          </div>
 
           <div>
-            <div className="flex justify-between items-center border-y-[1px] border-slate-50">
-              <h1>Gudstjeneste</h1>
-              <div className="flex">
-                <p className="">lør</p>
-                <p>juni 01</p>
+            {filteredEvents.slice(0, visibleCount).map((event, index) => (
+              <div
+                key={index}
+                className="flex justify-between items-center border-t-[1px] border-[#ffffff88] py-5 cursor-pointer"
+              >
+                <h1 className="primaryFontRegular font-[500] text-slate-50" style={{fontSize:"clamp(15px, 5vw, 25px)"}}>
+                  {event.title}
+                </h1>
+                <div className="flex items-center">
+                  <p className="primaryFontRegular font-[500] uppercase bg-slate-50 text-[#0D0D0D] py-[5px] px-[15px] rounded-full" style={{fontSize:"clamp(10px, 3.5vw, 20px)"}}>
+                    {event.day}
+                  </p>
+                  <p className="primaryFontRegular font-[500] uppercase bg-slate-50 text-[#0D0D0D] text-[20px] py-[5px] px-[15px] rounded-full" style={{fontSize:"clamp(10px, 3.5vw, 20px)"}}>
+                    {event.date}
+                  </p>
+                </div>
               </div>
-            </div>
+            ))}
+
+            {filteredEvents.length > 5 && (
+              <div className="flex justify-center items-center m-10">
+                <button
+                  onClick={handleToggleClick}
+                  className="btn btn-responsive rounded-full primaryFontRegular font-[500] uppercase bg-slate-50 text-[#0D0D0D] py-[5px] px-[15px]"
+                >
+                  {showMore ? "Se mer" : "Vis mindre"}
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </main>
