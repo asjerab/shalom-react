@@ -25,21 +25,6 @@ html {
 /* @font faces for the whole site*/
 
 @font-face {
-  font-family: "Onest-Light";
-  src: url(./assets/fonts/Onest-Light.ttf);
-}
-
-@font-face {
-  font-family: "Onest-Regular";
-  src: url(./assets/fonts/Onest-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Onest-Bold";
-  src: url(./assets/fonts/Onest-Bold.ttf);
-}
-
-@font-face {
   font-family: "Kelsi-fill";
   src: url(./assets/fonts/Kelsi-fill.otf);
 }
@@ -49,10 +34,33 @@ html {
   src: url(./assets/fonts/Kelsi-Regular.otf);
 }
 
+
 @font-face {
-  font-family: "Monument";
-  src: url(./assets/fonts/MonumentExtended-Regular.otf);
+  font-family: "Magic Retro";
+  src: url(assets/fonts/Magic\ Retro-normal-400-100.ttf);
 }
+
+@font-face {
+  font-family: "Milk&Honey";
+  src: url(assets/fonts/Milk\ And\ Honey.ttf);
+}
+
+
+@font-face {
+  font-family: "SF-Pro-Regular";
+  src: url(assets/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+  font-family: "SF-Pro-Medium";
+  src: url(assets/fonts/SFPRODISPLAYMEDIUM.OTF);
+}
+
+@font-face {
+  font-family: "SF-Pro-Bold";
+  src: url(assets/fonts/SFPRODISPLAYBOLD.OTF);
+}
+
 
 
 .primaryLight {
@@ -79,6 +87,28 @@ html {
   font-family: "Monument";
 }
 
+.Magic-Retro {
+  font-family: "Magic Retro";
+}
+
+.Milk-Honey {
+  font-family: "Milk&Honey";
+}
+
+.primaryFontRegular {
+  font-family: "SF-Pro-Regular";
+}
+
+.SF-Pro-Medium {
+  font-family: "SF-Pro-Medium";
+}
+
+.primaryFontBold {
+  font-family: "SF-Pro-Bold";
+}
+
+
+
 
 @keyframes appear {
   from {
@@ -97,6 +127,48 @@ html {
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
+
+
+/* Scrolling text animation */
+
+.scroll-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.scroll-holder {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.5s ease;
+  padding: 0;
+  margin: 0;
+}
+
+.scroll-container:hover .scroll-holder {
+  animation: scrollUp 0.5s ease forwards;
+}
+
+@keyframes scrollUp {
+  0% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  50% {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  51% {
+      transform: translateY(100%);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
 
 
 /* YouthNav-bg holder*/
@@ -137,6 +209,7 @@ html {
 }
 
 
+
 @keyframes rotate {
   100%   {transform: rotate(360deg)}
 }
@@ -167,6 +240,13 @@ html {
     display: flex;
     flex-direction: column;
     gap: 50px;
+  }
+
+  .nav-kalender {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 }
 
@@ -201,8 +281,9 @@ html {
   .youtube-bg-holder {
     width: 100%;
     max-width: 100%;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 25px;
   }
 
   .youtube-button {
@@ -238,6 +319,16 @@ html {
 
   .Mobile-modal-view {
     display: block;
+  }
+
+  .påmeldingHome {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    border-radius: 20px;
+  }
+
+  .påmeldingTitle {
+    font-size: 20px;
   }
 }
 
@@ -292,6 +383,16 @@ html {
 
   .footer-footer {
     padding-top: 5px;
+  }
+
+  .påmeldingHome {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    border-radius: 16px;
+  }
+
+  .påmeldingTitle {
+    font-size: 15px;
   }
 
 

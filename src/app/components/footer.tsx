@@ -8,7 +8,7 @@ export default function footer() {
         <div className="w-full max-w-[1325px] px-[35px]">
           <nav className="footer-nav flex justify-between items-start pb-[100px]">
             <div className="flex flex-col leading-[100px]">
-              <h1 className="Onest-Bold shalom-footer font-semibold text-slate-50 uppercase flex flex-col p-0 m-0 text-[100px]">
+              <h1 className="primaryFontBold shalom-footer font-semibold text-slate-50 uppercase flex flex-col p-0 m-0 text-[100px]">
                 Shalom{" "}
                 <span className="Kelsi-outline oslo-footer text-slate-50 p-0 m-0 text-[100px]">
                   Oslo
@@ -17,27 +17,27 @@ export default function footer() {
             </div>
             <div className="lenker-footer flex gap-10">
               <div className="lenker">
-                <h1 className="Onest-Bold pb-3 text-slate-50 font-medium uppercase text-[20px]">
+                <h1 className="primaryFontBold pb-3 text-slate-50 font-medium uppercase text-[20px]">
                   Lenker
                 </h1>
-                <p className="Onest-Regular text-slate-50 font-light uppercase text-[15px] cursor-pointer hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out">
+                <p className="primaryFontRegular font-[600] text-slate-50 uppercase text-[15px] cursor-pointer hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out">
                   <Link href="/youthGrupper">Utrustning</Link>
                 </p>
-                <p className="Onest-Regular text-slate-50 font-light uppercase text-[15px] cursor-pointer hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out">
+                <p className="primaryFontRegular font-[600] text-slate-50 uppercase text-[15px] cursor-pointer hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out">
                   <Link href="/youthForms">Påmelding</Link>
                 </p>
-                <p className="Onest-Regular text-slate-50 font-light uppercase text-[15px] cursor-pointer hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out">
+                <p className="primaryFontRegular font-[600] text-slate-50 uppercase text-[15px] cursor-pointer hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out">
                   <Link href="/OmOss">Om Oss</Link>
                 </p>
-                <p className="Onest-Regular text-slate-50 font-light uppercase text-[15px] cursor-pointer hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out">
+                <p className="primaryFontRegular font-[600] text-slate-50 uppercase text-[15px] cursor-pointer hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out">
                   <Link href="/youthKontakt">Kontakt</Link>
                 </p>
               </div>
               <div className="adresse">
-                <h1 className="Onest-Bold pb-3 text-slate-50 font-medium uppercase text-[20px]">
+                <h1 className="primaryFontBold pb-3 text-slate-50 font-medium uppercase text-[20px]">
                   Adresse
                 </h1>
-                <p className="Onest-Regular text-slate-50 font-light uppercase text-[15px]">
+                <p className="primaryFontRegular font-[600] text-slate-50 uppercase text-[15px]">
                   Norway
                   <br />
                   St. Olavs gate 24
@@ -46,10 +46,10 @@ export default function footer() {
                 </p>
               </div>
               <div className="kontakt">
-                <h1 className="Onest-Bold pb-3 text-slate-50 font-medium uppercase text-[20px]">
+                <h1 className="primaryFontBold pb-3 text-slate-50 font-medium uppercase text-[20px]">
                   Kontakt
                 </h1>
-                <p className="Onest-Regular text-slate-50 font-light uppercase text-[15px]">
+                <p className="primaryFontRegular font-[600] text-slate-50 uppercase text-[15px]">
                   ShalomOslo@gmail.com
                 </p>
               </div>
@@ -58,15 +58,22 @@ export default function footer() {
           <hr className="opacity-25" />
           <div className="footer-footer flex justify-between items-center py-3">
             <div className="flex gap-5">
-              <p className="Onest-Regular text-slate-50 hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out cursor-pointer">
-                Design by Asjer
-              </p>
-              <p className="Onest-Regular text-slate-50 hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out cursor-pointer">
-                Code Asjer
-              </p>
+              <div className="scroll-container">
+                <p className="primaryFontRegular font-[600] scroll-holder  text-slate-50 hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out cursor-pointer">
+                  Design by Asjer
+                </p>
+              </div>
+              <div className="scroll-container">
+                <p className="primaryFontRegular font-[600] scroll-holder text-slate-50 hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out cursor-pointer">
+                  Code Asjer
+                </p>
+              </div>
             </div>
             <div className="flex gap-3">
-              <Link target="_blank" href="https://www.youtube.com/@shalomyouth_newcreation">
+              <Link
+                target="_blank"
+                href="https://www.youtube.com/@shalomyouth_newcreation"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
@@ -81,7 +88,10 @@ export default function footer() {
                   />
                 </svg>
               </Link>
-              <Link target="_blank" href="https://www.instagram.com/shalomyouthoslo/?hl=en">
+              <Link
+                target="_blank"
+                href="https://www.instagram.com/shalomyouthoslo/?hl=en"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"

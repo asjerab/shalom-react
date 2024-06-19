@@ -17,14 +17,17 @@ export default function TestNav() {
           <nav className="w-full py-[50px] px-[25px]">
             <div className="flex justify-end items-center">
               <button
-                className="Onest-Regular text-slate-50 uppercase text-[15px]"
+                className="primaryFontRegular text-slate-50 uppercase text-[15px]"
                 onClick={toggleMenu}
               >
                 [CLOSE]
               </button>
             </div>
             <div className="py-10 flex flex-col gap-2">
-              <Link className="Onest-Bold font-bold flex justify-between items-center" href="/shalomYouth">
+              <Link
+                className="primaryFontRegular font-bold flex justify-between items-center"
+                href="/shalomYouth"
+              >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
                   style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
@@ -34,7 +37,7 @@ export default function TestNav() {
 
                 <p className="Kelsi-fill text-slate-50 text-[20px]">x</p>
               </Link>
-              <Link className="Onest-Bold font-bold" href="/youthGrupper">
+              <Link className="primaryFontRegular font-bold" href="/youthGrupper">
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
                   style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
@@ -42,7 +45,7 @@ export default function TestNav() {
                   utrustning
                 </h1>
               </Link>
-              <Link className="Onest-Bold font-bold" href="/youthForms">
+              <Link className="primaryFontRegular font-bold" href="/youthForms">
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
                   style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
@@ -50,7 +53,7 @@ export default function TestNav() {
                   påmelding
                 </h1>
               </Link>
-              <Link className="Onest-Bold font-bold" href="/OmOss">
+              <Link className="primaryFontRegular font-bold" href="/OmOss">
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
                   style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
@@ -58,7 +61,7 @@ export default function TestNav() {
                   om oss
                 </h1>
               </Link>
-              <Link className="Onest-Bold font-bold" href="/youthKontakt">
+              <Link className="primaryFontRegular font-bold" href="/youthKontakt">
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
                   style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
@@ -71,22 +74,28 @@ export default function TestNav() {
           <div className="w-full p-[25px]">
             <nav className="flex items-center gap-3 py-5">
               <p className="Onest-Light uppercase font-light text-slate-50 underline text-[12px]">
-                <Link target="_blank" href="https://www.instagram.com/shalomyouthoslo/?hl=en">
+                <Link
+                  target="_blank"
+                  href="https://www.instagram.com/shalomyouthoslo/?hl=en"
+                >
                   Instagram
                 </Link>
               </p>
               <p className="text-slate-50">•</p>
               <p className="Onest-Light uppercase font-light text-slate-50 underline text-[12px]">
-                <Link target="_blank" href="https://www.youtube.com/@shalomyouth_newcreation">
+                <Link
+                  target="_blank"
+                  href="https://www.youtube.com/@shalomyouth_newcreation"
+                >
                   Youtube
                 </Link>
               </p>
             </nav>
             <div className="flex gap-3">
-              <button className="Onest-Bold font-bold btn btn-wide border-none text-slate-50 uppercase bg-[#5E8DD4] hover:bg-[#7297ce] hover:translate-y-[-5px] duration-150 ease-in-out">
+              <button className="primaryFontRegular font-bold btn btn-wide px-10 border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
                 <Link href="/">fellesskap</Link>
               </button>
-              <button className="Onest-Bold font-bold btn w-full max-w-[50px] border-none text-slate-50 uppercase bg-[#5E8DD4] hover:bg-[#7297ce] hover:translate-y-[-5px] duration-150 ease-in-out">
+              <button className="primaryFontRegular font-bold btn   border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
                 <Link href="/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -122,37 +131,37 @@ export default function TestNav() {
               />
             </Link>
             <div className="flex items-center gap-2">
-              <Link href="/youthGrupper">
+              <Link className="scroll-container" href="/youthGrupper">
                 <p
-                  className="hidden-nav-link primaryBold text-slate-50 text-[15px]"
+                  className="hidden-nav-link scroll-holder primaryFontBold text-slate-50 text-[15px]"
                   data-text="UTRUSTNING"
                 >
                   UTRUSTNING
                 </p>
               </Link>
-              <Link href="/youthForms">
-                <p className="hidden-nav-link primaryBold text-slate-50 text-[15px]">
+              <Link className="scroll-container" href="/youthForms">
+                <p className="hidden-nav-link scroll-holder primaryFontBold text-slate-50 text-[15px]">
                   PÅMELDING
                 </p>
               </Link>
-              <Link href="/OmOss">
-                <p className="hidden-nav-link primaryBold text-slate-50 text-[15px]">
+              <Link className="scroll-container" href="/OmOss">
+                <p className="hidden-nav-link scroll-holder primaryFontBold text-slate-50 text-[15px]">
                   OM OSS
                 </p>
               </Link>
-              <Link href="/youthKontakt">
-                <p className="hidden-nav-link primaryBold text-slate-50 text-[15px]">
+              <Link className="scroll-container" href="/youthKontakt">
+                <p className="hidden-nav-link scroll-holder primaryFontBold text-slate-50 text-[15px]">
                   KONTAKT
                 </p>
               </Link>
-              <Link href="/">
+              <Link className="scroll-container" href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  className="hidden-nav-link w-8 h-8 text-slate-50 cursor-pointer"
+                  className="hidden-nav-link w-8 h-8 text-slate-50 cursor-pointer scroll-holder"
                 >
                   <path
                     stroke-linecap="round"

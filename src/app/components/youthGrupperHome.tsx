@@ -10,34 +10,34 @@ export default function YouthGrupperHome() {
       <div className="flex justify-center" id="grupper-a">
         <div className="grupper-container-home py-[100px] px-[35px]">
           <h1
-            className="primaryRegular text-slate-50 font-[700] uppercase py-[50px]"
-            style={{ fontSize: "clamp(36px, 8vw, 50px)" }}
+            className="primaryFontRegular text-slate-50 font-[600] py-[15px] leading-[84px]"
+            style={{ fontSize: "clamp(36px, 12vw, 80px)" }}
           >
-            Grupper.
+            Grupper
           </h1>
           <div className="grupper-wrapper-home grid grid-cols-2 gap-7">
-            <Link href="/youthGrupper" className="animation-scroll">
+            <Link href="/youthGrupper" className="">
               <img
                 className="w-full max-w-[648px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
                 src={alphaKursImg.src}
                 alt="alphakurs img"
               />
             </Link>
-            <Link href="/youthGrupper" className="animation-scroll">
+            <Link href="/youthGrupper" className="">
               <img
                 className="hidden-grupper-img w-full max-w-[648px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
                 src={bibelStudieImg.src}
                 alt="bibel studie img"
               />
             </Link>
-            <Link href="/youthGrupper" className="animation-scroll">
+            <Link href="/youthGrupper" className="">
               <img
                 className="w-full max-w-[648px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
                 src={connectImg.src}
                 alt="connect img"
               />
             </Link>
-            <Link href="/youthGrupper" className="animation-scroll">
+            <Link href="/youthGrupper" className="">
               <img
                 className="hidden-grupper-img w-full max-w-[648px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
                 src={tjenesteKursImg.src}
@@ -47,7 +47,7 @@ export default function YouthGrupperHome() {
           </div>
           <div className="påmeldingHomeInfoContainer flex gap-16 justify-between items-center my-14">
             <p
-              className="primaryRegular text-slate-50 max-w-[600px]"
+              className="primaryFontRegular text-slate-50 max-w-[600px]"
               style={{ fontSize: "clamp(14px, 4vw, 22px)" }}
             >
               Trykk på "Alle Grupper" for og se alle grupper vi tilbyr i vårt

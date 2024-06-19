@@ -40,13 +40,13 @@ export default function YouthGrupper() {
       <div className="Gruper-wrapper p-[35px]">
         <div className="mb-10">
           <h1
-            className="primaryBold text-slate-50"
+            className="primaryFontBold text-slate-50"
             style={{ fontSize: "clamp(50px, 10vw, 200px)" }}
           >
             Grupper.
           </h1>
           <p
-            className="primaryRegular text-slate-50 max-w-[1000px]"
+            className="primaryFontRegular text-slate-50 max-w-[1000px]"
             style={{ fontSize: "clamp(15px, 2vw, 25px)" }}
           >
             Her kan du lese mer om hva som skjer i løpet av uken. Klikk på
@@ -63,7 +63,7 @@ export default function YouthGrupper() {
                 alt="alphaKursImg"
               />
               <h1
-                className="primaryLight text-slate-50 uppercase"
+                className="primaryFontRegular text-slate-50 uppercase"
                 style={{
                   fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
                 }}
@@ -82,7 +82,7 @@ export default function YouthGrupper() {
                 alt="bibelStudieImg"
               />
               <h1
-                className="primaryLight text-slate-50 uppercase"
+                className="primaryFontRegular text-slate-50 uppercase"
                 style={{
                   fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
                 }}
@@ -101,7 +101,7 @@ export default function YouthGrupper() {
                 alt="tjenesteKursImg"
               />
               <h1
-                className="primaryLight text-slate-50 uppercase"
+                className="primaryFontRegular text-slate-50 uppercase"
                 style={{
                   fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
                 }}
@@ -116,7 +116,7 @@ export default function YouthGrupper() {
             <li className="grupper-img flex py-[100px] flex-col gap-5">
               <img className="w-full" src={connectImg.src} alt="connectImg" />
               <h1
-                className="primaryLight text-slate-50 uppercase"
+                className="primaryFontRegular text-slate-50 uppercase"
                 style={{
                   fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
                 }}
@@ -131,7 +131,7 @@ export default function YouthGrupper() {
             <li className="grupper-img flex py-[100px] flex-col gap-5">
               <img className="w-full" src={dap.src} alt="dapImg" />
               <h1
-                className="primaryLight text-slate-50 uppercase"
+                className="primaryFontRegular text-slate-50 uppercase"
                 style={{
                   fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
                 }}
@@ -146,7 +146,7 @@ export default function YouthGrupper() {
             <li className="grupper-img flex py-[100px] flex-col gap-5">
               <img className="w-full" src={bonn.src} alt="bønnImg" />
               <h1
-                className="primaryLight text-slate-50 uppercase"
+                className="primaryFontRegular text-slate-50 uppercase"
                 style={{
                   fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
                 }}
@@ -165,7 +165,7 @@ export default function YouthGrupper() {
                 alt="The Upper room Img"
               />
               <h1
-                className="primaryLight text-slate-50 uppercase"
+                className="primaryFontRegular text-slate-50 uppercase"
                 style={{
                   fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
                 }}
@@ -184,7 +184,7 @@ export default function YouthGrupper() {
                 alt="evangeliseringImg"
               />
               <h1
-                className="primaryLight text-slate-50 uppercase"
+                className="primaryFontRegular text-slate-50 uppercase"
                 style={{
                   fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
                 }}
@@ -199,7 +199,7 @@ export default function YouthGrupper() {
             <li className="grupper-img flex py-[100px] flex-col gap-5">
               <img className="w-full" src={james.src} alt="James1:27Img" />
               <h1
-                className="primaryLight text-slate-50 uppercase"
+                className="primaryFontRegular text-slate-50 uppercase"
                 style={{
                   fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
                 }}

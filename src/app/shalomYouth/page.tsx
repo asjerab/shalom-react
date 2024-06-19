@@ -4,6 +4,7 @@ import YoutubeComp from "../components/youtubeComp"
 import PaameldingHome from "../components/påmeldingHome"
 import Footer from "../components/footer"
 import Loading from "../components/loading"
+import Kalender from "../components/kalender"
 
 
 
@@ -14,6 +15,7 @@ export default function ShalomHome() {
       <Loading />
       <YouthNav />
       <YouthGrupperHome />
+      <Kalender />
       <YoutubeComp />
       <PaameldingHome />
       <Footer />

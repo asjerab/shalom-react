@@ -58,7 +58,7 @@ export default function Loading() {
   return (
     <main>
       <div className="w-full h-dvh fixed bg-[#111] flex justify-center items-center flex-col gap-2 z-50">
-        <h1 className="Onest-Regular text-[25px] fade-in fade-out text-slate-50 font-medium">
+        <h1 className="primaryFontRegular text-[25px] fade-in fade-out text-slate-50">
           {routeName}
         </h1>
         <span className="loader"></span>
