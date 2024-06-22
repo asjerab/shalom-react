@@ -37,7 +37,10 @@ export default function TestNav() {
 
                 <p className="Kelsi-fill text-slate-50 text-[20px]">x</p>
               </Link>
-              <Link className="primaryFontRegular font-bold" href="/youthGrupper">
+              <Link
+                className="primaryFontRegular font-bold"
+                href="/youthGrupper"
+              >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
                   style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
@@ -61,7 +64,10 @@ export default function TestNav() {
                   om oss
                 </h1>
               </Link>
-              <Link className="primaryFontRegular font-bold" href="/youthKontakt">
+              <Link
+                className="primaryFontRegular font-bold"
+                href="/youthKontakt"
+              >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
                   style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
@@ -92,9 +98,11 @@ export default function TestNav() {
               </p>
             </nav>
             <div className="flex gap-3">
-              <button className="primaryFontRegular font-bold btn btn-wide px-10 border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
-                <Link href="/">fellesskap</Link>
-              </button>
+              <Link href="/">
+                <button className="primaryFontRegular font-bold btn btn-wide px-10 border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
+                  fellesskap
+                </button>
+              </Link>
               <button className="primaryFontRegular font-bold btn   border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
                 <Link href="/">
                   <svg

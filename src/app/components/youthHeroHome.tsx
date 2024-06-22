@@ -9,7 +9,7 @@ export default function YouthNav() {
         <YouthNavHome />
         <div className="heroTextYouth w-full h-4/5  flex justify-center items-center flex-col">
           <h1
-            className="primaryFontBold text-slate-50 font-[700] uppercase"
+            className="primaryFontRegular text-slate-50 font-[700] uppercase"
             style={{ fontSize: "clamp(10px, 8.2vw, 155px)" }}
           >
             Shalom Youth

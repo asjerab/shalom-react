@@ -330,6 +330,16 @@ html {
   .påmeldingTitle {
     font-size: 20px;
   }
+
+  .omOssflex {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .omOssText {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 600px) {

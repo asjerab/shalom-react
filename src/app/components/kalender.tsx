@@ -50,17 +50,26 @@ export default function Kalender() {
   };
 
   const events: Event[] = [
-    { month: "Desember", title: "Gudstjeneste", day: "lør", date: "juni 04" },
-    { month: "Juni", title: "Connect", day: "ons", date: "juni 05" },
-    { month: "Juni", title: "Connect", day: "ons", date: "juni 05" },
-    { month: "Juni", title: "Connect", day: "ons", date: "juni 05" },
+    // JUNI
+    { month: "Juni", title: "Gudstjeneste", day: "lør", date: "juni 01" },
     { month: "Juni", title: "Connect", day: "ons", date: "juni 05" },
     { month: "Juni", title: "Evangelisering", day: "fre", date: "juni 07" },
-    { month: "Juni", title: "Alpha kurs & Dypere", day: "søn", date: "juni 09" },
-    { month: "Juli", title: "Summer Camp", day: "man", date: "juli 15" },
-    { month: "Juli", title: "Youth Meeting", day: "fre", date: "juli 20" },
-    { month: "August", title: "Workshop", day: "tir", date: "august 12" },
-    { month: "August", title: "Community Service", day: "tor", date: "august 22" },
+    { month: "Juni", title: "5 års markering", day: "lør", date: "juni 08" },
+    { month: "Juni", title: "Alphakurs & dypere", day: "søn", date: "juni 09" },
+    { month: "Juni", title: "Bibelstudie", day: "ons", date: "juni 12" },
+    { month: "Juni", title: "Bønn", day: "tor", date: "juni 13" },
+    { month: "Juni", title: "Gudstjeneste", day: "lør", date: "juni 15" },
+    { month: "Juni", title: "Gudstjeneste", day: "lør", date: "juni 22" },
+    { month: "Juni", title: "Gudstjeneste", day: "søn", date: "juni 30" },
+    /////////////////////////////
+    // AUGUST
+    { month: "August", title: "Shalom Youth Leir", day: "tor", date: "juni 01" },
+    { month: "August", title: "Shalom Youth Leir", day: "fre", date: "juni 02" },
+    { month: "August", title: "Shalom Youth Leir", day: "lør", date: "juni 03" },
+    { month: "August", title: "Shalom Youth Leir", day: "søn", date: "juni 04" },
+    /////////////////////////////
+
+
     // Add more events as needed
   ];
 
@@ -69,7 +78,7 @@ export default function Kalender() {
   return (
     <>
       <main className="flex justify-center items-center p-[25px]">
-        <div className="w-full max-w-[1325px] py-[100px] pb-[200px]">
+        <div className="w-full max-w-[1325px] py-[100px]">
           <nav className="nav-kalender flex justify-between items-end">
             <div>
               <h1
@@ -101,7 +110,7 @@ export default function Kalender() {
               <button
                 key={month}
                 onClick={() => handleMonthClick(month)}
-                className="btn btn-responsive rounded-full bg-[#191919] border-none text-slate-50 hover:bg-slate-50 hover:text-[#191919]" style={{fontSize:"clamp(10px, 3vw, 20px)"}}
+                className="primaryFontRegular font-[500] btn btn-responsive rounded-full bg-[#191919] border-none text-slate-50 hover:bg-slate-50 hover:text-[#191919]" style={{fontSize:"clamp(10px, 3vw, 20px)"}}
               >
                 {month}
               </button>
