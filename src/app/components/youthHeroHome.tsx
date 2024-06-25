@@ -9,14 +9,14 @@ export default function YouthNav() {
         <YouthNavHome />
         <div className="heroTextYouth w-full h-4/5  flex justify-center items-center flex-col">
           <h1
-            className="primaryFontRegular text-slate-50 font-[700] uppercase"
+            className="primaryFontRegular text-slate-50 font-[700] uppercase leading-none"
             style={{ fontSize: "clamp(10px, 8.2vw, 155px)" }}
           >
             Shalom Youth
           </h1>
           <p
             className="primaryFontRegular p-text-hero-youth text-slate-50 max-w-[750px] w-full text-center px-[50px]"
-            style={{ fontSize: "clamp(18px, 2vw, 22px)" }}
+            style={{ fontSize: "clamp(22px, 5vw, 22px)" }}
           >
             La ingen forakte deg fordi du er ung, men vær et forbilde for de
             troende i ord og livsførsel, i kjærlighet, tro og renhet. 1.Timoteus

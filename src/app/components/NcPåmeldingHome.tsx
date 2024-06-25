@@ -1,0 +1,125 @@
+import Link from "next/link";
+
+export default function PaameldingHome() {
+  return (
+    <main>
+      <section className="flex justify-center items-center py-[150px] px-[25px]">
+        <div className="w-full max-w-[1325px] flex flex-col">
+          <h1
+            className="primaryFontRegular text-slate-50 text-[100px] leading-none font-[400] my-5"
+            style={{ fontSize: "clamp(36px, 12vw, 80px)" }}
+          >
+            Påmelding.
+          </h1>{" "}
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSe3xjbXh_j5iW6K-KPNR43eRfX_FxEvYj5WWflKolWsW7e-oQ/viewform">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-3 hover:px-8 duration-150 ease-in-out">
+              <h1 className="påmeldingTitle  primaryFontRegular font-[600] text-slate-50 text-[25px] uppercase">
+                The Upper Room
+              </h1>
+              <div className="cursor-pointer bg-[#222] p-[10px] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_1_20)">
+                    <path
+                      d="M0.789551 0.78949L14.2106 14.2105M14.2106 14.2105V2.38659M14.2106 14.2105H2.38666"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_20">
+                      <rect width="15" height="15" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </Link>
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSetchxXf0oHHc_m84O_NxPaIWyn6Gk6c0M4CcOOcuau7EaJRg/viewform">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-3 hover:px-8 duration-150 ease-in-out">
+              <h1 className="påmeldingTitle  primaryFontRegular font-[600] text-slate-50 text-[25px] uppercase">
+                Alphakurs
+              </h1>
+              <div className="cursor-pointer bg-[#222] p-[10px] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_1_20)">
+                    <path
+                      d="M0.789551 0.78949L14.2106 14.2105M14.2106 14.2105V2.38659M14.2106 14.2105H2.38666"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_20">
+                      <rect width="15" height="15" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </Link>
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSerL_wsSXphDQfwW-WZY9al7T8Ply6C9yRb-DSES4a2Ds0dfA/viewform">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-3 hover:px-8 duration-150 ease-in-out">
+              <h1 className="påmeldingTitle  primaryFontRegular font-[600] text-slate-50 text-[25px] uppercase">
+                Tjenestekurs
+              </h1>
+              <div className="cursor-pointer bg-[#222] p-[10px] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_1_20)">
+                    <path
+                      d="M0.789551 0.78949L14.2106 14.2105M14.2106 14.2105V2.38659M14.2106 14.2105H2.38666"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_20">
+                      <rect width="15" height="15" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </Link>
+          <div className="påmeldingHomeInfoContainer flex gap-16 justify-between items-center my-14">
+            <p
+              className="primaryFontRegular text-slate-50 max-w-[600px]"
+              style={{ fontSize: "clamp(14px, 4vw, 22px)" }}
+            >
+              Trykk på "Alle påmeldinger" for og hente fram flere påmeldinger du
+              kan melde deg på.
+            </p>
+            <Link href="/">
+              <button className="btn btn-wide rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">
+                Alle påmeldinger
+              </button>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

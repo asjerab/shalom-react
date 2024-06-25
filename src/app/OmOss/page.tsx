@@ -1,11 +1,9 @@
 import YouthNav from "../components/youthNav";
-import Loading from "../components/loading";
-import Footer from "../components/footer";
+import Footer from "../components/youthFooter";
 
 export default function OmOss() {
   return (
     <main className="w-full h-full">
-      <Loading />
       <YouthNav />
       <div className="p-[35px]">
         <nav>

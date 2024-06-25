@@ -1,13 +1,11 @@
 import YouthNav from "../components/youthNav";
-import Loading from "../components/loading";
-import Footer from "../components/footer"
+import Footer from "../components/youthFooter"
 
 
 
 export default function youthKontakt() {
   return (
     <main className="w-full h-full">
-      <Loading />
       <YouthNav />
       <div className="kontakt-wrapper p-[50px]">
         <h1

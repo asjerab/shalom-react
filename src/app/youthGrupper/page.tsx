@@ -9,7 +9,6 @@ import dap from "../grupperImages/dap.png";
 import evangelisering from "../grupperImages/evangelisering-img.png";
 import james from "../grupperImages/James-img.png";
 import dypereImg from "../grupperImages/dypere-img.png";
-import Loading from "../components/loading";
 import AlphakursModal from "../components/ModalComponents/AlphakursModal";
 import BibelstudieModal from "../components/ModalComponents/BibelstudieModal";
 import TjenesteModal from "../components/ModalComponents/TjenesteModal";
@@ -28,19 +27,18 @@ import BønnMobileModal from "../components/MobileModal/BønnMobileModal";
 import EvangeliseringMobileModal from "../components/MobileModal/EvangeliseringMobileModal";
 import TheUpperRoomMobileModal from "../components/MobileModal/TheUpperRoomMobileModal";
 import JamesMobileModal from "../components/MobileModal/JamesMobileModal";
-import Footer from "../components/footer"
+import Footer from "../components/youthFooter"
 
 
 
 export default function YouthGrupper() {
   return (
     <main className="h-full">
-      <Loading />
       <YouthNav />
       <div className="Gruper-wrapper p-[35px]">
         <div className="mb-10">
           <h1
-            className="primaryFontBold text-slate-50"
+            className="primaryFontBold text-slate-50 leading-none"
             style={{ fontSize: "clamp(50px, 10vw, 200px)" }}
           >
             Grupper.

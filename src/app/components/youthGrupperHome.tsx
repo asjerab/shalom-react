@@ -10,7 +10,7 @@ export default function YouthGrupperHome() {
       <div className="flex justify-center" id="grupper-a">
         <div className="grupper-container-home py-[100px] px-[35px]">
           <h1
-            className="primaryFontRegular text-slate-50 font-[600] py-[15px] leading-[84px]"
+            className="primaryFontRegular text-slate-50 font-[600] my-5 leading-[84px]"
             style={{ fontSize: "clamp(36px, 12vw, 80px)" }}
           >
             Grupper

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import ShalomYouth from "./shalomYouth/page";
 import ShalomNewCreation from "./shalomNewCreation/page";
-import Footer from "./components/footer";
+import Footer from "./components/youthFooter";
 
 
 

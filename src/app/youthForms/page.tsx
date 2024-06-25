@@ -1,18 +1,16 @@
 import Link from "next/link";
 import TestNav from "../components/youthNav";
-import Footer from "../components/footer";
-import Loading from "../components/loading";
+import Footer from "../components/youthFooter";
 
 export default function youthPåmelding() {
   return (
     <main>
-      <Loading />
       <TestNav />
       <section className="påmelding-wrapper flex justify-center items-center py-[50px] px-[35px]">
         <div className="w-full">
           <div className="mb-10">
             <h1
-              className="primaryFontBold text-slate-50"
+              className="primaryFontBold text-slate-50 leading-none"
               style={{ fontSize: "clamp(50px, 10vw, 200px)" }}
             >
               Påmelding.
@@ -34,20 +32,25 @@ export default function youthPåmelding() {
               <div className="cursor-pointer bg-[#222] p-[10px] rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
                   fill="none"
                 >
-                  <path
-                    d="M9.41016 1L9.39416 1.35542C9.24294 4.71458 11.9339 7.51649 15.2964 7.50107V7.50107"
-                    stroke="white"
-                  />
-                  <path
-                    d="M9.39948 13.5796L9.37532 13.26C9.13452 10.0735 11.7279 7.39057 14.9207 7.52302V7.52302"
-                    stroke="white"
-                  />
-                  <line y1="7.5" x2="14" y2="7.5" stroke="white" />
+                  <g clip-path="url(#clip0_1_20)">
+                    <path
+                      d="M0.789551 0.78949L14.2106 14.2105M14.2106 14.2105V2.38659M14.2106 14.2105H2.38666"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_20">
+                      <rect width="15" height="15" fill="white" />
+                    </clipPath>
+                  </defs>
                 </svg>
               </div>
             </div>
@@ -61,20 +64,25 @@ export default function youthPåmelding() {
               <div className="cursor-pointer bg-[#222] p-[10px] rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
                   fill="none"
                 >
-                  <path
-                    d="M9.41016 1L9.39416 1.35542C9.24294 4.71458 11.9339 7.51649 15.2964 7.50107V7.50107"
-                    stroke="white"
-                  />
-                  <path
-                    d="M9.39948 13.5796L9.37532 13.26C9.13452 10.0735 11.7279 7.39057 14.9207 7.52302V7.52302"
-                    stroke="white"
-                  />
-                  <line y1="7.5" x2="14" y2="7.5" stroke="white" />
+                  <g clip-path="url(#clip0_1_20)">
+                    <path
+                      d="M0.789551 0.78949L14.2106 14.2105M14.2106 14.2105V2.38659M14.2106 14.2105H2.38666"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_20">
+                      <rect width="15" height="15" fill="white" />
+                    </clipPath>
+                  </defs>
                 </svg>
               </div>
             </div>
@@ -88,20 +96,25 @@ export default function youthPåmelding() {
               <div className="cursor-pointer bg-[#222] p-[10px] rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
                   fill="none"
                 >
-                  <path
-                    d="M9.41016 1L9.39416 1.35542C9.24294 4.71458 11.9339 7.51649 15.2964 7.50107V7.50107"
-                    stroke="white"
-                  />
-                  <path
-                    d="M9.39948 13.5796L9.37532 13.26C9.13452 10.0735 11.7279 7.39057 14.9207 7.52302V7.52302"
-                    stroke="white"
-                  />
-                  <line y1="7.5" x2="14" y2="7.5" stroke="white" />
+                  <g clip-path="url(#clip0_1_20)">
+                    <path
+                      d="M0.789551 0.78949L14.2106 14.2105M14.2106 14.2105V2.38659M14.2106 14.2105H2.38666"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_20">
+                      <rect width="15" height="15" fill="white" />
+                    </clipPath>
+                  </defs>
                 </svg>
               </div>
             </div>
@@ -115,20 +128,25 @@ export default function youthPåmelding() {
               <div className="cursor-pointer bg-[#222] p-[10px] rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
                   fill="none"
                 >
-                  <path
-                    d="M9.41016 1L9.39416 1.35542C9.24294 4.71458 11.9339 7.51649 15.2964 7.50107V7.50107"
-                    stroke="white"
-                  />
-                  <path
-                    d="M9.39948 13.5796L9.37532 13.26C9.13452 10.0735 11.7279 7.39057 14.9207 7.52302V7.52302"
-                    stroke="white"
-                  />
-                  <line y1="7.5" x2="14" y2="7.5" stroke="white" />
+                  <g clip-path="url(#clip0_1_20)">
+                    <path
+                      d="M0.789551 0.78949L14.2106 14.2105M14.2106 14.2105V2.38659M14.2106 14.2105H2.38666"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_20">
+                      <rect width="15" height="15" fill="white" />
+                    </clipPath>
+                  </defs>
                 </svg>
               </div>
             </div>
@@ -142,20 +160,25 @@ export default function youthPåmelding() {
               <div className="cursor-pointer bg-[#222] p-[10px] rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
                   fill="none"
                 >
-                  <path
-                    d="M9.41016 1L9.39416 1.35542C9.24294 4.71458 11.9339 7.51649 15.2964 7.50107V7.50107"
-                    stroke="white"
-                  />
-                  <path
-                    d="M9.39948 13.5796L9.37532 13.26C9.13452 10.0735 11.7279 7.39057 14.9207 7.52302V7.52302"
-                    stroke="white"
-                  />
-                  <line y1="7.5" x2="14" y2="7.5" stroke="white" />
+                  <g clip-path="url(#clip0_1_20)">
+                    <path
+                      d="M0.789551 0.78949L14.2106 14.2105M14.2106 14.2105V2.38659M14.2106 14.2105H2.38666"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_20">
+                      <rect width="15" height="15" fill="white" />
+                    </clipPath>
+                  </defs>
                 </svg>
               </div>
             </div>
@@ -169,20 +192,25 @@ export default function youthPåmelding() {
               <div className="cursor-pointer bg-[#222] p-[10px] rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
                   fill="none"
                 >
-                  <path
-                    d="M9.41016 1L9.39416 1.35542C9.24294 4.71458 11.9339 7.51649 15.2964 7.50107V7.50107"
-                    stroke="white"
-                  />
-                  <path
-                    d="M9.39948 13.5796L9.37532 13.26C9.13452 10.0735 11.7279 7.39057 14.9207 7.52302V7.52302"
-                    stroke="white"
-                  />
-                  <line y1="7.5" x2="14" y2="7.5" stroke="white" />
+                  <g clip-path="url(#clip0_1_20)">
+                    <path
+                      d="M0.789551 0.78949L14.2106 14.2105M14.2106 14.2105V2.38659M14.2106 14.2105H2.38666"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_20">
+                      <rect width="15" height="15" fill="white" />
+                    </clipPath>
+                  </defs>
                 </svg>
               </div>
             </div>
