@@ -26,7 +26,7 @@ export default function footer() {
                   <Link href="/NewCreationForms">Påmelding</Link>
                 </p>
                 <p className="primaryFontRegular font-[600] text-slate-50 uppercase text-[15px] cursor-pointer hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out">
-                  <Link href="/">Om Oss</Link>
+                  <Link href="/NewCreationOmOss">Om Oss</Link>
                 </p>
                 <p className="primaryFontRegular font-[600] text-slate-50 uppercase text-[15px] cursor-pointer hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out">
                   <Link href="/NewCreationKontakt">Kontakt</Link>

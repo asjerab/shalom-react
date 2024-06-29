@@ -8,12 +8,13 @@ export default function YouthGrupperHome() {
   return (
     <main>
       <div className="flex justify-center" id="grupper-a-Nc">
-        <div className="grupper-container-home py-[100px] px-[35px]">
+        <div className="grupper-container-home pt-[200px] pb-[100px] px-[35px]">
           <h1
-            className="primaryFontRegular text-slate-50 font-[600] my-5 leading-[84px]"
+            className="primaryFontRegular text-slate-50 font-[600] my-5 leading-[84px] flex items-center gap-5"
             style={{ fontSize: "clamp(36px, 12vw, 80px)" }}
           >
             Grupper
+            <span className="Kelsi-fill text-slate-50">x</span>
           </h1>
           <div className="grupper-wrapper-home grid grid-cols-2 gap-7">
             <Link href="/NewCreationGrupper" className="">
@@ -53,8 +54,10 @@ export default function YouthGrupperHome() {
               Trykk på "Alle Grupper" for og se alle grupper vi tilbyr i vårt
               fellesskap.
             </p>
-            <Link href="/">
-              <button className="btn btn-wide rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">Alle Grupper</button>
+            <Link href="/NewCreationGrupper">
+              <button className="btn btn-wide rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">
+                Alle Grupper
+              </button>
             </Link>
           </div>{" "}
         </div>

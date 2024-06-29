@@ -13,7 +13,7 @@ export default function TestNav() {
   return (
     <main>
       {menuOpen && (
-        <div className="navigation-menu-mobile w-full h-full bg-[#111] fixed bottom-0 z-50 flex flex-col justify-between">
+        <div className="navigation-menu-mobile w-full h-full bg-[#111] fixed bottom-0 z-[100] flex flex-col justify-between">
           <nav className="w-full py-[50px] px-[25px]">
             <div className="flex justify-end items-center">
               <button
@@ -25,7 +25,7 @@ export default function TestNav() {
             </div>
             <div className="py-10 flex flex-col gap-2">
               <Link
-                className="primaryFontRegular font-bold flex justify-between items-center"
+                className="Sf-pro-font-regular font-bold flex justify-between items-center"
                 href="/shalomNewCreation"
               >
                 <h1
@@ -38,7 +38,7 @@ export default function TestNav() {
                 <p className="Kelsi-fill text-slate-50 text-[20px]">x</p>
               </Link>
               <Link
-                className="primaryFontRegular font-bold"
+                className="Sf-pro-font-regular font-bold"
                 href="/NewCreationGrupper"
               >
                 <h1
@@ -48,7 +48,7 @@ export default function TestNav() {
                   utrustning
                 </h1>
               </Link>
-              <Link className="primaryFontRegular font-bold" href="/NewCreationForms">
+              <Link className="Sf-pro-font-regular font-bold" href="/NewCreationForms">
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
                   style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
@@ -56,7 +56,7 @@ export default function TestNav() {
                   påmelding
                 </h1>
               </Link>
-              <Link className="primaryFontRegular font-bold" href="/">
+              <Link className="Sf-pro-font-regular font-bold" href="/NewCreationOmOss">
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
                   style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
@@ -65,7 +65,7 @@ export default function TestNav() {
                 </h1>
               </Link>
               <Link
-                className="primaryFontRegular font-bold"
+                className="Sf-pro-font-regular font-bold"
                 href="/NewCreationKontakt"
               >
                 <h1
@@ -82,7 +82,7 @@ export default function TestNav() {
               <p className="Onest-Light uppercase font-light text-slate-50 underline text-[12px]">
                 <Link
                   target="_blank"
-                  href="https://www.instagram.com/shalomyouthoslo/?hl=en"
+                  href="https://www.instagram.com/shalomnewcreation/"
                 >
                   Instagram
                 </Link>
@@ -99,7 +99,7 @@ export default function TestNav() {
             </nav>
             <div className="flex gap-3">
               <Link href="/">
-                <button className="primaryFontRegular font-bold btn btn-wide px-10 border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
+                <button className="Sf-pro-font-regular font-bold btn btn-wide px-10 border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
                   fellesskap
                 </button>
               </Link>
@@ -130,10 +130,10 @@ export default function TestNav() {
       )}
       <nav>
         <div className="nav">
-          <div className="nav-header flex justify-between items-center p-[50px] pt-[75px]">
+          <div className="nav-header flex justify-between items-start p-[50px] pt-[75px]">
             <Link href="/shalomNewCreation">
               <img
-                className="w-full max-w-[150px]"
+                className="w-full max-w-[175px]"
                 src={NcLogo.src}
                 alt="NcLogo"
               />
@@ -152,7 +152,7 @@ export default function TestNav() {
                   PÅMELDING
                 </p>
               </Link>
-              <Link className="scroll-container" href="/">
+              <Link className="scroll-container" href="/NewCreationOmOss">
                 <p className="hidden-nav-link scroll-holder primaryFontBold text-slate-50 text-[15px]">
                   OM OSS
                 </p>

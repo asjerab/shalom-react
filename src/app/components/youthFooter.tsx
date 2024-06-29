@@ -27,7 +27,7 @@ export default function footer() {
                   <Link href="/youthForms">Påmelding</Link>
                 </p>
                 <p className="primaryFontRegular font-[600] text-slate-50 uppercase text-[15px] cursor-pointer hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out">
-                  <Link href="/OmOss">Om Oss</Link>
+                  <Link href="/YouthOmOss">Om Oss</Link>
                 </p>
                 <p className="primaryFontRegular font-[600] text-slate-50 uppercase text-[15px] cursor-pointer hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out">
                   <Link href="/youthKontakt">Kontakt</Link>

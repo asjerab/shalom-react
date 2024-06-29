@@ -6,13 +6,14 @@ export default function PaameldingHome() {
       <section className="flex justify-center items-center py-[150px] px-[25px]">
         <div className="w-full max-w-[1325px] flex flex-col">
           <h1
-            className="primaryFontRegular text-slate-50 text-[100px] leading-none font-[400] my-5"
+            className="primaryFontRegular text-slate-50 font-[600] my-5 leading-[84px] flex items-center gap-5"
             style={{ fontSize: "clamp(36px, 12vw, 80px)" }}
           >
-            Påmelding.
-          </h1>{" "}
+            Påmelding
+            <span className="Kelsi-fill text-slate-50">x</span>
+          </h1>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSe3xjbXh_j5iW6K-KPNR43eRfX_FxEvYj5WWflKolWsW7e-oQ/viewform">
-            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-3 hover:px-8 duration-150 ease-in-out">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-3">
               <h1 className="påmeldingTitle  primaryFontRegular font-[600] text-slate-50 text-[25px] uppercase">
                 The Upper Room
               </h1>
@@ -43,7 +44,7 @@ export default function PaameldingHome() {
             </div>
           </Link>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSetchxXf0oHHc_m84O_NxPaIWyn6Gk6c0M4CcOOcuau7EaJRg/viewform">
-            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-3 hover:px-8 duration-150 ease-in-out">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-3">
               <h1 className="påmeldingTitle  primaryFontRegular font-[600] text-slate-50 text-[25px] uppercase">
                 Alphakurs
               </h1>
@@ -74,7 +75,7 @@ export default function PaameldingHome() {
             </div>
           </Link>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSerL_wsSXphDQfwW-WZY9al7T8Ply6C9yRb-DSES4a2Ds0dfA/viewform">
-            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-3 hover:px-8 duration-150 ease-in-out">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-3">
               <h1 className="påmeldingTitle  primaryFontRegular font-[600] text-slate-50 text-[25px] uppercase">
                 Tjenestekurs
               </h1>
@@ -112,7 +113,7 @@ export default function PaameldingHome() {
               Trykk på "Alle påmeldinger" for og hente fram flere påmeldinger du
               kan melde deg på.
             </p>
-            <Link href="/">
+            <Link href="/NewCreationForms">
               <button className="btn btn-wide rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">
                 Alle påmeldinger
               </button>

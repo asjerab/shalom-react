@@ -6,15 +6,15 @@ export default function YouthNav() {
     <main>
       <nav className="h-dvh bg-cover bg-no-repeat bg-center NcNav-bg pb-[100px]">
         <NcNav />
-        <div className="heroTextYouth w-full h-4/5  flex justify-center items-center flex-col">
+        <div className="heroTextYouth w-full h-5/6  flex justify-center items-center flex-col">
           <h1
             className="primaryFontRegular text-slate-50 font-[700] uppercase leading-none"
-            style={{ fontSize: "clamp(10px, 8.2vw, 155px)" }}
+            style={{ fontSize: "clamp(10px, 11.2vw, 205px)" }}
           >
             New Creation
           </h1>
           <p
-            className="primaryFontRegular p-text-hero-youth text-slate-50 max-w-[950px] w-full text-center px-[50px]"
+            className="primaryFontLight p-text-hero-youth text-slate-50 max-w-[950px] w-full text-center px-[50px]"
             style={{ fontSize: "clamp(22px, 5vw, 22px)" }}
           >
             Derfor, om noen er i Kristus, da er han en ny skapning, det gamle er

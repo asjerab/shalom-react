@@ -6,11 +6,12 @@ export default function PaameldingHome() {
       <section className="flex justify-center items-center py-[150px] px-[25px]">
         <div className="w-full max-w-[1325px] flex flex-col">
           <h1
-            className="primaryFontRegular text-slate-50 text-[100px] leading-none font-[400] my-5"
+            className="primaryFontRegular text-slate-50 font-[600] my-5 leading-[84px] flex items-center gap-5"
             style={{ fontSize: "clamp(36px, 12vw, 80px)" }}
           >
-            Påmelding.
-          </h1>{" "}
+            Påmelding
+            <span className="Kelsi-fill text-slate-50">x</span>
+          </h1>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSesbn9kHSXX_Yb5uK5ovpKd9xiZ57p5DGpClDozOTZma3ZgrQ/viewform">
             <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-3 hover:px-8 duration-150 ease-in-out">
               <h1 className="påmeldingTitle  primaryFontRegular font-[600] text-slate-50 text-[25px] uppercase">

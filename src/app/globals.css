@@ -84,6 +84,21 @@ html {
   src: url(assets/fonts/Kollektif-Bold.ttf);
 }
 
+@font-face {
+  font-family: "NeueHaasDisplayLight";
+  src: url(assets/fonts/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+  font-family: "NeueHaasDisplayMedium";
+  src: url(assets/fonts/NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+  font-family: "NeueHaasDisplayBold";
+  src: url(assets/fonts/NeueHaasDisplayBold.ttf);
+}
+
 .Kelsi-fill {
   font-family: "Kelsi-fill";
 }
@@ -105,19 +120,23 @@ html {
 }
 
 .SF-Pro-Medium {
-  font-family: "SF-Pro-Medium";
+  font-family: "NeueHaasDisplayBold";
 }
 
 .primaryFontLight {
-  font-family: "SF-Pro-Regular";
+  font-family: "NeueHaasDisplayLight";
 }
 
 .primaryFontRegular {
-  font-family: "SF-Pro-Medium";
+  font-family: "NeueHaasDisplayMedium";
 }
 
 .primaryFontBold {
   font-family: "SF-Pro-Bold";
+}
+
+.Sf-pro-font-regular {
+  font-family: "SF-Pro-Regular";
 }
 
 @keyframes appear {
@@ -175,6 +194,14 @@ html {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.påmeldingHome:hover svg {
+  rotate: -95deg;
+}
+
+.påmeldingHome svg {
+  transition: all 150ms ease-in-out;
 }
 
 /* YouthNav-bg holder*/
@@ -396,6 +423,16 @@ html {
 
   .omOssText {
     text-align: left;
+  }
+
+  .nav-header {
+    align-items: end;
+  }
+
+  .omOssFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
   }
 }
 

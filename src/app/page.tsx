@@ -3,19 +3,17 @@ import ShalomYouth from "./shalomYouth/page";
 import ShalomNewCreation from "./shalomNewCreation/page";
 import Footer from "./components/youthFooter";
 
-
-
 export default function Home() {
   return (
     <main>
       <div className="w-full h-dvh	flex justify-center items-center">
         <div className="choose-group-container p-[35px] w-full max-w-[901px]">
-          <span className="primaryFontRegular badge rounded-md p-4 bg-[#1b1b1b] border-none text-slate-50">
+          <span className="Sf-pro-font-regular badge rounded-md p-4 bg-[#1b1b1b] border-none text-slate-50">
             Velg fellesskap
           </span>
           <Link href="/shalomYouth">
             <h1
-              className="primaryFontRegular text-slate-50  py-[25px] uppercase transform hover:translate-x-2 ease-in-out duration-200"
+              className="Sf-pro-font-regular text-slate-50  py-[25px] uppercase transform hover:translate-x-2 ease-in-out duration-200"
               style={{ fontSize: "clamp(25px, 3vw, 50px)" }}
             >
               Shalom Youth
@@ -26,7 +24,7 @@ export default function Home() {
 
           <Link href="/shalomNewCreation">
             <h1
-              className="primaryFontRegular text-slate-50  py-[25px] uppercase transform hover:translate-x-3 ease-in-out duration-200"
+              className="Sf-pro-font-regular text-slate-50  py-[25px] uppercase transform hover:translate-x-3 ease-in-out duration-200"
               style={{ fontSize: "clamp(25px, 3vw, 50px)" }}
             >
               Shalom New Creation
@@ -34,18 +32,19 @@ export default function Home() {
           </Link>
 
           <p
-            className="primaryFontRegular text-slate-50"
+            className="Sf-pro-font-regular text-slate-50"
             style={{ fontSize: "clamp(12px, 2vw, 16px)" }}
           >
-            Velkommen til Shalom Oslo sin offisielle side. Her kan du velge
-            mellom to fellesskap. Shalom Youth er et ungdomsfellesskap for alle
-            fra 13-19 år, mens Shalom New Creation er for deg som er 20 år og
-            oppover. Du hjertelig velkommen til å ta en titt på en av disse. Gud
-            velsigne deg!
+            Velkommen til Shalom Oslo sin offisielle hjemmeside. Her kan du
+            velge mellom to fellesskap. Shalom Youth er et ungdomsfellesskap for
+            alle fra 13-19 år, mens Shalom New Creation er for deg som er 20 år
+            og oppover. Du hjertelig velkommen til å ta en titt på en av disse.
+            Shalom youth og Shalom new creation er under en og samme nettside.
+            Gud velsigne deg!
           </p>
         </div>
       </div>
-      <Footer />  
+      <Footer />
     </main>
   );
 }

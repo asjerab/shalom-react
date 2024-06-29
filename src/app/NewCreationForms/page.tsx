@@ -25,7 +25,8 @@ export default function youthPåmelding() {
           </div>
 
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeqfFJm6cBVCvVCQV8hIdk-gcRCsrmLJexgZJeiqZVg00mEqQ/viewform">
-            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-6 hover:px-8 duration-150 ease-in-out">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
+              {" "}
               <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">
                 Bibelstudie
               </h1>
@@ -57,7 +58,8 @@ export default function youthPåmelding() {
           </Link>
 
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSerL_wsSXphDQfwW-WZY9al7T8Ply6C9yRb-DSES4a2Ds0dfA/viewform">
-            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-6 hover:px-8 duration-150 ease-in-out">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
+              {" "}
               <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">
                 Tjenestekurs
               </h1>
@@ -89,7 +91,8 @@ export default function youthPåmelding() {
           </Link>
 
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfZN8NrgmXcL07JAg_Ie5k-sWxVrJkmTRdep2ZVcDD3vf6TRQ/viewform">
-            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-6 hover:px-8 duration-150 ease-in-out">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
+              {" "}
               <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">
                 Connect
               </h1>
@@ -121,7 +124,8 @@ export default function youthPåmelding() {
           </Link>
 
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSetchxXf0oHHc_m84O_NxPaIWyn6Gk6c0M4CcOOcuau7EaJRg/viewform">
-            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-6 hover:px-8 duration-150 ease-in-out">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
+              {" "}
               <h1 className="påmeldingTitle primaryFontRegular font-[600]  text-slate-50 text-[25px]">
                 Alphakurs
               </h1>
@@ -153,7 +157,8 @@ export default function youthPåmelding() {
           </Link>
 
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdWBP7yJddqmqgW5XaienN-GCqKIykNCsh3NPig-9UnIFVbmw/viewform">
-            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-6 hover:px-8 duration-150 ease-in-out">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
+              {" "}
               <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">
                 Dåp
               </h1>
@@ -185,7 +190,8 @@ export default function youthPåmelding() {
           </Link>
 
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSe3xjbXh_j5iW6K-KPNR43eRfX_FxEvYj5WWflKolWsW7e-oQ/viewform">
-            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-6 hover:px-8 duration-150 ease-in-out">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
+              {" "}
               <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">
                 The upper room
               </h1>

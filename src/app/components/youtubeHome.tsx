@@ -6,8 +6,7 @@ export default function youtubeComp() {
     <main>
       <div className="flex justify-center items-center py-[100px] px-[25px] pb-[75px] flex-col">
         <div className="youtube-bg-holder youtubeImgContainer bg-cover bg-no-repeat bg-center rounded-[16px] flex justify-end flex-col p-16 gap-2">
-          <div>
-          </div>
+          <div></div>
           <div className="youtubeImgOverlay">
             <div className="youtubeImgText">
               <h1 className="primaryFontRegular flex items-center gap-2 text-[25px]">
@@ -47,23 +46,21 @@ export default function youtubeComp() {
           </div>
         </div>
         <div className="py-5 w-full max-w-[1325px]">
-            <p
-              className="primaryFontLight text-slate-50 text-[20px] font-[300]"
-              style={{ fontSize: "clamp(15px, 3.5vw, 20px)" }}
-            >
-              Shalom Youth ∙ Shalom New Creation
-            </p>
-            <h1
-              className="primaryFontRegular text-slate-50 text-[100px] leading-none font-[400]"
-              style={{ fontSize: "clamp(25px, 10vw, 100px)" }}
-            >
-              Youtube
-            </h1>
-          </div>
+          <p
+            className="primaryFontLight text-slate-50 text-[20px] font-[300]"
+            style={{ fontSize: "clamp(15px, 3.5vw, 20px)" }}
+          >
+            Shalom Youth ∙ Shalom New Creation
+          </p>
+          <h1
+            className="primaryFontRegular text-slate-50 font-[600] my-5 leading-none flex items-center gap-5"
+            style={{ fontSize: "clamp(36px, 12vw, 80px)" }}
+          >
+            Youtube
+            <span className="Kelsi-fill text-slate-50">x</span>
+          </h1>
+        </div>
       </div>
-
-
-
     </main>
   );
 }

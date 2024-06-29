@@ -25,7 +25,7 @@ export default function youthPåmelding() {
           </div>
 
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdDbsu-p-7rR353roJfZuUF-l8oNqjkdHXiT8WY2y9E3kZ7Bw/viewform">
-            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-6 hover:px-8 duration-150 ease-in-out">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
               <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">
                 Bibelstudie
               </h1>
@@ -57,7 +57,7 @@ export default function youthPåmelding() {
           </Link>
 
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSerL_wsSXphDQfwW-WZY9al7T8Ply6C9yRb-DSES4a2Ds0dfA/viewform">
-            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-6 hover:px-8 duration-150 ease-in-out">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
               <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">
                 Tjenestekurs
               </h1>
@@ -89,7 +89,7 @@ export default function youthPåmelding() {
           </Link>
 
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSesbn9kHSXX_Yb5uK5ovpKd9xiZ57p5DGpClDozOTZma3ZgrQ/viewform">
-            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-6 hover:px-8 duration-150 ease-in-out">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
               <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">
                 Connect
               </h1>
@@ -121,7 +121,7 @@ export default function youthPåmelding() {
           </Link>
 
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdxWO95fkpaN8Y5My2L3Ii5lCKK49Q910fl9HXcR9JsASCjOg/viewform">
-            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-6 hover:px-8 duration-150 ease-in-out">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
               <h1 className="påmeldingTitle primaryFontRegular font-[600]  text-slate-50 text-[25px]">
                 Alphakurs
               </h1>
@@ -153,7 +153,7 @@ export default function youthPåmelding() {
           </Link>
 
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdWBP7yJddqmqgW5XaienN-GCqKIykNCsh3NPig-9UnIFVbmw/viewform">
-            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-6 hover:px-8 duration-150 ease-in-out">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
               <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">
                 Dåp
               </h1>
@@ -185,7 +185,7 @@ export default function youthPåmelding() {
           </Link>
 
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfWrL9syVWMrORCbySCvHJ_2MkNWaAJ3vt4Mq2kQwbiamztYQ/viewform">
-            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-6 hover:px-8 duration-150 ease-in-out">
+            <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
               <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">
                 The upper room
               </h1>

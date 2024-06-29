@@ -55,7 +55,12 @@ export default function Kalender() {
     { month: "Juni", title: "Gudstjeneste", day: "søn", date: "juni 02" },
     { month: "Juni", title: "Connect", day: "tor", date: "juni 06" },
     { month: "Juni", title: "Evangelisering", day: "fre", date: "juni 07" },
-    { month: "Juni", title: "5 års markering youth", day: "lør", date: "juni 08" },
+    {
+      month: "Juni",
+      title: "5 års markering youth",
+      day: "lør",
+      date: "juni 08",
+    },
     { month: "Juni", title: "Alphakurs & Dypere", day: "søn", date: "juni 09" },
     { month: "Juni", title: "Bibelstudie", day: "ons", date: "juni 12" },
     { month: "Juni", title: "Bønn", day: "tor", date: "juni 13" },
@@ -64,10 +69,30 @@ export default function Kalender() {
     { month: "Juni", title: "Gudstjeneste", day: "søn", date: "juni 30" },
     /////////////////////////////
     // AUGUST
-    { month: "August", title: "Shalom Youth Leir", day: "Man", date: "juni 05" },
-    { month: "August", title: "Shalom Youth Leir", day: "Tir", date: "juni 06" },
-    { month: "August", title: "Shalom Youth Leir", day: "Ons", date: "juni 07" },
-    { month: "August", title: "Shalom Youth Leir", day: "Tor", date: "juni 08" },
+    {
+      month: "August",
+      title: "Shalom Youth Leir",
+      day: "Man",
+      date: "juni 05",
+    },
+    {
+      month: "August",
+      title: "Shalom Youth Leir",
+      day: "Tir",
+      date: "juni 06",
+    },
+    {
+      month: "August",
+      title: "Shalom Youth Leir",
+      day: "Ons",
+      date: "juni 07",
+    },
+    {
+      month: "August",
+      title: "Shalom Youth Leir",
+      day: "Tor",
+      date: "juni 08",
+    },
     /////////////////////////////
     // Add more events as needed
   ];
@@ -81,10 +106,11 @@ export default function Kalender() {
           <nav className="nav-kalender flex justify-between items-end">
             <div>
               <h1
-                className="primaryFontBold uppercase text-slate-50"
-                style={{ fontSize: "clamp(35px, 10vw, 100px)" }}
+                className="primaryFontRegular text-slate-50 font-[600] my-5 leading-[84px] flex items-center gap-5"
+                style={{ fontSize: "clamp(36px, 12vw, 80px)" }}
               >
                 Kalender
+                <span className="Kelsi-fill text-slate-50">x</span>
               </h1>
               <p
                 className="primaryFontRegular font-[300] w-full max-w-[682px] text-slate-50"
@@ -105,11 +131,20 @@ export default function Kalender() {
             </div>
           </nav>
           <div className="flex gap-3 py-10 flex-wrap">
-            {["Juni", "Juli", "August", "September", "Oktober", "November", "Desember"].map((month) => (
+            {[
+              "Juni",
+              "Juli",
+              "August",
+              "September",
+              "Oktober",
+              "November",
+              "Desember",
+            ].map((month) => (
               <button
                 key={month}
                 onClick={() => handleMonthClick(month)}
-                className="primaryFontRegular font-[500] btn btn-responsive rounded-full bg-[#191919] border-none text-slate-50 hover:bg-slate-50 hover:text-[#191919]" style={{fontSize:"clamp(10px, 3vw, 20px)"}}
+                className="primaryFontRegular font-[500] btn btn-responsive rounded-full bg-[#191919] border-none text-slate-50 hover:bg-slate-50 hover:text-[#191919]"
+                style={{ fontSize: "clamp(10px, 3vw, 20px)" }}
               >
                 {month}
               </button>
@@ -122,14 +157,23 @@ export default function Kalender() {
                 key={index}
                 className="flex justify-between items-center border-t-[1px] border-[#ffffff88] py-5 cursor-pointer"
               >
-                <h1 className="primaryFontRegular font-[500] text-slate-50" style={{fontSize:"clamp(15px, 5vw, 25px)"}}>
+                <h1
+                  className="primaryFontRegular font-[500] text-slate-50"
+                  style={{ fontSize: "clamp(15px, 5vw, 25px)" }}
+                >
                   {event.title}
                 </h1>
                 <div className="flex items-center">
-                  <p className="primaryFontRegular font-[500] uppercase bg-slate-50 text-[#0D0D0D] py-[5px] px-[15px] rounded-full" style={{fontSize:"clamp(10px, 3.5vw, 20px)"}}>
+                  <p
+                    className="primaryFontRegular font-[500] uppercase bg-slate-50 text-[#0D0D0D] py-[5px] px-[15px] rounded-full"
+                    style={{ fontSize: "clamp(10px, 3.5vw, 20px)" }}
+                  >
                     {event.day}
                   </p>
-                  <p className="primaryFontRegular font-[500] uppercase bg-slate-50 text-[#0D0D0D] text-[20px] py-[5px] px-[15px] rounded-full" style={{fontSize:"clamp(10px, 3.5vw, 20px)"}}>
+                  <p
+                    className="primaryFontRegular font-[500] uppercase bg-slate-50 text-[#0D0D0D] text-[20px] py-[5px] px-[15px] rounded-full"
+                    style={{ fontSize: "clamp(10px, 3.5vw, 20px)" }}
+                  >
                     {event.date}
                   </p>
                 </div>

@@ -25,7 +25,7 @@ export default function TestNav() {
             </div>
             <div className="py-10 flex flex-col gap-2">
               <Link
-                className="primaryFontRegular font-bold flex justify-between items-center"
+                className="Sf-pro-font-regular font-bold flex justify-between items-center"
                 href="/shalomYouth"
               >
                 <h1
@@ -38,7 +38,7 @@ export default function TestNav() {
                 <p className="Kelsi-fill text-slate-50 text-[20px]">x</p>
               </Link>
               <Link
-                className="primaryFontRegular font-bold"
+                className="Sf-pro-font-regular font-bold"
                 href="/youthGrupper"
               >
                 <h1
@@ -48,7 +48,7 @@ export default function TestNav() {
                   utrustning
                 </h1>
               </Link>
-              <Link className="primaryFontRegular font-bold" href="/youthForms">
+              <Link className="Sf-pro-font-regular font-bold" href="/youthForms">
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
                   style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
@@ -56,7 +56,7 @@ export default function TestNav() {
                   påmelding
                 </h1>
               </Link>
-              <Link className="primaryFontRegular font-bold" href="/OmOss">
+              <Link className="Sf-pro-font-regular font-bold" href="/YouthOmOss">
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
                   style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
@@ -65,7 +65,7 @@ export default function TestNav() {
                 </h1>
               </Link>
               <Link
-                className="primaryFontRegular font-bold"
+                className="Sf-pro-font-regular font-bold"
                 href="/youthKontakt"
               >
                 <h1
@@ -99,7 +99,7 @@ export default function TestNav() {
             </nav>
             <div className="flex gap-3">
               <Link href="/">
-                <button className="primaryFontRegular font-bold btn btn-wide px-10 border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
+                <button className="Sf-pro-font-regular font-bold btn btn-wide px-10 border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
                   fellesskap
                 </button>
               </Link>
@@ -152,7 +152,7 @@ export default function TestNav() {
                   PÅMELDING
                 </p>
               </Link>
-              <Link className="scroll-container" href="/OmOss">
+              <Link className="scroll-container" href="/YouthOmOss">
                 <p className="hidden-nav-link scroll-holder primaryFontBold text-slate-50 text-[15px]">
                   OM OSS
                 </p>
