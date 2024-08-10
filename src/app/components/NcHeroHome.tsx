@@ -14,8 +14,7 @@ export default function YouthNav() {
             New Creation
           </h1>
           <p
-            className="primaryFontLight p-text-hero-youth text-slate-50 max-w-[950px] w-full text-center px-[50px]"
-            style={{ fontSize: "clamp(22px, 5vw, 22px)" }}
+            className="primaryFontLight p-text-hero-youth text-[22px] text-slate-50 font-[600] max-w-[950px] w-full text-center px-[50px]"
           >
             Derfor, om noen er i Kristus, da er han en ny skapning, det gamle er
             forbi, se, alt er blitt nytt. Men alt dette er av Gud, han som

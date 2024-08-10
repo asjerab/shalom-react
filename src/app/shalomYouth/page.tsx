@@ -9,7 +9,7 @@ import Marquee from "../components/Marquee";
 export default function ShalomHome() {
   return (
     <main>
-      <Marquee />
+      {/* <Marquee /> */}
       <YouthNav />
       <YouthGrupperHome />
       <KalenderYouth />

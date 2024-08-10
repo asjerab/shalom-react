@@ -7,16 +7,15 @@ export default function YouthNav() {
     <main>
       <nav className="h-dvh bg-cover bg-no-repeat bg-center youthNav-bg pb-[100px]">
         <YouthNavHome />
-        <div className="heroTextYouth w-full h-5/6  flex justify-center items-center flex-col">
+        <div className="primaryFontHeadings w-full h-5/6  flex justify-center items-center flex-col">
           <h1
-            className="primaryFontRegular text-slate-50 font-[700] uppercase leading-none"
+            className="primaryFontHero text-slate-50 font-[900] uppercase leading-none"
             style={{ fontSize: "clamp(10px, 11.2vw, 205px)" }}
           >
             Shalom Youth
           </h1>
           <p
-            className="primaryFontLight p-text-hero-youth text-slate-50 max-w-[750px] w-full text-center px-[50px]"
-            style={{ fontSize: "clamp(22px, 5vw, 22px)" }}
+            className="primaryFontLight p-text-hero-youth text-[22px] text-slate-50 font-[600] max-w-[1000px] w-full text-center px-[50px]"
           >
             La ingen forakte deg fordi du er ung, men vær et forbilde for de
             troende i ord og livsførsel, i kjærlighet, tro og renhet. 1.Timoteus

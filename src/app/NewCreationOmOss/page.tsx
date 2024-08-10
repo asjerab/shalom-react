@@ -92,16 +92,16 @@ export default function OmOssNewCreation() {
                 <br />
                 <br />
                 <br />
-                'Nei, den som er i Kristus, er en ny skapning. Det gamle er
-                borte, se, det nye er blitt til! ' 2. Korinter 5:17
+                Nei, den som er i Kristus, er en ny skapning. Det gamle er
+                borte, se, det nye er blitt til!  2. Korinter 5:17
                 <br />
                 <br />
-                'Gå derfor og gjør alle folkeslag til disipler: Døp dem til
+                Gå derfor og gjør alle folkeslag til disipler: Døp dem til
                 Faderens og Sønnens og Den hellige ånds navn og lær dem å holde
                 alt det jeg har befalt dere. Og se, jeg er med dere alle dager
-                inntil verdens ende.» ' Matteus 28:19-20
+                inntil verdens ende.»  Matteus 28:19-20
                 <br />
-                <br />' Men dere skal få kraft når Den hellige ånd kommer over
+                <br /> Men dere skal få kraft når Den hellige ånd kommer over
                 dere, og dere skal være mine vitner i Jerusalem og hele Judea, i
                 Samaria og helt til jordens ende.» Apostlenes gjerninger 1:8
               </p>

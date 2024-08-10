@@ -4,13 +4,13 @@ import KalenderNc from "../components/NcKalender";
 import YoutubeComp from "../components/youtubeHome";
 import NcPåmeldingHome from "../components/NcPåmeldingHome";
 import Footer from "../components/NcFooter";
-import Marquee from "../components/Marquee";
+// import Marquee from "../components/Marquee";
 
 export default function ShalomHome() {
   return (
     <main>
       <NcNav />
-      <Marquee />
+      {/* <Marquee /> */}
       <NcGrupperHome />
       <KalenderNc />
       <YoutubeComp />

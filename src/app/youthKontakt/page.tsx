@@ -1,7 +1,5 @@
 import YouthNav from "../components/youthNav";
-import Footer from "../components/youthFooter"
-
-
+import Footer from "../components/youthFooter";
 
 export default function youthKontakt() {
   return (
@@ -19,14 +17,25 @@ export default function youthKontakt() {
           style={{ fontSize: "clamp(15px, 2vw, 25px)" }}
         >
           Har du noen spørsmål? Ta gjerne kontakt med oss på:{" "}
-          <span className="text-zinc-500 underline">
+          <span className="text-[#2b80ff] underline">
             {" "}
             E-post: Shalomoslo@gmail.com
           </span>{" "}
-          Besøksadresse: Shalom Youth <span className="text-zinc-500 underline">St. Olavs Gate</span> 24 0166 Oslo Vennligst
-          kontakt en spesifikk leder nedenfor hvis du har spesifikke spørsmål.
+          Besøksadresse: Shalom Youth{" "}
+          <span className="text-[#2b80ff] underline">St. Olavs Gate</span> 24
+          0166 Oslo Vennligst kontakt en spesifikk leder nedenfor hvis du har
+          spesifikke spørsmål.
         </p>
       </div>{" "}
+      <div className="business-info-kontakt kontakt-wrapper px-[50px] py-[15px] flex gap-4">
+        <h1 className="primaryFontRegular text-[#111]  badge py-4">NORWAY</h1>
+        <h1 className="primaryFontRegular text-[#111]  badge py-4">
+          ST. OLAVS GATE 24
+        </h1>
+        <h1 className="primaryFontRegular text-[#111]  badge py-4">
+          0166, OSLO
+        </h1>
+      </div>
       <div className="kontakt-children p-[50px] max-w-[1325px]">
         <div className="w-full h-[2px] bg-[#67686c] opacity-50 "></div>
         <div className="py-[65px] flex flex-col gap-5 ">
@@ -38,8 +47,8 @@ export default function youthKontakt() {
               Nahom Zenawi
             </h1>
             <p
-              className="primaryFontRegular text-slate-50"
-              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+              className="primaryFontRegular text-slate-50 badge bg-[#131313] border-none p-5"
+              style={{ fontSize: "clamp(15px, 2vw, 20px)" }}
             >
               Hovedleder
             </p>
@@ -62,8 +71,8 @@ export default function youthKontakt() {
               Belen Asgedom
             </h1>
             <p
-              className="primaryFontRegular text-slate-50"
-              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+              className="primaryFontRegular text-slate-50 badge bg-[#131313] border-none p-5"
+              style={{ fontSize: "clamp(15px, 2vw, 20px)" }}
             >
               Forsamlingsleder
             </p>
@@ -85,8 +94,8 @@ export default function youthKontakt() {
               Lydia Ayelegn
             </h1>
             <p
-              className="primaryFontRegular text-slate-50"
-              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+              className="primaryFontRegular text-slate-50 badge bg-[#131313] border-none p-5"
+              style={{ fontSize: "clamp(15px, 2vw, 20px)" }}
             >
               Forsamlingsleder
             </p>
@@ -109,8 +118,8 @@ export default function youthKontakt() {
               Becky Mebrahtu
             </h1>
             <p
-              className="primaryFontRegular text-slate-50"
-              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+              className="primaryFontRegular text-slate-50 badge bg-[#131313] border-none p-5"
+              style={{ fontSize: "clamp(15px, 2vw, 20px)" }}
             >
               Forsamlingsleder
             </p>
@@ -125,7 +134,6 @@ export default function youthKontakt() {
 
         <div className="w-full h-[2px] bg-[#67686c] opacity-50 "></div>
 
-
         <div className="py-[65px] flex flex-col gap-5 ">
           <div className="flex row-kontakt justify-between items-center">
             <h1
@@ -135,8 +143,8 @@ export default function youthKontakt() {
               Kedy Mebrahtu
             </h1>
             <p
-              className="primaryFontRegular text-slate-50"
-              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+              className="primaryFontRegular text-slate-50 badge bg-[#131313] border-none p-5"
+              style={{ fontSize: "clamp(15px, 2vw, 20px)" }}
             >
               Forsamlingsleder
             </p>
@@ -160,8 +168,8 @@ export default function youthKontakt() {
               Naod Mesfun
             </h1>
             <p
-              className="primaryFontRegular text-slate-50"
-              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+              className="primaryFontRegular text-slate-50 badge bg-[#131313] border-none p-5"
+              style={{ fontSize: "clamp(15px, 2vw, 20px)" }}
             >
               Leder for connect
             </p>
@@ -185,8 +193,8 @@ export default function youthKontakt() {
               Sem Aman
             </h1>
             <p
-              className="primaryFontRegular text-slate-50"
-              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+              className="primaryFontRegular text-slate-50 badge bg-[#131313] border-none p-5"
+              style={{ fontSize: "clamp(15px, 2vw, 20px)" }}
             >
               Leder for Bibelstudie
             </p>
@@ -209,8 +217,8 @@ export default function youthKontakt() {
               Noah Samuel
             </h1>
             <p
-              className="primaryFontRegular text-slate-50"
-              style={{ fontSize: "clamp(15px, 3vw, 25px)" }}
+              className="primaryFontRegular text-slate-50 badge bg-[#131313] border-none p-5"
+              style={{ fontSize: "clamp(15px, 2vw, 20px)" }}
             >
               Leder for evangelisering
             </p>

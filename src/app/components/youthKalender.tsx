@@ -138,7 +138,11 @@ export default function Kalender() {
               <button
                 key={month}
                 onClick={() => handleMonthClick(month)}
-                className="primaryFontRegular font-[500] btn btn-responsive rounded-full bg-[#191919] border-none text-slate-50 hover:bg-slate-50 hover:text-[#191919]"
+                className={`primaryFontRegular font-[500] btn btn-responsive rounded-full ${
+                  visibleMonth === month
+                    ? "bg-slate-50 text-[#191919]"
+                    : "bg-[#191919] text-slate-50"
+                } border-none hover:bg-slate-50 hover:text-[#191919]`}
                 style={{ fontSize: "clamp(10px, 3vw, 20px)" }}
               >
                 {month}
@@ -147,33 +151,39 @@ export default function Kalender() {
           </div>
 
           <div>
-            {filteredEvents.slice(0, visibleCount).map((event, index) => (
-              <div
-                key={index}
-                className="flex justify-between items-center border-t-[1px] border-[#ffffff88] py-5 cursor-pointer"
-              >
-                <h1
-                  className="primaryFontRegular font-[500] text-slate-50"
-                  style={{ fontSize: "clamp(15px, 5vw, 25px)" }}
+            {filteredEvents.length > 0 ? (
+              filteredEvents.slice(0, visibleCount).map((event, index) => (
+                <div
+                  key={index}
+                  className="flex justify-between items-center border-t-[1px] border-[#ffffff88] py-5 cursor-pointer"
                 >
-                  {event.title}
-                </h1>
-                <div className="flex items-center">
-                  <p
-                    className="primaryFontRegular font-[500] uppercase bg-slate-50 text-[#0D0D0D] py-[5px] px-[15px] rounded-full"
-                    style={{ fontSize: "clamp(10px, 3.5vw, 20px)" }}
+                  <h1
+                    className="primaryFontRegular font-[500] text-slate-50"
+                    style={{ fontSize: "clamp(15px, 5vw, 25px)" }}
                   >
-                    {event.day}
-                  </p>
-                  <p
-                    className="primaryFontRegular font-[500] uppercase bg-slate-50 text-[#0D0D0D] text-[20px] py-[5px] px-[15px] rounded-full"
-                    style={{ fontSize: "clamp(10px, 3.5vw, 20px)" }}
-                  >
-                    {event.date}
-                  </p>
+                    {event.title}
+                  </h1>
+                  <div className="flex items-center">
+                    <p
+                      className="primaryFontRegular font-[500] uppercase bg-slate-50 text-[#0D0D0D] py-[5px] px-[15px] rounded-full"
+                      style={{ fontSize: "clamp(10px, 3.5vw, 20px)" }}
+                    >
+                      {event.day}
+                    </p>
+                    <p
+                      className="primaryFontRegular font-[500] uppercase bg-slate-50 text-[#0D0D0D] text-[20px] py-[5px] px-[15px] rounded-full"
+                      style={{ fontSize: "clamp(10px, 3.5vw, 20px)" }}
+                    >
+                      {event.date}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))
+            ) : (
+              <p className="primaryFontRegular text-[20px] font-[500] text-slate-50 text-center py-5">
+                No events
+              </p>
+            )}
 
             {filteredEvents.length > 5 && (
               <div className="flex justify-center items-center m-10">

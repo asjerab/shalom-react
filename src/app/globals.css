@@ -99,6 +99,11 @@ html {
   src: url(assets/fonts/NeueHaasDisplayBold.ttf);
 }
 
+@font-face {
+  font-family: "BlackSword";
+  src: url(assets/fonts/Blacksword.otf);
+}
+
 .Kelsi-fill {
   font-family: "Kelsi-fill";
 }
@@ -132,11 +137,19 @@ html {
 }
 
 .primaryFontBold {
-  font-family: "SF-Pro-Bold";
+  font-family: "AeonikTRIAL-Bold";
+}
+
+.primaryFontHeadings {
+  font-family: "AeonikTRIAL-Regular";
 }
 
 .Sf-pro-font-regular {
   font-family: "SF-Pro-Regular";
+}
+
+.BlackSword {
+  font-family: "BlackSword";
 }
 
 @keyframes appear {
@@ -334,13 +347,14 @@ html {
     display: none;
   }
 
-  .nav-res-button {
-    display: block;
+  .p-text-hero-youth {
+    font-size: 12px;
+    max-width: 1000px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1rem;
   }
 
-  .p-text-hero-youth {
-    font-size: 10px !important;
-  }
 
   .grupper-container-home {
     padding: 100px 25px;
@@ -434,6 +448,15 @@ html {
     flex-direction: column;
     gap: 100px;
   }
+
+  .business-info-kontakt {
+    flex-direction: column;
+  }
+
+  .omOssNavWrapper {
+    gap: 20px;
+    height: 60%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -492,8 +515,6 @@ html {
   .Nc-oslo-footer {
     font-size: 55px;
   }
-
-
 
   .footer-footer {
     padding-top: 5px;
