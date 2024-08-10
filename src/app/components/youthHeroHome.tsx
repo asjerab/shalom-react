@@ -12,7 +12,7 @@ export default function YouthNav() {
             className="primaryFontHero text-slate-50 font-[900] uppercase leading-none"
             style={{ fontSize: "clamp(10px, 11.2vw, 205px)" }}
           >
-            Shalom Youth
+            Asjer Bereket
           </h1>
           <p
             className="primaryFontLight p-text-hero-youth text-[22px] text-slate-50 font-[600] max-w-[1000px] w-full text-center px-[50px]"
