@@ -110,7 +110,7 @@ export default function PaameldingHome() {
               className='primaryFontRegular text-slate-50 max-w-[600px]'
               style={{ fontSize: 'clamp(14px, 4vw, 22px)' }}
             >
-              Trykk på 'Alle påmeldinger' for og hente fram flere påmeldinger du
+              Trykk på &rdquo; Alle påmeldinger &rdquo; for og hente fram flere påmeldinger du
               kan melde deg på.
             </p>
             <Link href='/NewCreationForms'>
