@@ -51,7 +51,7 @@ export default function YouthGrupperHome() {
               className="primaryFontRegular text-slate-50 max-w-[600px]"
               style={{ fontSize: "clamp(14px, 4vw, 22px)" }}
             >
-              Trykk på "Alle Grupper" for og se alle grupper vi tilbyr i vårt
+              Trykk på &rdquo; Alle Grupper &rdquo; for og se alle grupper vi tilbyr i vårt
               fellesskap.
             </p>
             <Link href="/NewCreationGrupper">

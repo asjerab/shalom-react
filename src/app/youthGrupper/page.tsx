@@ -48,7 +48,7 @@ export default function YouthGrupper() {
             style={{ fontSize: "clamp(15px, 2vw, 25px)" }}
           >
             Her kan du lese mer om hva som skjer i løpet av uken. Klikk på
-            "utforsk" for å lese mer om hvert emne. Der det er påmelding, har du
+            &rdquo; utforsk &rdquo; for å lese mer om hvert emne. Der det er påmelding, har du
             også muligheten til å registrere deg gjennom påmeldingssiden vår.
           </p>
         </div>
