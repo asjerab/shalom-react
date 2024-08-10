@@ -129,15 +129,18 @@ html {
 }
 
 .primaryFontLight {
-  font-family: "NeueHaasDisplayLight";
+  font-family: "kollektif";
+  font-weight: 300;
 }
 
 .primaryFontRegular {
-  font-family: "NeueHaasDisplayMedium";
+  font-family: "kollektif";
+  font-weight: 500;
 }
 
 .primaryFontBold {
-  font-family: "AeonikTRIAL-Bold";
+  font-family: "kollektif";
+  font-weight: 700;
 }
 
 .primaryFontHeadings {

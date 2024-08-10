@@ -25,12 +25,12 @@ export default function TestNav() {
             </div>
             <div className="py-10 flex flex-col gap-2">
               <Link
-                className="Sf-pro-font-regular font-bold flex justify-between items-center"
+                className="PrimaryFontRegular font-medium flex justify-between items-center"
                 href="/shalomNewCreation"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
-                  style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
+                  style={{ fontSize: "clamp(30px, 5vw, 65px)" }}
                 >
                   hjem
                 </h1>
@@ -38,39 +38,39 @@ export default function TestNav() {
                 <p className="Kelsi-fill text-slate-50 text-[20px]">x</p>
               </Link>
               <Link
-                className="Sf-pro-font-regular font-bold"
+                className="PrimaryFontRegular font-medium"
                 href="/NewCreationGrupper"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
-                  style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
+                  style={{ fontSize: "clamp(30px, 5vw, 65px)" }}
                 >
                   utrustning
                 </h1>
               </Link>
-              <Link className="Sf-pro-font-regular font-bold" href="/NewCreationForms">
+              <Link className="PrimaryFontRegular font-medium" href="/NewCreationForms">
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
-                  style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
+                  style={{ fontSize: "clamp(30px, 5vw, 65px)" }}
                 >
                   påmelding
                 </h1>
               </Link>
-              <Link className="Sf-pro-font-regular font-bold" href="/NewCreationOmOss">
+              <Link className="PrimaryFontRegular font-medium" href="/NewCreationOmOss">
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
-                  style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
+                  style={{ fontSize: "clamp(30px, 5vw, 65px)" }}
                 >
                   om oss
                 </h1>
               </Link>
               <Link
-                className="Sf-pro-font-regular font-bold"
+                className="PrimaryFontRegular font-medium"
                 href="/NewCreationKontakt"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
-                  style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
+                  style={{ fontSize: "clamp(30px, 5vw, 65px)" }}
                 >
                   kontakt
                 </h1>

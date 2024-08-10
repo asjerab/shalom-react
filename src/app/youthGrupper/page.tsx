@@ -36,7 +36,7 @@ export default function YouthGrupper() {
     <main className="h-full">
       <YouthNav />
       <div className="Gruper-wrapper p-[35px]">
-        <div className="mb-10">
+        <div className="flex flex-col gap-10">
           <h1
             className="primaryFontBold text-slate-50 leading-none"
             style={{ fontSize: "clamp(50px, 10vw, 200px)" }}

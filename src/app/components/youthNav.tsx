@@ -25,7 +25,7 @@ export default function TestNav() {
             </div>
             <div className='py-10 flex flex-col gap-2'>
               <Link
-                className='Sf-pro-font-regular font-bold flex justify-between items-center'
+                className='PrimaryFontRegular font-medium flex justify-between items-center'
                 href='/shalomYouth'
               >
                 <h1
@@ -38,7 +38,7 @@ export default function TestNav() {
                 <p className='Kelsi-fill text-slate-50 text-[20px]'>x</p>
               </Link>
               <Link
-                className='Sf-pro-font-regular font-bold'
+                className='PrimaryFontRegular font-medium'
                 href='/youthGrupper'
               >
                 <h1
@@ -48,7 +48,7 @@ export default function TestNav() {
                   utrustning
                 </h1>
               </Link>
-              <Link className='Sf-pro-font-regular font-bold' href='/youthForms'>
+              <Link className='PrimaryFontRegular font-medium' href='/youthForms'>
                 <h1
                   className='text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out'
                   style={{ fontSize: 'clamp(25px, 5vw, 65px)' }}
@@ -56,7 +56,7 @@ export default function TestNav() {
                   påmelding
                 </h1>
               </Link>
-              <Link className='Sf-pro-font-regular font-bold' href='/YouthOmOss'>
+              <Link className='PrimaryFontRegular font-medium' href='/YouthOmOss'>
                 <h1
                   className='text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out'
                   style={{ fontSize: 'clamp(25px, 5vw, 65px)' }}
@@ -65,7 +65,7 @@ export default function TestNav() {
                 </h1>
               </Link>
               <Link
-                className='Sf-pro-font-regular font-bold'
+                className='PrimaryFontRegular font-medium '
                 href='/youthKontakt'
               >
                 <h1
