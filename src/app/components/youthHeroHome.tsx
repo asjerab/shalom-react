@@ -14,15 +14,13 @@ export default function YouthNav() {
           >
             Shalom Youth
           </h1>
-          <p
-            className="primaryFontLight p-text-hero-youth text-[22px] text-slate-50 font-[600] max-w-[1000px] w-full text-center px-[50px]"
-          >
+          <p className="primaryFontLight p-text-hero-youth text-[22px] text-slate-50 font-[600] max-w-[1000px] w-full text-center px-[50px]">
             La ingen forakte deg fordi du er ung, men vær et forbilde for de
             troende i ord og livsførsel, i kjærlighet, tro og renhet. 1.Timoteus
             4:12
           </p>
           <a href="#grupper-a" className="flex justify-center">
-            <button className="btn w-full scroll-container max-w-[125px] m-5 rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">
+            <button className="btn w-full scroll-container max-w-[125px] m-5 rounded-[16px] bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">
               <div className="scroll-holder">
                 <p>Utforsk</p>
               </div>
