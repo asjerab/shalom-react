@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { events } from "/Websites/shalom-react/src/data/event";
-import YouthNav from "../../../components/youthNav";
-import Footer from "../../../components/youthFooter";
+import YouthNav from "../../components/youthNav";
+import Footer from "../../components/youthFooter";
 
 interface EventPageProps {
   params: {
