@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { events } from "/Websites/shalom-react/src/data/event";
+import { events } from "/shalom-react/src/data/event";
 import YouthNav from "../../components/youthNav";
 import Footer from "../../components/youthFooter";
 
