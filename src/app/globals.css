@@ -134,7 +134,7 @@ html {
 }
 
 .primaryFontRegular {
-  font-family: "kollektif";
+  font-family: "SF-Pro-Regular";
   font-weight: 500;
 }
 
@@ -352,12 +352,11 @@ html {
 
   .p-text-hero-youth {
     font-size: 12px;
-    max-width: 1000px;
+    max-width: 350px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 1rem;
   }
-
 
   .grupper-container-home {
     padding: 100px 25px;
@@ -531,5 +530,18 @@ html {
 
   .påmeldingTitle {
     font-size: 15px;
+  }
+
+  .kalender-page-wrapper {
+    padding: 25px;
+  }
+
+  .kalender-subInfo {
+    flex-wrap: wrap ;
+  }
+
+  .kalender-subInfo p {
+    font-size: 11px;
+    padding: 13px;
   }
 }

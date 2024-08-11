@@ -60,7 +60,7 @@ export default function Kalender() {
     { month: "Juni", title: "Bønn", day: "tor", date: "juni 13" },
     { month: "Juni", title: "Gudstjeneste", day: "lør", date: "juni 15" },
     { month: "Juni", title: "Gudstjeneste", day: "lør", date: "juni 22" },
-    { month: "Juni", title: "Gudstjeneste", day: "søn", date: "juni 30" },
+    { month: "Juni", title: "Gudstjeneste", day: "søn", date: "juni 30",},
     /////////////////////////////
     // AUGUST
     {

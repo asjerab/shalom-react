@@ -8,7 +8,7 @@ export default function footer() {
         <div className="w-full max-w-[1325px] px-[35px]">
           <nav className="footer-nav flex justify-between items-start pb-[100px]">
             <div className="flex flex-col leading-[100px]">
-              <h1 className="primaryFontBold shalom-footer font-semibold text-slate-50 uppercase flex flex-col p-0 m-0 text-[100px]">
+              <h1 className="primaryFontHeadings shalom-footer font-semibold text-slate-50 uppercase flex flex-col p-0 m-0 text-[100px]">
                 Shalom{" "}
                 <span className="Kelsi-outline oslo-footer text-slate-50 p-0 m-0 text-[100px]">
                   Oslo
