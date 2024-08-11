@@ -54,6 +54,11 @@ export default function YouthGrupperHome() {
               Trykk på &rdquo; Alle Grupper &rdquo; for og se alle grupper vi tilbyr i vårt
               fellesskap.
             </p>
+            <Link href='/youthGrupper'>
+              <button className='btn btn-wide rounded-xl bg-[#2b80ff] text-slate-50 border-none hover:bg-[#3e8bff]'>
+                Alle Grupper
+              </button>
+            </Link>
           </div>{' '}
         </div>
       </div>
