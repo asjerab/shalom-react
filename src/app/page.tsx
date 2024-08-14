@@ -8,7 +8,7 @@ export default function Home() {
     <main>
       <div className="w-full h-dvh	flex justify-center items-center">
         <div className="choose-group-container p-[35px] w-full max-w-[901px]">
-          <span className="Sf-pro-font-regular badge rounded-md p-4 bg-[#1b1b1b] border-none text-slate-50">
+          <span className="Sf-pro-font-regular badge rounded-[28px] uppercase p-4 bg-[#1b1b1b] border-none text-slate-50">
             Velg fellesskap
           </span>
           <Link href="/shalomYouth">

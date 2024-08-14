@@ -544,4 +544,13 @@ html {
     font-size: 11px;
     padding: 13px;
   }
+
+  .KalenderHomeTitle {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .dag-dato-kalender-wrapper {
+    gap: 1.5rem;
+  }
 }

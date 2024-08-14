@@ -13,16 +13,14 @@ export default function YouthNav() {
           >
             New Creation
           </h1>
-          <p
-            className="primaryFontLight p-text-hero-youth text-[22px] text-slate-50 font-[600] max-w-[950px] w-full text-center px-[50px]"
-          >
+          <p className="primaryFontLight p-text-hero-youth text-[22px] text-slate-50 font-[600] max-w-[950px] w-full text-center px-[50px]">
             Derfor, om noen er i Kristus, da er han en ny skapning, det gamle er
             forbi, se, alt er blitt nytt. Men alt dette er av Gud, han som
             forlikte oss med seg selv ved Kristus og ga oss forlikelsens
             tjeneste. 2. Korinterbrev 5:17-18
           </p>
           <a href="#grupper-a-Nc" className="flex justify-center">
-            <button className="btn w-full scroll-container max-w-[125px] m-5 rounded-xl bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">
+            <button className="btn w-full primaryFontHeadings uppercase scroll-container max-w-[125px] m-5 rounded-[28px] bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">
               <div className="scroll-holder">
                 <p>Utforsk</p>
               </div>
