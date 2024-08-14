@@ -20,7 +20,7 @@ export default function YouthNav() {
             4:12
           </p>
           <a href="#grupper-a" className="flex justify-center">
-            <button className="btn w-full scroll-container max-w-[125px] m-5 rounded-[16px] bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">
+            <button className="btn w-full primaryFontHeadings uppercase scroll-container max-w-[125px] m-5 rounded-[28px] bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">
               <div className="scroll-holder">
                 <p>Utforsk</p>
               </div>

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 interface DateType {
@@ -11,6 +12,7 @@ interface Event {
   title: string;
   day: string;
   date: string;
+  id?: string;  // Make sure to include id in the Event interface
 }
 
 export default function Kalender() {
@@ -42,53 +44,63 @@ export default function Kalender() {
 
   const handleToggleClick = () => {
     if (showMore) {
-      setVisibleCount((prevCount) => prevCount + 5);
+      if (visibleCount + 5 >= filteredEvents.length) {
+        setVisibleCount(filteredEvents.length);
+        setShowMore(false);
+      } else {
+        setVisibleCount((prevCount) => prevCount + 5);
+      }
     } else {
       setVisibleCount(5);
+      setShowMore(true);
     }
-    setShowMore(!showMore);
   };
 
   const events: Event[] = [
     // JUNI
-    { month: "Juni", title: "Alphakurs & Dypere", day: "lør", date: "juni 01" },
-    { month: "Juni", title: "Gudstjeneste", day: "søn", date: "juni 02" },
-    { month: "Juni", title: "Connect", day: "tor", date: "juni 06" },
-    { month: "Juni", title: "Evangelisering", day: "fre", date: "juni 07" },
+    { month: "Juni", id: "/event/KalenderNewCreation/AlphakursTheUpperRoom", title: "Alphakurs & Dypere", day: "lør", date: "juni 01" },
+    { month: "Juni", id: "/event/KalenderNewCreation/Gudstjeneste", title: "Gudstjeneste", day: "søn", date: "juni 02" },
+    { month: "Juni", id: "/event/KalenderNewCreation/Connect", title: "Connect", day: "tor", date: "juni 06" },
+    { month: "Juni", id: "/event/KalenderNewCreation/Evangelisering", title: "Evangelisering", day: "fre", date: "juni 07" },
     {
       month: "Juni",
+      id: "/event/KalenderNewCreation/AlphakursTheUpperRoom",
       title: "5 års markering youth",
       day: "lør",
       date: "juni 08",
     },
-    { month: "Juni", title: "Alphakurs & Dypere", day: "søn", date: "juni 09" },
-    { month: "Juni", title: "Bibelstudie", day: "ons", date: "juni 12" },
-    { month: "Juni", title: "Bønn", day: "tor", date: "juni 13" },
-    { month: "Juni", title: "Alphakurs & Dypere", day: "lør", date: "juni 15" },
-    { month: "Juni", title: "Gudstjeneste", day: "søn", date: "juni 23" },
-    { month: "Juni", title: "Gudstjeneste", day: "søn", date: "juni 30" },
+    { month: "Juni", id: "/event/KalenderNewCreation/AlphakursTheUpperRoom", title: "Alphakurs & Dypere", day: "søn", date: "juni 09" },
+    { month: "Juni", id: "/event/KalenderNewCreation/Bibelstudie", title: "Bibelstudie", day: "ons", date: "juni 12" },
+    { month: "Juni", id: "/event/KalenderNewCreation/Bønnemøte", title: "Bønn", day: "tor", date: "juni 13" },
+    { month: "Juni", id: "/event/KalenderNewCreation/AlphakursTheUpperRoom", title: "Alphakurs & Dypere", day: "lør", date: "juni 15" },
+    { month: "Juni", id: "/event/KalenderNewCreation/Gudstjeneste", title: "Gudstjeneste", day: "søn", date: "juni 23" },
+    { month: "Juni", id: "/event/KalenderNewCreation/Gudstjeneste", title: "Gudstjeneste", day: "søn", date: "juni 30" },
     /////////////////////////////
     // AUGUST
     {
       month: "August",
+      id: "/event/KalenderNewCreation/AlphakursTheUpperRoom",
       title: "Shalom Youth Leir",
       day: "Man",
       date: "juni 05",
     },
     {
       month: "August",
+      id: "/event/KalenderNewCreation/AlphakursTheUpperRoom",
       title: "Shalom Youth Leir",
       day: "Tir",
       date: "juni 06",
     },
     {
       month: "August",
+      id: "/event/KalenderNewCreation/AlphakursTheUpperRoom",
       title: "Shalom Youth Leir",
       day: "Ons",
       date: "juni 07",
     },
     {
       month: "August",
+      id: "/event/KalenderNewCreation/AlphakursTheUpperRoom",
       title: "Shalom Youth Leir",
       day: "Tor",
       date: "juni 08",
@@ -155,9 +167,20 @@ export default function Kalender() {
             ))}
           </div>
 
+          <div className="flex justify-between pb-[15px]">
+            <div>
+              <h1 className="primaryFontHeadings text-[#c5c5c5]">Event</h1>
+            </div>
+            <div className="dag-dato-kalender-wrapper flex gap-10">
+              <p className="primaryFontHeadings text-[#c5c5c5]">Dag</p>
+              <p className="primaryFontHeadings text-[#c5c5c5]">Dato</p>
+            </div>
+          </div>
+
           <div>
             {filteredEvents.length > 0 ? (
               filteredEvents.slice(0, visibleCount).map((event, index) => (
+                <Link key={index} href={event.id ? event.id : "#"}>
                 <div
                   key={index}
                   className="flex justify-between items-center border-t-[1px] border-[#ffffff88] py-5 cursor-pointer"
@@ -183,6 +206,7 @@ export default function Kalender() {
                     </p>
                   </div>
                 </div>
+                </Link>
               ))
             ) : (
               <p className="primaryFontRegular text-[20px] font-[500] text-slate-50 text-center py-5">
@@ -190,7 +214,7 @@ export default function Kalender() {
               </p>
             )}
 
-            {filteredEvents.length > visibleCount && (
+            {filteredEvents.length > 0 && (
               <div className="flex justify-center items-center m-10">
                 <button
                   onClick={handleToggleClick}
@@ -200,6 +224,7 @@ export default function Kalender() {
                 </button>
               </div>
             )}
+
           </div>
         </div>
       </main>

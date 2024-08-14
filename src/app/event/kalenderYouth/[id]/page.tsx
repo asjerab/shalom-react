@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
-import { events } from "../../../data/event";
-import YouthNav from "../../components/youthNav";
-import Footer from "../../components/youthFooter";
+import { eventsYouth } from "../../../../data/eventYouth";
+import YouthNav from "../../../components/youthNav";
+import Footer from "../../../components/youthFooter";
 
 interface EventPageProps {
   params: {
@@ -11,7 +11,7 @@ interface EventPageProps {
 
 export async function generateStaticParams() {
   // Generate static paths based on local data
-  return events.map((event) => ({
+  return eventsYouth.map((event) => ({
     id: event.id,
   }));
 }
@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 // This is a server component that can fetch data
 const EventPage = async ({ params }: EventPageProps) => {
   const { id } = params;
-  const eventData = events.find((event) => event.id === id);
+  const eventData = eventsYouth.find((event) => event.id === id);
 
   // If eventData is not found, show a 404 page
   if (!eventData) {
@@ -31,7 +31,7 @@ const EventPage = async ({ params }: EventPageProps) => {
       <YouthNav />
       <div className="kalender-page-wrapper flex flex-col gap-10 p-[50px]">
         <div className="flex flex-col gap-5">
-          <h1 className="Sf-pro-font-bold font-[700] text-slate-50 text-[35px]">
+          <h1 className="Sf-pro-font-regular font-[700] text-slate-50 text-[35px]">
             {eventData.title}
           </h1>
           <p
