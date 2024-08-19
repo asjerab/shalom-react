@@ -60,9 +60,6 @@ export default function YouthGrupperHome() {
               </button>
             </Link>
           </div>{" "}
-          <Link href="/event/kalenderYouth/1">
-            <p>Hello World</p>
-          </Link>
         </div>
       </div>
     </main>
