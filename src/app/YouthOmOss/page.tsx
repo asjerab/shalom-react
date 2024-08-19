@@ -1,5 +1,8 @@
 import TestNav from "../components/youthNav";
 import NcFooter from "../components/NcFooter";
+import OmOssImageOne from "../images/DSC00754.png";
+import OmOssImageTwo from "../images/DSC03171.png";
+import OmOssImageThree from "../images/DSC03193.png";
 
 export default function OmOssNewCreation() {
   return (
@@ -15,7 +18,7 @@ export default function OmOssNewCreation() {
               Om Oss.
             </h1>{" "}
           </nav>
-          <div className="omOssFlex flex gap-10 py-[50px]">
+          <div className="omOssFlex flex flex-col gap-10 py-[50px]">
             <div>
               <h1 className="primaryFontRegular text-[35px] text-slate-50 uppercase py-5">
                 Visjon
@@ -51,6 +54,33 @@ export default function OmOssNewCreation() {
                 <br />
                 6. / Å gjøre disipler ved å gjenopprette den personlige
                 relasjonen med Gud som alle mennesker er skapt for.
+              </p>
+        
+
+              <div className="flex py-20 gap-5">
+                <img
+                  className="w-full max-w-[600px] rounded-[8px]"
+                  src={OmOssImageTwo.src}
+                  alt="OmImageOne"
+                />
+                <img
+                  className="w-full max-w-[600px] rounded-[8px]"
+                  src={OmOssImageOne.src}
+                  alt="OmImageOne"
+                />
+                <img
+                  className="rounded-[8px]"
+                  src={OmOssImageThree.src}
+                  alt="OmImageOne"
+                />
+              </div>
+            </div>
+            <div>
+              <h1 className="primaryFontRegular text-[35px] text-slate-50 uppercase">
+                Vår Tro
+              </h1>
+
+              <p className="primaryFontLight w-full max-w-[950px] text-slate-50">
                 <br />
                 <br />
                 <br />
@@ -83,31 +113,25 @@ export default function OmOssNewCreation() {
                 Vi har blitt kalt til å være Hans vitner. For at det skal være
                 mulig, er vi avhengige av Den Hellige Ånd. Først og fremst er
                 hovedoppdraget til Den Hellige Ånd å ære Far ved å gi oss en
-                  relasjon til Ham. Så er målet Hans å lede oss til et hellig
-                et gudfryktig liv hvor vi bærer de riktige fruktene. Sist, men
-                ikke minst, vil Den Hellige Ånd gjøre oss til virkekraftige
-                vitner. Dette vises i våre gjerninger og måten vi lever livene
-                våre på.
+                relasjon til Ham. Så er målet Hans å lede oss til et hellig et
+                gudfryktig liv hvor vi bærer de riktige fruktene. Sist, men ikke
+                minst, vil Den Hellige Ånd gjøre oss til virkekraftige vitner.
+                Dette vises i våre gjerninger og måten vi lever livene våre på.
                 <br />
                 <br />
                 Nei, den som er i Kristus, er en ny skapning. Det gamle er
-                borte, se, det nye er blitt til!  2. Korinter 5:17
+                borte, se, det nye er blitt til! 2. Korinter 5:17
                 <br />
                 <br />
                 Gå derfor og gjør alle folkeslag til disipler: Døp dem til
                 Faderens og Sønnens og Den hellige ånds navn og lær dem å holde
                 alt det jeg har befalt dere. Og se, jeg er med dere alle dager
-                inntil verdens ende.»  Matteus 28:19-20
+                inntil verdens ende.» Matteus 28:19-20
                 <br />
                 <br /> Men dere skal få kraft når Den hellige ånd kommer over
                 dere, og dere skal være mine vitner i Jerusalem og hele Judea, i
                 Samaria og helt til jordens ende.» Apostlenes gjerninger 1:8
               </p>
-            </div>
-            <div>
-              <h1 className="primaryFontRegular text-[35px] text-slate-50 uppercase py-5">
-                Vår Tro
-              </h1>
               <p className="primaryFontLight w-full max-w-[950px] text-slate-50">
                 Vi tror at Bibelen er Guds Ord. At den er nøyaktig, har
                 fullstendig autoritet og er anvendelig for våre daglige liv.
