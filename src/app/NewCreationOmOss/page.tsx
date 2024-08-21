@@ -55,7 +55,7 @@ export default function OmOssNewCreation() {
                 sammen og bygger relasjoner til hverandre.
                 <br />
                 <br />
-                Vi er et fellesskap for unge voksne 20+ som tilber
+                Vi er et fellesskap for unge voksne 19+ som tilber
                 Herren sammen og bygger relasjoner til hverandre.
                 <br />
                 <br />

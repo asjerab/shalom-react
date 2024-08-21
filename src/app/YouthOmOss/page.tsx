@@ -55,7 +55,6 @@ export default function OmOssNewCreation() {
                 6. / Å gjøre disipler ved å gjenopprette den personlige
                 relasjonen med Gud som alle mennesker er skapt for.
               </p>
-        
 
               <div className="flex py-20 gap-5">
                 <img
@@ -84,8 +83,9 @@ export default function OmOssNewCreation() {
                 <br />
                 <br />
                 <br />
-                Vi er et fellesskap for ungdommer mellom 13 og 19 år som tilber
-                Herren sammen og bygger relasjoner til hverandre.
+                Vi er et fellesskap for ungdommer fra ungdomsskolen (8.–10. trinn) og
+                videregående (1.–3. trinn) som tilber Herren sammen og bygger
+                relasjoner til hverandre.
                 <br />
                 <br />
                 Vi ønsker at alle mennesker skal få muligheten til å høre

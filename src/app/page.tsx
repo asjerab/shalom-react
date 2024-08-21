@@ -1,7 +1,6 @@
 import Link from "next/link";
 import ShalomYouth from "./shalomYouth/page";
 import ShalomNewCreation from "./shalomNewCreation/page";
-import Footer from "./components/youthFooter";
 
 export default function Home() {
   return (
@@ -36,15 +35,14 @@ export default function Home() {
             style={{ fontSize: "clamp(12px, 2vw, 16px)" }}
           >
             Velkommen til Shalom Oslo sin offisielle hjemmeside. Her kan du
-            velge mellom to fellesskap. Shalom Youth er et ungdomsfellesskap for
-            alle fra 13-19 år, mens Shalom New Creation er for deg som er 20 år
-            og oppover. Du hjertelig velkommen til å ta en titt på en av disse.
-            Shalom youth og Shalom new creation er under en og samme nettside.
-            Gud velsigne deg!
+            velge mellom to fellesskap.Shalom Youth er et ungdomsfellesskap for
+            alle fra ungdomsskolen (8.–10. trinn) og videregående (1.–3. trinn)
+            , mens Shalom New Creation er for deg som er 19 år og oppover. Du
+            hjertelig velkommen til å ta en titt på en av disse. Shalom youth og
+            Shalom new creation er under en og samme nettside. Gud velsigne deg!
           </p>
         </div>
       </div>
-      <Footer />
     </main>
   );
 }

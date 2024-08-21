@@ -105,7 +105,7 @@ export default function TestNav() {
             </nav>
             <div className="flex gap-3">
               <Link href="/">
-                <button className="Sf-pro-font-regular rounded-full font-bold btn btn-wide px-10 border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
+                <button className="primaryFontHeadings rounded-full font-bold btn btn-wide px-10 border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
                   fellesskap
                 </button>
               </Link>
