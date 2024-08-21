@@ -51,7 +51,7 @@ export default function OmOssNewCreation() {
                 <br />
                 6. / Å gjøre disipler ved å gjenopprette den personlige
                 relasjonen med Gud som alle mennesker er skapt for. Vi er et
-                fellesskap for alle som er 20 år og oppover som tilber Herren
+                fellesskap for alle som er 19 år og oppover som tilber Herren
                 sammen og bygger relasjoner til hverandre.
                 <br />
                 <br />
