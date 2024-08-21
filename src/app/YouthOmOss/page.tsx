@@ -1,8 +1,5 @@
 import TestNav from "../components/youthNav";
 import NcFooter from "../components/NcFooter";
-import OmOssImageOne from "../images/DSC00754.png";
-import OmOssImageTwo from "../images/DSC03171.png";
-import OmOssImageThree from "../images/DSC03193.png";
 
 export default function OmOssNewCreation() {
   return (
@@ -55,24 +52,6 @@ export default function OmOssNewCreation() {
                 6. / Å gjøre disipler ved å gjenopprette den personlige
                 relasjonen med Gud som alle mennesker er skapt for.
               </p>
-
-              <div className="flex py-20 gap-5">
-                <img
-                  className="w-full max-w-[600px] rounded-[8px]"
-                  src={OmOssImageTwo.src}
-                  alt="OmImageOne"
-                />
-                <img
-                  className="w-full max-w-[600px] rounded-[8px]"
-                  src={OmOssImageOne.src}
-                  alt="OmImageOne"
-                />
-                <img
-                  className="rounded-[8px]"
-                  src={OmOssImageThree.src}
-                  alt="OmImageOne"
-                />
-              </div>
             </div>
             <div>
               <h1 className="primaryFontRegular text-[35px] text-slate-50 uppercase">
