@@ -181,12 +181,9 @@ export default function Kalender() {
             {filteredEvents.length > 0 ? (
               filteredEvents.slice(0, visibleCount).map((event, index) => (
                 <Link key={index} href={event.id ? event.id : "#"}>
-                <div
-                  key={index}
-                  className="flex justify-between items-center border-t-[1px] border-[#ffffff88] py-5 cursor-pointer"
-                >
+               <div className="flex justify-between items-center border-t-[1px] border-[#ffffff88] py-5 cursor-pointer hover:px-[5px] hover:scale-[1] duration-75">
                   <h1
-                    className="primaryFontRegular font-[500] text-slate-50"
+                    className="KalenderHomeTitle primaryFontRegular font-[500] text-slate-50 flex flex-wrap"
                     style={{ fontSize: "clamp(15px, 5vw, 25px)" }}
                   >
                     {event.title}

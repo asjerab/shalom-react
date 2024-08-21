@@ -114,7 +114,7 @@ export default function PaameldingHome() {
               kan melde deg på.
             </p>
             <Link href='/youthForms'>
-              <button className='btn btn-wide rounded-xl bg-[#2b80ff] text-slate-50 border-none hover:bg-[#3e8bff]'>
+              <button className='btn btn-wide rounded-full bg-[#2b80ff] text-slate-50 border-none hover:bg-[#3e8bff]'>
                 Alle påmeldinger
               </button>
             </Link>
