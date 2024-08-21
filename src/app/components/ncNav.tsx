@@ -25,7 +25,7 @@ export default function TestNav() {
             </div>
             <div className="py-10 flex flex-col gap-2">
               <Link
-                className="PrimaryFontRegular font-medium flex justify-between items-center"
+                className="PrimaryFontHeadings flex justify-between items-center"
                 href="/shalomNewCreation"
               >
                 <h1
@@ -38,7 +38,7 @@ export default function TestNav() {
                 <p className="Kelsi-fill text-slate-50 text-[20px]">x</p>
               </Link>
               <Link
-                className="PrimaryFontRegular font-medium"
+                className="primaryFontHeadings font-medium"
                 href="/NewCreationGrupper"
               >
                 <h1
@@ -48,15 +48,21 @@ export default function TestNav() {
                   utrustning
                 </h1>
               </Link>
-              <Link className="PrimaryFontRegular font-medium" href="/NewCreationForms">
+              <Link
+                className="primaryFontHeadings font-medium"
+                href="/NewCreationForms"
+              >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
                   style={{ fontSize: "clamp(30px, 5vw, 65px)" }}
                 >
-                  påmelding
+                  p<span className="primaryFontRegular">å</span>melding
                 </h1>
               </Link>
-              <Link className="PrimaryFontRegular font-medium" href="/NewCreationOmOss">
+              <Link
+                className="primaryFontHeadings font-medium"
+                href="/NewCreationOmOss"
+              >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
                   style={{ fontSize: "clamp(30px, 5vw, 65px)" }}
@@ -65,7 +71,7 @@ export default function TestNav() {
                 </h1>
               </Link>
               <Link
-                className="PrimaryFontRegular font-medium"
+                className="primaryFontHeadings font-medium"
                 href="/NewCreationKontakt"
               >
                 <h1
@@ -99,11 +105,11 @@ export default function TestNav() {
             </nav>
             <div className="flex gap-3">
               <Link href="/">
-                <button className="Sf-pro-font-regular font-bold btn btn-wide px-10 border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
+                <button className="Sf-pro-font-regular rounded-full font-bold btn btn-wide px-10 border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
                   fellesskap
                 </button>
               </Link>
-              <button className="primaryFontRegular font-bold btn   border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
+              <button className="primaryFontRegular font-bold btn rounded-full border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-x-[5px] duration-150 ease-in-out">
                 <Link href="/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -141,40 +147,40 @@ export default function TestNav() {
             <div className="flex items-center gap-2">
               <Link className="scroll-container" href="/NewCreationGrupper">
                 <p
-                  className="hidden-nav-link scroll-holder primaryFontBold text-slate-50 text-[15px]"
+                  className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px]"
                   data-text="UTRUSTNING"
                 >
                   UTRUSTNING
                 </p>
               </Link>
               <Link className="scroll-container" href="/NewCreationForms">
-                <p className="hidden-nav-link scroll-holder primaryFontBold text-slate-50 text-[15px]">
+                <p className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px]">
                   PÅMELDING
                 </p>
               </Link>
               <Link className="scroll-container" href="/NewCreationOmOss">
-                <p className="hidden-nav-link scroll-holder primaryFontBold text-slate-50 text-[15px]">
+                <p className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px]">
                   OM OSS
                 </p>
               </Link>
               <Link className="scroll-container" href="/NewCreationKontakt">
-                <p className="hidden-nav-link scroll-holder primaryFontBold text-slate-50 text-[15px]">
+                <p className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px]">
                   KONTAKT
                 </p>
               </Link>
-              <Link className="scroll-container" href="/">
+              <Link className="scroll-container bg-[#111] p-[16px] rounded-full hidden-nav-link" href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  className="hidden-nav-link w-8 h-8 text-slate-50 cursor-pointer scroll-holder"
+                  className="size-6 text-slate-50 cursor-pointer scroll-holder"
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
+                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
                   />
                 </svg>
               </Link>

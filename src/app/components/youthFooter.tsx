@@ -45,6 +45,16 @@ export default function footer() {
                   0166, Oslo
                 </p>
               </div>
+              <div className="Gudstjenester">
+                <h1 className="primaryFontBold pb-3 text-slate-50 font-medium uppercase text-[20px]">
+                  Gudstjenester
+                </h1>
+                <p className="primaryFontRegular font-[600] text-slate-50 uppercase text-[15px]">
+                  Hver Lørdag 
+                  <br />
+                  kl: 16:00 - 19:00
+                </p>
+              </div>
               <div className="kontakt">
                 <h1 className="primaryFontBold pb-3 text-slate-50 font-medium uppercase text-[20px]">
                   Kontakt
