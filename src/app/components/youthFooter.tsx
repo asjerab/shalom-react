@@ -1,5 +1,6 @@
 import Link from "next/link";
 import YouthLogo from "../images/ShalomYouth-Logo.png";
+import ThemeButtons from "./ThemeButtons";
 
 export default function footer() {
   return (
@@ -20,6 +21,9 @@ export default function footer() {
                 <h1 className="primaryFontBold pb-3 text-slate-50 font-medium uppercase text-[20px]">
                   Lenker
                 </h1>
+                <p className="primaryFontRegular font-[600] text-slate-50 uppercase text-[15px] cursor-pointer hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out">
+                  <Link href="/shalomYouth">Hjem</Link>
+                </p>
                 <p className="primaryFontRegular font-[600] text-slate-50 uppercase text-[15px] cursor-pointer hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out">
                   <Link href="/youthGrupper">Utrustning</Link>
                 </p>
@@ -79,7 +83,10 @@ export default function footer() {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-3">
+            <div className="flex gap-5">
+              <ThemeButtons />
+            </div>
+            {/* <div className="flex items-center gap-3">
               <Link
                 target="_blank"
                 href="https://www.youtube.com/@shalomyouth_newcreation"
@@ -124,7 +131,7 @@ export default function footer() {
                   />
                 </svg>
               </Link>
-              <div className="flex items-center gap-5 border-[1px] border-slate-50 p-2 rounded-full">
+              <div className="flex items-center gap-5 border-[1px] border-[#c7c7c7] p-2 rounded-full">
                 <svg
                   data-testid="geist-icon"
                   height="16"
@@ -155,8 +162,24 @@ export default function footer() {
                     fill="currentColor"
                   ></path>
                 </svg>
+                <Link href="/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    className="hover:translate-y-[-3px] duration-100 ease-in-out cursor-pointer size-[22px] text-slate-50"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                    />
+                  </svg>
+                </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>

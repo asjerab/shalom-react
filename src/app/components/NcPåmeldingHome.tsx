@@ -114,8 +114,8 @@ export default function PaameldingHome() {
               kan melde deg på.
             </p>
             <Link href='/NewCreationForms'>
-              <button className='btn btn-wide rounded-full bg-[#2b80ff] text-slate-50 border-none hover:bg-[#3e8bff]'>
-                Alle påmeldinger
+              <button className='btn btn-wide scroll-container rounded-full bg-[#2b80ff] text-slate-50 border-none hover:bg-[#3e8bff]'>
+                <p className='scroll-holder'>Alle påmeldinger</p>
               </button>
             </Link>
           </div>
