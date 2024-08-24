@@ -10,7 +10,7 @@ export default function YouthGrupperHome() {
       <div className="flex justify-center" id="grupper-a">
         <div className="grupper-container-home pt-[200px] pb-[100px] px-[35px]">
           <h1
-            className="light dark primaryFontRegular text-slate-50 font-[600] my-5 leading-[84px] flex items-center gap-5"
+            className="primaryFontRegular text-slate-50 font-[600] my-5 leading-[84px] flex items-center gap-5"
             style={{ fontSize: "clamp(36px, 12vw, 80px)" }}
           >
             Grupper
@@ -55,8 +55,8 @@ export default function YouthGrupperHome() {
               tilbyr i vårt fellesskap.
             </p>
             <Link href="/youthGrupper">
-              <button className="btn btn-wide scroll-container rounded-full bg-[#2b80ff] text-slate-50 border-none hover:bg-[#3e8bff]">
-                <p className="scroll-holder">Alle Grupper</p>
+              <button className="btn btn-wide rounded-full bg-[#2b80ff] text-slate-50 border-none hover:bg-[#3e8bff]">
+                Alle Grupper
               </button>
             </Link>
           </div>

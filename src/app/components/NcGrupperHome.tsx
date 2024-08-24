@@ -51,12 +51,12 @@ export default function YouthGrupperHome() {
               className="primaryFontRegular text-slate-50 max-w-[600px]"
               style={{ fontSize: "clamp(14px, 4vw, 22px)" }}
             >
-              Trykk på &rdquo; Alle Grupper &rdquo; for og se alle grupper vi
-              tilbyr i vårt fellesskap.
+              Trykk på &rdquo; Alle Grupper &rdquo; for og se alle grupper vi tilbyr i vårt
+              fellesskap.
             </p>
             <Link href="/NewCreationGrupper">
-              <button className="btn btn-wide scroll-container rounded-full bg-[#2b80ff] text-slate-50 border-none hover:bg-[#3e8bff]">
-                <p className="scroll-holder">Alle Grupper </p>
+              <button className="btn btn-wide rounded-full bg-[#2b80ff] text-slate-50 border-none hover:bg-[#3e8bff]">
+                Alle Grupper
               </button>
             </Link>
           </div>{" "}

@@ -38,8 +38,8 @@ export default function youtubeComp() {
                 target="_blank"
                 href="https://www.youtube.com/@shalomyouth_newcreation"
               >
-                <button className="primaryRegular scroll-container font-[600] text-[#111] bg-slate-50 px-[20px] h-[40px] rounded-[28px] text-[15px] uppercase my-3">
-                  <p className="scroll-holder">lenke her</p>
+                <button className="primaryRegular font-[600] text-[#111] bg-slate-50 px-[20px] h-[40px] rounded-[28px] text-[15px] uppercase my-3">
+                  lenke her
                 </button>
               </Link>
             </div>
