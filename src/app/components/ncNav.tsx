@@ -143,24 +143,24 @@ export default function TestNav() {
             <div className="flex items-center gap-2">
               <Link className="scroll-container" href="/NewCreationGrupper">
                 <p
-                  className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px]"
+                  className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px] font-bold"
                   data-text="UTRUSTNING"
                 >
                   UTRUSTNING
                 </p>
               </Link>
               <Link className="scroll-container" href="/NewCreationForms">
-                <p className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px]">
-                  PÅMELDING
+                <p className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px] font-bold">
+                  P<span className="uppercase primaryFontRegular font-bold">å</span>MELDING
                 </p>
               </Link>
               <Link className="scroll-container" href="/NewCreationOmOss">
-                <p className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px]">
+                <p className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px] font-bold">
                   OM OSS
                 </p>
               </Link>
               <Link className="scroll-container" href="/NewCreationKontakt">
-                <p className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px]">
+                <p className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px] font-bold">
                   KONTAKT
                 </p>
               </Link>
