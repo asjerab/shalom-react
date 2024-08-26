@@ -21,8 +21,10 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
     return new Date(2024, monthIndex, 1).getDay();
   };
 
+  const currentMonthIndex = new Date().getMonth();
+
   return (
-    <CustomSwiper>
+    <CustomSwiper initialIndex={currentMonthIndex}>
       {months.map((month) => (
         <div key={month} className="border p-4">
           <h2 className="text-lg font-bold">{month}</h2>

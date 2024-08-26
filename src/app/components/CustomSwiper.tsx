@@ -1,12 +1,17 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface CustomSwiperProps {
   children: React.ReactNode[];
+  initialIndex: number;
 }
 
-const CustomSwiper: React.FC<CustomSwiperProps> = ({ children }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+const CustomSwiper: React.FC<CustomSwiperProps> = ({ children, initialIndex }) => {
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
+
+  useEffect(() => {
+    setCurrentIndex(initialIndex);
+  }, [initialIndex]);
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : children.length - 1));
@@ -28,18 +33,20 @@ const CustomSwiper: React.FC<CustomSwiperProps> = ({ children }) => {
           </div>
         ))}
       </div>
-      <button
-        onClick={handlePrev}
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2"
-      >
-        Prev
-      </button>
-      <button
-        onClick={handleNext}
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2"
-      >
-        Next
-      </button>
+      <div className="flex justify-center mt-4">
+        <button
+          onClick={handlePrev}
+          className="bg-gray-800 text-white p-2 mx-2"
+        >
+          Prev
+        </button>
+        <button
+          onClick={handleNext}
+          className="bg-gray-800 text-white p-2 mx-2"
+        >
+          Next
+        </button>
+      </div>
     </div>
   );
 };
