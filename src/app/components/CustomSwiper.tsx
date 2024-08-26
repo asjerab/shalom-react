@@ -40,8 +40,8 @@ const CustomSwiper: React.FC<CustomSwiperProps> = ({
           </div>
         ))}
       </div>
-      <div className="flex justify-between mt-4">
-        <button onClick={handlePrev} className="primaryFontHeadings flex items-center gap-2 text-slate-50 text-[25px] hover:underline">
+      <div className="flex justify-between mt-10">
+        <button onClick={handlePrev} className="primaryFontHeadings flex items-center gap-2 text-slate-50 hover:underline" style={{fontSize:"clamp(15px, 5vw, 25px)"}}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -60,7 +60,7 @@ const CustomSwiper: React.FC<CustomSwiperProps> = ({
         </button>
         <button
           onClick={handleNext}
-          className="primaryFontHeadings flex items-center gap-2 text-slate-50 text-[25px] hover:underline"
+          className="primaryFontHeadings flex items-center gap-2 text-slate-50 text-[25px] hover:underline" style={{fontSize:"clamp(15px, 5vw, 25px)"}}
         >
           Neste
           <svg
