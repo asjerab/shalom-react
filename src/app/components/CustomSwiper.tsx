@@ -1,12 +1,15 @@
 "use client";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 interface CustomSwiperProps {
   children: React.ReactNode[];
   initialIndex: number;
 }
 
-const CustomSwiper: React.FC<CustomSwiperProps> = ({ children, initialIndex }) => {
+const CustomSwiper: React.FC<CustomSwiperProps> = ({
+  children,
+  initialIndex,
+}) => {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
 
   useEffect(() => {
@@ -14,11 +17,15 @@ const CustomSwiper: React.FC<CustomSwiperProps> = ({ children, initialIndex }) =
   }, [initialIndex]);
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : children.length - 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : children.length - 1
+    );
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex < children.length - 1 ? prevIndex + 1 : 0));
+    setCurrentIndex((prevIndex) =>
+      prevIndex < children.length - 1 ? prevIndex + 1 : 0
+    );
   };
 
   return (
@@ -33,18 +40,43 @@ const CustomSwiper: React.FC<CustomSwiperProps> = ({ children, initialIndex }) =
           </div>
         ))}
       </div>
-      <div className="flex justify-center mt-4">
-        <button
-          onClick={handlePrev}
-          className="bg-gray-800 text-white p-2 mx-2"
-        >
-          Prev
+      <div className="flex justify-between mt-4">
+        <button onClick={handlePrev} className="primaryFontHeadings flex items-center gap-2 text-slate-50 text-[25px] hover:underline">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className="size-7 border-[1px] border-slate-50 text-slate-50 rounded-full"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18"
+            />
+          </svg>
+          Tilbake
         </button>
         <button
           onClick={handleNext}
-          className="bg-gray-800 text-white p-2 mx-2"
+          className="primaryFontHeadings flex items-center gap-2 text-slate-50 text-[25px] hover:underline"
         >
-          Next
+          Neste
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className="size-7 border-[1px] border-slate-50 text-slate-50 rounded-full"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+            />
+          </svg>
         </button>
       </div>
     </div>
