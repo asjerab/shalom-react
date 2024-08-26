@@ -1,4 +1,4 @@
-import Calendar from "./kalenderFrame";
+import Calendar from "./YouthKalenderFrame";
 const data = [
   { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 1, },
   { month: "June", id: "/event/kalenderYouth/Connect", date: 5, image: 'grupperImages/connect-img.png' },
@@ -75,7 +75,7 @@ const Home: React.FC = () => {
           </h1>{" "}
           <p
             className="primaryFontRegular text-slate-50 w-full max-w-[680px]"
-            style={{ fontSize: "clamp(15px, 5vw, 25px)" }}
+            style={{ fontSize: "clamp(15px, 3.5vw, 25px)" }}
           >
             Dette er shalom youth sin helt egne kalenderen, her kan du se hva
             som skjer i løpet av måneden du har valgt. I tillegg ser du datoene

@@ -28,7 +28,7 @@ export default function TestModal() {
         }`}
       >
         <nav className="flex justify-between items-center p-[2em]">
-          <h1 className="Onest-Regular uppercase text-slate-50 text-[20px]">
+          <h1 className="primaryFontRegular uppercase text-slate-50 text-[20px]">
             James 1:27 Ministry
           </h1>
           <svg
@@ -47,7 +47,7 @@ export default function TestModal() {
             />
           </svg>
         </nav>
-        <p className="Onest-Regular font-light px-[2em] text-slate-50">
+        <p className="primaryFontRegular font-light px-[2em] text-slate-50">
           Love In Action - kjærlighet i handling. Rundt om i hele verden er det
           barn og unge som må avslutte sin skolegang på grunn av fattigdom og
           mangel på midler. Dette innebærer blant annet at foreldre ikke har

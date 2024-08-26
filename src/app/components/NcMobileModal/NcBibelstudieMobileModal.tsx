@@ -29,7 +29,7 @@ export default function TestModal() {
         }`}
       >
         <nav className="flex justify-between items-center p-[2em]">
-          <h1 className="Onest-Regular uppercase text-slate-50 text-[20px]">
+          <h1 className="primaryFontRegular uppercase text-slate-50 text-[20px]">
             Bibelstudie
           </h1>
           <svg
@@ -48,7 +48,7 @@ export default function TestModal() {
             />
           </svg>
         </nav>
-        <p className="Onest-Regular font-light px-[2em] text-slate-50">
+        <p className="primaryFontRegular font-light px-[2em] text-slate-50">
           Å studere Bibelen er en måte å bli bedre kjent med Gud. Bibelstudie
           gir deg muligheten til å dykke dypere i Guds ord sammen med andre og
           styrke forståelsen din for tekstene. Sammen med dyktige undervisere,

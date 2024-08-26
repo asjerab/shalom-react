@@ -29,7 +29,7 @@ export default function TestModal() {
         }`}
       >
         <nav className="flex justify-between items-center p-[2em]">
-          <h1 className="Onest-Regular uppercase text-slate-50 text-[20px]">
+          <h1 className="primaryFontRegular uppercase text-slate-50 text-[20px]">
             Alphakurs
           </h1>
           <svg
@@ -48,7 +48,7 @@ export default function TestModal() {
             />
           </svg>
         </nav>
-        <p className="Onest-Regular font-light px-[2em] text-slate-50">
+        <p className="primaryFontRegular font-light px-[2em] text-slate-50">
           Alphakurs er en introduksjon til den kristne tro. Kurset er for deg
           som er nyfrelst, men også for deg som ønsker å vite mer om troen. Her
           går vi gjennom grunnleggende temaer som er fundamentet i vår tro.

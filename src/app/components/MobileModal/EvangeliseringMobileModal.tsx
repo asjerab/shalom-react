@@ -28,7 +28,7 @@ export default function TestModal() {
         }`}
       >
         <nav className="flex justify-between items-center p-[2em]">
-          <h1 className="Onest-Regular uppercase text-slate-50 text-[20px]">
+          <h1 className="primaryFontRegular uppercase text-slate-50 text-[20px]">
             Evangelisering
           </h1>
           <svg
@@ -47,7 +47,7 @@ export default function TestModal() {
             />
           </svg>
         </nav>
-        <p className="Onest-Regular font-light px-[2em] pb-[4em] text-slate-50">
+        <p className="primaryFontRegular font-light px-[2em] pb-[4em] text-slate-50">
           Vi tror på at evangelisering fører til starten på en personlig og
           transformerende reise med Jesus. Derfor har vi et eget team som går ut
           annenhver uke for å dele Jesus med verden. Den ubetingede kjærligheten

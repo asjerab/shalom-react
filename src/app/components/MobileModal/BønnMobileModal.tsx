@@ -28,7 +28,7 @@ export default function TestModal() {
         }`}
       >
         <nav className="flex justify-between items-center p-[2em]">
-          <h1 className="Onest-Regular uppercase text-slate-50 text-[20px]">
+          <h1 className="primaryFontRegular uppercase text-slate-50 text-[20px]">
             Bønn
           </h1>
           <svg
@@ -47,7 +47,7 @@ export default function TestModal() {
             />
           </svg>
         </nav>
-        <p className="Onest-Regular font-light px-[2em] pb-[4em] text-slate-50">
+        <p className="primaryFontRegular font-light px-[2em] pb-[4em] text-slate-50">
           Bønn er et av fundamentene i fellesskapet vårt og derfor dedikerer vi
           annenhver torsdag klokken 18:00 - 19:00 for å søke Gud sammen i bønn.
           Vi ber for hverandre, byen vår, landet vårt og verden. Du er hjertelig
