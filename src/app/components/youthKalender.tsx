@@ -1,4 +1,5 @@
 import Calendar from "./YouthKalenderFrame";
+
 const data = [
   { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 1, },
   { month: "June", id: "/event/kalenderYouth/Connect", date: 5, image: 'grupperImages/connect-img.png' },
@@ -7,6 +8,7 @@ const data = [
     month: "June",
     id: "/event/kalenderYouth/AlphakursTheUpperRoom",
     date: 9,
+    image: 'grupperImages/alpha-kurs-img.png'
   },
   { month: "June", id: "/event/kalenderYouth/Bibelstudie", date: 12, image: 'grupperImages/bible-studie-img.png' },
   { month: "June", id: "/event/kalenderYouth/Bonnemote", date: 13, image: 'grupperImages/bonn-img.png'  },

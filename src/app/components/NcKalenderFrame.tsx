@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from "react";
-import CustomSwiper from "./YouthCustomSwiper";
+import CustomSwiper from "./NcCustomSwiper";
 
 
 interface CalendarProps {
