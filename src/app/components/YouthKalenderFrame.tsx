@@ -58,7 +58,7 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
       const dateData = data.find((d) => d.month === month && d.date === day);
 
       return (
-        <div key={day} className="relative border-[1px] border-[#535353] p-2 rounded-[4px]">
+        <div key={day} className="relative border-none bg-[#1e1e1e]  p-2 rounded-[4px]">
           {dateData ? (
             <>
               <a href={dateData.id} className="relative z-10 text-blue-500 cursor-pointer">
