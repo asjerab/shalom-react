@@ -8,6 +8,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   transition: all 0.2s ease-in-out;
+  cursor: url(../cursor-folder/Normal.cur);
 }
 
 html {
@@ -22,7 +23,9 @@ html {
   background: #57b0da;
 }
 
-/* Dark Mode/ Light Mode */
+/* Cursors */
+
+
 
 
 
