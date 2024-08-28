@@ -31,7 +31,7 @@ const CustomSwiper: React.FC<CustomSwiperProps> = ({
   return (
     <div className="relative w-full overflow-hidden">
       <div
-        className="flex transition-transform duration-300"
+        className="flex transition-transform duration-[500ms] ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {children.map((child, index) => (
@@ -48,7 +48,7 @@ const CustomSwiper: React.FC<CustomSwiperProps> = ({
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            className="size-7 border-[1px] border-slate-50 text-slate-50 rounded-full"
+            className="size-7 border-[1px] border-slate-50 p-[2px] text-slate-50 rounded-full"
           >
             <path
               stroke-linecap="round"
@@ -60,7 +60,7 @@ const CustomSwiper: React.FC<CustomSwiperProps> = ({
         </button>
         <button
           onClick={handleNext}
-          className="primaryFontHeadings flex items-center gap-2 text-slate-50 text-[25px] hover:underline" style={{fontSize:"clamp(15px, 5vw, 25px)"}}
+          className="primaryFontHeadings flex items-center gap-2 text-slate-50 hover:underline" style={{fontSize:"clamp(15px, 5vw, 25px)"}}
         >
           Neste
           <svg
@@ -69,7 +69,7 @@ const CustomSwiper: React.FC<CustomSwiperProps> = ({
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            className="size-7 border-[1px] border-slate-50 text-slate-50 rounded-full"
+            className="size-7 border-[1px] border-slate-50 p-[2px] text-slate-50 rounded-full"
           >
             <path
               stroke-linecap="round"
