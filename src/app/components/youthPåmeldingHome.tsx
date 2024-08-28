@@ -6,7 +6,7 @@ export default function PaameldingHome() {
       <section className='flex justify-center items-center py-[150px] px-[25px]'>
         <div className='w-full max-w-[1325px] flex flex-col'>
           <h1
-            className='text-slate-50 font-[600] my-5 leading-[84px] flex items-center gap-5'
+            className='primaryFontRegular text-slate-50 font-[600] my-5 leading-[84px] flex items-center gap-5'
             style={{ fontSize: 'clamp(36px, 12vw, 80px)' }}
           >
             Påmelding

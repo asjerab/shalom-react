@@ -29,7 +29,7 @@ export default function TestModal() {
         }`}
       >
         <nav className="flex justify-between items-center p-[2em]">
-          <h1 className="Onest-Regular uppercase text-slate-50 text-[20px]">
+          <h1 className="primaryFontRegular uppercase text-slate-50 text-[20px]">
             The Upper Room
           </h1>
           <svg
@@ -48,7 +48,7 @@ export default function TestModal() {
             />
           </svg>
         </nav>
-        <p className="Onest-Regular font-light px-[2em] text-slate-50">
+        <p className="primaryFontRegular font-light px-[2em] text-slate-50">
           Visjonen vår er å se en utrustet generasjon som er rotfestet i
           Kristus. Derfor har vi et kurs som har som mål å forme deg til å ligne
           mer og mer på Kristus gjennom undervisning og bønn. Undervisningen

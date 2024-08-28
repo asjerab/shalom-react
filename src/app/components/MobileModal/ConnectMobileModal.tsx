@@ -29,7 +29,7 @@ export default function TestModal() {
         }`}
       >
         <nav className="flex justify-between items-center p-[2em]">
-          <h1 className="Onest-Regular uppercase text-slate-50 text-[20px]">
+          <h1 className="primaryFontRegular uppercase text-slate-50 text-[20px]">
             Connect
           </h1>
           <svg
@@ -48,7 +48,7 @@ export default function TestModal() {
             />
           </svg>
         </nav>
-        <p className="Onest-Regular font-light px-[2em] text-slate-50">
+        <p className="primaryFontRegular font-light px-[2em] text-slate-50">
           Connect er småfellesskapsarbeidet vi har i fellesskapet. På lørdager
           møtes vi i storfellesskapet, mens i Connect møtes vi i mindre grupper
           der vi kan vokse sammen i troen. Dette er en arena hvor du blir bedre
