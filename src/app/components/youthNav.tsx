@@ -133,7 +133,7 @@ export default function TestNav() {
       <nav>
         <div className="nav">
           <div className="nav-header flex justify-between items-center p-[50px] pt-[75px]">
-            <Link href="/">
+            <Link href="/shalomYouth">
               <img
                 className="w-full max-w-[150px]"
                 src={YouthLogo.src}

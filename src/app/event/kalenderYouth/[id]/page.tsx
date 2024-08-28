@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { eventsYouth } from "../../../../data/eventYouth";
 import YouthNav from "../../../components/youthNav";
 import Footer from "../../../components/youthFooter";
+import Link from "next/link";
 
 interface EventPageProps {
   params: {
@@ -30,6 +31,25 @@ const EventPage = async ({ params }: EventPageProps) => {
     <main className="w-full h-screen">
       <YouthNav />
       <div className="kalender-page-wrapper flex flex-col gap-10 p-[50px]">
+        <a href="/shalomYouth#youth-kalender">
+          <h2 className="flex items-center gap-2 primaryFontHeadings text-slate-50 cursor-pointer" style={{fontSize:"clamp(15px, 3.5vw, 25px)"}}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="size-8 text-slate-50"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+              />
+            </svg>
+            Tilbake
+          </h2>
+        </a>
         <div className="flex flex-col gap-5">
           <h1 className="Sf-pro-font-regular font-[700] text-slate-50 text-[35px]">
             {eventData.title}
