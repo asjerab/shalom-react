@@ -61,10 +61,10 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
       const dateData = data.find((d) => d.month === month && d.date === day);
 
       return (
-        <div key={day} className="relative border-none bg-[#1e1e1e]  p-2 rounded-[4px]">
+        <div key={day} className="kalender-day-box relative border-none bg-[#1e1e1e] h-[46px] rounded-[4px]">
           {dateData ? (
             <a href={dateData.id}>
-              <p className="relative z-10 text-slate-50 cursor-pointer">
+              <p className="relative z-10 flex justify-end items-start text-[12px] h-full px-2 py-1">
                 {day}
               </p>  
               {dateData.image && (
@@ -78,7 +78,7 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
               )}
             </a>
           ) : (
-            <span className="relative z-10">{day}</span>
+            <span className="relative z-10 flex justify-end items-start text-[12px] h-full px-2 py-1" style={{fontSize:"clamp(8px, 2vw, 15px)"}}>{day}</span>
           )}
         </div>
       );
