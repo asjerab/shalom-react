@@ -23,11 +23,6 @@ html {
   background: #57b0da;
 }
 
-/* Cursors */
-
-
-
-
 
 /* @font faces for the whole site*/
 
@@ -475,6 +470,10 @@ html {
     display: flex;
     flex-direction: column;
     gap: 35px;
+  }
+
+  .kalender-day-box {
+    height: 36px;
   }
 }
 
