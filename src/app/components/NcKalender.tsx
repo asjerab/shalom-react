@@ -1,12 +1,12 @@
 import Calendar from "./NcKalenderFrame";
 
 const data = [
-  { month: "June", id: "/event/KalenderNewCreation/Gudstjeneste", date: 1, image: 'grupperImages/Gudstjeneste-img.png' },
+  { month: "June", id: "/event/KalenderNewCreation/Gudstjeneste", date: 1, image: 'kalenderImages/gudstjeneste-kal-img.png', name: 'Gudstjeneste' },
 ];
 
 const Home: React.FC = () => {
   return (
-    <main className="py-[100px] px-[25px]">
+    <main className="py-[100px] px-[20px]">
       <div className="w-full max-w-[1325px] mx-auto p-4">
         <div>
           <h1
