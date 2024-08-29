@@ -79,7 +79,7 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
                     {dateData ? (
                       <a href={dateData.id}>
                         <div>
-                          <p className="relative z-10 flex justify-end items-start text-[12px] h-full px-2 py-1">
+                          <p className="relative z-10 flex justify-end items-start h-full px-2 py-1" style={{fontSize:"clamp(12px, 5vw, 15px)"}}>
                             {day}
                           </p>
                         </div>
