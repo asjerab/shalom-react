@@ -72,7 +72,7 @@ const data = [
 
 const Home: React.FC = () => {
   return (
-    <main className="py-[100px] px-[25px]">
+    <main className="py-[100px] px-[20px]">
       <div className="w-full max-w-[1325px] mx-auto p-4" id="youth-kalender">
         <div>
           <h1
