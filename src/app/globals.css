@@ -23,7 +23,6 @@ html {
   background: #57b0da;
 }
 
-
 /* @font faces for the whole site*/
 
 @font-face {
@@ -316,7 +315,13 @@ html {
   }
 }
 
-/* 1100px Media Query*/
+@media screen and (max-width: 1600px) {
+  .kalender-div {
+    width: 79%;
+  }
+}
+
+/* 15000px Media Query*/
 
 @media screen and (max-width: 1500px) {
   .footer-nav {
@@ -324,10 +329,13 @@ html {
     flex-direction: column;
     gap: 50px;
   }
+
+  .kalender-div {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 1100px) {
-
   .grupper-img {
     padding-bottom: 55px;
     padding-top: 55px;
@@ -344,6 +352,10 @@ html {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+  }
+
+  .kalender-div {
+    width: 85%;
   }
 }
 
@@ -472,8 +484,8 @@ html {
     gap: 35px;
   }
 
-  .kalender-day-box {
-    height: 36px;
+  .kalender-div {
+    width: 95%;
   }
 }
 
@@ -553,7 +565,7 @@ html {
   }
 
   .kalender-subInfo {
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
   }
 
   .kalender-subInfo p {
@@ -576,5 +588,9 @@ html {
     align-items: start;
     padding-top: 20px;
     gap: 15px;
+  }
+
+  .kalender-div {
+    width: 100%;
   }
 }
