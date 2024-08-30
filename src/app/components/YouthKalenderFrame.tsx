@@ -8,7 +8,6 @@ interface CalendarProps {
     id: string;
     date: number;
     image: string;
-    name?: any;
   }[];
 }
 
@@ -74,21 +73,13 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
                 return (
                   <div
                     key={day}
-                    className="kalender-day-box relative border-none bg-[#1e1e1e] h-[46px] rounded-[4px]"
+                    className="relative border-none bg-[#1e1e1e] h-[10vw] max-h-[175px] w-[10vw] max-w-[175px] rounded-[4px]"
                   >
                     {dateData ? (
                       <a href={dateData.id}>
                         <div>
-                          <p className="relative z-10 flex justify-end items-start h-full px-2 py-1" style={{ fontSize: "clamp(8px, 2vw, 15px)" }}>
+                          <p className="relative z-10 flex justify-end items-start h-full px-2 py-1" style={{ fontSize: "clamp(8px, 3.5vw, 20px)" }}>
                             {day}
-                          </p>
-                        </div>
-                        <div>
-                          <p
-                            className="relative z-10 flex justify-start items-start h-full px-1 pb-1"
-                            style={{ fontSize: "clamp(3px, 1vw, 12px)" }}
-                          >
-                            {dateData.name !== undefined && dateData.name}
                           </p>
                         </div>
                         {dateData.image && (
@@ -104,7 +95,7 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
                     ) : (
                       <span
                         className="relative z-10 flex justify-end items-start text-[12px] h-full px-2 py-1"
-                        style={{ fontSize: "clamp(8px, 2vw, 15px)" }}
+                        style={{ fontSize: "clamp(8px, 3.5vw, 20px)" }}
                       >
                         {day}
                       </span>

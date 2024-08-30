@@ -1,7 +1,6 @@
-import Image from 'next/image';
+import Image from "next/image";
 import React from "react";
 import CustomSwiper from "./NcCustomSwiper";
-
 
 interface CalendarProps {
   data: {
@@ -9,7 +8,6 @@ interface CalendarProps {
     id: string;
     date: number;
     image: string;
-    name?: any;
   }[];
 }
 
@@ -46,69 +44,68 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
     <CustomSwiper initialIndex={currentMonthIndex}>
       {months.map((month) => (
         <div key={month} className="w-full">
-  <div className="pb-16">
-    <h2
-      className="font-bold primaryFontHeadings text-slate-50 pt-10"
-      style={{ fontSize: "clamp(15px, 5vw, 35px)" }}
-    >
-      {month}
-    </h2>
-  </div>
-  <div className="grid grid-cols-7 gap-2 uppercase primaryFontRegular text-slate-50" style={{ fontSize: "clamp(12px, 3.5vw, 20px)" }}>
-    {["Man", "Tir", "Ons", "Tor", "Fre", "Lør", "Søn"].map((day) => (
-      <div key={day} className="font-bold w-full text-center pb-5">
-        {day}
-      </div>
-    ))}
-    {Array.from({ length: getFirstDayOfMonth(month) }).map((_, i) => (
-      <div key={i}></div>
-    ))}
-    {Array.from({ length: getDaysInMonth(month) }, (_, i) => i + 1).map((day) => {
-      const dateData = data.find((d) => d.month === month && d.date === day);
-
-      return (
-        <div
-        key={day}
-        className="kalender-day-box relative border-none bg-[#1e1e1e] h-[46px] rounded-[4px]"
-      >
-        {dateData ? (
-          <a href={dateData.id}>
-            <div>
-              <p className="relative z-10 flex justify-end items-start h-full px-2 py-1" style={{ fontSize: "clamp(8px, 2vw, 15px)" }}>
-                {day}
-              </p>
-            </div>
-            <div>
-              <p
-                className="relative z-10 flex justify-start items-start h-full px-1 pb-1"
-                style={{ fontSize: "clamp(3px, 1vw, 12px)" }}
-              >
-                {dateData.name !== undefined && dateData.name}
-              </p>
-            </div>
-            {dateData.image && (
-              <Image
-                src={"/" + dateData.image}
-                alt={``}
-                width={177.86}
-                height={46}
-                className="absolute top-0 left-0 w-full h-full object-covern rounded-[4px]"
-              />
-            )}
-          </a>
-        ) : (
-          <span
-            className="relative z-10 flex justify-end items-start text-[12px] h-full px-2 py-1"
-            style={{ fontSize: "clamp(8px, 2vw, 15px)" }}
+          <div className="pb-16">
+            <h2
+              className="font-bold primaryFontHeadings text-slate-50 pt-10"
+              style={{ fontSize: "clamp(15px, 5vw, 35px)" }}
+            >
+              {month}
+            </h2>
+          </div>
+          <div
+            className="grid grid-cols-7 gap-2 uppercase primaryFontRegular text-slate-50"
+            style={{ fontSize: "clamp(12px, 3.5vw, 20px)" }}
           >
-            {day}
-          </span>
-        )}
-      </div>
-      );
-    })}
-  </div>
-</div>
+            {["Man", "Tir", "Ons", "Tor", "Fre", "Lør", "Søn"].map((day) => (
+              <div key={day} className="font-bold w-full text-center pb-5">
+                {day}
+              </div>
+            ))}
+            {Array.from({ length: getFirstDayOfMonth(month) }).map((_, i) => (
+              <div key={i}></div>
+            ))}
+            {Array.from({ length: getDaysInMonth(month) }, (_, i) => i + 1).map(
+              (day) => {
+                const dateData = data.find(
+                  (d) => d.month === month && d.date === day
+                );
+
+                return (
+                  <div
+                    key={day}
+                    className="relative border-none bg-[#1e1e1e] h-[10vw] max-h-[175px] w-[10vw] max-w-[175px] rounded-[4px]"
+                  >
+                    {dateData ? (
+                      <a href={dateData.id}>
+                        <div>
+                          <p className="relative z-10 flex justify-end items-start h-full px-2 py-1" style={{ fontSize: "clamp(8px, 3.5vw, 20px)" }}>
+                            {day}
+                          </p>
+                        </div>
+                        {dateData.image && (
+                          <Image
+                            src={"/" + dateData.image}
+                            alt={``}
+                            width={177.86}
+                            height={46}
+                            className="absolute top-0 left-0 w-full h-full object-covern rounded-[4px]"
+                          />
+                        )}
+                      </a>
+                    ) : (
+                      <span
+                        className="relative z-10 flex justify-end items-start text-[12px] h-full px-2 py-1"
+                        style={{ fontSize: "clamp(8px, 3.5vw, 20px)" }}
+                      >
+                        {day}
+                      </span>
+                    )}
+                  </div>
+                );
+              }
+            )}
+          </div>
+        </div>
       ))}
     </CustomSwiper>
   );
