@@ -1,4 +1,5 @@
 export const eventsYouth = [
+  //Faste arrangementer
   {
     id: "Gudstjeneste",
     title: "Gudstjeneste",
@@ -9,6 +10,15 @@ export const eventsYouth = [
     date: "Lørdager",
   },
   {
+    id: "Fellesmote",
+    title: "Fellesmøte",
+    description:
+      "Velkommen til gudstjeneste sammen med New Creation. Ta med en venn eller to og ta del i det Gud har for oss som fellesskap. Velkommen hjem!",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "Tid etter avtale",
+    date: "søndag 06.10.24",
+  },
+  {
     id: "Connect",
     title: "Connect",
     description: "Småfellesskap. Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
@@ -17,8 +27,16 @@ export const eventsYouth = [
     date: "Onsdager / Oddetallsuker",
   },
   {
-    id: "AlphakursTheUpperRoom",
-    title: "Alphakurs Og The Upper Room",
+    id: "Alphakurs",
+    title: "Alphakurs",
+    description: "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "13:30 - 15:00",
+    date: "Lørdager / 7 ukers kurs",
+  },
+  {
+    id: "TheUpperRoom",
+    title: "TheUpperRoom",
     description: "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
     location: "St. Olavs Gate 24, Oslo",
     clock: "13:30 - 15:00",
@@ -40,6 +58,15 @@ export const eventsYouth = [
     clock: "Klokkeslett etter avtale",
     date: "Dato etter avtale",
   },
+
+  {
+    id: "Tjenestekurs",
+    title: "Tjenesetekurs",
+    description: "Dette er tjenestekurs for deg som vil tjenestegjøre i shalom youth",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "Klokkeslett etter avtale",
+    date: "13.10.24",
+  },
   {
     id: "Bonnemote",
     title: "Bønnemøte",
@@ -56,4 +83,69 @@ export const eventsYouth = [
     clock: "18:00",
     date: "Fredager / Oddetallsuker",
   },
+  {
+    id: "JamesEvent",
+    title: "James Family",
+    description: "James Family Event",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "Tid Kommer",
+    date: "Dato Kommer",
+  },
+  //Spesielle arrangementer
+  {
+    id: "ConnectOgTjenestekurs",
+    title: "Tjenesetekurs",
+    description: "Dette er tjenestekurs for deg som vil tjenestegjøre i shalom youth",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "Klokkeslett etter avtale",
+    date: "13.10.24",
+    //
+    titleTwo: "Connect",
+    descriptionTwo: "Småfellesskap. Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
+    locationTwo: "St. Olavs Gate 24, Oslo",
+    clockTwo: "18:00",
+    dateTwo: "Onsdager / Oddetallsuker",
+  },
+
+  {
+    id: "ConnectOgTjenestekurs",
+    title: "Tjenesetekurs",
+    description: "Dette er tjenestekurs for deg som vil tjenestegjøre i shalom youth",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "Klokkeslett etter avtale",
+    date: "13.10.24",
+    //
+    titleTwo: "Connect",
+    descriptionTwo: "Småfellesskap. Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
+    locationTwo: "St. Olavs Gate 24, Oslo",
+    clockTwo: "18:00",
+    dateTwo: "Onsdager / Oddetallsuker",
+  },
+
+  {
+    id: "MultiSondagsArrangement",
+    title: "Gudstjeneste",
+    description:
+      "Velkommen til gudstjeneste hver lørdag klokken 16:00. Vi ber, lovsynger og lytter til Guds ord. Ta med en venn eller to og ta del i det Gud har for oss som fellesskap. Velkommen hjem!",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "16:00 - 19:00",
+    date: "Lørdager",
+    //
+    idTwo: "Alphakurs",
+    titleTwo: "Alphakurs",
+    descriptionTwo: "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
+    locationTwo: "St. Olavs Gate 24, Oslo",
+    clockTwo: "13:30 - 15:00",
+    dateTwo: "Lørdager / 7 ukers kurs",
+    //
+    titleThree: "TheUpperRoom",
+    descriptionThree: "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
+    locationThree: "St. Olavs Gate 24, Oslo",
+    clockThree: "13:30 - 15:00",
+    dateThree: "Lørdager / 7 ukers kurs",
+  },
+
 ];
+  
+  
+
