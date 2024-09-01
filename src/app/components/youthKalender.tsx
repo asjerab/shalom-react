@@ -20,10 +20,15 @@ const data = [
   ///////////////// 
   // September Seksjon
   { month: "September", id: "/event/kalenderYouth/Bibelstudie", date: 3, image: 'grupperImages/bible-studie-img.png'  },
-  { month: "September", id: "/event/kalenderYouth/Bonnemote", date: 5, image: 'grupperImages/bonn-img.png'  },
+  { month: "September", id: "https://dayandnight.no/2024/04/24/6110/", date: 4, image: 'arrangementImages/BonnOgFasteImage.png'  },
+  { month: "September", id: "https://dayandnight.no/2024/04/24/6110/", date: 5, image: 'arrangementImages/BonnOgFasteImage.png'  },
+  { month: "September", id: "https://dayandnight.no/2024/04/24/6110/", date: 6, image: 'arrangementImages/BonnOgFasteImage.png'  },
+  { month: "September", id: "https://dayandnight.no/2024/04/24/6110/", date: 7, image: 'arrangementImages/BonnOgFasteImage.png'  },
+  { month: "September", id: "https://dayandnight.no/2024/04/24/6110/", date: 8, image: 'arrangementImages/BonnOgFasteImage.png'  },
   { month: "September", id: "/event/kalenderYouth/Connect", date: 11 , image: 'grupperImages/connect-img.png'  },
   { month: "September", id: "/event/kalenderYouth/Evangelisering", date: 13, image: 'grupperImages/evangelisering-img.png'  },
   { month: "September", id: "/event/kalenderYouth/Gudstjeneste", date: 14, image: 'grupperImages/Gudstjeneste-img.png'},
+  { month: "September", id: "/event/arrangement/Storsondag", date: 15, image: 'arrangementImages/Storsondag-img.png'},
   { month: "September", id: "/event/kalenderYouth/Bibelstudie", date: 17, image: 'grupperImages/bible-studie-img.png'  },
   { month: "September", id: "/event/kalenderYouth/Bonnemote", date: 19, image: 'grupperImages/bonn-img.png'  },
   { month: "September", id: "/event/kalenderYouth/Gudstjeneste", date: 21, image: 'grupperImages/Gudstjeneste-img.png'},
@@ -33,6 +38,7 @@ const data = [
   { month: "October", id: "/event/kalenderYouth/Bibelstudie", date: 1, image: 'grupperImages/bible-studie-img.png'  },
   { month: "October", id: "/event/kalenderYouth/Bonnemote", date: 3, image: 'grupperImages/bonn-img.png'  },
   { month: "October", id: "/event/kalenderYouth/Gudstjeneste", date: 5 , image: 'grupperImages/Gudstjeneste-img.png'},
+  { month: "October", id: "/event/kalenderYouth/Gudstjeneste", date: 6 , image: 'grupperImages/FellesMoteImage.png'},
   { month: "October", id: "/event/kalenderYouth/Connect", date: 9 , image: 'grupperImages/connect-img.png' },
   { month: "October", id: "/event/kalenderYouth/Evangelisering", date: 11, image: 'grupperImages/evangelisering-img.png'  },
   { month: "October", id: "/event/kalenderYouth/Gudstjeneste", date: 12, image: 'grupperImages/Gudstjeneste-img.png' },
@@ -42,6 +48,7 @@ const data = [
   { month: "October", id: "/event/kalenderYouth/Connect", date: 23, image: 'grupperImages/connect-img.png' },
   { month: "October", id: "/event/kalenderYouth/Evangelisering", date: 25, image: 'grupperImages/evangelisering-img.png'  },
   { month: "October", id: "/event/kalenderYouth/Gudstjeneste", date: 26, image: 'grupperImages/Gudstjeneste-img.png' },
+  { month: "October", id: "/event/kalenderYouth/JamesEvent", date: 27, image: 'grupperImages/James-img.png' },
   { month: "October", id: "/event/kalenderYouth/Bibelstudie", date: 29, image: 'grupperImages/bible-studie-img.png'  },
   { month: "October", id: "/event/kalenderYouth/Bonnemote", date: 31, image: 'grupperImages/bonn-img.png'  },
   ///////////////// 

@@ -1,7 +1,10 @@
 import Calendar from "./NcKalenderFrame";
 
 const data = [
-  { month: "June", id: "/event/KalenderNewCreation/Gudstjeneste", date: 1, image: 'grupperImages/Gudstjeneste-img.png', },
+  { month: "September", id: "/event/arrangementNewCreation/Storsondag", date: 15, image: 'arrangementImages/Storsondag-img.png' },
+    ///////////////// 
+  // September Seksjon
+  { month: "October", id: "/event/KalenderNewCreation/JamesEvent", date: 27, image: 'grupperImages/James-img.png' },
 ];
 
 const Home: React.FC = () => {

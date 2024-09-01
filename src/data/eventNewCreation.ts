@@ -17,8 +17,16 @@ export const eventsNc = [
     date: "Torsdager / Oddetallsuker",
   },
   {
-    id: "AlphakursTheUpperRoom",
-    title: "Alphakurs Og The Upper Room",
+    id: "Alphakurs",
+    title: "The Upper Room",
+    description: "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "16:00 - 17:30",
+    date: "Søndager / 7 ukers kurs",
+  },
+  {
+    id: "The Upper Room",
+    title: "Alphakurs",
     description: "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
     location: "St. Olavs Gate 24, Oslo",
     clock: "16:00 - 17:30",
@@ -55,5 +63,13 @@ export const eventsNc = [
     location: "St. Olavs Gate 24, Oslo",
     clock: "18:00",
     date: "Fredager / Oddetallsuker",
+  },
+  {
+    id: "JamesEvent",
+    title: "James Family",
+    description: "James Family Event",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "Tid Kommer",
+    date: "Dato Kommer",
   },
 ];

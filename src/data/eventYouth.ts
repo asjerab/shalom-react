@@ -17,8 +17,16 @@ export const eventsYouth = [
     date: "Onsdager / Oddetallsuker",
   },
   {
-    id: "AlphakursTheUpperRoom",
-    title: "Alphakurs Og The Upper Room",
+    id: "Alphakurs",
+    title: "Alphakurs",
+    description: "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "13:30 - 15:00",
+    date: "Lørdager / 7 ukers kurs",
+  },
+  {
+    id: "TheUpperRoom",
+    title: "TheUpperRoom",
     description: "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
     location: "St. Olavs Gate 24, Oslo",
     clock: "13:30 - 15:00",
@@ -40,6 +48,15 @@ export const eventsYouth = [
     clock: "Klokkeslett etter avtale",
     date: "Dato etter avtale",
   },
+
+  {
+    id: "Tjenestekurs",
+    title: "Tjenesetekurs",
+    description: "Dette er tjenestekurs for deg som vil tjenestegjøre i shalom youth",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "Klokkeslett etter avtale",
+    date: "13.10.24",
+  },
   {
     id: "Bonnemote",
     title: "Bønnemøte",
@@ -55,5 +72,13 @@ export const eventsYouth = [
     location: "St. Olavs Gate 24, Oslo",
     clock: "18:00",
     date: "Fredager / Oddetallsuker",
+  },
+  {
+    id: "JamesEvent",
+    title: "James Family",
+    description: "James Family Event",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "Tid Kommer",
+    date: "Dato Kommer",
   },
 ];
