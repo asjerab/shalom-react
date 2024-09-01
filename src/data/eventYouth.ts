@@ -9,6 +9,15 @@ export const eventsYouth = [
     date: "Lørdager",
   },
   {
+    id: "Fellesmote",
+    title: "Fellesmøte",
+    description:
+      "Velkommen til gudstjeneste sammen med New Creation. Ta med en venn eller to og ta del i det Gud har for oss som fellesskap. Velkommen hjem!",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "Tid etter avtale",
+    date: "søndag 06.10.24",
+  },
+  {
     id: "Connect",
     title: "Connect",
     description: "Småfellesskap. Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
