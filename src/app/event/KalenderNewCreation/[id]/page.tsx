@@ -27,7 +27,7 @@ const EventPage = async ({ params }: EventPageProps) => {
   }
 
   return (
-    <main className="w-full h-screen">
+    <main className="w-full h-full">
       <NcNav />
       <div className="kalender-page-wrapper flex flex-col gap-10 p-[50px]">
         <a href="/shalomNewCreation#NewCreation-kalender">
