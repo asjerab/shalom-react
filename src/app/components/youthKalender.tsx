@@ -33,6 +33,7 @@ const data = [
   { month: "September", id: "/event/kalenderYouth/Bonnemote", date: 19, image: 'grupperImages/bonn-img.png'  },
   { month: "September", id: "/event/kalenderYouth/Gudstjeneste", date: 21, image: 'grupperImages/Gudstjeneste-img.png'},
   { month: "September", id: "/event/kalenderYouth/Connect", date: 25 , image: 'grupperImages/connect-img.png' },
+  { month: "September", id: "/event/kalenderYouth/Gudstjeneste", date: 28, image: 'grupperImages/Gudstjeneste-img.png'},
   ///////////////// 
   // October Seksjon
   { month: "October", id: "/event/kalenderYouth/Bibelstudie", date: 1, image: 'grupperImages/bible-studie-img.png'  },
