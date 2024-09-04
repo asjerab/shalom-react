@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import alphaKursImg from "../grupperImages/alpha-kurs-img.png";
 import bibelStudieImg from "../grupperImages/bible-studie-img.png";
 import connectImg from "../grupperImages/connect-img.png";
@@ -18,30 +19,38 @@ export default function YouthGrupperHome() {
           </h1>
           <div className="grupper-wrapper-home grid grid-cols-2 gap-7">
             <Link href="/youthGrupper" className="">
-              <img
-                className="w-full max-w-[648px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
+              <Image
+                className="w-full max-w-[640px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
                 src={alphaKursImg.src}
+                width={640}
+                height={640}
                 alt="alphakurs img"
               />
             </Link>
             <Link href="/youthGrupper" className="">
-              <img
-                className="hidden-grupper-img w-full max-w-[648px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
+              <Image
+                className="hidden-grupper-img w-full max-w-[640px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
                 src={bibelStudieImg.src}
+                width={640}
+                height={640}
                 alt="bibel studie img"
               />
             </Link>
             <Link href="/youthGrupper" className="">
-              <img
-                className="w-full max-w-[648px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
+              <Image
+                className="w-full max-w-[640pxpx] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
                 src={connectImg.src}
+                width={640}
+                height={640}
                 alt="connect img"
               />
             </Link>
             <Link href="/youthGrupper" className="">
-              <img
-                className="hidden-grupper-img w-full max-w-[648px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
+              <Image
+                className="hidden-grupper-img w-full max-w-[640px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
                 src={tjenesteKursImg.src}
+                width={640}
+                height={640}
                 alt="tjenestekurs img"
               />
             </Link>
