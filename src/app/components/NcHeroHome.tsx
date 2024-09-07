@@ -4,7 +4,7 @@ import NcNav from "./ncNav";
 export default function YouthNav() {
   return (
     <main>
-      <nav className="h-dvh bg-cover bg-no-repeat bg-center NcNav-bg pb-[100px]">
+      <nav className="h-dvh bg-cover bg-no-repeat bg-center NcNav-bg pb-[100px]" id="NcHero">
         <NcNav />
         <div className="heroTextYouth w-full h-5/6  flex justify-center items-center flex-col">
           <h1
