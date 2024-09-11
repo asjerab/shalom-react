@@ -55,7 +55,7 @@ export default function TestModal() {
           går man gjennom en bok i Bibelen over en periode og ser på historien,
           konteksten og hvordan vi kan anvende det i våre liv. I bibelstudie går
           vi inn i Ordet sammen, men vi lærer også hvordan vi skal lese Bibelen
-          på egen hånd. Studiet holdes annenhver onsdag kl. 18:00.
+          på egen hånd. Studiet holdes annenhver tirsdag kl. 18:00.
           <br />
           <br />
           Dette kurset har påmelding. Trykk nedenfor og fyll ut skjemaet dersom

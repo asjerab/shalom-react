@@ -51,7 +51,7 @@ export default function Modal() {
               periode og ser på historien, konteksten og hvordan vi kan anvende
               det i våre liv. I bibelstudie går vi inn i Ordet sammen, men vi
               lærer også hvordan vi skal lese Bibelen på egen hånd. Studiet
-              holdes annenhver onsdag kl. 18:00.
+              holdes annenhver tirsdag kl. 18:00.
               <br />
               <br />
               Dette kurset har påmelding. Klikk nedenfor og fyll ut skjemaet
