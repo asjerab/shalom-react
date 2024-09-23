@@ -82,20 +82,68 @@ const EventPage = async ({ params }: EventPageProps) => {
           </h1>
           <p
             className="Sf-pro-font-regular text-slate-50 w-full max-w-[700px]"
-            style={{ fontSize: "clamp(15px, 3.5vw, 20px)", display: eventData.descriptionTwo ? "flex" : "none" }}
+            style={{
+              fontSize: "clamp(15px, 3.5vw, 20px)",
+              display: eventData.descriptionTwo ? "flex" : "none",
+            }}
           >
             {eventData.descriptionTwo}
           </p>
         </div>
         <div className="kalender-subInfo flex gap-5">
-          <p className="Sf-pro-font-regular text-[#111]  badge py-4 border-none" style={{ display: eventData.locationTwo ? "flex" : "none" }}>
+          <p
+            className="Sf-pro-font-regular text-[#111]  badge py-4 border-none"
+            style={{ display: eventData.locationTwo ? "flex" : "none" }}
+          >
             {eventData.locationTwo}
           </p>
-          <p className="Sf-pro-font-regular text-[#111]  badge py-4 border-none" style={{ display: eventData.clockTwo ? "flex" : "none" }}>
+          <p
+            className="Sf-pro-font-regular text-[#111]  badge py-4 border-none"
+            style={{ display: eventData.clockTwo ? "flex" : "none" }}
+          >
             {eventData.clockTwo}
           </p>
-          <p className="Sf-pro-font-regular text-[#111]  badge py-4 border-none" style={{ display: eventData.dateTwo ? "flex" : "none" }}>
+          <p
+            className="Sf-pro-font-regular text-[#111]  badge py-4 border-none"
+            style={{ display: eventData.dateTwo ? "flex" : "none" }}
+          >
             {eventData.dateTwo}
+          </p>
+        </div>
+      </div>
+      <div className="kalender-page-wrapper flex flex-col gap-10 p-[50px]">
+        <div className="flex flex-col gap-5">
+          <h1 className="Sf-pro-font-regular font-[700] text-slate-50 text-[35px]">
+            {eventData.titleThree}
+          </h1>
+          <p
+            className="Sf-pro-font-regular text-slate-50 w-full max-w-[700px]"
+            style={{
+              fontSize: "clamp(15px, 3.5vw, 20px)",
+              display: eventData.descriptionTwo ? "flex" : "none",
+            }}
+          >
+            {eventData.descriptionThree}
+          </p>
+        </div>
+        <div className="kalender-subInfo flex gap-5">
+          <p
+            className="Sf-pro-font-regular text-[#111]  badge py-4 border-none"
+            style={{ display: eventData.locationTwo ? "flex" : "none" }}
+          >
+            {eventData.locationThree}
+          </p>
+          <p
+            className="Sf-pro-font-regular text-[#111]  badge py-4 border-none"
+            style={{ display: eventData.clockTwo ? "flex" : "none" }}
+          >
+            {eventData.clockThree}
+          </p>
+          <p
+            className="Sf-pro-font-regular text-[#111]  badge py-4 border-none"
+            style={{ display: eventData.dateTwo ? "flex" : "none" }}
+          >
+            {eventData.dateThree}
           </p>
         </div>
       </div>

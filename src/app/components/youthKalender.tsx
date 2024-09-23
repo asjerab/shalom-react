@@ -32,13 +32,13 @@ const data = [
   { month: "September", id: "/event/kalenderYouth/Evangelisering", date: 20, image: 'grupperImages/evangelisering-img.png'  },
   { month: "September", id: "/event/kalenderYouth/Gudstjeneste", date: 21, image: 'grupperImages/Gudstjeneste-img.png'},
   { month: "September", id: "/event/kalenderYouth/Connect", date: 25 , image: 'grupperImages/connect-img.png' },
+  { month: "September", id: "/event/kalenderYouth/Fellesmote", date: 29 , image: 'grupperImages/FellesMoteImage.png' },
   ///////////////// 
   // October Seksjon
   { month: "October", id: "/event/kalenderYouth/Bibelstudie", date: 1, image: 'grupperImages/bible-studie-img.png'  },
   { month: "October", id: "/event/kalenderYouth/Bonnemote", date: 3, image: 'grupperImages/bonn-img.png'  },
   { month: "October", id: "/event/kalenderYouth/Evangelisering", date: 4, image: 'grupperImages/evangelisering-img.png'  },
-  { month: "October", id: "/event/kalenderYouth/MultiSondagsArrangement", date: 5 , image: 'grupperImages/AlphaDypereOgGudstjeneste.png'},
-  { month: "October", id: "/event/kalenderYouth/Fellesmote", date: 6 , image: 'grupperImages/FellesMoteImage.png'},
+  { month: "October", id: "/event/kalenderYouth/FellesMoteArrangement", date: 6 , image: 'grupperImages/FellesMoteMAlpha&Dypere.png'},
   { month: "October", id: "/event/kalenderYouth/ConnectOgTjenestekurs", date: 9 , image: 'grupperImages/ConnetOgTjenestekurs.png' },
   { month: "October", id: "/event/kalenderYouth/MultiSondagsArrangement", date: 12 , image: 'grupperImages/AlphaDypereOgGudstjeneste.png'},
   { month: "October", id: "/event/kalenderYouth/Bibelstudie", date: 15, image: 'grupperImages/bible-studie-img.png'  },

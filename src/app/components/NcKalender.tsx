@@ -15,13 +15,13 @@ const data = [
   { month: "September", id: "/event/KalenderNewCreation/Evangelisering", date: 20, image: 'grupperImages/evangelisering-img.png' },
   { month: "September", id: "/event/KalenderNewCreation/Gudstjeneste", date: 22, image: 'grupperImages/Gudstjeneste-img.png' },
   { month: "September", id: "/event/KalenderNewCreation/Connect", date: 26, image: 'grupperImages/connect-img.png' },
+  { month: "September", id: "/event/KalenderNewCreation/Fellesmote", date: 29, image: 'grupperImages/FellesMoteImage.png' },
     ///////////////// 
   // October Seksjon
   { month: "October", id: "/event/KalenderNewCreation/Bibelstudie", date: 1, image: 'grupperImages/bible-studie-img.png' },
   { month: "October", id: "/event/KalenderNewCreation/Bonnemote", date: 3, image: 'grupperImages/bonn-img.png' },
   { month: "October", id: "/event/KalenderNewCreation/Evangelisering", date: 4, image: 'grupperImages/evangelisering-img.png' },
-  { month: "October", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 5, image: 'grupperImages/AlphaOgDypere.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Fellesmote", date: 6, image: 'grupperImages/FellesMoteImage.png' },
+  { month: "October", id: "/event/KalenderNewCreation/FellesMotMultiArrangement", date: 6, image: 'grupperImages/FellesMoteMAlpha&Dypere.png' },
   { month: "October", id: "/event/KalenderNewCreation/Tjenestekurs", date: 9, image: 'grupperImages/tjeneste-kurs-img.png' },
   { month: "October", id: "/event/KalenderNewCreation/Connect", date: 10, image: 'grupperImages/connect-img.png' },
   { month: "October", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 12, image: 'grupperImages/AlphaOgDypere.png' },
@@ -77,7 +77,7 @@ const Home: React.FC = () => {
   
   return (
     <main className="py-[100px] px-[20px]">
-      <div className="w-full max-w-[1325px] mx-auto p-4" id="NewCreation-kalender">
+      <div className="w-full max-w-[1325px] mx-auto p-4 kalender-div" id="NewCreation-kalender">
         <div>
           <h1
             className="light dark primaryFontRegular text-slate-50 font-[600] my-5 leading-[84px] flex items-center gap-5"

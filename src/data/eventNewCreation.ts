@@ -104,4 +104,27 @@ export const eventsNc = [
     clockTwo: "16:00 - 17:30",
     dateTwo: "Søndager / 7 ukers kurs",
   },
+  {
+    id: "FellesMotMultiArrangement",
+    title: "Fellesmøte",
+    description:
+      "Velkommen til gudstjeneste sammen med New Creation. Ta med en venn eller to og ta del i det Gud har for oss som fellesskap. Velkommen hjem!",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "Tid etter avtale",
+    date: "søndag 06.10.24",
+    //
+    titleTwo: "Alphakurs",
+    descriptionTwo:
+      "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
+    locationTwo: "St. Olavs Gate 24, Oslo",
+    clockTwo: "13:30 - 15:00",
+    dateTwo: "Lørdager / 7 ukers kurs",
+    //
+    titleThree: "TheUpperRoom",
+    descriptionThree:
+      "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
+    locationThree: "St. Olavs Gate 24, Oslo",
+    clockThree: "13:30 - 15:00",
+    dateThree: "Lørdager / 7 ukers kurs",
+  },
 ];
