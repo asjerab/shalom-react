@@ -1,5 +1,4 @@
 import Link from "next/link";
-import YouthLogo from "../images/ShalomYouth-Logo.png";
 import ThemeButtons from "./ThemeButtons";
 
 export default function footer() {

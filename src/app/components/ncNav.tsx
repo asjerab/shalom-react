@@ -1,19 +1,45 @@
 "use client";
-import React, { useState } from "react";
+import {
+  RegisterLink,
+  LoginLink,
+  LogoutLink,
+} from "@kinde-oss/kinde-auth-nextjs/components";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import NcLogo from "../images/shalom_snc_logo (1).png";
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 
 export default function TestNav() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // Handle screen width changes
+  const handleResize = () => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    handleResize(); // Set initial state
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const { user, getUser } = useKindeBrowserClient();
+  const alsoUser = getUser();
+
   return (
     <main>
-      {menuOpen && (
-        <div className="navigation-menu-mobile w-full h-full bg-[#111] fixed bottom-0 z-[100] flex flex-col justify-between">
+      {/* Mobile Menu for screens smaller than 768px */}
+      {menuOpen && isMobile && (
+        <div className="navigation-menu-mobile w-full h-full bg-[#111] fixed bottom-0 z-50 flex flex-col justify-between">
           <nav className="w-full py-[50px] px-[25px]">
             <div className="flex justify-end items-center">
               <button
@@ -25,75 +51,78 @@ export default function TestNav() {
             </div>
             <div className="py-10 flex flex-col gap-2">
               <Link
-                className="PrimaryFontHeadings flex justify-between items-center"
+                className="PrimaryFontHeadings font-medium flex justify-between items-center"
                 href="/shalomNewCreation"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
-                  style={{ fontSize: "clamp(30px, 5vw, 65px)" }}
+                  style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
                 >
                   hjem
                 </h1>
-
-                <p className="Kelsi-fill text-slate-50 text-[20px]">x</p>
               </Link>
               <Link
-                className="primaryFontHeadings font-medium"
+                className="PrimaryFontHeadings font-medium flex justify-between items-center"
                 href="/NewCreationGrupper"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
-                  style={{ fontSize: "clamp(30px, 5vw, 65px)" }}
+                  style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
                 >
-                  utrustning
+                  Utrustning
                 </h1>
               </Link>
               <Link
-                className="primaryFontHeadings font-medium"
+                className="PrimaryFontHeadings font-medium flex justify-between items-center"
                 href="/NewCreationForms"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
-                  style={{ fontSize: "clamp(30px, 5vw, 65px)" }}
+                  style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
                 >
-                  p<span className="primaryFontRegular">å</span>melding
+                  Påmelding
                 </h1>
               </Link>
               <Link
-                className="primaryFontHeadings font-medium"
+                className="PrimaryFontHeadings font-medium flex justify-between items-center"
                 href="/NewCreationOmOss"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
-                  style={{ fontSize: "clamp(30px, 5vw, 65px)" }}
+                  style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
                 >
-                  om oss
+                  Om Oss
                 </h1>
               </Link>
               <Link
-                className="primaryFontHeadings font-medium"
+                className="PrimaryFontHeadings font-medium flex justify-between items-center"
                 href="/NewCreationKontakt"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
-                  style={{ fontSize: "clamp(30px, 5vw, 65px)" }}
+                  style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
                 >
-                  kontakt
+                  Kontakt
                 </h1>
               </Link>
+              {user && (
+                <Link
+                  className="PrimaryFontHeadings font-medium flex justify-between items-center"
+                  href="/dashboard"
+                >
+                  <h1
+                    className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
+                    style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
+                  >
+                    Dashboard
+                  </h1>
+                </Link>
+              )}
+              {/* Other Links */}
             </div>
           </nav>
           <div className="w-full p-[25px]">
             <nav className="flex items-center gap-3 py-5">
-              <p className="Onest-Light uppercase font-light text-slate-50 underline text-[12px]">
-                <Link
-                  target="_blank"
-                  href="https://www.instagram.com/shalomnewcreation/"
-                >
-                  Instagram
-                </Link>
-              </p>
-              <p className="text-slate-50">•</p>
               <p className="Onest-Light uppercase font-light text-slate-50 underline text-[12px]">
                 <Link
                   target="_blank"
@@ -102,6 +131,15 @@ export default function TestNav() {
                   Youtube
                 </Link>
               </p>
+              <p className="Onest-Light uppercase font-light text-slate-50 underline text-[12px]">
+                <Link
+                  target="_blank"
+                  href="https://www.instagram.com/shalomnewcreation/?hl=en"
+                >
+                  Instagram
+                </Link>
+              </p>
+              {/* Other Footer Links */}
             </nav>
             <div className="flex gap-3">
               <Link href="/">
@@ -109,96 +147,208 @@ export default function TestNav() {
                   fellesskap
                 </button>
               </Link>
-              <button className="btn rounded-full border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-x-[5px] duration-150 ease-in-out ">
-                <svg
-                  data-testid="geist-icon"
-                  height="16"
-                  stroke-linejoin="round"
-                  viewBox="0 0 16 16"
-                  width="16"
-                  className="hover:translate-y-[-3px] duration-100 ease-in-out cursor-pointer size-[20px] text-slate-50"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M8.75 0.75V0H7.25V0.75V2V2.75H8.75V2V0.75ZM11.182 3.75732L11.7123 3.22699L12.0659 2.87344L12.5962 2.34311L13.6569 3.40377L13.1265 3.9341L12.773 4.28765L12.2426 4.81798L11.182 3.75732ZM8 10.5C9.38071 10.5 10.5 9.38071 10.5 8C10.5 6.61929 9.38071 5.5 8 5.5C6.61929 5.5 5.5 6.61929 5.5 8C5.5 9.38071 6.61929 10.5 8 10.5ZM8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12ZM13.25 7.25H14H15.25H16V8.75H15.25H14H13.25V7.25ZM0.75 7.25H0V8.75H0.75H2H2.75V7.25H2H0.75ZM2.87348 12.0659L2.34315 12.5962L3.40381 13.6569L3.93414 13.1265L4.28769 12.773L4.81802 12.2426L3.75736 11.182L3.22703 11.7123L2.87348 12.0659ZM3.75735 4.81798L3.22702 4.28765L2.87347 3.9341L2.34314 3.40377L3.4038 2.34311L3.93413 2.87344L4.28768 3.22699L4.81802 3.75732L3.75735 4.81798ZM12.0659 13.1265L12.5962 13.6569L13.6569 12.5962L13.1265 12.0659L12.773 11.7123L12.2426 11.182L11.182 12.2426L11.7123 12.773L12.0659 13.1265ZM8.75 13.25V14V15.25V16H7.25V15.25V14V13.25H8.75Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
+              <button className="btn primaryFontRegular rounded-full border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-x-[5px] duration-150 ease-in-out ">
+                {user ? (
+                  <LogoutLink>LogOut</LogoutLink>
+                ) : (
+                  <LoginLink>Sign in</LoginLink>
+                )}{" "}
               </button>
             </div>
           </div>
         </div>
       )}
+
       <nav>
-        <div className="nav">
-          <div className="nav-header flex justify-between items-start p-[50px] pt-[75px]">
-            <Link href="/shalomNewCreation">
-              <img
-                className="w-full max-w-[175px]"
-                src={NcLogo.src}
-                alt="NcLogo"
-              />
-            </Link>
-            <div className="flex items-center gap-2">
-              <Link className="scroll-container" href="/NewCreationGrupper">
-                <p
-                  className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px] font-bold"
-                  data-text="UTRUSTNING"
+        <div className="nav-header flex justify-between items-center p-[50px] pt-[75px]">
+          <Link href="/shalomYouth">
+            {user ? (
+              <Link href="/">
+                <h1
+                  className="primaryFontHeadings font-bold text-slate-50"
+                  style={{ fontSize: "clamp(25px, 5vw, 35px)" }}
                 >
-                  UTRUSTNING
-                </p>
+                  Admin Version
+                </h1>
               </Link>
-              <Link className="scroll-container" href="/NewCreationForms">
-                <p className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px] font-bold">
-                  P<span className="uppercase primaryFontRegular font-bold">å</span>MELDING
-                </p>
-              </Link>
-              <Link className="scroll-container" href="/NewCreationOmOss">
-                <p className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px] font-bold">
-                  OM OSS
-                </p>
-              </Link>
-              <Link className="scroll-container" href="/NewCreationKontakt">
-                <p className="hidden-nav-link scroll-holder primaryFontHeadings text-slate-50 text-[17px] font-bold">
-                  KONTAKT
-                </p>
-              </Link>
-              <Link
-                className="scroll-container bg-[#111] p-[16px] rounded-full hidden-nav-link"
-                href="/"
+            ) : (
+              <img
+                className="w-full max-w-[150px]"
+                src={NcLogo.src}
+                alt="YouthLogo"
+              />
+            )}
+          </Link>
+
+          <div className="relative">
+            <button
+              onClick={toggleMenu}
+              className="flex items-center gap-2 border-[2px] border-[#111111] bg-[#111111] px-[20px] py-[8px] rounded-[8px] hover:scale-[99%] duration-150 ease-in-out"
+            >
+              <p
+                className="font-medium text-slate-50"
+                style={{ fontSize: "clamp(15px, 3vw, 20px)" }}
               >
+                {menuOpen ? "Close" : "Menu"}
+              </p>
+              {menuOpen ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  className="size-6 text-slate-50 cursor-pointer scroll-holder"
+                  fill="currentColor"
+                  className="size-5 text-slate-50"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                    fill-rule="evenodd"
+                    d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd"
                   />
                 </svg>
-              </Link>
-              <svg
-                onClick={toggleMenu}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="bar-nav hidden w-8 h-8 text-slate-50 cursor-pointer"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 9h16.5m-16.5 6.75h16.5"
-                />
-              </svg>
-            </div>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="size-5 text-slate-50"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 9a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9Zm0 6.75a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              )}
+            </button>
+
+            {/* Show desktop menu if larger than 768px */}
+            {menuOpen && !isMobile && (
+              <div className="Menu-wrapper">
+                <div className="Menu absolute right-0 mt-2  w-[400px] h-auto border-[1px] border-[#111111] border-opacity-[25%] p-5 py-[1.5rem] rounded-[8px] bg-[#111111] z-10">
+                  <Link
+                    href="/NewCreationGrupper"
+                    className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out p-1 hover:underline decoration-slate-50"
+                  >
+                    <p className="font-medium text-[20px] text-slate-50">
+                      Utrustning
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="size-4 text-slate-50"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </Link>
+                  <Link
+                    href="/NewCreationForms"
+                    className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out p-1 hover:underline decoration-slate-50"
+                  >
+                    <p className="font-medium text-[20px] text-slate-50">
+                      Påmelding
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="size-4 text-slate-50"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </Link>
+                  <Link
+                    href="/NewCreationOmOss"
+                    className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out p-1 hover:underline decoration-slate-50"
+                  >
+                    <p className="font-medium text-[20px] text-slate-50">
+                      Om Oss
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="size-4 text-slate-50"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </Link>
+                  <Link
+                    href="/NewCreationKontakt"
+                    className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out p-1 hover:underline decoration-slate-50"
+                  >
+                    <p className="font-medium text-[20px] text-slate-50">
+                      Kontakt
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="size-4 text-slate-50"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </Link>
+                  {user && (
+                    <Link
+                      href="/dashboard"
+                      className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out p-[0.10rem] hover:underline decoration-slate-50"
+                    >
+                      <p className="font-medium text-[20px] text-slate-50">
+                        Dashboard
+                      </p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="size-4 text-slate-50"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </Link>
+                  )}
+                  <div className="flex gap-2 mt-3">
+                    <Link href="/" className="w-full">
+                      <button
+                        className="bg-[#ffffff] w-full p-[7px] my-2 rounded-[8px] text-[#111111] hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50"
+                        id="button"
+                      >
+                        <LoginLink>Felleskap</LoginLink>
+                      </button>
+                    </Link>
+                    <button
+                      className="bg-[#ffffff] w-full p-[7px] my-2 rounded-[8px] text-[#111111] hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50"
+                      id="button"
+                    >
+                      {user ? (
+                        <LogoutLink>LogOut</LogoutLink>
+                      ) : (
+                        <LoginLink>Login</LoginLink>
+                      )}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </nav>

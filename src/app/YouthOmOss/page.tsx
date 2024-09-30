@@ -1,5 +1,5 @@
 import TestNav from "../components/youthNav";
-import NcFooter from "../components/NcFooter";
+import YouthFooter from "../components/youthFooter"
 
 export default function OmOssNewCreation() {
   return (
@@ -175,7 +175,7 @@ export default function OmOssNewCreation() {
             </div>
           </div>
         </div>
-        <NcFooter />
+        <YouthFooter />
       </main>
     </>
   );
