@@ -27,7 +27,7 @@ import BønnMobileModal from '../components/MobileModal/BønnMobileModal';
 import EvangeliseringMobileModal from '../components/MobileModal/EvangeliseringMobileModal';
 import NcTheUpperRoomMobileModal from '../components/NcMobileModal/NcTheUpperRoomMobileModal';
 import JamesMobileModal from '../components/MobileModal/JamesMobileModal';
-import Footer from '../components/youthFooter'
+import NcFooter from '../components/NcFooter'
 
 
 
@@ -211,7 +211,7 @@ export default function YouthGrupper() {
           </ul>
         </div>
       </div>
-      <Footer />
+      <NcFooter />
     </main>
   );
 }
