@@ -584,7 +584,7 @@ html {
 
   .footer-footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: start;
     padding-top: 20px;
     gap: 15px;
