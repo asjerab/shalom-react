@@ -78,7 +78,7 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
                     {dateData ? (
                       <a
                         href={dateData.id}
-                        className="relative z-10 w-full h-full"
+                        className="relative z-10 w-full h-full hover:scale-[99%]"
                       >
                         <p
                           className="absolute z-10 flex justify-end items-start w-full h-full px-2 py-1"
