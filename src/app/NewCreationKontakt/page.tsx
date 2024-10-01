@@ -22,9 +22,11 @@ export default function youthKontakt() {
             E-post: Shalomoslo@gmail.com
           </span>{" "}
           Besøksadresse: Shalom New Creation{" "}
-          <span className="text-[#2b80ff] underline">St. Olavs Gate</span> 24
-          0166 Oslo Vennligst kontakt en spesifikk leder nedenfor hvis du har
-          spesifikke spørsmål.
+          <span className="text-[#2b80ff] underline">
+            St. Olavs Gate 24 0166 Oslo
+          </span>{" "}
+          Vennligst kontakt en spesifikk leder nedenfor hvis du har spesifikke
+          spørsmål.
         </p>
       </div>{" "}
       <div className="business-info-kontakt kontakt-wrapper px-[50px] py-[15px] flex gap-4">
@@ -118,8 +120,8 @@ export default function youthKontakt() {
               Becky Mebrahtu
             </h1>
             <p
-             className="primaryFontRegular text-slate-50 badge bg-[#131313] border-none p-5"
-             style={{ fontSize: "clamp(15px, 2vw, 20px)" }}
+              className="primaryFontRegular text-slate-50 badge bg-[#131313] border-none p-5"
+              style={{ fontSize: "clamp(15px, 2vw, 20px)" }}
             >
               Forsamlingsleder
             </p>

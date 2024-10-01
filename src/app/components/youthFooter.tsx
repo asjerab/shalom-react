@@ -74,12 +74,12 @@ export default function footer() {
             <div className="flex gap-5">
               <div className="scroll-container">
                 <p className="primaryFontRegular font-[600] scroll-holder  text-slate-50 hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out cursor-pointer">
-                  Design by Asjer
+                  Design by Jesus
                 </p>
               </div>
               <div className="scroll-container">
                 <p className="primaryFontRegular font-[600] scroll-holder text-slate-50 hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out cursor-pointer">
-                  Code Asjer
+                  Code Jesus
                 </p>
               </div>
             </div>

@@ -54,7 +54,7 @@ export default function TestNav() {
               </Link>
               <Link
                 className="PrimaryFontHeadings font-medium flex justify-between items-center"
-                href="/youthGrupper"
+                href="/YouthGrupper"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
@@ -65,7 +65,7 @@ export default function TestNav() {
               </Link>
               <Link
                 className="PrimaryFontHeadings font-medium flex justify-between items-center"
-                href="/youthForms"
+                href="/YouthForms"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
@@ -87,7 +87,7 @@ export default function TestNav() {
               </Link>
               <Link
                 className="PrimaryFontHeadings font-medium flex justify-between items-center"
-                href="/youthKontakt"
+                href="/YouthKontakt"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
@@ -96,7 +96,6 @@ export default function TestNav() {
                   Kontakt
                 </h1>
               </Link>
-              {/* Other Links */}
             </div>
           </nav>
           <div className="w-full p-[25px]">
@@ -184,7 +183,7 @@ export default function TestNav() {
               <div className="Menu-wrapper">
                 <div className="Menu absolute right-0 mt-2  w-[400px] h-auto border-[1px] border-[#111111] border-opacity-[25%] p-5 py-[1.5rem] rounded-[8px] bg-[#111111] z-10">
                   <Link
-                    href="/youthGrupper"
+                    href="/YouthGrupper"
                     className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out p-1 hover:underline decoration-slate-50"
                   >
                     <p className="font-medium text-[20px] text-slate-50">
@@ -204,7 +203,7 @@ export default function TestNav() {
                     </svg>
                   </Link>
                   <Link
-                    href="/youthForms"
+                    href="/YouthForms"
                     className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out p-1 hover:underline decoration-slate-50"
                   >
                     <p className="font-medium text-[20px] text-slate-50">
@@ -244,7 +243,7 @@ export default function TestNav() {
                     </svg>
                   </Link>
                   <Link
-                    href="/youthKontakt"
+                    href="/YouthKontakt"
                     className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out p-1 hover:underline decoration-slate-50"
                   >
                     <p className="font-medium text-[20px] text-slate-50">

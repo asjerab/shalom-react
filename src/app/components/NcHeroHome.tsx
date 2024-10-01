@@ -1,7 +1,7 @@
 import Link from "next/link";
 import NcNav from "./ncNav";
 
-export default function YouthNav() {
+export default function NcHero() {
   return (
     <main>
       <nav className="h-dvh bg-cover bg-no-repeat bg-center NcNav-bg pb-[100px]" id="NcHero">
