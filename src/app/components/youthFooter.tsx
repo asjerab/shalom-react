@@ -73,13 +73,8 @@ export default function footer() {
           <div className="footer-footer flex justify-between items-center py-3">
             <div className="flex gap-5">
               <div className="scroll-container">
-                <p className="primaryFontRegular font-[600] scroll-holder  text-slate-50 hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out cursor-pointer">
-                  Design by Jesus
-                </p>
-              </div>
-              <div className="scroll-container">
                 <p className="primaryFontRegular font-[600] scroll-holder text-slate-50 hover:text-[#6d6d6d] hover:translate-y-[-3px] duration-100 ease-in-out cursor-pointer">
-                  Code Jesus
+                  © Shalomoslo 2024. All rights reserved.
                 </p>
               </div>
             </div>
