@@ -77,7 +77,7 @@ const Home: React.FC = () => {
   
   return (
     <main className="py-[100px] px-[20px]">
-      <div className="w-full max-w-[1325px] mx-auto p-4 kalender-div" id="NewCreation-kalender">
+      <div className="w-full max-w-[1150px] mx-auto p-4 kalender-div" id="NewCreation-kalender">
         <div>
           <h1
             className="light dark primaryFontRegular text-slate-50 font-[600] my-5 leading-[84px] flex items-center gap-5"
