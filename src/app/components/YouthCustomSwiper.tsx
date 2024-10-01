@@ -40,41 +40,46 @@ const CustomSwiper: React.FC<CustomSwiperProps> = ({
           </div>
         ))}
       </div>
-      <div className="flex justify-between mt-5">
-        <button onClick={handlePrev} className="primaryFontHeadings flex items-center gap-2 text-slate-50 hover:underline" style={{fontSize:"clamp(15px, 5vw, 25px)"}}>
+      <div className="flex items-center justify-between mt-5">
+        <button
+          onClick={handlePrev}
+          className="primaryFontHeadings flex items-center gap-2 text-slate-50  hover:bg-[#151515] p-3 rounded-[8px]"
+          style={{ fontSize: "clamp(15px, 5vw, 25px)" }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            className="size-7 border-[1px] border-slate-50 p-[2px] text-slate-50 rounded-full"
+            className="size-6"
           >
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
-              d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
             />
           </svg>
-          Tilbake
+          <p>Tilbake</p>
         </button>
         <button
           onClick={handleNext}
-          className="primaryFontHeadings flex items-center gap-2 text-slate-50 hover:underline" style={{fontSize:"clamp(15px, 5vw, 25px)"}}
+          className="primaryFontHeadings flex items-center gap-2 text-slate-50  hover:bg-[#151515] p-3 rounded-[8px]"
+          style={{ fontSize: "clamp(15px, 5vw, 25px)" }}
         >
-          Neste
+          <p>Neste</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            className="size-7 border-[1px] border-slate-50 p-[2px] text-slate-50 rounded-full"
+            className="size-6"
           >
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
-              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
             />
           </svg>
         </button>

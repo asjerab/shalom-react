@@ -73,28 +73,32 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
                 return (
                   <div
                     key={day}
-                    className="relative border-none bg-[#1e1e1e] h-[10vw] max-h-[175px] w-[10vw] max-w-[175px] rounded-[4px]"
+                    className="relative border-none bg-[#1e1e1e] w-full aspect-square max-w-[175px] rounded-[4px] flex flex-col justify-between"
                   >
                     {dateData ? (
-                      <a href={dateData.id}>
-                        <div>
-                          <p className="relative z-10 flex justify-end items-start h-full px-2 py-1" style={{ fontSize: "clamp(8px, 3.5vw, 20px)" }}>
-                            {day}
-                          </p>
-                        </div>
+                      <a
+                        href={dateData.id}
+                        className="relative z-10 w-full h-full"
+                      >
+                        <p
+                          className="absolute z-10 flex justify-end items-start w-full h-full px-2 py-1"
+                          style={{ fontSize: "clamp(8px, 3.5vw, 20px)" }}
+                        >
+                          {day}
+                        </p>
                         {dateData.image && (
                           <Image
                             src={"/" + dateData.image}
                             alt={``}
-                            width={760}
-                            height={761}
-                            className="absolute top-0 left-0 w-full h-full object-covern rounded-[4px]"
+                            layout="fill"
+                            objectFit="cover"
+                            className="absolute top-0 left-0 w-full h-full rounded-[4px]"
                           />
                         )}
                       </a>
                     ) : (
                       <span
-                        className="relative z-10 flex justify-end items-start text-[12px] h-full px-2 py-1"
+                        className="relative z-10 flex justify-end items-start text-[12px] w-full h-full px-2 py-1"
                         style={{ fontSize: "clamp(8px, 3.5vw, 20px)" }}
                       >
                         {day}
