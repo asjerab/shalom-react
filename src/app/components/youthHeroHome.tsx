@@ -2,6 +2,7 @@ import Link from "next/link";
 import YouthLogo from "../images/ShalomYouth-Logo.png";
 import YouthNavHome from "./youthNav";
 
+
 export default function YouthNav() {
   return (
     <main>
@@ -10,7 +11,7 @@ export default function YouthNav() {
         <div className="primaryFontHeadings w-full h-5/6  flex justify-center items-center flex-col">
           <h1
             className="primaryFontHero text-slate-50 font-[900] uppercase leading-none"
-            style={{ fontSize: "clamp(10px, 11.2vw, 205px)" }}
+            style={{ fontSize: "clamp(10px, 11.2vw, 250px)" }}
           >
             Shalom Youth
           </h1>
