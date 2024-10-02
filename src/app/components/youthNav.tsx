@@ -76,7 +76,7 @@ export default function TestNav() {
               </Link>
               <Link
                 className="PrimaryFontHeadings font-medium flex justify-between items-center"
-                href="/youthOmOss"
+                href="/YouthOmOss"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
