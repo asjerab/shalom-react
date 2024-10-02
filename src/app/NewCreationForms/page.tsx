@@ -24,7 +24,7 @@ export default function youthPåmelding() {
             </p>
           </div>
 
-          <div className="py-[100px]">
+          <div className="py-[50px]">
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeqfFJm6cBVCvVCQV8hIdk-gcRCsrmLJexgZJeiqZVg00mEqQ/viewform">
               <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
                 {" "}

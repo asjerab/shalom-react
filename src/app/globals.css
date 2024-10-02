@@ -105,6 +105,21 @@ html {
   src: url(assets/fonts/Blacksword.otf);
 }
 
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url(assets/fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url(assets/fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url(assets/fonts/Gilroy-SemiBold.ttf);
+}
+
 .Kelsi-fill {
   font-family: "Kelsi-fill";
 }
@@ -130,17 +145,17 @@ html {
 }
 
 .primaryFontLight {
-  font-family: "kollektif";
+  font-family: "Gilroy-Regular";
   font-weight: 300;
 }
 
 .primaryFontRegular {
-  font-family: "SF-Pro-Regular";
+  font-family: "Gilroy-Medium";
   font-weight: 500;
 }
 
 .primaryFontBold {
-  font-family: "kollektif";
+  font-family: "Gilroy-Semibold";
   font-weight: 700;
 }
 
