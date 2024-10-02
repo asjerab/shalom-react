@@ -54,7 +54,7 @@ export default function TestNav() {
               </Link>
               <Link
                 className="PrimaryFontHeadings font-medium flex justify-between items-center"
-                href="/YouthGrupper"
+                href="/youthGrupper"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
@@ -65,7 +65,7 @@ export default function TestNav() {
               </Link>
               <Link
                 className="PrimaryFontHeadings font-medium flex justify-between items-center"
-                href="/YouthForms"
+                href="/youthForms"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
@@ -76,7 +76,7 @@ export default function TestNav() {
               </Link>
               <Link
                 className="PrimaryFontHeadings font-medium flex justify-between items-center"
-                href="/YouthOmOss"
+                href="/youthOmOss"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
@@ -87,7 +87,7 @@ export default function TestNav() {
               </Link>
               <Link
                 className="PrimaryFontHeadings font-medium flex justify-between items-center"
-                href="/YouthKontakt"
+                href="/youthKontakt"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
@@ -131,7 +131,7 @@ export default function TestNav() {
 
       <nav>
         <div className="nav-header flex justify-between items-center p-[50px] pt-[75px]">
-          <Link href="/shalomNewCreation">
+          <Link href="/shalomYouth">
             <img
               className="w-full max-w-[150px]"
               src={YouthLogo.src}
@@ -184,7 +184,7 @@ export default function TestNav() {
               <div className="Menu-wrapper">
                 <div className="Menu absolute right-0 mt-2 w-[375px] h-auto border-[1px] border-[#111111] border-opacity-[25%] p-5 py-[1.5rem] rounded-[16px] bg-[#111111] z-10">
                   <Link
-                    href="/YouthGrupper"
+                    href="/youthGrupper"
                     className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50 rounded-[8px] p-3"
                   >
                     <p className="primaryFontRegular flex  items-center gap-2 text-[20px] text-slate-50">
@@ -212,7 +212,7 @@ export default function TestNav() {
                     </svg>
                   </Link>
                   <Link
-                    href="/YouthForms"
+                    href="/youthForms"
                     className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50 rounded-[8px] p-3"
                   >
                     <p className="primaryFontRegular flex  items-center gap-2 text-[20px] text-slate-50">
@@ -240,7 +240,7 @@ export default function TestNav() {
                     </svg>
                   </Link>
                   <Link
-                    href="/YouthOmOss"
+                    href="/youthOmOss"
                     className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50 rounded-[8px] p-3"
                   >
                     <p className="primaryFontRegular flex  items-center gap-2 text-[20px] text-slate-50">
@@ -272,7 +272,7 @@ export default function TestNav() {
                     </svg>
                   </Link>
                   <Link
-                    href="/YouthKontakt"
+                    href="/youthKontakt"
                     className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50 rounded-[8px] p-3"
                   >
                     <p className="primaryFontRegular flex  items-center gap-2 text-[20px] text-slate-50">
