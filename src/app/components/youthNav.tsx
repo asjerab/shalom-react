@@ -96,6 +96,7 @@ export default function TestNav() {
                   Kontakt
                 </h1>
               </Link>
+              {/* Other Links */}
             </div>
           </nav>
           <div className="w-full p-[25px]">
@@ -119,7 +120,7 @@ export default function TestNav() {
             </nav>
             <div className="w-full">
               <Link href="/">
-                <button className="primaryFontHeadings w-full rounded-full font-bold btn px-10 border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
+                <button className="primaryFontHeadings rounded-full font-bold btn w-full px-10 border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
                   fellesskap
                 </button>
               </Link>
@@ -130,7 +131,7 @@ export default function TestNav() {
 
       <nav>
         <div className="nav-header flex justify-between items-center p-[50px] pt-[75px]">
-          <Link href="/shalomYouth">
+          <Link href="/shalomNewCreation">
             <img
               className="w-full max-w-[150px]"
               src={YouthLogo.src}
@@ -181,7 +182,7 @@ export default function TestNav() {
             {/* Show desktop menu if larger than 768px */}
             {menuOpen && !isMobile && (
               <div className="Menu-wrapper">
-                <div className="Menu absolute right-0 mt-2  w-[375px] h-auto border-[1px] border-[#111111] border-opacity-[25%] p-5 py-[1.5rem] rounded-[16px] bg-[#111111] z-10">
+                <div className="Menu absolute right-0 mt-2 w-[375px] h-auto border-[1px] border-[#111111] border-opacity-[25%] p-5 py-[1.5rem] rounded-[16px] bg-[#111111] z-10">
                   <Link
                     href="/YouthGrupper"
                     className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50 rounded-[8px] p-3"
