@@ -11,8 +11,6 @@ export default function NotFound() {
       const cleanedUrl = currentUrl
         .replace(/https?:\/\//, "")
         .replace("localhost:3000", "")
-        .replace("shalomoslo", "")
-        .replace("/", "");
       setCleanUrl(cleanedUrl);
     }
   }, []);
