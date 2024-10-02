@@ -21,7 +21,7 @@ export default function NotFound() {
     <main className="w-full h-dvh flex justify-center items-center flex-col">
       <h1
         className="primaryFontRegular text-slate-50 flex leading-[80px]"
-        style={{ fontSize: "clamp(50px, 5vw, 125px)" }}
+        style={{ fontSize: "clamp(35px, 5vw, 125px)" }}
       >
         Fant ikke Siden{" "}
         <svg

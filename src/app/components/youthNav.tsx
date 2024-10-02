@@ -240,7 +240,7 @@ export default function TestNav() {
                     </svg>
                   </Link>
                   <Link
-                    href="/youthOmOss"
+                    href="/YouthOmOss"
                     className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50 rounded-[8px] p-3"
                   >
                     <p className="primaryFontRegular flex  items-center gap-2 text-[20px] text-slate-50">
