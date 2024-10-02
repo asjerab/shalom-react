@@ -49,7 +49,7 @@ export default function NotFound() {
         </svg>
       </h1>
       <p className="flex items-center gap-2 badge p-4 primaryFontRegular text-[#ffffff] bg-[#2b80ff] border-none m-3 text-[15px]">
-        ingen resultat på<code className="primaryFontHeadings">"{cleanUrl}"</code>
+        ingen resultat på<code className="primaryFontHeadings">&quot;{cleanUrl}&quot;</code>
       </p>
       <Link href="/">
         <button className="btn btn-wide m-4">Hjem</button>
