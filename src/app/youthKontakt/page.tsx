@@ -30,11 +30,11 @@ export default function youthKontakt() {
         </p>
       </div>{" "}
       <div className="business-info-kontakt kontakt-wrapper px-[50px] py-[15px] flex gap-4">
-        <h1 className="primaryFontRegular text-[#111]  badge py-4">NORWAY</h1>
-        <h1 className="primaryFontRegular text-[#111]  badge py-4">
+        <h1 className="Sf-pro-font-regular text-[#ffffff]  badge bg-[#1f1f1f] py-5 border-none">NORWAY</h1>
+        <h1 className="Sf-pro-font-regular text-[#ffffff]  badge bg-[#1f1f1f] py-5 border-none">
           ST. OLAVS GATE 24
         </h1>
-        <h1 className="primaryFontRegular text-[#111]  badge py-4">
+        <h1 className="Sf-pro-font-regular text-[#ffffff]  badge bg-[#1f1f1f] py-5 border-none">
           0166, OSLO
         </h1>
       </div>
