@@ -158,7 +158,7 @@ export const eventsYouth = [
   },
 
   {
-    id: "FellesMotMultiArrangement",
+    id: "FellesMoteMultiArrangement",
     title: "Fellesmøte",
     description:
       "Velkommen til gudstjeneste sammen med New Creation. Ta med en venn eller to og ta del i det Gud har for oss som fellesskap. Velkommen hjem!",

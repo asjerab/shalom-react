@@ -38,7 +38,7 @@ const data = [
   { month: "October", id: "/event/kalenderYouth/Bibelstudie", date: 1, image: 'grupperImages/bible-studie-img.png'  },
   { month: "October", id: "/event/kalenderYouth/Bonnemote", date: 3, image: 'grupperImages/bonn-img.png'  },
   { month: "October", id: "/event/kalenderYouth/Evangelisering", date: 4, image: 'grupperImages/evangelisering-img.png'  },
-  { month: "October", id: "/event/kalenderYouth/FellesMoteArrangement", date: 6 , image: 'grupperImages/FellesMoteMAlpha&Dypere.png'},
+  { month: "October", id: "/event/kalenderYouth/FellesMoteMultiArrangement", date: 6 , image: 'grupperImages/FellesMoteMAlpha&Dypere.png'},
   { month: "October", id: "/event/kalenderYouth/ConnectOgTjenestekurs", date: 9 , image: 'grupperImages/ConnetOgTjenestekurs.png' },
   { month: "October", id: "/event/kalenderYouth/MultiSondagsArrangement", date: 12 , image: 'grupperImages/AlphaDypereOgGudstjeneste.png'},
   { month: "October", id: "/event/kalenderYouth/Bibelstudie", date: 15, image: 'grupperImages/bible-studie-img.png'  },
