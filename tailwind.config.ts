@@ -24,5 +24,18 @@ const config: Config = {
   daisyui: {
     themes: ["emerald"],
   },
+  purge: {
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      './src/**/*.{js,ts,jsx,tsx,mdx}',
+      './public/index.html',
+    ],
+    options: {
+      safelist: [
+        /^daisy-/,  // Safelist daisyUI classes
+      ],
+    },
+  },
 };
+
 export default config;
