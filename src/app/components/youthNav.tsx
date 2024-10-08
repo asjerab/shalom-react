@@ -76,7 +76,7 @@ export default function TestNav() {
               </Link>
               <Link
                 className="PrimaryFontHeadings font-medium flex justify-between items-center"
-                href="/YouthOmOss"
+                href="/youthOmOss"
               >
                 <h1
                   className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
@@ -240,7 +240,7 @@ export default function TestNav() {
                     </svg>
                   </Link>
                   <Link
-                    href="/YouthOmOss"
+                    href="/youthOmOss"
                     className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50 rounded-[8px] p-3"
                   >
                     <p className="primaryFontRegular flex  items-center gap-2 text-[20px] text-slate-50">

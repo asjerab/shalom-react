@@ -15,7 +15,7 @@ export default function OmOssNewCreation() {
               Om Oss.
             </h1>{" "}
           </nav>
-          <div className="omOssFlex flex flex-col gap-10 py-[50px]">
+          <div className="flex flex-col gap-10 py-[50px]">
             <div>
               <h1 className="primaryFontRegular text-[35px] text-slate-50 uppercase py-5">
                 Visjon
