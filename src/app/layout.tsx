@@ -30,8 +30,6 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <Analytics />
-      <SpeedInsights />
       <body>{children}</body>
     </html>
   );
