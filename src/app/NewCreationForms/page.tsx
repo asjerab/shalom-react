@@ -25,7 +25,7 @@ export default function youthPåmelding() {
           </div>
 
           <div className="py-[50px]">
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeqfFJm6cBVCvVCQV8hIdk-gcRCsrmLJexgZJeiqZVg00mEqQ/viewform">
+            <Link href="/NcCustomForm?formId=bibelstudieNewCreation">
               <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
                 {" "}
                 <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">
@@ -58,7 +58,7 @@ export default function youthPåmelding() {
               </div>
             </Link>
 
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSerL_wsSXphDQfwW-WZY9al7T8Ply6C9yRb-DSES4a2Ds0dfA/viewform">
+            <Link href="/NcCustomForm?formId=tjenestekurs">
               <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
                 {" "}
                 <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">
@@ -91,7 +91,7 @@ export default function youthPåmelding() {
               </div>
             </Link>
 
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfZN8NrgmXcL07JAg_Ie5k-sWxVrJkmTRdep2ZVcDD3vf6TRQ/viewform">
+            <Link href="/NcCustomForm?formId=connectNewCreation">
               <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
                 {" "}
                 <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">
@@ -124,7 +124,7 @@ export default function youthPåmelding() {
               </div>
             </Link>
 
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSetchxXf0oHHc_m84O_NxPaIWyn6Gk6c0M4CcOOcuau7EaJRg/viewform">
+            <Link href="/NcCustomForm?formId=alphakursNewCreation">
               <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
                 {" "}
                 <h1 className="påmeldingTitle primaryFontRegular font-[600]  text-slate-50 text-[25px]">
@@ -157,7 +157,7 @@ export default function youthPåmelding() {
               </div>
             </Link>
 
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdWBP7yJddqmqgW5XaienN-GCqKIykNCsh3NPig-9UnIFVbmw/viewform">
+            <Link href="/NcCustomForm?formId=daap">
               <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
                 {" "}
                 <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">
@@ -190,7 +190,7 @@ export default function youthPåmelding() {
               </div>
             </Link>
 
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSe3xjbXh_j5iW6K-KPNR43eRfX_FxEvYj5WWflKolWsW7e-oQ/viewform">
+            <Link href="/NcCustomForm?formId=dyperekursNewCreation">
               <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
                 {" "}
                 <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">

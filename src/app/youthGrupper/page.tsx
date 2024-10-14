@@ -18,18 +18,7 @@ import BønnModal from "../components/ModalComponents/BønnModal";
 import TheUpperRoom from "../components/ModalComponents/TheUpperRoom";
 import Evangelisering from "../components/ModalComponents/Evangelisering";
 import JamesModal from "../components/ModalComponents/JamesModal";
-import AlphakursMobileModal from "../components/MobileModal/AlphakursMobileModal";
-import BibelstudieMobileModal from "../components/MobileModal/BibelstudieMobileModal"
-import TjenesteMobileModal from "../components/MobileModal/TjenesteMobileModal"; 
-import ConnectMobileModal from "../components/MobileModal/ConnectMobileModal";
-import DåpMobileModal from "../components/MobileModal/DåpMobileModal";
-import BønnMobileModal from "../components/MobileModal/BønnMobileModal";
-import EvangeliseringMobileModal from "../components/MobileModal/EvangeliseringMobileModal";
-import TheUpperRoomMobileModal from "../components/MobileModal/TheUpperRoomMobileModal";
-import JamesMobileModal from "../components/MobileModal/JamesMobileModal";
-import Footer from "../components/youthFooter"
-
-
+import Footer from "../components/youthFooter";
 
 export default function YouthGrupper() {
   return (
@@ -48,8 +37,9 @@ export default function YouthGrupper() {
             style={{ fontSize: "clamp(15px, 2vw, 25px)" }}
           >
             Her kan du lese mer om hva som skjer i løpet av uken. Klikk på
-            &rdquo; utforsk &rdquo; for å lese mer om hvert emne. Der det er påmelding, har du
-            også muligheten til å registrere deg gjennom påmeldingssiden vår.
+            &rdquo; utforsk &rdquo; for å lese mer om hvert emne. Der det er
+            påmelding, har du også muligheten til å registrere deg gjennom
+            påmeldingssiden vår.
           </p>
         </div>
         <div>
@@ -63,14 +53,13 @@ export default function YouthGrupper() {
               <h1
                 className="primaryFontRegular text-slate-50 uppercase"
                 style={{
-                  fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
+                  fontSize: "clamp(15px, 5vw, 20px)",
                 }}
               >
                 Alphakurs
               </h1>
               <hr className="opacity-50" />
               <AlphakursModal />
-              <AlphakursMobileModal /> 
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -82,14 +71,13 @@ export default function YouthGrupper() {
               <h1
                 className="primaryFontRegular text-slate-50 uppercase"
                 style={{
-                  fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
+                  fontSize: "clamp(15px, 5vw, 20px)",
                 }}
               >
                 Bibelstudie
               </h1>
               <hr className="opacity-50" />
               <BibelstudieModal />
-              <BibelstudieMobileModal />
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -101,14 +89,13 @@ export default function YouthGrupper() {
               <h1
                 className="primaryFontRegular text-slate-50 uppercase"
                 style={{
-                  fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
+                  fontSize: "clamp(15px, 5vw, 20px)",
                 }}
               >
                 Tjenestekurs
               </h1>
               <hr className="opacity-50" />
               <TjenesteModal />
-              <TjenesteMobileModal />
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -116,14 +103,13 @@ export default function YouthGrupper() {
               <h1
                 className="primaryFontRegular text-slate-50 uppercase"
                 style={{
-                  fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
+                  fontSize: "clamp(15px, 5vw, 20px)",
                 }}
               >
                 Connect
               </h1>
               <hr className="opacity-50" />
               <ConnectModal />
-              <ConnectMobileModal />
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -131,14 +117,13 @@ export default function YouthGrupper() {
               <h1
                 className="primaryFontRegular text-slate-50 uppercase"
                 style={{
-                  fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
+                  fontSize: "clamp(15px, 5vw, 20px)",
                 }}
               >
                 Dåp
               </h1>
               <hr className="opacity-50" />
               <DåpModal />
-              <DåpMobileModal />
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -146,14 +131,13 @@ export default function YouthGrupper() {
               <h1
                 className="primaryFontRegular text-slate-50 uppercase"
                 style={{
-                  fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
+                  fontSize: "clamp(15px, 5vw, 20px)",
                 }}
               >
                 Bønn
               </h1>
               <hr className="opacity-50" />
               <BønnModal />
-              <BønnMobileModal />
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -165,14 +149,13 @@ export default function YouthGrupper() {
               <h1
                 className="primaryFontRegular text-slate-50 uppercase"
                 style={{
-                  fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
+                  fontSize: "clamp(15px, 5vw, 20px)",
                 }}
               >
                 The upper room
               </h1>
               <hr className="opacity-50" />
               <TheUpperRoom />
-              <TheUpperRoomMobileModal />
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -184,14 +167,13 @@ export default function YouthGrupper() {
               <h1
                 className="primaryFontRegular text-slate-50 uppercase"
                 style={{
-                  fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
+                  fontSize: "clamp(15px, 5vw, 20px)",
                 }}
               >
                 Evangelisering
               </h1>
               <hr className="opacity-50" />
               <Evangelisering />
-              <EvangeliseringMobileModal />
             </li>
 
             <li className="grupper-img flex py-[100px] flex-col gap-5">
@@ -199,14 +181,13 @@ export default function YouthGrupper() {
               <h1
                 className="primaryFontRegular text-slate-50 uppercase"
                 style={{
-                  fontSize: "calc(clamp(1.75em, 2.3vw, 2.5em) * 1.125)",
+                  fontSize: "clamp(15px, 5vw, 20px)",
                 }}
               >
                 James 1:27 Ministry
               </h1>
               <hr className="opacity-50" />
               <JamesModal />
-              <JamesMobileModal />
             </li>
           </ul>
         </div>

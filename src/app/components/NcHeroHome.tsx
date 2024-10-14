@@ -8,7 +8,7 @@ export default function NcHero() {
         <NcNav />
         <div className="heroTextYouth w-full h-5/6  flex justify-center items-center flex-col">
           <h1
-            className="primaryFontHeadings text-slate-50 font-[700] uppercase leading-none"
+            className="primaryFontHeadings text-slate-50 font-[700]  leading-none"
             style={{ fontSize: "clamp(10px, 11.2vw, 205px)" }}
           >
             New Creation
