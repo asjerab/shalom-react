@@ -12,7 +12,7 @@ export default function PaameldingHome() {
             Påmelding
             <span className='Kelsi-fill text-slate-50'>x</span>
           </h1>
-          <Link href='https://docs.google.com/forms/d/e/1FAIpQLSe3xjbXh_j5iW6K-KPNR43eRfX_FxEvYj5WWflKolWsW7e-oQ/viewform'>
+          <Link href='/NcCustomForm?formId=dyperekursNewCreation'>
             <div className='påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-3'>
               <h1 className='påmeldingTitle  primaryFontRegular font-[600] text-slate-50 text-[25px] uppercase'>
                 The Upper Room
@@ -43,7 +43,7 @@ export default function PaameldingHome() {
               </div>
             </div>
           </Link>
-          <Link href='https://docs.google.com/forms/d/e/1FAIpQLSetchxXf0oHHc_m84O_NxPaIWyn6Gk6c0M4CcOOcuau7EaJRg/viewform'>
+          <Link href='/NcCustomForm?formId=alphakursNewCreation'>
             <div className='påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-3'>
               <h1 className='påmeldingTitle  primaryFontRegular font-[600] text-slate-50 text-[25px] uppercase'>
                 Alphakurs
@@ -74,7 +74,7 @@ export default function PaameldingHome() {
               </div>
             </div>
           </Link>
-          <Link href='https://docs.google.com/forms/d/e/1FAIpQLSerL_wsSXphDQfwW-WZY9al7T8Ply6C9yRb-DSES4a2Ds0dfA/viewform'>
+          <Link href='/NcCustomForm?formId=tjenestekurs'>
             <div className='påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-3'>
               <h1 className='påmeldingTitle  primaryFontRegular font-[600] text-slate-50 text-[25px] uppercase'>
                 Tjenestekurs
@@ -115,7 +115,7 @@ export default function PaameldingHome() {
             </p>
             <Link href='/NewCreationForms'>
               <button className='btn btn-wide scroll-container rounded-full bg-[#2b80ff] text-slate-50 border-none hover:bg-[#3e8bff]'>
-                <p className='scroll-holder'>Alle påmeldinger</p>
+                <p className='primaryFontRegular scroll-holder'>Alle påmeldinger</p>
               </button>
             </Link>
           </div>

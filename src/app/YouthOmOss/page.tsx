@@ -54,9 +54,6 @@ export default function OmOssNewCreation() {
               </p>
             </div>
             <div>
-              <h1 className="primaryFontRegular text-[35px] text-slate-50 uppercase">
-                Vår Tro
-              </h1>
 
               <p className="primaryFontLight w-full max-w-[950px] text-slate-50">
                 <br />
@@ -111,6 +108,9 @@ export default function OmOssNewCreation() {
                 dere, og dere skal være mine vitner i Jerusalem og hele Judea, i
                 Samaria og helt til jordens ende.» Apostlenes gjerninger 1:8
               </p>
+              <h1 className="primaryFontRegular text-[35px] text-slate-50 uppercase py-16">
+                Vår Tro
+              </h1>
               <p className="primaryFontLight w-full max-w-[950px] text-slate-50">
                 Vi tror at Bibelen er Guds Ord. At den er nøyaktig, har
                 fullstendig autoritet og er anvendelig for våre daglige liv.

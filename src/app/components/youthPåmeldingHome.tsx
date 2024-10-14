@@ -12,7 +12,7 @@ export default function PaameldingHome() {
             Påmelding
             <span className='Kelsi-fill text-slate-50'>x</span>
           </h1>
-          <Link href='https://docs.google.com/forms/d/e/1FAIpQLSesbn9kHSXX_Yb5uK5ovpKd9xiZ57p5DGpClDozOTZma3ZgrQ/viewform'>
+          <Link href='/customForm?formId=connectYouth'>
             <div className='påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-3 hover:px-8 duration-150 ease-in-out'>
               <h1 className='påmeldingTitle  primaryFontRegular font-[600] text-slate-50 text-[25px] uppercase'>
                 Connect
@@ -43,7 +43,7 @@ export default function PaameldingHome() {
               </div>
             </div>
           </Link>
-          <Link href='https://docs.google.com/forms/d/e/1FAIpQLSdDbsu-p-7rR353roJfZuUF-l8oNqjkdHXiT8WY2y9E3kZ7Bw/viewform'>
+          <Link href='/customForm?formId=bibelstudieYouth'>
             <div className='påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-3 hover:px-8 duration-150 ease-in-out'>
               <h1 className='påmeldingTitle  primaryFontRegular font-[600] text-slate-50 text-[25px] uppercase'>
                 Bibelstudie
@@ -74,7 +74,7 @@ export default function PaameldingHome() {
               </div>
             </div>
           </Link>
-          <Link href='https://docs.google.com/forms/d/e/1FAIpQLSerL_wsSXphDQfwW-WZY9al7T8Ply6C9yRb-DSES4a2Ds0dfA/viewform'>
+          <Link href='/customForm?formId=tjenestekurs'>
             <div className='påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[28px] my-3 hover:px-8 duration-150 ease-in-out'>
               <h1 className='påmeldingTitle  primaryFontRegular font-[600] text-slate-50 text-[25px] uppercase'>
                 Tjenestekurs
@@ -115,7 +115,7 @@ export default function PaameldingHome() {
             </p>
             <Link href='/youthForms'>
               <button className='btn btn-wide scroll-container rounded-full bg-[#2b80ff] text-slate-50 border-none hover:bg-[#3e8bff]'>
-                <p className='scroll-holder'>Alle påmeldinger</p>
+                <p className='primaryFontRegular scroll-holder'>Alle påmeldinger</p>
               </button>
             </Link>
           </div>

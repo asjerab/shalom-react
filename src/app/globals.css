@@ -20,7 +20,23 @@ html {
 }
 
 ::selection {
-  background: #57b0da;
+  background: #2b80ff;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: white !important;
+  -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+  font-family: "Gilroy-Medium", sans-serif !important;
 }
 
 /* @font faces for the whole site*/

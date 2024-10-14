@@ -65,7 +65,7 @@ export default function YouthGrupperHome() {
             </p>
             <Link href="/NewCreationGrupper">
               <button className="btn btn-wide scroll-container rounded-full bg-[#2b80ff] text-slate-50 border-none hover:bg-[#3e8bff]">
-                <p className="scroll-holder">Alle Grupper </p>
+                <p className="primaryFontRegular scroll-holder">Alle Grupper </p>
               </button>
             </Link>
           </div>{" "}

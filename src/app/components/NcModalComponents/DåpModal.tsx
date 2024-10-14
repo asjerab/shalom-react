@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-export default function BonModal() {
+export default function DaapModal() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -48,7 +48,7 @@ export default function BonModal() {
         >
           <nav className="flex justify-between items-center p-[2em]">
             <h1 className="primaryFontRegular uppercase text-slate-50 text-[20px]">
-              Bønn
+              Dåp
             </h1>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -66,12 +66,23 @@ export default function BonModal() {
               />
             </svg>
           </nav>
-          <p className="primaryFontRegular font-light p-[2em] text-slate-50">
-            Bønn er et av fundamentene i fellesskapet vårt og derfor dedikerer
-            vi annenhver torsdag klokken 18:00 - 19:00 for å søke Gud sammen i
-            bønn. Vi ber for hverandre, byen vår, landet vårt og verden. Du er
-            hjertelig velkommen til å bli med - ingen påmelding er nødvendig.
+          <p className="primaryFontRegular font-light px-[2em] text-slate-50">
+            Etter at du har tatt imot Jesus så forteller Guds ord at dåpen er
+            det neste steget. Dåpen er en ytre handling på din personlige tro. I
+            forkant av dåpen vil du få én time undervisning om hva dåp er og
+            hvorfor man døpes.
+            <br />
+            <br />
+            Dersom du ønsker å la deg døpe kan du melde deg på nedenfor, så vil
+            vi ta kontakt med deg.
           </p>
+          <Link href="/NcCustomForm?formId=daap">
+            <div className="p-[2em]">
+              <button className="btn w-full bg-[#101010] text-slate-50 border-none hover:bg-[#131313]">
+                Påmelding
+              </button>
+            </div>
+          </Link>
         </div>
       )}
 
@@ -85,7 +96,7 @@ export default function BonModal() {
           <div className="modal-content modal-content bg-[#1a1a1a] rounded-[25px] p-[3em] m-[1em]">
             <nav className="py-5 flex justify-between items-center">
               <h1 className="primaryFontRegular font-bold text-slate-50 text-3xl">
-                Bønn
+                Dåp
               </h1>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -104,11 +115,25 @@ export default function BonModal() {
               </svg>
             </nav>
             <p className="primaryFontRegular text-slate-50 py-5 text-[17px] modal-p">
-              Bønn er et av fundamentene i fellesskapet vårt og derfor dedikerer
-              vi annenhver torsdag klokken 18:00 - 19:00 for å søke Gud sammen i
-              bønn. Vi ber for hverandre, byen vår, landet vårt og verden. Du er
-              hjertelig velkommen til å bli med - ingen påmelding er nødvendig.
+              Etter at du har tatt imot Jesus så forteller Guds ord at dåpen er
+              det neste steget. Dåpen er en ytre handling på din personlige tro.
+              I forkant av dåpen vil du få én time undervisning om hva dåp er og
+              hvorfor man døpes.
+              <br />
+              <br />
+              Dersom du ønsker å la deg døpe kan du melde deg på nedenfor, så
+              vil vi ta kontakt med deg.
             </p>
+            <div className="py-5">
+              <Link
+                target="_blank"
+                href="/NcCustomForm?formId=daap"
+              >
+              <button className="button-modal btn btn-wide  rounded-xl bg-[#ffffff] text-[#111] border-none hover:bg-[#d3d2d2]">
+                Påmelding
+              </button>
+              </Link>
+            </div>
           </div>
         </div>
       )}
