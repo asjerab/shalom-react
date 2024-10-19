@@ -42,7 +42,7 @@ export const eventsNc = [
     description:
       "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
     location: "St. Olavs Gate 24, Oslo",
-    clock: "16:00 - 17:30",
+    clock: "14:00 - 15:30",
     date: "Søndager / 7 ukers kurs",
   },
   {
@@ -95,7 +95,7 @@ export const eventsNc = [
     description:
       "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
     location: "St. Olavs Gate 24, Oslo",
-    clock: "16:00 - 17:30",
+    clock: "14:00 - 15:30",
     date: "Søndager / 7 ukers kurs",
     titleTwo: "The Upper Room",
     descriptionTwo:
