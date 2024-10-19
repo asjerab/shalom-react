@@ -46,14 +46,14 @@ export default function youthKontakt() {
               className="primaryFontRegular text-slate-50"
               style={{ fontSize: "clamp(15px, 5vw, 30px)" }}
             >
-              Eliab Derege
+              Nahom Zenawi
             </h1>
             <p
               className="primaryFontRegular text-slate-50 badge bg-[#131313] border-none p-5"
               style={{ fontSize: "clamp(15px, 2vw, 20px)" }}
             >
               Hovedleder
-            </p>gi
+            </p>
           </div>
           <p
             className="primaryFontRegular text-[#8f8f92]"
