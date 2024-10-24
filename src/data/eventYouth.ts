@@ -92,11 +92,12 @@ export const eventsYouth = [
   },
   {
     id: "JamesEvent",
-    title: "James Family",
-    description: "James Family Event",
+    title: "Bli en fadder!",
+    description:
+      "Møtet utgår i dag på grunn av fellesmøtet med James. I stedet vil hovedfokuset være på fadderordningen. Dersom du ønsker å bli fadder, kan du ta kontakt med oss for mer informasjon om hvordan du kan bidra som fadder. PS: Vi vil også ha salg av produkter fra vår tidligere kolleksjon etter møtet.",
     location: "St. Olavs Gate 24, Oslo",
-    clock: "Tid Kommer",
-    date: "Dato Kommer",
+    clock: "18:30",
+    date: "27.10.24",
   },
   //Spesielle arrangementer
   {

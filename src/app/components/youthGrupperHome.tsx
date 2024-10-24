@@ -8,7 +8,7 @@ import tjenesteKursImg from "../grupperImages/tjeneste-kurs-img.png";
 export default function YouthGrupperHome() {
   return (
     <main>
-      <div className="flex justify-center" id="grupper-a">
+      <div className="flex justify-center">
         <div className="grupper-container-home pt-[200px] pb-[100px] px-[35px] w-full max-w-[1150px]">
           <h1
             className="light dark primaryFontRegular text-slate-50 font-[600] my-5 leading-[84px] flex items-center gap-5"
