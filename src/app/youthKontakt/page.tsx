@@ -46,7 +46,7 @@ export default function youthKontakt() {
               className="primaryFontRegular text-slate-50"
               style={{ fontSize: "clamp(15px, 5vw, 30px)" }}
             >
-              Nahom Zenawi
+              Eliab Derege
             </h1>
             <p
               className="primaryFontRegular text-slate-50 badge bg-[#131313] border-none p-5"
