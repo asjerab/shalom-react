@@ -181,4 +181,53 @@ export const eventsYouth = [
     clockThree: "13:30 - 15:00",
     dateThree: "Lørdager / 7 ukers kurs",
   },
+
+  {
+    id: "BonnemoteTorsdager",
+    title: "Bønnemøte",
+    description:
+      "Bønnemøte sammen med Shalom New Creation. Ordinære møter utgår denne måneden. Sjekk kalenderen for informasjon om når de vanlige møtene starter opp igjen.",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "18:00-20:00",
+    date: "",
+  },
+  {
+    id: "BonnemoteLordager",
+    title: "Bønnemøte",
+    description:
+      "Bønnemøte sammen med Shalom New Creation. Ordinære møter utgår denne måneden. Sjekk kalenderen for informasjon om når de vanlige møtene starter opp igjen.",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "16:00-18:00",
+    date: "",
+    titleTwo: "Alpha kurs",
+    descriptionTwo:
+      "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen. ",
+    locationTwo: "St. Olavs Gate 24, Oslo",
+    clockTwo: "14:00-15:30",
+    dateTwo: "",
+  },
+  {
+    id: "BonnemoteSondager",
+    title: "Bønnemøte",
+    description:
+      "Bønnemøte sammen med Shalom New Creation. Ordinære møter utgår denne måneden. Sjekk kalenderen for informasjon om når de vanlige møtene starter opp igjen.",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "18:30-20:30",
+    date: "",
+    titleTwo: "Dypere Kurs",
+    descriptionTwo:
+      "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen. ",
+    locationTwo: "St. Olavs Gate 24, Oslo",
+    clockTwo: "16:30-17:30",
+    dateTwo: "",
+  },
+  {
+    id: "Daap",
+    title: "Dåp",
+    description:
+      "Ønsker du og døpe deg kan du gjøre det via påmelding siden og du vil bli kontaktet fortløpende. Er du usikker på hva dåp går ut på? Les mer om kurset ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "14:00",
+    date: "02.11.24",
+  },
 ];
