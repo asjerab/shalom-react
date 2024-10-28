@@ -132,7 +132,7 @@ export const eventsNc = [
     id: "BonnemoteTorsdager",
     title: "Bønnemøte",
     description:
-      "Bønnemøte sammen med Shalom New Creation. Ordinære møter utgår denne måneden. Sjekk kalenderen for informasjon om når de vanlige møtene starter opp igjen.",
+      "Bønnemøte sammen med Shalom Youth. Ordinære møter utgår denne måneden. Sjekk kalenderen for informasjon om når de vanlige møtene starter opp igjen.",
     location: "St. Olavs Gate 24, Oslo",
     clock: "18:00-20:00",
     date: "",
@@ -141,7 +141,7 @@ export const eventsNc = [
     id: "BonnemoteLordager",
     title: "Bønnemøte",
     description:
-      "Bønnemøte sammen med Shalom New Creation. Ordinære møter utgår denne måneden. Sjekk kalenderen for informasjon om når de vanlige møtene starter opp igjen.",
+      "Bønnemøte sammen med Shalom Youth. Ordinære møter utgår denne måneden. Sjekk kalenderen for informasjon om når de vanlige møtene starter opp igjen.",
     location: "St. Olavs Gate 24, Oslo",
     clock: "16:00-18:00",
     date: "",
@@ -156,7 +156,7 @@ export const eventsNc = [
     id: "BonnemoteLordager",
     title: "Bønnemøte",
     description:
-      "Bønnemøte sammen med Shalom New Creation. Ordinære møter utgår denne måneden. Sjekk kalenderen for informasjon om når de vanlige møtene starter opp igjen.",
+      "Bønnemøte sammen med Shalom Youth. Ordinære møter utgår denne måneden. Sjekk kalenderen for informasjon om når de vanlige møtene starter opp igjen.",
     location: "St. Olavs Gate 24, Oslo",
     clock: "16:00-18:00",
     date: "",
@@ -177,7 +177,7 @@ export const eventsNc = [
     id: "BonnemoteSondager",
     title: "Bønnemøte",
     description:
-      "Bønnemøte sammen med Shalom New Creation. Ordinære møter utgår denne måneden. Sjekk kalenderen for informasjon om når de vanlige møtene starter opp igjen.",
+      "Bønnemøte sammen med Shalom Youth. Ordinære møter utgår denne måneden. Sjekk kalenderen for informasjon om når de vanlige møtene starter opp igjen.",
     location: "St. Olavs Gate 24, Oslo",
     clock: "18:30-20:30",
     date: "",
