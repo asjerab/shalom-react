@@ -39,7 +39,7 @@ export const arrangement = [
 
       {
         id: "Bravelovenorway",
-        title: "Jente arrangement med Bravelovenorway",
+        title: "Jente arrangement med Bravelovenorway!",
         description:
           "5. desember kommer Brave Love til Oslo for å ha et event med Shalom Youth og Shalom New Creation! Hold av datoen og kom!",
         location: "Pilstredet 27H, Oslo",
