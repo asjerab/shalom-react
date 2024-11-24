@@ -4,9 +4,10 @@ import YouthNav from "../../../components/ncNav";
 import YouthFooter from "../../../components/NcFooter";
 
 interface EventPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateStaticParams() {
@@ -18,7 +19,7 @@ export async function generateStaticParams() {
 
 // This is a server component that can fetch data
 const EventPage = async ({ params }: EventPageProps) => {
-  const { id } = params;
+  const { id } = await params;
   const eventData = arrangement.find((event) => event.id === id);
 
   // If eventData is not found, show a 404 page
