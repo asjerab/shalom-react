@@ -4,9 +4,9 @@ import NcNav from "../../../components/ncNav";
 import NcFooter from "../../../components/NcFooter";
 
 interface EventPageProps {
-  params: {
-    id: string; // Ensures the `id` type is defined properly
-  };
+  params: Promise<{
+    id: string;
+  }>; // params is now expected to be a Promise
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
@@ -19,7 +19,9 @@ export async function generateStaticParams() {
 
 // The main EventPage function
 export default async function EventPage({ params }: EventPageProps) {
-  const { id } = params; // Destructure `id` from `params`
+  // Wait for params to resolve since it's now a Promise
+  const resolvedParams = await params;
+  const { id } = resolvedParams; // Destructure `id` from the resolved params
   const eventData = eventsNc.find((event) => event.id === id); // Locate event data
 
   // If no event data is found, show a 404 page
