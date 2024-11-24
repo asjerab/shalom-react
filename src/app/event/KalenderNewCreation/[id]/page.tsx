@@ -6,8 +6,8 @@ import NcFooter from "../../../components/NcFooter";
 interface EventPageProps {
   params: Promise<{
     id: string;
-  }>; // params is now expected to be a Promise
-  searchParams: { [key: string]: string | string[] | undefined };
+  }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 // Generate static paths based on local data
