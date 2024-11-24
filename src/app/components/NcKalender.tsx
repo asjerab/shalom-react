@@ -61,7 +61,7 @@ const data = [
   ///////////////// 
   // December Seksjon
   { month: "December", id: "/event/KalenderNewCreation/Gudstjeneste", date: 1, image: 'grupperImages/Gudstjeneste-img.png' },
-  { month: "December", id: "/event/KalenderNewCreation/Connect", date: 5, image: 'grupperImages/connect-img.png' },
+  { month: "December", id: "/event/arrangementNewCreation/Bravelovenorway", date: 5, image: 'arrangementImages/Bravelovenorway.png' },
   { month: "December", id: "/event/KalenderNewCreation/Gudstjeneste", date: 8, image: 'grupperImages/Gudstjeneste-img.png' },
   { month: "December", id: "/event/KalenderNewCreation/Bibelstudie", date: 10, image: 'grupperImages/bible-studie-img.png' },
   { month: "December", id: "/event/KalenderNewCreation/Bonnemote", date: 12, image: 'grupperImages/bonn-img.png' },
@@ -69,6 +69,8 @@ const data = [
   { month: "December", id: "/event/KalenderNewCreation/Gudstjeneste", date: 15, image: 'grupperImages/Gudstjeneste-img.png' },
   { month: "December", id: "/event/KalenderNewCreation/Connect", date: 19, image: 'grupperImages/connect-img.png' },
   { month: "December", id: "/event/KalenderNewCreation/Fellesmote", date: 22, image: 'grupperImages/FellesMoteImage.png' },
+  { month: "December", id: "/event/arrangementNewCreation/Nyttaarsaften", date: 31, image: 'arrangementImages/Nyttaarsaften.png' },
+
 
 ];
 
