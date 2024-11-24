@@ -5,7 +5,7 @@ import NcFooter from "../../../components/NcFooter";
 
 interface EventPageProps {
   params: {
-    id: string;
+    id: any;
   };
   searchParams: { [key: string]: string | string[] | undefined };
 }

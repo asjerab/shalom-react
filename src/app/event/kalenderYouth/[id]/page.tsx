@@ -6,7 +6,7 @@ import Link from "next/link";
 
 interface EventPageProps {
   params: {
-    id: string;
+    id: any;
   };
   searchParams?: { [key: string]: string | string[] | undefined };
 }
