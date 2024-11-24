@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 }
 
 // This is a server component that can fetch data
-const EventPage = async ({ params }: EventPageProps) => {
+export default function Page({ params }: EventPageProps) {
   const { id } = params;
   const eventData = eventsYouth.find((event) => event.id === id);
 
@@ -164,6 +164,4 @@ const EventPage = async ({ params }: EventPageProps) => {
       <Footer />
     </main>
   );
-};
-
-export default EventPage;
+}

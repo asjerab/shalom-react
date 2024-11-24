@@ -7,7 +7,7 @@ interface EventPageProps {
   params: {
     id: string;
   };
-  searchParams?: { [key: string]: string | string[] | undefined };
+  searchParams: { [key: string]: string | string[] | undefined };
 }
 
 export async function generateStaticParams() {
@@ -17,12 +17,10 @@ export async function generateStaticParams() {
   }));
 }
 
-// This is a server component that can fetch data
-const EventPage = async ({ params }: EventPageProps) => {
+export default async function EventPage({ params }: EventPageProps) {
   const { id } = params;
   const eventData = eventsNc.find((event) => event.id === id);
 
-  // If eventData is not found, show a 404 page
   if (!eventData) {
     notFound();
   }
@@ -151,6 +149,4 @@ const EventPage = async ({ params }: EventPageProps) => {
       <NcFooter />
     </main>
   );
-};
-
-export default EventPage;
+}
