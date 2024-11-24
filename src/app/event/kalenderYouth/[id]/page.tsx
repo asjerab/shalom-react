@@ -5,9 +5,10 @@ import Footer from "../../../components/youthFooter";
 import Link from "next/link";
 
 interface EventPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateStaticParams() {
@@ -18,8 +19,8 @@ export async function generateStaticParams() {
 }
 
 // This is a server component that can fetch data
-const EventPage = async ({ params }: EventPageProps) => {
-  const { id } = params;
+export default async function Page({ params }: EventPageProps) {
+  const { id } = await params;
   const eventData = eventsYouth.find((event) => event.id === id);
 
   // If eventData is not found, show a 404 page
@@ -40,13 +41,13 @@ const EventPage = async ({ params }: EventPageProps) => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
               className="size-6"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M15.75 19.5 8.25 12l7.5-7.5"
               />
             </svg>
@@ -163,6 +164,4 @@ const EventPage = async ({ params }: EventPageProps) => {
       <Footer />
     </main>
   );
-};
-
-export default EventPage;
+}

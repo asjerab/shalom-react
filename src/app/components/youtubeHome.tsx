@@ -19,13 +19,13 @@ export default function youtubeComp() {
                     viewBox="0 0 15 15"
                     fill="none"
                   >
-                    <g clip-path="url(#clip0_1_20)">
+                    <g clipPath="url(#clip0_1_20)">
                       <path
                         d="M0.789551 0.78949L14.2106 14.2105M14.2106 14.2105V2.38659M14.2106 14.2105H2.38666"
                         stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </g>
                     <defs>

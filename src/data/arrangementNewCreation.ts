@@ -15,7 +15,7 @@ export const arrangement = [
           "Bønnemøte sammen med Shalom Youth Youth. Ordinære møter utgår denne måneden. Sjekk kalenderen for informasjon om når de vanlige møtene starter opp igjen.",
         location: "St. Olavs Gate 24, Oslo",
         clock: "18:00-20:00",
-        date: "",
+        date: "Dato står i kalenderen",
       },
       {
         id: "BonnemoteLordager",
@@ -24,7 +24,7 @@ export const arrangement = [
           "Bønnemøte sammen med Shalom Youth Youth. Ordinære møter utgår denne måneden. Sjekk kalenderen for informasjon om når de vanlige møtene starter opp igjen.",
         location: "St. Olavs Gate 24, Oslo",
         clock: "16:00-18:00",
-        date: "",
+        date: "Dato står i kalenderen",
       },
       {
         id: "BonnemoteSondager",
@@ -33,6 +33,27 @@ export const arrangement = [
           "Bønnemøte sammen med Shalom Youth Youth. Ordinære møter utgår denne måneden. Sjekk kalenderen for informasjon om når de vanlige møtene starter opp igjen.",
         location: "St. Olavs Gate 24, Oslo",
         clock: "18:30-20:30",
-        date: "",
+        date: "Dato står i kalenderen",
+      },
+
+
+      {
+        id: "Bravelovenorway",
+        title: "Jente arrangement med Bravelovenorway",
+        description:
+          "5. desember kommer Brave Love til Oslo for å ha et event med Shalom Youth og Shalom New Creation! Hold av datoen og kom!",
+        location: "Pilstredet 27H, Oslo",
+        clock: "18:00",
+        date: "05.12.24",
+      },
+  
+      {
+        id: "Nyttaarsaften",
+        title: "Nyttårsaften feiring",
+        description:
+          "Mer info kommer",
+          location: "St. Olavs Gate 24, Oslo",
+          clock: "Tid kommer",
+        date: "31.12.24",
       },
 ]
