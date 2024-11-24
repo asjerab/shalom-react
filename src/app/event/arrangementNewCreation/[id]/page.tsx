@@ -22,7 +22,6 @@ const EventPage = async ({ params }: EventPageProps) => {
   const { id } = await params;
   const eventData = arrangement.find((event) => event.id === id);
 
-  // If eventData is not found, show a 404 page
   if (!eventData) {
     notFound();
   }

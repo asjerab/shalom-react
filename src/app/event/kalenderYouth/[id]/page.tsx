@@ -5,10 +5,10 @@ import Footer from "../../../components/youthFooter";
 import Link from "next/link";
 
 interface EventPageProps {
-  params: {
-    id: any;
-  };
-  searchParams?: { [key: string]: string | string[] | undefined };
+  params: Promise<{
+    id: string;
+  }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateStaticParams() {
@@ -19,8 +19,8 @@ export async function generateStaticParams() {
 }
 
 // This is a server component that can fetch data
-export default function Page({ params }: EventPageProps) {
-  const { id } = params;
+export default async function Page({ params }: EventPageProps) {
+  const { id } = await params;
   const eventData = eventsYouth.find((event) => event.id === id);
 
   // If eventData is not found, show a 404 page
