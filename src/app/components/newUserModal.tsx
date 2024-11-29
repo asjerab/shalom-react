@@ -35,18 +35,22 @@ const Modal: React.FC<ModalProps> = ({ showModal, closeModal }) => {
   if (!showModal) return null;
 
   const mobileModal = (
-    <div className={`fixed left-1/2 transform -translate-x-1/2 w-full bottom-0 z-50 bg-[#f1f1f1] rounded-t-[25px] ${isVisible ? "block" : "hidden"}`}>
+    <div
+      className={`fixed left-1/2 transform -translate-x-1/2 w-full bottom-0 z-50 bg-[#f1f1f1] rounded-t-[25px] ${
+        isVisible ? "block" : "hidden"
+      }`}
+    >
       <nav className="flex justify-between items-center p-[2em]">
         <h1 className="primaryFontRegular uppercase text-[#111111] text-[20px]">
           Heisan!
         </h1>
       </nav>
       <p className="primaryFontRegular font-light px-[2em] text-[#111111]">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
-        nesciunt suscipit magnam porro amet facere aliquam, rem quos
-        voluptatem tempora quasi. Architecto sit et sapiente commodi nihil
-        accusantium eum quis earum autem, quos quam sint, dignissimos
-        distinctio quae adipisci labore porro obcaecati nam laborum.
+        <strong>Velkommen til Shalom Youth!</strong> Dette er vår offisielle side, hvor du kan
+        bli bedre kjent med hvem vi er, hva vi gjør, hva vi tilbyr, og hvor du
+        finner oss. Vi holder gudstjenester hver lørdag kl. 16:00, og du er
+        hjertelig velkommen til å delta. Må Guds nåde og velsignelse være over
+        deg!{" "}
       </p>
       <div className="p-[2em]">
         <button
@@ -77,15 +81,11 @@ const Modal: React.FC<ModalProps> = ({ showModal, closeModal }) => {
           Heisan!
         </h2>
         <p className="mb-4 text-[#111111]">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
-          nesciunt suscipit magnam porro amet facere aliquam, rem quos
-          voluptatem tempora quasi. Architecto sit et sapiente commodi nihil
-          accusantium eum quis earum autem, quos quam sint, dignissimos
-          distinctio quae adipisci labore porro obcaecati nam laborum. At vero
-          quos debitis eos quisquam fugit repellat voluptate incidunt quas
-          reiciendis perspiciatis eveniet omnis quasi delectus rem vitae
-          molestias tempora adipisci harum, dolorem id provident unde placeat
-          sequi.
+        <strong>Velkommen til Shalom Youth!</strong> Dette er vår offisielle side, hvor du kan
+        bli bedre kjent med hvem vi er, hva vi gjør, hva vi tilbyr, og hvor du
+        finner oss. Vi holder gudstjenester hver lørdag kl. 16:00, og du er
+        hjertelig velkommen til å delta. Må Guds nåde og velsignelse være over
+        deg!{" "}
         </p>
         <button
           onClick={closeModal}
