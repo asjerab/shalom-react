@@ -1,6 +1,6 @@
 "use client";
 
-// import NewUserModal from "../components/NcnewUserModal";
+import NewUserModal from "../components/NcnewUserModal";
 // import Marquee from "../components/Marquee"
 import NcNav from "../components/NcHeroHome";
 import NcGrupperHome from "../components/NcGrupperHome";
@@ -32,7 +32,8 @@ export default function ShalomHome() {
   return (
     <main>
       <NcNav />
-      {/*       <NewUserModal showModal={showModal} closeModal={closeModal} />*/}{" "}
+      <NewUserModal showModal={showModal} closeModal={closeModal} />
+      */{" "}
       {/*       <Marquee />
        */}{" "}
       <NcGrupperHome />
