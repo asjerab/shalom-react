@@ -76,11 +76,14 @@ const data = [
   // December Seksjon
   { month: "December", id: "/event/kalenderYouth/Connect", date: 4, image: 'grupperImages/connect-img.png' },
   { month: "December", id: "/event/arrangement/Bravelovenorway", date: 5, image: 'arrangementImages/Bravelovenorway.png' },
+  { month: "December", id: "/event/kalenderYouth/Evangelisering", date: 6, image: 'grupperImages/evangelisering-img.png'  },
   { month: "December", id: "/event/kalenderYouth/Gudstjeneste", date: 7 , image: 'grupperImages/Gudstjeneste-img.png'},
   { month: "December", id: "/event/kalenderYouth/Bibelstudie", date: 10, image: 'grupperImages/bible-studie-img.png'  },
-  { month: "December", id: "/event/kalenderYouth/Connect", date: 12, image: 'grupperImages/connect-img.png' },
-  { month: "December", id: "/event/kalenderYouth/Evangelisering", date: 13, image: 'grupperImages/evangelisering-img.png'  },
+  { month: "December", id: "/event/arrangement/JulebordYouth", date: 11, image: 'arrangementImages/JulebordConnectYouthImg.png'  },
+  { month: "December", id: "/event/kalenderYouth/Bonnemote", date: 12, image: 'grupperImages/bonn-img.png'  },
   { month: "December", id: "/event/kalenderYouth/Gudstjeneste", date: 14, image: 'grupperImages/Gudstjeneste-img.png' },
+  { month: "December", id: "/event/kalenderYouth/Evangelisering", date: 20, image: 'grupperImages/evangelisering-img.png'  },
+  { month: "December", id: "/event/arrangement/Julecup", date: 21, image: 'arrangementImages/JulecupFellesImg.png' },
   { month: "December", id: "/event/kalenderYouth/Fellesmote", date: 22, image: 'grupperImages/FellesMoteImage.png' },
   { month: "December", id: "/event/arrangement/Nyttaarsaften", date: 31, image: 'arrangementImages/Nyttaarsaften.png' },
 ];
