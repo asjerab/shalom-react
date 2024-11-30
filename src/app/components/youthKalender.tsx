@@ -74,6 +74,7 @@ const data = [
   { month: "November", id: "/event/kalenderYouth/Gudstjeneste", date: 30 , image: 'grupperImages/Gudstjeneste-img.png'},
   ///////////////// 
   // December Seksjon
+  { month: "December", id: "/event/kalenderYouth/Fellesmote", date: 1, image: 'grupperImages/FellesMoteImage.png' },
   { month: "December", id: "/event/kalenderYouth/Connect", date: 4, image: 'grupperImages/connect-img.png' },
   { month: "December", id: "/event/arrangement/Bravelovenorway", date: 5, image: 'arrangementImages/Bravelovenorway.png' },
   { month: "December", id: "/event/kalenderYouth/Evangelisering", date: 6, image: 'grupperImages/evangelisering-img.png'  },

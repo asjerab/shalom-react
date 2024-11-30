@@ -60,6 +60,7 @@ const data = [
   { month: "November", id: "/event/KalenderNewCreation/BonnemoteLordager", date: 30 , image: 'arrangementImages/AlphaOgBonn.png'},
   ///////////////// 
   // December Seksjon
+  { month: "December", id: "/event/KalenderNewCreation/Fellesmote", date: 1, image: 'grupperImages/FellesMoteImage.png' },
   { month: "December", id: "/event/KalenderNewCreation/Gudstjeneste", date: 1, image: 'grupperImages/Gudstjeneste-img.png' },
   { month: "December", id: "/event/arrangementNewCreation/Bravelovenorway", date: 5, image: 'arrangementImages/Brave&Connect.png' },
   { month: "December", id: "/event/KalenderNewCreation/Evangelisering", date: 6, image: 'grupperImages/evangelisering-img.png' },
