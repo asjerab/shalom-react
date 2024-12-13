@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import NcNav from "../components/ncNav";
 import NcFooter from "../components/NcFooter";
-import Link from "next/Link"
 
 interface FormField {
   id: string;
@@ -401,7 +400,7 @@ export default function CustomForm() {
     <main className="w-full h-full">
       <NcNav   />
       <div className="px-[35px]">
-        <Link href="/NewCreationForms">
+        <a href="/NewCreationForms">
           <button
             className="primaryFontHeadings flex items-center gap-2 text-slate-50  hover:bg-[#151515] p-3 rounded-[8px]"
             style={{ fontSize: "clamp(15px, 5vw, 25px)" }}
@@ -422,7 +421,7 @@ export default function CustomForm() {
             </svg>
             <p>Tilbake</p>
           </button>
-        </Link>
+        </a>
       </div>
       <nav className="p-[35px]">
         <div className="flex flex-col gap-5">
