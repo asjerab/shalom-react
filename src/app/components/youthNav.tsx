@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import YouthLogo from "../images/ShalomYouth-Logo.png";
 import Image from "next/image";
 
 export default function TestNav() {
@@ -121,7 +120,7 @@ export default function TestNav() {
           <Link href="/shalomYouth">
             <Image
               className="w-full max-w-[150px]"
-              src="/ShalomYouthLogo.png"
+              src="/logo/ShalomYouthLogo.png"
               width={150}
               height={150}
               alt="YouthLogo"
