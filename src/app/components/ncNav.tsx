@@ -116,7 +116,7 @@ export default function TestNav() {
         <div className="nav-header flex justify-between items-center p-[50px] pt-[75px]">
           <Link href="/shalomNewCreation">
             <Image
-              src="/shalom_snc_logo.png"
+              src="/logo/shalom_snc_logo.png"
               width={150}
               height={150}
               alt="Example image"
