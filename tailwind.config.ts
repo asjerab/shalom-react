@@ -8,11 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        primaryLight: ["SF Pro Display Light"],
-        primaryRegular: ["SF Pro Display Regular"],
-        primaryBold: ["SF Pro Display Light"],
-      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

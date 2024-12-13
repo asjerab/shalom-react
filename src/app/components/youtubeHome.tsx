@@ -6,7 +6,7 @@ export default function youtubeComp() {
     <main className="">
       <nav className="flex justify-center w-full">
         <div className="flex justify-center items-center py-[100px] px-[25px] pb-[75px] flex-col w-full max-w-[1150px]">
-          <div className="youtube-bg-holder youtubeImgContainer bg-cover bg-no-repeat bg-center rounded-[16px] flex justify-end flex-col p-16 gap-2">
+          <div className="youtube-bg-holder youtubeImgContainer rounded-[16px] flex justify-end flex-col p-16 gap-2">
             <div></div>
             <div className="youtubeImgOverlay">
               <div className="youtubeImgText">

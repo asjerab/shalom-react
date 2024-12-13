@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import NcLogo from "../images/shalom_snc_logo (1).png";
+import Image from "next/image";
 
 export default function TestNav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,9 +26,23 @@ export default function TestNav() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const navLinks = [
+    { name: "Utrustning", href: "/NewCreationGrupper" },
+    { name: "Påmelding", href: "/NewCreationForms" },
+    { name: "Om Oss", href: "/NewCreationOmOss" },
+    { name: "Kontakt", href: "/NewCreationKontakt" },
+  ];
+
+  const navLinksMobile = [
+    { name: "Hjem", hrefMobile: "/shalomNewCreation" },
+    { name: "Utrustning", hrefMobile: "/NewCreationGrupper" },
+    { name: "Påmelding", hrefMobile: "/NewCreationForms" },
+    { name: "Om Oss", hrefMobile: "/NewCreationOmOss" },
+    { name: "Kontakt", hrefMobile: "/NewCreationKontakt" },
+  ];
+
   return (
     <main>
-      {/* Mobile Menu for screens smaller than 768px */}
       {menuOpen && isMobile && (
         <div className="navigation-menu-mobile w-full h-full bg-[#111] fixed bottom-0 z-50 flex flex-col justify-between">
           <nav className="w-full py-[50px] px-[25px]">
@@ -52,62 +66,20 @@ export default function TestNav() {
               </button>
             </div>
             <div className="py-10 flex flex-col gap-2">
-              <Link
-                className="PrimaryFontHeadings font-medium flex justify-between items-center"
-                href="/shalomNewCreation"
-              >
-                <h1
-                  className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
-                  style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
+              {navLinksMobile.map((link) => (
+                <Link
+                  key={link.hrefMobile} // Ensure the key is added here
+                  className="PrimaryFontHeadings font-medium flex justify-between items-center"
+                  href={link.hrefMobile}
                 >
-                  hjem
-                </h1>
-              </Link>
-              <Link
-                className="PrimaryFontHeadings font-medium flex justify-between items-center"
-                href="/NewCreationGrupper"
-              >
-                <h1
-                  className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
-                  style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
-                >
-                  Utrustning
-                </h1>
-              </Link>
-              <Link
-                className="PrimaryFontHeadings font-medium flex justify-between items-center"
-                href="/NewCreationForms"
-              >
-                <h1
-                  className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
-                  style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
-                >
-                  Påmelding
-                </h1>
-              </Link>
-              <Link
-                className="PrimaryFontHeadings font-medium flex justify-between items-center"
-                href="/NewCreationOmOss"
-              >
-                <h1
-                  className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
-                  style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
-                >
-                  Om Oss
-                </h1>
-              </Link>
-              <Link
-                className="PrimaryFontHeadings font-medium flex justify-between items-center"
-                href="/NewCreationKontakt"
-              >
-                <h1
-                  className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
-                  style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
-                >
-                  Kontakt
-                </h1>
-              </Link>
-              {/* Other Links */}
+                  <h1
+                    className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out"
+                    style={{ fontSize: "clamp(25px, 5vw, 65px)" }}
+                  >
+                    {link.name}
+                  </h1>
+                </Link>
+              ))}
             </div>
           </nav>
           <div className="w-full p-[25px]">
@@ -123,19 +95,18 @@ export default function TestNav() {
               <p className="Onest-Light uppercase font-light text-slate-50 underline text-[12px]">
                 <Link
                   target="_blank"
-                  href="https://www.instagram.com/shalomnewcreation/?hl=en"
+                  href="https://www.instagram.com/shalomyouthoslo/?hl=en"
                 >
                   Instagram
                 </Link>
               </p>
             </nav>
             <div className="w-full">
-              <button 
-                onClick={() => window.location.href = '/'}
-                className="primaryFontHeadings rounded-full font-bold btn w-full px-10 border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out"
-              >
-                fellesskap
-              </button>
+              <Link href="/">
+                <button className="primaryFontHeadings rounded-full font-bold btn w-full px-10 border-none text-slate-50 uppercase bg-[#2b80ff] hover:bg-[#4d8cea] hover:translate-y-[-5px] duration-150 ease-in-out">
+                  fellesskap
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -144,17 +115,18 @@ export default function TestNav() {
       <nav>
         <div className="nav-header flex justify-between items-center p-[50px] pt-[75px]">
           <Link href="/shalomNewCreation">
-            <img
-              className="w-full max-w-[150px]"
-              src={NcLogo.src}
-              alt="YouthLogo"
+            <Image
+              src="/shalom_snc_logo.png"
+              width={150}
+              height={150}
+              alt="Example image"
             />
           </Link>
 
           <div className="relative">
             <button
               onClick={toggleMenu}
-              className="flex items-center gap-2 border-[2px] border-[#111111] bg-[#111111] px-[20px] py-[8px] rounded-[16px] hover:scale-[99%] duration-150 ease-in-out"
+              className="flex items-center gap-2 border-[2px] border-[#111111] bg-[#111111] px-[20px] py-[8px] rounded-[8px] hover:scale-[99%] duration-150 ease-in-out"
             >
               <p
                 className="font-medium text-slate-50"
@@ -191,95 +163,44 @@ export default function TestNav() {
               )}
             </button>
 
-            {/* Show desktop menu if larger than 768px */}
             {menuOpen && !isMobile && (
               <div className="Menu-wrapper">
-                <div className="Menu absolute right-0 mt-2 w-[375px] h-auto border-[1px] border-[#111111] border-opacity-[25%] p-5 py-[1.5rem] rounded-[16px] bg-[#111111] z-10">
-                  <Link
-                    href="/NewCreationGrupper"
-                    className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50 rounded-[8px] p-3"
-                  >
-                    <p className="primaryFontRegular flex  items-center gap-2 text-[20px] text-slate-50">
-                      Utrustning
-                    </p>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="size-4 text-slate-50"
+                <div className="Menu absolute right-0 mt-2 w-[375px] h-auto border-[1px] border-[#111111] border-opacity-[25%] p-5 py-[1.5rem] rounded-[8px] bg-[#111111] z-10">
+                  {navLinks.map((link) => (
+                    <div
+                      key={link.href} // Ensure the key is added here
+                      className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50 rounded-[8px] p-3"
                     >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </Link>
-                  <Link
-                    href="/NewCreationForms"
-                    className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50 rounded-[8px] p-3"
-                  >
-                    <p className="primaryFontRegular flex  items-center gap-2 text-[20px] text-slate-50">
-                      Påmelding
-                    </p>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="size-4 text-slate-50"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </Link>
-                  <Link
-                    href="/NewCreationOmOss"
-                    className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50 rounded-[8px] p-3"
-                  >
-                    <p className="primaryFontRegular flex  items-center gap-2 text-[20px] text-slate-50">
-                      Om Oss
-                    </p>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="size-4 text-slate-50"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </Link>
-                  <Link
-                    href="/NewCreationKontakt"
-                    className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50 rounded-[8px] p-3"
-                  >
-                    <p className="primaryFontRegular flex  items-center gap-2 text-[20px] text-slate-50">
-                      Kontakt
-                    </p>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="size-4 text-slate-50"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </Link>
+                      <Link
+                        className="primaryFontRegular flex items-center gap-2 text-[20px] text-slate-50"
+                        href={link.href}
+                      >
+                        <h1 className="text-slate-50 uppercase hover:translate-x-[10px] duration-150 ease-in-out">
+                          {link.name}
+                        </h1>
+                      </Link>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                        className="size-6"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                        />
+                      </svg>
+                    </div>
+                  ))}
+
                   <div className="flex gap-2 mt-3">
                     <button
                       className="bg-[#ffffff] w-full p-[11px] my-2 rounded-[8px] text-[#111111] hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50"
                       id="button"
-                      onClick={() => window.location.href = '/'}
+                      onClick={() => (window.location.href = "/")}
                     >
                       Felleskap
                     </button>

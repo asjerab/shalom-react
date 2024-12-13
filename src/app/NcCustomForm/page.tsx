@@ -399,6 +399,30 @@ export default function CustomForm() {
   return (
     <main className="w-full h-full">
       <NcNav   />
+      <div className="px-[35px]">
+        <a href="/NewCreationForms">
+          <button
+            className="primaryFontHeadings flex items-center gap-2 text-slate-50  hover:bg-[#151515] p-3 rounded-[8px]"
+            style={{ fontSize: "clamp(15px, 5vw, 25px)" }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+              />
+            </svg>
+            <p>Tilbake</p>
+          </button>
+        </a>
+      </div>
       <nav className="p-[35px]">
         <div className="flex flex-col gap-5">
           <h1

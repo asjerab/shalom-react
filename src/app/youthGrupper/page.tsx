@@ -1,13 +1,14 @@
 "use client";
+import Image from "next/image";
 import YouthNav from "../components/youthNav";
 import alphaKursImg from "../grupperImages/alpha-kurs-img.png";
 import bibelStudieImg from "../grupperImages/bible-studie-img.png";
 import connectImg from "../grupperImages/connect-img.png";
 import tjenesteKursImg from "../grupperImages/tjeneste-kurs-img.png";
 import bonn from "../grupperImages/bonn-img.png";
-import dap from "../grupperImages/dap.png";
+import daap from "../grupperImages/dap.png";
 import evangelisering from "../grupperImages/evangelisering-img.png";
-import james from "../grupperImages/James-img.png";
+import jamesMinistry from "../grupperImages/James-img.png";
 import dypereImg from "../grupperImages/dypere-img.png";
 import AlphakursModal from "../components/ModalComponents/AlphakursModal";
 import BibelstudieModal from "../components/ModalComponents/BibelstudieModal";
@@ -21,6 +22,54 @@ import JamesModal from "../components/ModalComponents/JamesModal";
 import Footer from "../components/youthFooter";
 
 export default function YouthGrupper() {
+  const grupper = [
+    {
+      img: alphaKursImg,
+      title: "Alphakurs",
+      modal: <AlphakursModal />,
+    },
+    {
+      img: bibelStudieImg,
+      title: "Bibelstudie",
+      modal: <BibelstudieModal />,
+    },
+    {
+      img: tjenesteKursImg,
+      title: "Tjenestekurs",
+      modal: <TjenesteModal />,
+    },
+    {
+      img: connectImg,
+      title: "Connect",
+      modal: <ConnectModal />,
+    },
+    {
+      img: daap,
+      title: "Dåp",
+      modal: <DåpModal />,
+    },
+    {
+      img: bonn,
+      title: "Bønn",
+      modal: <BønnModal />,
+    },
+    {
+      img: dypereImg,
+      title: "The upper room",
+      modal: <TheUpperRoom />,
+    },
+    {
+      img: evangelisering,
+      title: "Evangelisering",
+      modal: <Evangelisering />,
+    },
+    {
+      img: jamesMinistry,
+      title: "James 1:27 Ministry",
+      modal: <JamesModal />,
+    },
+  ];
+
   return (
     <main className="h-full">
       <YouthNav />
@@ -44,151 +93,27 @@ export default function YouthGrupper() {
         </div>
         <div>
           <ul className="gupper-page-container grid grid-cols-3 gap-5">
-            <li className="grupper-img flex py-[100px] flex-col gap-5">
-              <img
-                className="w-full"
-                src={alphaKursImg.src}
-                alt="alphaKursImg"
-              />
-              <h1
-                className="primaryFontRegular text-slate-50 uppercase"
-                style={{
-                  fontSize: "clamp(15px, 5vw, 20px)",
-                }}
-              >
-                Alphakurs
-              </h1>
-              <hr className="opacity-50" />
-              <AlphakursModal />
-            </li>
-
-            <li className="grupper-img flex py-[100px] flex-col gap-5">
-              <img
-                className="w-full"
-                src={bibelStudieImg.src}
-                alt="bibelStudieImg"
-              />
-              <h1
-                className="primaryFontRegular text-slate-50 uppercase"
-                style={{
-                  fontSize: "clamp(15px, 5vw, 20px)",
-                }}
-              >
-                Bibelstudie
-              </h1>
-              <hr className="opacity-50" />
-              <BibelstudieModal />
-            </li>
-
-            <li className="grupper-img flex py-[100px] flex-col gap-5">
-              <img
-                className="w-full"
-                src={tjenesteKursImg.src}
-                alt="tjenesteKursImg"
-              />
-              <h1
-                className="primaryFontRegular text-slate-50 uppercase"
-                style={{
-                  fontSize: "clamp(15px, 5vw, 20px)",
-                }}
-              >
-                Tjenestekurs
-              </h1>
-              <hr className="opacity-50" />
-              <TjenesteModal />
-            </li>
-
-            <li className="grupper-img flex py-[100px] flex-col gap-5">
-              <img className="w-full" src={connectImg.src} alt="connectImg" />
-              <h1
-                className="primaryFontRegular text-slate-50 uppercase"
-                style={{
-                  fontSize: "clamp(15px, 5vw, 20px)",
-                }}
-              >
-                Connect
-              </h1>
-              <hr className="opacity-50" />
-              <ConnectModal />
-            </li>
-
-            <li className="grupper-img flex py-[100px] flex-col gap-5">
-              <img className="w-full" src={dap.src} alt="dapImg" />
-              <h1
-                className="primaryFontRegular text-slate-50 uppercase"
-                style={{
-                  fontSize: "clamp(15px, 5vw, 20px)",
-                }}
-              >
-                Dåp
-              </h1>
-              <hr className="opacity-50" />
-              <DåpModal />
-            </li>
-
-            <li className="grupper-img flex py-[100px] flex-col gap-5">
-              <img className="w-full" src={bonn.src} alt="bønnImg" />
-              <h1
-                className="primaryFontRegular text-slate-50 uppercase"
-                style={{
-                  fontSize: "clamp(15px, 5vw, 20px)",
-                }}
-              >
-                Bønn
-              </h1>
-              <hr className="opacity-50" />
-              <BønnModal />
-            </li>
-
-            <li className="grupper-img flex py-[100px] flex-col gap-5">
-              <img
-                className="w-full"
-                src={dypereImg.src}
-                alt="The Upper room Img"
-              />
-              <h1
-                className="primaryFontRegular text-slate-50 uppercase"
-                style={{
-                  fontSize: "clamp(15px, 5vw, 20px)",
-                }}
-              >
-                The upper room
-              </h1>
-              <hr className="opacity-50" />
-              <TheUpperRoom />
-            </li>
-
-            <li className="grupper-img flex py-[100px] flex-col gap-5">
-              <img
-                className="w-full"
-                src={evangelisering.src}
-                alt="evangeliseringImg"
-              />
-              <h1
-                className="primaryFontRegular text-slate-50 uppercase"
-                style={{
-                  fontSize: "clamp(15px, 5vw, 20px)",
-                }}
-              >
-                Evangelisering
-              </h1>
-              <hr className="opacity-50" />
-              <Evangelisering />
-            </li>
-
-            <li className="grupper-img flex py-[100px] flex-col gap-5">
-              <img className="w-full" src={james.src} alt="James1:27Img" />
-              <h1
-                className="primaryFontRegular text-slate-50 uppercase"
-                style={{
-                  fontSize: "clamp(15px, 5vw, 20px)",
-                }}
-              >
-                James 1:27 Ministry
-              </h1>
-              <hr className="opacity-50" />
-              <JamesModal />
-            </li>
+            {grupper.map((gruppe, index) => (
+              <li key={index} className="grupper-img flex py-[100px] flex-col gap-5">
+                <Image
+                  className="w-full"
+                  src={gruppe.img.src}
+                  width={604}
+                  height={604}
+                  alt={gruppe.title}
+                />
+                <h1
+                  className="primaryFontRegular text-slate-50 uppercase"
+                  style={{
+                    fontSize: "clamp(15px, 5vw, 20px)",
+                  }}
+                >
+                  {gruppe.title}
+                </h1>
+                <hr className="opacity-50" />
+                {gruppe.modal}
+              </li>
+            ))}
           </ul>
         </div>
       </div>
