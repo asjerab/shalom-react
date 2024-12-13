@@ -129,7 +129,7 @@ export default function TestNav() {
               className="flex items-center gap-2 border-[2px] border-[#111111] bg-[#111111] px-[20px] py-[8px] rounded-[8px] hover:scale-[99%] duration-150 ease-in-out"
             >
               <p
-                className="font-medium text-slate-50"
+                className="primaryFontRegular text-slate-50"
                 style={{ fontSize: "clamp(15px, 3vw, 20px)" }}
               >
                 {menuOpen ? "Close" : "Menu"}

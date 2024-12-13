@@ -44,97 +44,27 @@ input:-webkit-autofill:active {
 
 @font-face {
   font-family: "Kelsi-fill";
-  src: url(./assets/fonts/Kelsi-fill.otf);
+  src: url(/fonts/Kelsi-fill.otf);
 }
 
 @font-face {
   font-family: "Kelsi-outline";
-  src: url(./assets/fonts/Kelsi-Regular.otf);
-}
-
-@font-face {
-  font-family: "Magic Retro";
-  src: url(assets/fonts/Magic\ Retro-normal-400-100.ttf);
-}
-
-@font-face {
-  font-family: "Milk&Honey";
-  src: url(assets/fonts/Milk\ And\ Honey.ttf);
-}
-
-@font-face {
-  font-family: "SF-Pro-Regular";
-  src: url(assets/fonts/SFPRODISPLAYREGULAR.OTF);
-}
-
-@font-face {
-  font-family: "SF-Pro-Medium";
-  src: url(assets/fonts/SFPRODISPLAYMEDIUM.OTF);
-}
-
-@font-face {
-  font-family: "SF-Pro-Bold";
-  src: url(assets/fonts/SFPRODISPLAYBOLD.OTF);
-}
-
-@font-face {
-  font-family: "AeonikTRIAL-Bold";
-  src: url(assets/fonts/AeonikTRIAL-Bold.otf);
-}
-
-@font-face {
-  font-family: "AeonikTRIAL-Regular";
-  src: url(assets/fonts/AeonikTRIAL-Regular.otf);
-}
-
-@font-face {
-  font-family: "AeonikTRIAL-Light";
-  src: url(assets/fonts/AeonikTRIAL-Light.otf);
-}
-
-@font-face {
-  font-family: "kollektif";
-  src: url(assets/fonts/Kollektif.ttf);
-}
-
-@font-face {
-  font-family: "kollektif-bold";
-  src: url(assets/fonts/Kollektif-Bold.ttf);
-}
-
-@font-face {
-  font-family: "NeueHaasDisplayLight";
-  src: url(assets/fonts/NeueHaasDisplayLight.ttf);
-}
-
-@font-face {
-  font-family: "NeueHaasDisplayMedium";
-  src: url(assets/fonts/NeueHaasDisplayMediu.ttf);
-}
-
-@font-face {
-  font-family: "NeueHaasDisplayBold";
-  src: url(assets/fonts/NeueHaasDisplayBold.ttf);
-}
-
-@font-face {
-  font-family: "BlackSword";
-  src: url(assets/fonts/Blacksword.otf);
+  src: url(/fonts/Kelsi-Regular.otf);
 }
 
 @font-face {
   font-family: "Gilroy-Regular";
-  src: url(assets/fonts/Gilroy-Regular.ttf);
+  src: url(/fonts/Gilroy-Regular.ttf);
 }
 
 @font-face {
   font-family: "Gilroy-Medium";
-  src: url(assets/fonts/Gilroy-Medium.ttf);
+  src: url(/fonts/Gilroy-Medium.ttf);
 }
 
 @font-face {
   font-family: "Gilroy-Semibold";
-  src: url(assets/fonts/Gilroy-SemiBold.ttf);
+  src: url(/fonts/Gilroy-SemiBold.ttf);
 }
 
 .Kelsi-fill {
@@ -145,21 +75,6 @@ input:-webkit-autofill:active {
   font-family: "Kelsi-outline";
 }
 
-.Monument {
-  font-family: "Monument";
-}
-
-.Magic-Retro {
-  font-family: "Magic Retro";
-}
-
-.Milk-Honey {
-  font-family: "Milk&Honey";
-}
-
-.SF-Pro-Medium {
-  font-family: "NeueHaasDisplayBold";
-}
 
 .primaryFontLight {
   font-family: "Gilroy-Regular";
@@ -176,17 +91,6 @@ input:-webkit-autofill:active {
   font-weight: 700;
 }
 
-.primaryFontHeadings {
-  font-family: "AeonikTRIAL-Regular";
-}
-
-.Sf-pro-font-regular {
-  font-family: "SF-Pro-Regular";
-}
-
-.BlackSword {
-  font-family: "BlackSword";
-}
 
 @keyframes appear {
   from {

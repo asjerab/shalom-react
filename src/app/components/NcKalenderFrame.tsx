@@ -46,7 +46,7 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
         <div key={month} className="w-full">
           <div className="pb-16">
             <h2
-              className="font-bold primaryFontHeadings text-slate-50 pt-10"
+              className="font-bold primaryFontRegular text-slate-50 pt-10"
               style={{ fontSize: "clamp(15px, 5vw, 35px)" }}
             >
               {month}
