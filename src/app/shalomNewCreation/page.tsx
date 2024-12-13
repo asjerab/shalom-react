@@ -33,7 +33,6 @@ export default function ShalomHome() {
     <main>
       <NcNav />
       <NewUserModal showModal={showModal} closeModal={closeModal} />
-      */{" "}
       {/*       <Marquee />
        */}{" "}
       <NcGrupperHome />

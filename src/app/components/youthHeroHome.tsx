@@ -6,7 +6,7 @@ import YouthNavHome from "./youthNav";
 export default function YouthNav() {
   return (
     <main>
-      <nav className="h-dvh bg-cover bg-no-repeat bg-center youthNav-bg pb-[100px]" id="youthHero">
+      <nav className="youthNav-bg pb-[100px]" id="youthHero">
         <YouthNavHome />
         <div className="primaryFontHeadings w-full h-5/6  flex justify-center items-center flex-col">
           <h1

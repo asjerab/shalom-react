@@ -256,19 +256,30 @@ input:-webkit-autofill:active {
 /* YouthNav-bg holder*/
 
 .youthNav-bg {
-  background-image: url(images/nav-bg-3.jpg);
+  background-image: url(/heroBgImages/shalomYouthHeroImg.jpg);
+  height: 100dvh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .NcNav-bg {
-  background-image: url(images/Nc-bg-nav.png);
+  background-image: url(/heroBgImages/newCreationHeroImg.png);
+  height: 100dvh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* youtube-bg holder*/
 
 .youtube-bg-holder {
-  background-image: url(./images/YoutubeIMG-min.png);
+  background-image: url(/heroBgImages/youtubeBgImg.png);
   width: 1325px;
   height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .youtubeImgContainer {
