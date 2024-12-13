@@ -10,7 +10,7 @@ export default function YouthNav() {
         <YouthNavHome />
         <div className="primaryFontHeadings w-full h-5/6  flex justify-center items-center flex-col">
           <h1
-            className="primaryFontHero text-slate-50 font-[900]  leading-none"
+            className="primaryFontBold text-slate-50 font-[900]  leading-none"
             style={{ fontSize: "clamp(10px, 11.2vw, 250px)" }}
           >
             Shalom Youth
@@ -21,7 +21,7 @@ export default function YouthNav() {
             4:12
           </p>
           <a href="#utforsk-a" className="flex justify-center">
-            <button className="btn w-full primaryFontHeadings uppercase scroll-container max-w-[125px] m-5 rounded-[28px] bg-[#222222] text-slate-50 border-none hover:bg-[#1a1a1a]">
+            <button className="btn w-full primaryFontRegular uppercase scroll-container max-w-[125px] m-5 rounded-[28px] bg-[#111] text-slate-50 border-none hover:bg-[#1a1a1a]">
               <div className="scroll-holder">
                 <p>Utforsk</p>
               </div>
