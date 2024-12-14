@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import TheUpperRoom from "../../../public/grupperImages/dypereKursBilde.png";
-import Bonn from "../../../public/grupperImages/bonnBilde.png";
-import Evangelisering from "../../../public/grupperImages/evangeliseringBilde.png";
-import tjenesteKursImg from "../../../public/grupperImages/tjenesteKursBilde.png";
+import TheUpperRoom from "/public/grupperImages/dypereKursBilde.png";
+import Bonn from "/public/grupperImages/bonnBilde.png";
+import Evangelisering from "/public/grupperImages/evangeliseringBilde.png";
+import tjenesteKursImg from "/public/grupperImages/tjenesteKursBilde.png";
 
 export default function YouthGrupperHome() {
   return (
