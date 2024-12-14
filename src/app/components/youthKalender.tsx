@@ -43,7 +43,7 @@ const data = [
   { month: "October", id: "/event/kalenderYouth/ConnectOgTjenestekurs", date: 9 , image: 'grupperImages/ConnetOgTjenestekurs.png' },
   { month: "October", id: "/event/kalenderYouth/MultiSondagsArrangement", date: 12 , image: 'grupperImages/AlphaDypereOgGudstjeneste.png'},
   { month: "October", id: "/event/kalenderYouth/Bibelstudie", date: 15, image: 'grupperImages/bible-studie-img.png'  },
-  { month: "October", id: "/event/kalenderYouth/Tjenestekurs", date: 16, image: 'grupperImages/tjenesteKursBilde.png'  },
+  { month: "October", id: "/event/kalenderYouth/Tjenestekurs", date: 16, image: 'grupperImages/tjenestekursBilde.png'  },
   { month: "October", id: "/event/kalenderYouth/Bonnemote", date: 17, image: 'grupperImages/bonnBilde.png'  },
   { month: "October", id: "/event/kalenderYouth/Evangelisering", date: 18, image: 'grupperImages/evangeliseringBilde.png'  },
   { month: "October", id: "/event/kalenderYouth/MultiSondagsArrangement", date: 19 , image: 'grupperImages/AlphaDypereOgGudstjeneste.png'},
@@ -51,7 +51,7 @@ const data = [
   { month: "October", id: "/event/kalenderYouth/MultiSondagsArrangement", date: 26 , image: 'grupperImages/AlphaDypereOgGudstjeneste.png'},
   { month: "October", id: "/event/kalenderYouth/JamesEvent", date: 27, image: 'grupperImages/jamesMinistryBilde.png' },
   { month: "October", id: "/event/kalenderYouth/Bibelstudie", date: 29, image: 'grupperImages/bible-studie-img.png'  },
-  { month: "October", id: "/event/kalenderYouth/Tjenestekurs", date: 30, image: 'grupperImages/tjenesteKursBilde.png'  },
+  { month: "October", id: "/event/kalenderYouth/Tjenestekurs", date: 30, image: 'grupperImages/tjenestekursBilde.png'  },
   { month: "October", id: "/event/kalenderYouth/Bonnemote", date: 31, image: 'grupperImages/bonnBilde.png'  },
   ///////////////// 
   // November Seksjon

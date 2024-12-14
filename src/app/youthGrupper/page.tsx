@@ -4,7 +4,7 @@ import YouthNav from "../components/youthNav";
 import alphaKursImg from "../../../public/grupperImages/alphaKursBilde.png";
 import bibelStudieImg from "../../../public/grupperImages/bibelStudieBilde.png";
 import connectImg from "../../../public/grupperImages/connectBilde.png";
-import tjenesteKursImg from "../../../public/grupperImages/tjenesteKursBilde.png";
+import tjenesteKursImg from "../../../public/grupperImages/tjenestekursBilde.png";
 import bonn from "../../../public/grupperImages/bonnBilde.png";
 import daap from "../../../public/grupperImages/daapBilde.png";
 import evangelisering from "../../../public/grupperImages/evangeliseringBilde.png";

@@ -3,7 +3,7 @@ import Image from "next/image";
 import TheUpperRoom from "/public/grupperImages/dypereKursBilde.png";
 import Bonn from "/public/grupperImages/bonnBilde.png";
 import Evangelisering from "/public/grupperImages/evangeliseringBilde.png";
-import tjenesteKursImg from "/public/grupperImages/tjenesteKursBilde.png";
+import tjenesteKursImg from "/public/grupperImages/tjenestekursBilde.png";
 
 export default function YouthGrupperHome() {
   return (

@@ -3,7 +3,7 @@ import Image from "next/image";
 import alphaKursImg from "/public/grupperImages/alphaKursBilde.png";
 import bibelStudieImg from "/public/grupperImages/bibelStudieBilde.png";
 import connectImg from "/public/grupperImages/connectBilde.png";
-import tjenesteKursImg from "/public/grupperImages/tjenesteKursBilde.png";
+import tjenesteKursImg from "/public/grupperImages/tjenestekursBilde.png";
 
 export default function YouthGrupperHome() {
   return (
