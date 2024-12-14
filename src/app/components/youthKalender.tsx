@@ -4,20 +4,20 @@ import image from "grupperImages/FellesMoteImage.png"
 const data = [
   /////////////////
   // Juni Seksjon
-  { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 1, image: 'grupperImages/Gudstjeneste-img.png'},
+  { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 1, image: 'grupperImages/GudstjenesteBilde.png'},
   { month: "June", id: "/event/kalenderYouth/Connect", date: 5, image: 'grupperImages/connectBilde.png' },
   { month: "June", id: "/event/kalenderYouth/Evangelisering", date: 7, image: 'grupperImages/evangeliseringBilde.png'  },
   { month: "June", id: "/event/kalenderYouth/AlphakursTheUpperRoom",date: 9, image: 'grupperImages/alphaKursBilde.png'},
   { month: "June", id: "/event/kalenderYouth/Bibelstudie", date: 11, image: 'grupperImages/bibelStudieBilde.png' },
   { month: "June", id: "/event/kalenderYouth/Bonnemote", date: 13, image: 'grupperImages/bonnBilde.png'  },
-  { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 15, image: 'grupperImages/Gudstjeneste-img.png' },
-  { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 22, image: 'grupperImages/Gudstjeneste-img.png' },
-  { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 30, image: 'grupperImages/Gudstjeneste-img.png' },
+  { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 15, image: 'grupperImages/GudstjenesteBilde.png' },
+  { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 22, image: 'grupperImages/GudstjenesteBilde.png' },
+  { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 30, image: 'grupperImages/GudstjenesteBilde.png' },
   ///////////////// 
   // August Seksjon
   { month: "August", id: "/event/kalenderYouth/TjenesteKickOff", date: 22, image: 'grupperImages/TjenesteKickoff-img.png'},
-  { month: "August", id: "/event/kalenderYouth/Gudstjeneste", date: 24, image: 'grupperImages/Gudstjeneste-img.png' },
-  { month: "August", id: "/event/kalenderYouth/Gudstjeneste", date: 31, image: 'grupperImages/Gudstjeneste-img.png' },
+  { month: "August", id: "/event/kalenderYouth/Gudstjeneste", date: 24, image: 'grupperImages/GudstjenesteBilde.png' },
+  { month: "August", id: "/event/kalenderYouth/Gudstjeneste", date: 31, image: 'grupperImages/GudstjenesteBilde.png' },
   ///////////////// 
   // September Seksjon
   { month: "September", id: "/event/kalenderYouth/Bibelstudie", date: 3, image: 'grupperImages/bibelStudieBilde.png'  },
@@ -27,11 +27,11 @@ const data = [
   { month: "September", id: "https://dayandnight.no/2024/04/24/6110/", date: 7, image: 'arrangementImages/BonnOgFasteImage.png'  },
   { month: "September", id: "https://dayandnight.no/2024/04/24/6110/", date: 8, image: 'arrangementImages/BonnOgFasteImage.png'  },
   { month: "September", id: "/event/kalenderYouth/Connect", date: 11 , image: 'grupperImages/connectBilde.png'  },
-  { month: "September", id: "/event/kalenderYouth/Gudstjeneste", date: 14, image: 'grupperImages/Gudstjeneste-img.png'},
+  { month: "September", id: "/event/kalenderYouth/Gudstjeneste", date: 14, image: 'grupperImages/GudstjenesteBilde.png'},
   { month: "September", id: "/event/arrangement/Storsondag", date: 15, image: 'arrangementImages/Storsondag-img.png'},
   { month: "September", id: "/event/kalenderYouth/Bonnemote", date: 19, image: 'grupperImages/bonnBilde.png'  },
   { month: "September", id: "/event/kalenderYouth/Evangelisering", date: 20, image: 'grupperImages/evangeliseringBilde.png'  },
-  { month: "September", id: "/event/kalenderYouth/Gudstjeneste", date: 21, image: 'grupperImages/Gudstjeneste-img.png'},
+  { month: "September", id: "/event/kalenderYouth/Gudstjeneste", date: 21, image: 'grupperImages/GudstjenesteBilde.png'},
   { month: "September", id: "/event/kalenderYouth/Connect", date: 25 , image: 'grupperImages/connectBilde.png' },
   { month: "September", id: "/event/kalenderYouth/Fellesmote", date: 29 , image: 'grupperImages/FellesMoteImage.png' },
   ///////////////// 
@@ -72,18 +72,18 @@ const data = [
   { month: "November", id: "/event/kalenderYouth/BonnemoteSondager", date: 24, image: 'arrangementImages/Bonn&Dypere.png' },
   { month: "November", id: "/event/kalenderYouth/BonnemoteTorsdager", date: 28, image: 'arrangementImages/bonnemoter.png' },
   { month: "November", id: "/event/kalenderYouth/Evangelisering", date: 29, image: 'grupperImages/evangeliseringBilde.png'  },
-  { month: "November", id: "/event/kalenderYouth/Gudstjeneste", date: 30 , image: 'grupperImages/Gudstjeneste-img.png'},
+  { month: "November", id: "/event/kalenderYouth/Gudstjeneste", date: 30 , image: 'grupperImages/GudstjenesteBilde.png'},
   ///////////////// 
   // December Seksjon
   { month: "December", id: "/event/kalenderYouth/Fellesmote", date: 1, image: 'grupperImages/FellesMoteImage.png' },
   { month: "December", id: "/event/kalenderYouth/Connect", date: 4, image: 'grupperImages/connectBilde.png' },
   { month: "December", id: "/event/arrangement/Bravelovenorway", date: 5, image: 'arrangementImages/Bravelovenorway.png' },
   { month: "December", id: "/event/kalenderYouth/Evangelisering", date: 6, image: 'grupperImages/evangeliseringBilde.png'  },
-  { month: "December", id: "/event/kalenderYouth/Gudstjeneste", date: 7 , image: 'grupperImages/Gudstjeneste-img.png'},
-  { month: "December", id: "/event/kalenderYouth/Bibelstudie", date: 10, image: 'grupperImages/bibelStudieBilde.png'  },
+  { month: "December", id: "/event/kalenderYouth/Gudstjeneste", date: 7 , image: 'grupperImages/GudstjenesteBilde.png'},
+  { month: "December", id: "/event/kalenderYouth/Bibelstudie", date: 10, image: 'grupperImages/bibelStudieBilde.png' },
   { month: "December", id: "/event/arrangement/JulebordYouth", date: 11, image: 'arrangementImages/JulebordConnectYouthImg.png'  },
   { month: "December", id: "/event/kalenderYouth/Bonnemote", date: 12, image: 'grupperImages/bonnBilde.png'  },
-  { month: "December", id: "/event/kalenderYouth/Gudstjeneste", date: 14, image: 'grupperImages/Gudstjeneste-img.png' },
+  { month: "December", id: "/event/kalenderYouth/Gudstjeneste", date: 14, image: 'grupperImages/GudstjenesteBilde.png' },
   { month: "December", id: "/event/kalenderYouth/Evangelisering", date: 20, image: 'grupperImages/evangeliseringBilde.png'  },
   { month: "December", id: "/event/arrangement/Julecup", date: 21, image: 'arrangementImages/JulecupFellesImg.png' },
   { month: "December", id: "/event/kalenderYouth/Fellesmote", date: 22, image: 'grupperImages/FellesMoteImage.png' },
