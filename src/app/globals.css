@@ -106,7 +106,7 @@ input:-webkit-autofill:active {
 .animation-scroll {
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 39%;
 }
 
 /* Scrolling text animation */
