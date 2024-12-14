@@ -1,15 +1,15 @@
 "use client";
 import Image from "next/image";
 import NcNav from "../components/ncNav";
-import alphaKursImg from "../grupperImages/alpha-kurs-img.png";
-import bibelStudieImg from "../grupperImages/bible-studie-img.png";
-import connectImg from "../grupperImages/connect-img.png";
-import tjenesteKursImg from "../grupperImages/tjeneste-kurs-img.png";
-import bonn from "../grupperImages/bonn-img.png";
-import dap from "../grupperImages/dap.png";
-import evangelisering from "../grupperImages/evangelisering-img.png";
-import james from "../grupperImages/James-img.png";
-import dypereImg from "../grupperImages/dypere-img.png";
+import alphaKursImg from "../../../public/grupperImages/alphaKursBilde.png";
+import bibelStudieImg from "../../../public/grupperImages/bibelStudieBilde.png";
+import connectImg from "../../../public/grupperImages/connectBilde.png";
+import tjenesteKursImg from "../../../public/grupperImages/tjenesteKursBilde.png";
+import bonn from "../../../public/grupperImages/bonnBilde.png";
+import daapBilde from "../../../public/grupperImages/daapBilde.png";
+import evangelisering from "../../../public/grupperImages/evangeliseringBilde.png";
+import james from "../../../public/grupperImages/jamesMinistryBilde.png";
+import dypereImg from "../../../public/grupperImages/dypereKursBilde.png";
 import NcAlphakursModal from "../components/NcModalComponents/NcAlphakursModal";
 import NcBibelstudieModal from "../components/NcModalComponents/NcBibelstudieModal";
 import TjenesteModal from "../components/NcModalComponents/TjenesteModal";
@@ -44,7 +44,7 @@ export default function YouthGrupper() {
       modal: <NcConnectModal />,
     },
     {
-      img: dap.src,
+      img: daapBilde.src,
       title: "Dåp",
       modal: <DåpModal />,
     },

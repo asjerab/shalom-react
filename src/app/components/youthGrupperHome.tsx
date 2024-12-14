@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import alphaKursImg from "../grupperImages/alpha-kurs-img.png";
-import bibelStudieImg from "../grupperImages/bible-studie-img.png";
-import connectImg from "../grupperImages/connect-img.png";
-import tjenesteKursImg from "../grupperImages/tjeneste-kurs-img.png";
+import alphaKursImg from "/public/grupperImages/alphaKursBilde.png";
+import bibelStudieImg from "/public/grupperImages/bibelStudieBilde.png";
+import connectImg from "/public/grupperImages/connectBilde.png"
+import tjenesteKursImg from "/public/grupperImages/tjenesteKursBilde.png";
 
 export default function YouthGrupperHome() {
   return (
