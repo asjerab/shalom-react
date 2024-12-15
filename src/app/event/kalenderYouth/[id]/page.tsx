@@ -65,7 +65,26 @@ export default async function Page({ params }: EventPageProps) {
               display: eventData.description ? "flex" : "none",
             }}
           >
-            {eventData.description}
+            {eventData.description.split("\n").map((line, index) => (
+              <span key={index}>
+                {line.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
+                  part.match(/https?:\/\/[^\s]+/) ? (
+                    <a
+                      key={i}
+                      href={part}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-500 underline"
+                    >
+                      {part}
+                    </a>
+                  ) : (
+                    part
+                  )
+                )}
+                <br />
+              </span>
+            ))}{" "}
           </p>
         </div>
         <div className="kalender-subInfo flex gap-5">

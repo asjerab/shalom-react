@@ -4,6 +4,7 @@ import NewUserModal from "../components/newUserModal";
 // import Marquee from "../components/Marquee";
 import YouthNav from "../components/youthHeroHome";
 import YouthGrupperHome from "../components/youthGrupperHome";
+import NewYears from "../components/newYearsPoster"
 import KalenderYouth from "../components/youthKalender";
 import YoutubeComp from "../components/youtubeHome";
 import PaameldingHome from "../components/youthPåmeldingHome";
@@ -33,6 +34,7 @@ export default function ShalomHome() {
        */}{" "}
       <NewUserModal showModal={showModal} closeModal={closeModal} />
       <YouthNav />
+      <NewYears />
       <YouthGrupperHome />
       <KalenderYouth />
       <YoutubeComp />

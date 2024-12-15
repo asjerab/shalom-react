@@ -1,5 +1,4 @@
 import Link from "next/link";
-import YoutubeIMG from "../images/YoutubeIMG.png";
 
 export default function youtubeComp() {
   return (

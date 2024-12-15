@@ -63,8 +63,20 @@ export default async function EventPage({ params }: EventPageProps) {
             className="Sf-pro-font-regular text-slate-50 w-full max-w-[700px]"
             style={{ fontSize: "clamp(15px, 3.5vw, 20px)" }}
           >
-            {eventData.description}
-          </p>
+            {eventData.description.split('\n').map((line, index) => (
+              <span key={index}>
+                {line.split(/(https?:\/\/[^\s]+)/g).map((part, i) => 
+                  part.match(/https?:\/\/[^\s]+/) ? (
+                    <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+                      {part}
+                    </a>
+                  ) : (
+                    part
+                  )
+                )}
+                <br />
+              </span>
+            ))}          </p>
         </div>
         <div className="kalender-subInfo flex gap-5">
           <p className="Sf-pro-font-regular text-[#111] badge py-4 border-none">

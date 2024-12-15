@@ -262,6 +262,10 @@ input:-webkit-autofill:active {
   }
 }
 
+.newYearsBg {
+  background-image: url(/heroBgImages/newYearsImage.png);
+}
+
 @media screen and (max-width: 1600px) {
   .kalender-div {
     width: 79%;
