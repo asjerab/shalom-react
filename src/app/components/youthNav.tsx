@@ -71,7 +71,7 @@ export default function TestNav() {
             <div className="py-10 flex flex-col gap-2">
               {navLinksMobile.map((link) => (
                 <Link
-                  key={link.hrefMobile} // Ensure the key is added here
+                  key={link.hrefMobile}
                   className="PrimaryFontHeadings font-medium flex justify-between items-center"
                   href={link.hrefMobile}
                 >
