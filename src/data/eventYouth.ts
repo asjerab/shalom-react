@@ -60,8 +60,8 @@ export const eventsYouth = [
     description:
       "Dette er tjeneste kick off for alle i tjeneste i Youth/New creation (Obligatorisk). Gi informasjon til din nærmeste leder om du ikke kommer.",
     location: "St. Olavs Gate 24, Oslo",
-    clock: "Klokkeslett etter avtale",
-    date: "Dato etter avtale",
+    clock: "17:00",
+    date: "01.09.25",
   },
 
   {
