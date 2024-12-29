@@ -15,8 +15,8 @@ export const eventsYouth = [
     description:
       "Velkommen til gudstjeneste sammen med New Creation. Ta med en venn eller to og ta del i det Gud har for oss som fellesskap. Velkommen hjem!",
     location: "St. Olavs Gate 24, Oslo",
-    clock: "18:30",
-    date: "søndag 06.10.24",
+    clock: "Tid kommer",
+    date: "søndag 23.02.25",
   },
   {
     id: "Connect",
@@ -71,7 +71,7 @@ export const eventsYouth = [
       "Dette er tjenestekurs for deg som vil tjenestegjøre i shalom youth",
     location: "St. Olavs Gate 24, Oslo",
     clock: "Klokkeslett etter avtale",
-    date: "13.10.24",
+    date: "13.10.25",
   },
   {
     id: "Bonnemote",
@@ -92,12 +92,11 @@ export const eventsYouth = [
   },
   {
     id: "JamesEvent",
-    title: "Bli en fadder!",
-    description:
-      "Møtet utgår i dag på grunn av fellesmøtet med James. I stedet vil hovedfokuset være på fadderordningen. Dersom du ønsker å bli fadder, kan du ta kontakt med oss for mer informasjon om hvordan du kan bidra som fadder. PS: Vi vil også ha salg av produkter fra vår tidligere kolleksjon etter møtet.",
+    title: "Love in action!",
+    description: "Mer info kommer",
     location: "St. Olavs Gate 24, Oslo",
-    clock: "18:30",
-    date: "27.10.24",
+    clock: "Tid kommer",
+    date: "15.02.25",
   },
   //Spesielle arrangementer
   {
@@ -107,14 +106,12 @@ export const eventsYouth = [
       "Dette er tjenestekurs for deg som vil tjenestegjøre i shalom youth",
     location: "St. Olavs Gate 24, Oslo",
     clock: "Klokkeslett etter avtale",
-    date: "13.10.24",
     //
     titleTwo: "Connect",
     descriptionTwo:
       "Småfellesskap. Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
     locationTwo: "St. Olavs Gate 24, Oslo",
-    clockTwo: "18:00",
-    dateTwo: "Onsdager / Oddetallsuker",
+    clockTwo: "Klokkeslett etter avtale",
   },
 
   {
@@ -124,7 +121,7 @@ export const eventsYouth = [
       "Dette er tjenestekurs for deg som vil tjenestegjøre i shalom youth",
     location: "St. Olavs Gate 24, Oslo",
     clock: "Klokkeslett etter avtale",
-    date: "13.10.24",
+    date: "13.10.25",
     //
     titleTwo: "Connect",
     descriptionTwo:
@@ -165,7 +162,7 @@ export const eventsYouth = [
       "Velkommen til gudstjeneste sammen med New Creation. Ta med en venn eller to og ta del i det Gud har for oss som fellesskap. Velkommen hjem!",
     location: "St. Olavs Gate 24, Oslo",
     clock: "Tid etter avtale",
-    date: "søndag 06.10.24",
+    date: "søndag 06.10.25",
     //
     titleTwo: "Alphakurs",
     descriptionTwo:
@@ -228,6 +225,23 @@ export const eventsYouth = [
       "Ønsker du og døpe deg kan du gjøre det via påmelding siden og du vil bli kontaktet fortløpende. Er du usikker på hva dåp går ut på? Les mer om kurset ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
     location: "St. Olavs Gate 24, Oslo",
     clock: "14:00",
-    date: "02.11.24",
+    date: "02.11.25",
   },
+  {
+    id: "AlphaOgDypere",
+    title: "Alphakurs",
+    description:
+      "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "14:00 - 15:30",
+    date: "Lørdager / 7 ukers kurs",
+    //
+    titleTwo: "TheUpperRoom",
+    descriptionTwo:
+      "Les mer om kursene ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
+    locationTwo: "St. Olavs Gate 24, Oslo",
+    clockTwo: "13:30 - 15:00",
+    dateTwo: "Lørdager / 7 ukers kurs",
+  },  
+
 ];
