@@ -3,8 +3,8 @@
 import NewUserModal from "../components/NcnewUserModal";
 import Marquee from "../components/Marquee";
 import NcNav from "../components/NcHeroHome";
+import NewYearsCountdown from "../components/newYearsCountDown"
 import NcGrupperHome from "../components/NcGrupperHome";
-import NewYears from "../components/NewCreationNewYearsPoster";
 import KalenderNc from "../components/NcKalender";
 import YoutubeComp from "../components/youtubeHome";
 import NcPåmeldingHome from "../components/NcPåmeldingHome";
@@ -31,9 +31,9 @@ export default function ShalomHome() {
   return (
     <main>
       <NcNav />
+      <NewYearsCountdown />
       <NewUserModal showModal={showModal} closeModal={closeModal} />
       <Marquee />
-      <NewYears />
       <NcGrupperHome />
       <KalenderNc />
       <YoutubeComp />

@@ -3,8 +3,8 @@
 import NewUserModal from "../components/newUserModal";
 import Marquee from "../components/Marquee";
 import YouthNav from "../components/youthHeroHome";
+import NewYearsCountdown from "../components/newYearsCountDown"
 import YouthGrupperHome from "../components/youthGrupperHome";
-import NewYears from "../components/newYearsPoster";
 import KalenderYouth from "../components/youthKalender";
 import YoutubeComp from "../components/youtubeHome";
 import PaameldingHome from "../components/youthPåmeldingHome";
@@ -31,7 +31,7 @@ export default function ShalomHome() {
       <Marquee />
       <NewUserModal showModal={showModal} closeModal={closeModal} />
       <YouthNav />
-      <NewYears />
+      <NewYearsCountdown />
       <YouthGrupperHome />
       <KalenderYouth />
       <YoutubeComp />
