@@ -70,4 +70,15 @@ export const arrangement = [
     clock: "20:00 - 00:15",
     date: "31.12.24",
   },
+
+  {
+    id: "Paaskekonf",
+    title: "Påskekonferanse",
+    description:
+      "Mer info kommer",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "Tid kommer",
+    date: "11-12.04.25",
+    //
+  }
 ];

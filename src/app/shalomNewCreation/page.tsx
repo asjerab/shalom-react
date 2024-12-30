@@ -1,7 +1,7 @@
 "use client";
 
 import NewUserModal from "../components/NcnewUserModal";
-// import Marquee from "../components/Marquee"
+import Marquee from "../components/Marquee";
 import NcNav from "../components/NcHeroHome";
 import NcGrupperHome from "../components/NcGrupperHome";
 import NewYears from "../components/NewCreationNewYearsPoster";
@@ -16,13 +16,11 @@ export default function ShalomHome() {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    // Check localStorage for 'returningUser' key
     const isReturningUser = localStorage.getItem("returningUser");
 
-    // If not set, show the modal and set the key
     if (!isReturningUser) {
       setShowModal(true);
-      localStorage.setItem("returningUser", "true"); // Now user is no longer new
+      localStorage.setItem("returningUser", "true");
     }
   }, []);
 
@@ -34,8 +32,7 @@ export default function ShalomHome() {
     <main>
       <NcNav />
       <NewUserModal showModal={showModal} closeModal={closeModal} />
-      {/*       <Marquee />
-       */}{" "}
+      <Marquee />
       <NewYears />
       <NcGrupperHome />
       <KalenderNc />

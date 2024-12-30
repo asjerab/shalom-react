@@ -1,81 +1,186 @@
 import Calendar from "./NcKalenderFrame";
 
 const data = [
-  ///////////////// 
-  // September Seksjon
-  { month: "September", id: "/event/KalenderNewCreation/Bibelstudie", date: 3, image: 'grupperImages/bibelStudieBilde.png' },
-  { month: "September", id: "https://dayandnight.no/2024/04/24/6110/", date: 4, image: 'arrangementImages/BonnOgFasteImage.png' },
-  { month: "September", id: "https://dayandnight.no/2024/04/24/6110/", date: 5, image: 'arrangementImages/BonnOgFasteImage.png' },
-  { month: "September", id: "https://dayandnight.no/2024/04/24/6110/", date: 6, image: 'arrangementImages/BonnOgFasteImage.png' },
-  { month: "September", id: "https://dayandnight.no/2024/04/24/6110/", date: 7, image: 'arrangementImages/BonnOgFasteImage.png' },
-  { month: "September", id: "https://dayandnight.no/2024/04/24/6110/", date: 8, image: 'arrangementImages/BonnOgFasteImage.png' },
-  { month: "September", id: "/event/KalenderNewCreation/Connect", date: 12, image: 'grupperImages/connectBilde.png' },
-  { month: "September", id: "/event/arrangementNewCreation/Storsondag", date: 15, image: 'arrangementImages/Storsondag-img.png' },
-  { month: "September", id: "/event/KalenderNewCreation/Bonnemote", date: 19, image: 'grupperImages/bonnBilde.png' },
-  { month: "September", id: "/event/KalenderNewCreation/Evangelisering", date: 20, image: 'grupperImages/evangeliseringBilde.png' },
-  { month: "September", id: "/event/KalenderNewCreation/Gudstjeneste", date: 22, image: 'grupperImages/gudstjenesteBilde.png' },
-  { month: "September", id: "/event/KalenderNewCreation/Connect", date: 26, image: 'grupperImages/connectBilde.png' },
-  { month: "September", id: "/event/KalenderNewCreation/Fellesmote", date: 29, image: 'grupperImages/FellesMoteImage.png' },
-    ///////////////// 
-  // October Seksjon
-  { month: "October", id: "/event/KalenderNewCreation/Bibelstudie", date: 1, image: 'grupperImages/bibelStudieBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Bonnemote", date: 3, image: 'grupperImages/bonnBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Evangelisering", date: 4, image: 'grupperImages/evangeliseringBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/FellesMotMultiArrangement", date: 6, image: 'grupperImages/FellesMoteMAlpha&Dypere.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Tjenestekurs", date: 9, image: 'grupperImages/tjenestekursBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Connect", date: 10, image: 'grupperImages/connectBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 12, image: 'grupperImages/AlphaOgDypere.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Gudstjeneste", date: 13, image: 'grupperImages/gudstjenesteBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Tjenestekurs", date: 16, image: 'grupperImages/tjenestekursBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Bonnemote", date: 17, image: 'grupperImages/bonnBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Evangelisering", date: 18, image: 'grupperImages/evangeliseringBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 19, image: 'grupperImages/AlphaOgDypere.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Gudstjeneste", date: 20, image: 'grupperImages/gudstjenesteBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Tjenestekurs", date: 23, image: 'grupperImages/tjenestekursBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Connect", date: 24, image: 'grupperImages/connectBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 26, image: 'grupperImages/AlphaOgDypere.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Tjenestekurs", date: 30, image: 'grupperImages/tjenestekursBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Bibelstudie", date: 15, image: 'grupperImages/bibelStudieBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/JamesEvent", date: 27, image: 'grupperImages/jamesMinistryBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Bibelstudie", date: 29, image: 'grupperImages/bibelStudieBilde.png' },
-  { month: "October", id: "/event/KalenderNewCreation/Bonnemote", date: 31, image: 'grupperImages/bonnBilde.png' },
+    /////////////////
+    // Januar Seksjon
+    { month: "January", id: "/event/KalenderNewCreation/Bonnemote", date: 3, image: 'arrangementImages/BonnOgFasteImage.png'},
+    { month: "January", id: "/event/KalenderNewCreation/Bonnemote", date: 4, image: 'arrangementImages/BonnOgFasteImage.png'},
+    { month: "January", id: "/event/KalenderNewCreation/Bonnemote", date: 5, image: 'arrangementImages/BonnOgFasteImage.png'},
+    { month: "January", id: "/event/KalenderNewCreation/TjenesteKickOff", date: 9, image: 'arrangementImages/TjenesteKickoff-img.png'},
+    { month: "January", id: "/event/KalenderNewCreation/Gudstjeneste", date: 12, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "January", id: "/event/KalenderNewCreation/Gudstjeneste", date: 19, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "January", id: "/event/KalenderNewCreation/Bibelstudie", date: 21, image: 'grupperImages/bibelStudieBilde.png'},
+    { month: "January", id: "/event/KalenderNewCreation/Bonnemote", date: 23, image: 'grupperImages/bonnBilde.png'},
+    { month: "January", id: "/event/KalenderNewCreation/Gudstjeneste", date: 26, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "January", id: "/event/KalenderNewCreation/Connect", date: 30, image: 'grupperImages/connectBilde.png'},
+    { month: "January", id: "/event/KalenderNewCreation/Evangelisering", date: 31, image: 'grupperImages/evangeliseringBilde.png'},
+    /////////////////
+    // Feburar Seksjon
+    { month: "February", id: "/event/KalenderNewCreation/Gudstjeneste", date: 2, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "February", id: "/event/KalenderNewCreation/Bibelstudie", date: 4, image: 'grupperImages/bibelStudieBilde.png'},
+    { month: "February", id: "/event/KalenderNewCreation/Bonnemote", date: 5, image: 'grupperImages/bonnBilde.png'},
+    { month: "February", id: "/event/KalenderNewCreation/Gudstjeneste", date: 9, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "February", id: "/event/KalenderNewCreation/Connect", date: 13, image: 'grupperImages/connectBilde.png'},
+    { month: "February", id: "/event/KalenderNewCreation/Evangelisering", date: 14, image: 'grupperImages/evangeliseringBilde.png'},
+    { month: "February", id: "/event/KalenderNewCreation/JamesEvent", date: 15, image: 'arrangementImages/jamesMinistryBilde.png'},
+    { month: "February", id: "/event/KalenderNewCreation/Bibelstudie", date: 18, image: 'grupperImages/bibelStudieBilde.png'},
+    { month: "February", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 22, image: 'grupperImages/AlphaOgDypere.png'},
+    { month: "February", id: "/event/KalenderNewCreation/Fellesmote", date: 23, image: 'arrangementImages/fellesMoteImage.png'},
+    { month: "February", id: "/event/KalenderNewCreation/Tjenestekurs", date: 26, image: 'grupperImages/tjenesteKursBilde.png'},
+    { month: "February", id: "/event/KalenderNewCreation/Connect", date: 27, image: 'grupperImages/connectBilde.png'},
+    /////////////////
+    // Mars Seksjon
+    { month: "March", id: "/event/kalenderYouth/Gudstjeneste", date: 2, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "March", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 1, image: 'grupperImages/AlphaOgDypere.png'},
+    { month: "March", id: "/event/KalenderNewCreation/Bibelstudie", date: 4, image: 'grupperImages/bibelStudieBilde.png'},
+    { month: "March", id: "/event/KalenderNewCreation/Tjenestekurs", date: 5, image: 'grupperImages/tjenesteKursBilde.png'},
+    { month: "March", id: "/event/KalenderNewCreation/Bonnemote", date: 6, image: 'grupperImages/bonnBilde.png'},
+    { month: "March", id: "/event/KalenderNewCreation/Gudstjeneste", date: 9, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "March", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 8, image: 'grupperImages/AlphaOgDypere.png'},
+    { month: "March", id: "/event/KalenderNewCreation/Tjenestekurs", date: 12, image: 'grupperImages/tjenesteKursBilde.png'},
+    { month: "March", id: "/event/KalenderNewCreation/Connect", date: 13, image: 'grupperImages/connectBilde.png'},
+    { month: "March", id: "/event/KalenderNewCreation/Evangelisering", date: 14, image: 'grupperImages/evangeliseringBilde.png'},
+    { month: "March", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 15, image: 'grupperImages/AlphaOgDypere.png'},
+    { month: "March", id: "/event/kalenderYouth/Gudstjeneste", date: 16, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "March", id: "/event/KalenderNewCreation/Bibelstudie", date: 18, image: 'grupperImages/bibelStudieBilde.png'},
+    { month: "March", id: "/event/KalenderNewCreation/Tjenestekurs", date: 19, image: 'grupperImages/tjenesteKursBilde.png'},
+    { month: "March", id: "/event/KalenderNewCreation/Bonnemote", date: 20, image: 'grupperImages/bonnBilde.png'},
+    { month: "March", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 22, image: 'grupperImages/AlphaOgDypere.png'},
+    { month: "March", id: "/event/kalenderYouth/Gudstjeneste", date: 23, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "March", id: "/event/KalenderNewCreation/Connect", date: 27, image: 'grupperImages/connectBilde.png'},
+    { month: "March", id: "/event/KalenderNewCreation/Evangelisering", date: 28, image: 'grupperImages/evangeliseringBilde.png'},
+    { month: "March", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 29, image: 'grupperImages/AlphaOgDypere.png'},
+    { month: "March", id: "/event/kalenderYouth/Gudstjeneste", date: 30, image: 'arrangementImages/gudstjenesteBilde.png'},
+    /////////////////
+    // April Seksjon
+    { month: "April", id: "/event/KalenderNewCreation/Bibelstudie", date: 1, image: 'grupperImages/bibelStudieBilde.png'},
+    { month: "April", id: "/event/KalenderNewCreation/Bonnemote", date: 3, image: 'grupperImages/bonnBilde.png'},
+    { month: "April", id: "/event/KalenderNewCreation/Gudstjeneste", date: 6, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "April", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 5, image: 'grupperImages/AlphaOgDypere.png'},
+    { month: "April", id: "/event/KalenderNewCreation/Connect", date: 10, image: 'grupperImages/connectBilde.png'},
+    { month: "April", id: "/event/arrangementNewCreation/Paaskekonf", date: 11, image: 'arrangementImages/paaskekonf.png'},
+    { month: "April", id: "/event/arrangementNewCreation/Paaskekonf", date: 12, image: 'arrangementImages/paaskekonf.png'},
+    { month: "April", id: "/event/KalenderNewCreation/Connect", date: 24, image: 'grupperImages/connectBilde.png'},
+    { month: "April", id: "/event/KalenderNewCreation/Evangelisering", date: 25, image: 'grupperImages/evangeliseringBilde.png'},
+    { month: "April", id: "/event/KalenderNewCreation/Gudstjeneste", date: 27, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "April", id: "/event/KalenderNewCreation/Bibelstudie", date: 29, image: 'grupperImages/bibelStudieBilde.png'},
+    /////////////////
+    // Mai Seksjon
+    { month: "May", id: "/event/KalenderNewCreation/Bonnemote", date: 1, image: 'grupperImages/bonnBilde.png'},
+    { month: "May", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 3, image: 'grupperImages/AlphaOgDypere.png'},
+    { month: "May", id: "/event/kalenderYouth/Gudstjeneste", date: 4, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "May", id: "/event/KalenderNewCreation/Connect", date: 8, image: 'grupperImages/connectBilde.png'},
+    { month: "May", id: "/event/KalenderNewCreation/Evangelisering", date: 9, image: 'grupperImages/evangeliseringBilde.png'},
+    { month: "May", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 10, image: 'grupperImages/AlphaOgDypere.png'},
+    { month: "May", id: "/event/kalenderYouth/Gudstjeneste", date: 11, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "May", id: "/event/KalenderNewCreation/Tjenestekurs", date: 7, image: 'grupperImages/tjenesteKursBilde.png'},
+    { month: "May", id: "/event/KalenderNewCreation/Bibelstudie", date: 13, image: 'grupperImages/bibelStudieBilde.png'},
+    { month: "May", id: "/event/KalenderNewCreation/Tjenestekurs", date: 14, image: 'grupperImages/tjenesteKursBilde.png'},
+    { month: "May", id: "/event/KalenderNewCreation/Bonnemote", date: 15, image: 'grupperImages/bonnBilde.png'},
+    { month: "May", id: "/event/KalenderNewCreation/Fellesmote", date: 18, image: 'arrangementImages/fellesMoteImage.png'},
+    { month: "May", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 17, image: 'grupperImages/AlphaOgDypere.png'},
+    { month: "May", id: "/event/KalenderNewCreation/Connect", date: 22, image: 'grupperImages/connectBilde.png'},
+    { month: "May", id: "/event/KalenderNewCreation/Tjenestekurs", date: 21, image: 'grupperImages/tjenesteKursBilde.png'},
+    { month: "May", id: "/event/KalenderNewCreation/Evangelisering", date: 23, image: 'grupperImages/evangeliseringBilde.png'},
+    { month: "May", id: "/event/kalenderYouth/Gudstjeneste", date: 25, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "May", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 24, image: 'grupperImages/AlphaOgDypere.png'},
+    { month: "May", id: "/event/KalenderNewCreation/Bibelstudie", date: 27, image: 'grupperImages/bibelStudieBilde.png'},
+    { month: "May", id: "/event/KalenderNewCreation/Tjenestekurs", date: 28, image: 'grupperImages/tjenesteKursBilde.png'},
+    { month: "May", id: "/event/KalenderNewCreation/Bonnemote", date: 29, image: 'grupperImages/bonnBilde.png'},
+    { month: "May", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 31, image: 'grupperImages/AlphaOgDypere.png'},
 
-  ///////////////// 
-  // November Seksjon
-  { month: "November", id: "/event/KalenderNewCreation/Evangelisering", date: 1, image: 'grupperImages/evangeliseringBilde.png' },
-  { month: "November", id: "/event/KalenderNewCreation/Daap", date: 2 , image: 'grupperImages/daapBilde.png'},
-  { month: "November", id: "/event/KalenderNewCreation/BonnemoteSondager", date: 3, image: 'arrangementImages/Bonn&Dypere.png' },
-  { month: "November", id: "/event/KalenderNewCreation/BonnemoteTorsdager", date: 7, image: 'arrangementImages/bonnemoter.png' },
-  { month: "November", id: "/event/KalenderNewCreation/BonnemoteLordager", date: 9 , image: 'arrangementImages/AlphaOgBonn.png'},
-  { month: "November", id: "/event/KalenderNewCreation/BonnemoteSondager", date: 10, image: 'arrangementImages/Bonn&Dypere.png' },
-  { month: "November", id: "/event/KalenderNewCreation/BonnemoteTorsdager", date: 14, image: 'arrangementImages/bonnemoter.png' },
-  { month: "November", id: "/event/KalenderNewCreation/Evangelisering", date: 15, image: 'grupperImages/evangeliseringBilde.png' },
-  { month: "November", id: "/event/KalenderNewCreation/BonnemoteLordager", date: 16 , image: 'arrangementImages/AlphaOgBonn.png'},
-  { month: "November", id: "/event/KalenderNewCreation/BonnemoteSondager", date: 17, image: 'arrangementImages/Bonn&Dypere.png' },
-  { month: "November", id: "/event/KalenderNewCreation/BonnemoteTorsdager", date: 21, image: 'arrangementImages/bonnemoter.png' },
-  { month: "November", id: "/event/KalenderNewCreation/BonnemoteLordager", date: 23 , image: 'arrangementImages/AlphaOgBonn.png'},
-  { month: "November", id: "/event/KalenderNewCreation/BonnemoteSondager", date: 24, image: 'arrangementImages/Bonn&Dypere.png' },
-  { month: "November", id: "/event/KalenderNewCreation/BonnemoteTorsdager", date: 28, image: 'arrangementImages/bonnemoter.png' },
-  { month: "November", id: "/event/KalenderNewCreation/Evangelisering", date: 29, image: 'grupperImages/evangeliseringBilde.png' },
-  { month: "November", id: "/event/KalenderNewCreation/BonnemoteLordager", date: 30 , image: 'arrangementImages/AlphaOgBonn.png'},
-  ///////////////// 
-  // December Seksjon
-  { month: "December", id: "/event/KalenderNewCreation/Fellesmote", date: 1, image: 'grupperImages/FellesMoteImage.png' },
-  { month: "December", id: "/event/KalenderNewCreation/Gudstjeneste", date: 1, image: 'grupperImages/gudstjenesteBilde.png' },
-  { month: "December", id: "/event/arrangementNewCreation/Bravelovenorway", date: 5, image: 'arrangementImages/Brave&Connect.png' },
-  { month: "December", id: "/event/KalenderNewCreation/Evangelisering", date: 6, image: 'grupperImages/evangeliseringBilde.png' },
-  { month: "December", id: "/event/KalenderNewCreation/Gudstjeneste", date: 8, image: 'grupperImages/gudstjenesteBilde.png' },
-  { month: "December", id: "/event/KalenderNewCreation/Bibelstudie", date: 10, image: 'grupperImages/bibelStudieBilde.png' },
-  { month: "December", id: "/event/KalenderNewCreation/Bonnemote", date: 12, image: 'grupperImages/bonnBilde.png' },
-  { month: "December", id: "/event/KalenderNewCreation/Gudstjeneste", date: 15, image: 'grupperImages/gudstjenesteBilde.png' },
-  { month: "December", id: "/event/KalenderNewCreation/Connect", date: 19, image: 'grupperImages/connectBilde.png' },
-  { month: "December", id: "/event/KalenderNewCreation/Evangelisering", date: 20, image: 'grupperImages/evangeliseringBilde.png' },
-  { month: "December", id: "/event/arrangementNewCreation/Julecup", date: 21, image: 'arrangementImages/JulecupFellesImg.png' },
-  { month: "December", id: "/event/KalenderNewCreation/Fellesmote", date: 22, image: 'grupperImages/FellesMoteImage.png' },
-  { month: "December", id: "/event/arrangementNewCreation/Nyttaarsaften", date: 31, image: 'arrangementImages/Nyttaarsaften.png' },
+    /////////////////
+    // June Seksjon
+    { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 1, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "June", id: "/event/KalenderNewCreation/Connect", date: 5, image: 'grupperImages/connectBilde.png'},
+    { month: "June", id: "/event/KalenderNewCreation/Evangelisering", date: 6, image: 'grupperImages/evangeliseringBilde.png'},
+    { month: "June", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 7, image: 'grupperImages/AlphaOgDypere.png'},
+    { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 8, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "June", id: "/event/KalenderNewCreation/Bibelstudie", date: 10, image: 'grupperImages/bibelStudieBilde.png'},
+    { month: "June", id: "/event/KalenderNewCreation/Bonnemote", date: 12, image: 'grupperImages/bonnBilde.png'},
+    { month: "June", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 14, image: 'grupperImages/AlphaOgDypere.png'},
+    { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 15, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "June", id: "/event/KalenderNewCreation/Connect", date: 19, image: 'grupperImages/connectBilde.png'},
+    { month: "June", id: "/event/KalenderNewCreation/Evangelisering", date: 20, image: 'grupperImages/evangeliseringBilde.png'},
+    { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 22, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "June", id: "/event/KalenderNewCreation/Bibelstudie", date: 24, image: 'grupperImages/bibelStudieBilde.png'},
+    { month: "June", id: "/event/KalenderNewCreation/Bonnemote", date: 26, image: 'grupperImages/bonnBilde.png'},
+    { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 29, image: 'arrangementImages/gudstjenesteBilde.png'},
 
 
-];
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  ];
+  
 
 console.log(data);
 const Home: React.FC = () => {

@@ -16,7 +16,6 @@ export const eventsNc = [
       "Velkommen til gudstjeneste sammen med Youth. Ta med en venn eller to og ta del i det Gud har for oss som fellesskap. Velkommen hjem!",
     location: "St. Olavs Gate 24, Oslo",
     clock: "18:30",
-    date: "søndag 06.10.24",
   },
   {
     id: "Connect",
@@ -64,6 +63,14 @@ export const eventsNc = [
     date: "Dato etter avtale",
   },
   {
+    id: "Tjenestekurs",
+    title: "Tjenesetekurs",
+    description:
+      "Dette er tjenestekurs for deg som vil tjenestegjøre i shalom youth",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "Klokkeslett etter avtale",
+  },
+  {
     id: "Bonnemote",
     title: "Bønnemøte",
     description: "Felles bønnemøte for Youth & New Creation.",
@@ -87,7 +94,7 @@ export const eventsNc = [
       "Møtet i dag  med James og Youth. hovedfokuset være på fadderordningen. Dersom du ønsker å bli fadder, kan du ta kontakt med oss for mer informasjon om hvordan du kan bidra som fadder. PS: Vi vil også ha salg av produkter fra vår tidligere kolleksjon etter møtet.",
     location: "St. Olavs Gate 24, Oslo",
     clock: "18:30",
-    date: "27.10.24",
+    date: "15.02.25",
   },
   //Spesielle arrangementer
   {
@@ -195,6 +202,5 @@ export const eventsNc = [
       "Ønsker du og døpe deg kan du gjøre det via påmelding siden og du vil bli kontaktet fortløpende. Er du usikker på hva dåp går ut på? Les mer om kurset ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen. ",
     location: "St. Olavs Gate 24, Oslo",
     clock: "14:00",
-    date: "02.11.24",
   },
 ];
