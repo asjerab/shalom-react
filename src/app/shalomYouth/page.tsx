@@ -1,10 +1,10 @@
 "use client";
 
 import NewUserModal from "../components/newUserModal";
-// import Marquee from "../components/Marquee";
+import Marquee from "../components/Marquee";
 import YouthNav from "../components/youthHeroHome";
 import YouthGrupperHome from "../components/youthGrupperHome";
-import NewYears from "../components/newYearsPoster"
+import NewYears from "../components/newYearsPoster";
 import KalenderYouth from "../components/youthKalender";
 import YoutubeComp from "../components/youtubeHome";
 import PaameldingHome from "../components/youthPåmeldingHome";
@@ -15,13 +15,11 @@ export default function ShalomHome() {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    // Check localStorage for 'returningUser' key
     const isReturningUser = localStorage.getItem("returningUser");
 
-    // If not set, show the modal and set the key
     if (!isReturningUser) {
       setShowModal(true);
-      localStorage.setItem("returningUser", "true"); // Now user is no longer new
+      localStorage.setItem("returningUser", "true");
     }
   }, []);
 
@@ -30,8 +28,7 @@ export default function ShalomHome() {
   };
   return (
     <main>
-      {/*       <Marquee />
-       */}{" "}
+      <Marquee />
       <NewUserModal showModal={showModal} closeModal={closeModal} />
       <YouthNav />
       <NewYears />
