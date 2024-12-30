@@ -33,7 +33,7 @@ const NewYearsCountdown = () => {
       <main className="flex justify-center items-center pt-[150px] p-[30px] h-screen">
         <div className="flex flex-col text-center primaryFontRegular text-slate-50" style={{fontSize: "clamp(20px, 10vw, 125px)"}}>
             {isVisible && <h1 className="leading-15">2024 slutter om</h1>}
-            <h1 className="bg-[#1b1b1b] rounded-full px-20">{timeRemaining}</h1>
+            <h1 className="bg-[#1b1b1b] rounded-full">{timeRemaining}</h1>
             </div>
       </main>
     </>
