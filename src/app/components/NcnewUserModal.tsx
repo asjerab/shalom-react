@@ -83,7 +83,7 @@ const Modal: React.FC<ModalProps> = ({ showModal, closeModal }) => {
         <p className="mb-4 text-[#111111]">
         <strong>Velkommen til Shalom New Creation!</strong> Dette er vår offisielle
         side, hvor du kan bli bedre kjent med hvem vi er, hva vi gjør, hva vi
-        tilbyr, og hvor du finner oss. Vi holder gudstjenester hver lørdag kl.
+        tilbyr, og hvor du finner oss. Vi holder gudstjenester hver søndag kl.
         18:30, og du er hjertelig velkommen til å delta. Må Guds nåde og
         velsignelse være over deg!{" "}
         </p>

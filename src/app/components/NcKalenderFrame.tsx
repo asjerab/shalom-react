@@ -29,13 +29,13 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
 
   const getDaysInMonth = (month: string) => {
     const monthIndex = months.indexOf(month);
-    return new Date(2024, monthIndex + 1, 0).getDate();
+    return new Date(2025, monthIndex + 1, 0).getDate();
   };
 
   const getFirstDayOfMonth = (month: string) => {
     const monthIndex = months.indexOf(month);
 
-    return new Date(2024, monthIndex, 0).getDay();
+    return new Date(2025, monthIndex, 0).getDay();
   };
 
   const currentMonthIndex = new Date().getMonth();
