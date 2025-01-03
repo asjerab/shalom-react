@@ -1,9 +1,7 @@
 "use client";
 
 import NewUserModal from "../components/newUserModal";
-import Marquee from "../components/Marquee";
 import YouthNav from "../components/youthHeroHome";
-import NewYearsCountdown from "../components/newYearsCountDown"
 import YouthGrupperHome from "../components/youthGrupperHome";
 import KalenderYouth from "../components/youthKalender";
 import YoutubeComp from "../components/youtubeHome";
@@ -28,10 +26,8 @@ export default function ShalomHome() {
   };
   return (
     <main>
-      <Marquee />
       <NewUserModal showModal={showModal} closeModal={closeModal} />
       <YouthNav />
-      <NewYearsCountdown />
       <YouthGrupperHome />
       <KalenderYouth />
       <YoutubeComp />
