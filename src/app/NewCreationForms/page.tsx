@@ -8,8 +8,8 @@ const NewCreationForm = [
     href: "/NcCustomForm?formId=bibelstudieNewCreation",
   },
   { formName: "Tjenestekurs", href: "/NcCustomForm?formId=tjenestekurs" },
-  { formName: "Connect", href: "/NcCustomForm?formId=tjenestekurs" },
-  { formName: "Alphakurs", href: "/NcCustomForm?formId=connectNewCreation" },
+  { formName: "Connect", href: "/NcCustomForm?formId=connectNewCreation" },
+  { formName: "Alphakurs", href: "/NcCustomForm?formId=alphakursNewCreation" },
   { formName: "Dåp", href: "/NcCustomForm?formId=daap" },
   {
     formName: "The upper room",
@@ -39,7 +39,7 @@ export default function youthPåmelding() {
             </p>
           </div>
 
-          {NewCreationForm.map((form,index) => (
+          {NewCreationForm.map((form, index) => (
             <div key={index}>
               <Link href={form.href}>
                 <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
