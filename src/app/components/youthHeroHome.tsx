@@ -2,7 +2,6 @@ import Link from "next/link";
 import YouthLogo from "../images/ShalomYouth-Logo.png";
 import YouthNavHome from "./youthNav";
 
-
 export default function YouthNav() {
   return (
     <main>
@@ -20,13 +19,22 @@ export default function YouthNav() {
             troende i ord og livsførsel, i kjærlighet, tro og renhet. 1.Timoteus
             4:12
           </p>
-          <a href="#utforsk-a" className="flex justify-center">
-            <button className="btn w-full primaryFontRegular uppercase scroll-container max-w-[125px] m-5 rounded-[28px] bg-[#111] text-slate-50 border-none hover:bg-[#1a1a1a]">
-              <div className="scroll-holder">
-                <p>Utforsk</p>
-              </div>
-            </button>
-          </a>
+          <div className="flex items-center">
+            <a href="#utforsk-a" className="flex justify-center active:scale-[0.95] duration-150 ease-in-out">
+              <button className="btn w-full primaryFontRegular uppercase scroll-container max-w-[125px] m-5 rounded-[28px] bg-[#111] text-slate-50 border-none hover:bg-[#1a1a1a]">
+                <div className="scroll-holder">
+                  <p>Utforsk</p>
+                </div>
+              </button>
+            </a>
+            <a href="#youth-kalender" className="flex justify-center active:scale-[0.95] duration-150 ease-in-out">
+              <button className="btn w-full primaryFontBold  uppercase scroll-container max-w-[125px] m-5 rounded-[28px] bg-[#ececec] text-[#111] font-[800] border-none hover:bg-[#e4e3e3]">
+                <div className="scroll-holder">
+                  <p>Kalender</p>
+                </div>
+              </button>
+            </a>
+          </div>
         </div>
       </nav>
     </main>
