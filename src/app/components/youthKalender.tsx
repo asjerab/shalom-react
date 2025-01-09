@@ -89,61 +89,6 @@ const data = [
   { month: "June", id: "/event/kalenderYouth/Bibelstudie", date: 24, image: 'grupperImages/bibelStudieBilde.png'},
   { month: "June", id: "/event/kalenderYouth/Bonnemote", date: 26, image: 'grupperImages/bonnBilde.png'},
   { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 28, image: 'arrangementImages/gudstjenesteBilde.png'},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ];
 
 const Home: React.FC = () => {
