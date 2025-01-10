@@ -14,7 +14,7 @@ export default function YouthGrupperHome() {
             className="light dark primaryFontRegular text-slate-50 font-[600] my-5 leading-[84px] flex items-center gap-5"
             style={{ fontSize: "clamp(36px, 12vw, 80px)" }}
           >
-            Gruppr
+            Grupper
             <span className="Kelsi-fill text-slate-50">x</span>
           </h1>
           <div className="grupper-wrapper-home grid grid-cols-2 gap-7">
