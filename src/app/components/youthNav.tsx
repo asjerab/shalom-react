@@ -31,8 +31,8 @@ export default function TestNav() {
     { name: "Påmelding", href: "/youthForms" },
     { name: "Om Oss", href: "/YouthOmOss" },
     { name: "Kontakt", href: "/youthKontakt" },
-    { name: "Feedback", href: "/Feedback" },
- ];
+/*     { name: "Feedback", href: "/Feedback" },
+ */ ];
 
   const navLinksMobile = [
     { name: "Hjem", hrefMobile: "/shalomYouth" },
@@ -40,8 +40,8 @@ export default function TestNav() {
     { name: "Påmelding", hrefMobile: "/youthForms" },
     { name: "Om Oss", hrefMobile: "/YouthOmOss" },
     { name: "Kontakt", hrefMobile: "/youthKontakt" },
-    { name: "Feedback", hrefMobile: "/Feedback" },
- ];
+/*     { name: "Feedback", hrefMobile: "/Feedback" },
+ */ ];
 
   return (
     <main>
