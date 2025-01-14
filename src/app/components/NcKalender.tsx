@@ -85,7 +85,7 @@ const data = [
     { month: "May", id: "/event/kalenderYouth/Gudstjeneste", date: 25, image: 'arrangementImages/gudstjenesteBilde.png'},
     { month: "May", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 24, image: 'grupperImages/AlphaOgDypere.png'},
     { month: "May", id: "/event/KalenderNewCreation/Bibelstudie", date: 27, image: 'grupperImages/bibelStudieBilde.png'},
-    { month: "May", id: "/event/KalenderNewCreation/Tjenestekurs", date: 28, image: 'grupperImages/tjenestekursBilde.png'g},
+    { month: "May", id: "/event/KalenderNewCreation/Tjenestekurs", date: 28, image: 'grupperImages/tjenestekursBilde.png'},
     { month: "May", id: "/event/KalenderNewCreation/Bonnemote", date: 29, image: 'grupperImages/bonnBilde.png'},
     { month: "May", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 31, image: 'grupperImages/AlphaOgDypere.png'},
 
