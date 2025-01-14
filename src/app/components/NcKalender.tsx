@@ -22,7 +22,7 @@ const data = [
     { month: "February", id: "/event/KalenderNewCreation/Gudstjeneste", date: 9, image: 'arrangementImages/gudstjenesteBilde.png'},
     { month: "February", id: "/event/KalenderNewCreation/Connect", date: 13, image: 'grupperImages/connectBilde.png'},
     { month: "February", id: "/event/KalenderNewCreation/Evangelisering", date: 14, image: 'grupperImages/evangeliseringBilde.png'},
-    { month: "February", id: "/event/KalenderNewCreation/JamesEvent", date: 15, image: 'arrangementImages/jamesMinistryBilde.png'},
+    { month: "February", id: "/event/KalenderNewCreation/JamesEvent", date: 15, image: 'grupperImages/jamesMinistryBilde.png'},
     { month: "February", id: "/event/KalenderNewCreation/Bibelstudie", date: 18, image: 'grupperImages/bibelStudieBilde.png'},
     { month: "February", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 22, image: 'grupperImages/AlphaOgDypere.png'},
     { month: "February", id: "/event/KalenderNewCreation/Fellesmote", date: 23, image: 'arrangementImages/fellesMoteImage.png'},

@@ -89,9 +89,9 @@ export const eventsNc = [
   },
   {
     id: "JamesEvent",
-    title: "Bli en fadder!",
+    title: "Love in action!",
     description:
-      "Møtet i dag  med James og Youth. hovedfokuset være på fadderordningen. Dersom du ønsker å bli fadder, kan du ta kontakt med oss for mer informasjon om hvordan du kan bidra som fadder. PS: Vi vil også ha salg av produkter fra vår tidligere kolleksjon etter møtet.",
+      "Mer info kommer",
     location: "St. Olavs Gate 24, Oslo",
     clock: "18:30",
     date: "15.02.25",
