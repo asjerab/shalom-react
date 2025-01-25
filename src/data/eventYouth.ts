@@ -224,8 +224,8 @@ export const eventsYouth = [
     description:
       "Ønsker du og døpe deg kan du gjøre det via påmelding siden og du vil bli kontaktet fortløpende. Er du usikker på hva dåp går ut på? Les mer om kurset ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen.",
     location: "St. Olavs Gate 24, Oslo",
-    clock: "14:00",
-    date: "02.11.25",
+    clock: "Tid etter avtale",
+    date: "08.2.25",
   },
   {
     id: "AlphaOgDypere",
