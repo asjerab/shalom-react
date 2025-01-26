@@ -1,6 +1,8 @@
 import Link from "next/link";
 import NcNav from "../components/ncNav";
 import NcFooter from "../components/NcFooter";
+import Marquee from "../components/Marquee"
+
 
 const NewCreationForm = [
   {
@@ -20,6 +22,7 @@ const NewCreationForm = [
 export default function youthPåmelding() {
   return (
     <main>
+      <Marquee />
       <NcNav />
       <section className="påmelding-wrapper flex justify-center items-center py-[50px] px-[35px]">
         <div className="w-full">

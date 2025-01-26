@@ -90,8 +90,7 @@ export const eventsNc = [
   {
     id: "JamesEvent",
     title: "Love in action!",
-    description:
-      "Mer info kommer",
+    description: "Mer info kommer",
     location: "St. Olavs Gate 24, Oslo",
     clock: "18:30",
     date: "15.02.25",
@@ -174,8 +173,7 @@ export const eventsNc = [
     clockTwo: "14:00-15:30",
     dateTwo: "",
     titleThree: "Dåp",
-    descriptionThree:
-      "",
+    descriptionThree: "",
     locationThree: "St. Olavs Gate 24, Oslo",
     clockThree: "14:00",
     dateThree: "02.11.24",
@@ -195,12 +193,13 @@ export const eventsNc = [
     clockTwo: "16:30-17:30",
     dateTwo: "",
   },
-    {
+  {
     id: "Daap",
     title: "Dåp",
     description:
       "Ønsker du og døpe deg kan du gjøre det via påmelding siden og du vil bli kontaktet fortløpende. Er du usikker på hva dåp går ut på? Les mer om kurset ved å trykke på ' UTRUSTNING ' i navigasjonsmenyen. ",
     location: "St. Olavs Gate 24, Oslo",
-    clock: "14:00",
+    date: "08.02.25",
+    clock: "Tid etter avtale",
   },
 ];

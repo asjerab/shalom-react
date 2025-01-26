@@ -19,6 +19,7 @@ const data = [
     { month: "February", id: "/event/KalenderNewCreation/Gudstjeneste", date: 2, image: 'arrangementImages/gudstjenesteBilde.png'},
     { month: "February", id: "/event/KalenderNewCreation/Bibelstudie", date: 4, image: 'grupperImages/bibelStudieBilde.png'},
     { month: "February", id: "/event/KalenderNewCreation/Bonnemote", date: 5, image: 'grupperImages/bonnBilde.png'},
+    { month: "February", id: "/event/KalenderNewCreation/Daap", date: 8, image: 'grupperImages/daapBilde.png'},
     { month: "February", id: "/event/KalenderNewCreation/Gudstjeneste", date: 9, image: 'arrangementImages/gudstjenesteBilde.png'},
     { month: "February", id: "/event/KalenderNewCreation/Connect", date: 13, image: 'grupperImages/connectBilde.png'},
     { month: "February", id: "/event/KalenderNewCreation/Evangelisering", date: 14, image: 'grupperImages/evangeliseringBilde.png'},

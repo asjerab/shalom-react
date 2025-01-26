@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import YouthNav from "../components/youthNav";
 import YouthFooter from "../components/youthFooter";
+import Marquee from "../components/Marquee"
 
 interface FormField {
   id: string;
@@ -399,6 +400,7 @@ export default function CustomForm() {
 
   return (
     <main className="w-full h-full">
+      <Marquee />
       <YouthNav />
       <div className="px-[35px]">
         <a href="/youthForms">

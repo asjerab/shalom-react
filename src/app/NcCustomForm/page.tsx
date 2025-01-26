@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import NcNav from "../components/ncNav";
 import NcFooter from "../components/NcFooter";
+import Marquee from "../components/Marquee"
+
 
 interface FormField {
   id: string;
@@ -398,6 +400,7 @@ export default function CustomForm() {
 
   return (
     <main className="w-full h-full">
+      <Marquee />
       <NcNav   />
       <div className="px-[35px]">
         <a href="/NewCreationForms">

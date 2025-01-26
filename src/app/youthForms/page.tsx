@@ -1,6 +1,7 @@
 import Link from "next/link";
 import YouthNav from "../components/youthNav";
 import Footer from "../components/youthFooter";
+import Marquee from "../components/Marquee"
 
 const youthForm = [
   { formName: "Bibelstudie", href: "/customForm?formId=bibelstudieYouth" },
@@ -14,6 +15,7 @@ const youthForm = [
 export default function youthPåmelding() {
   return (
     <main>
+      <Marquee />
       <YouthNav />
       <section className="påmelding-wrapper flex justify-center items-center py-[75px] px-[35px]">
         <div className="w-full">
