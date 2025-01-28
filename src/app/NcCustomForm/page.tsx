@@ -4,8 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import NcNav from "../components/ncNav";
 import NcFooter from "../components/NcFooter";
-import Marquee from "../components/Marquee"
-
+import Marquee from "../components/Marquee";
 
 interface FormField {
   id: string;
@@ -30,12 +29,15 @@ export default function CustomForm() {
     googleFormUrl: "",
     fields: [],
   });
+  const [showModal, setShowModal] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const formsData: Record<string, FormConfig> = {
     alphakursNewCreation: {
       formName: "Alphakurs",
       googleFormUrl:
-        "https://docs.google.com/forms/u/3/d/e/1FAIpQLScvAmJojBSMWv4z8lCZqs1CCdA0Wdi7ZlJNiqYKYWZoL9E1dg/formResponse",
+        "https://docs.google.com/forms/u/0/d/e/1FAIpQLScvAmJojBSMWv4z8lCZqs1CCdA0Wdi7ZlJNiqYKYWZoL9E1dg/formResponse",
       fields: [
         {
           id: "entry.1637903101",
@@ -133,7 +135,7 @@ export default function CustomForm() {
     tjenestekurs: {
       formName: "Tjenestekurs",
       googleFormUrl:
-        "https://docs.google.com/forms/u/3/d/e/1FAIpQLSerL_wsSXphDQfwW-WZY9al7T8Ply6C9yRb-DSES4a2Ds0dfA/formResponse",
+        "https://docs.google.com/forms/u/4/d/e/1FAIpQLSerL_wsSXphDQfwW-WZY9al7T8Ply6C9yRb-DSES4a2Ds0dfA/formResponse",
       fields: [
         {
           id: "entry.125316426",
@@ -191,7 +193,7 @@ export default function CustomForm() {
     daap: {
       formName: "Dåp",
       googleFormUrl:
-        "https://docs.google.com/forms/u/3/d/e/1FAIpQLSdWBP7yJddqmqgW5XaienN-GCqKIykNCsh3NPig-9UnIFVbmw/formResponse",
+        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdWBP7yJddqmqgW5XaienN-GCqKIykNCsh3NPig-9UnIFVbmw/formResponse",
       fields: [
         {
           id: "entry.511953395",
@@ -241,7 +243,7 @@ export default function CustomForm() {
     dyperekursNewCreation: {
       formName: "Dypere kurs",
       googleFormUrl:
-        "https://docs.google.com/forms/u/3/d/e/1FAIpQLSdGOqk7phPIgYcBofhdMXsoWA_bJA0iqQNfGf2RnFUjBAXphw/formResponse",
+        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdGOqk7phPIgYcBofhdMXsoWA_bJA0iqQNfGf2RnFUjBAXphw/formResponse",
       fields: [
         {
           id: "entry.2078734039",
@@ -350,10 +352,10 @@ export default function CustomForm() {
 
   useEffect(() => {
     const form = document.querySelector("#customForm") as HTMLFormElement;
-  
+
     const handleSubmit = (event: Event) => {
       event.preventDefault();
-  
+
       const formData = new FormData();
       formConfig.fields.forEach((field) => {
         if (field.type === "checkbox") {
@@ -372,36 +374,79 @@ export default function CustomForm() {
           }
         }
       });
-  
+
       fetch(formConfig.googleFormUrl, {
         method: "POST",
         body: formData,
         mode: "no-cors",
       })
         .then(() => {
-          alert("Form submitted successfully");
+          setIsSuccess(true);
+          setShowModal(true);
         })
         .catch((error) => {
+          setIsSuccess(false);
+          setErrorMessage(error.message);
+          setShowModal(true);
           console.error("Error submitting form:", error);
         });
     };
-  
+
     if (form) {
       form.addEventListener("submit", handleSubmit);
     }
-  
-    // Cleanup function to remove the event listener
+
     return () => {
       if (form) {
         form.removeEventListener("submit", handleSubmit);
       }
     };
-  }, [formConfig]); // Re-run only when formConfig changes  
+  }, [formConfig]);
 
   return (
     <main className="w-full h-full">
+      {showModal && (
+        <div className="fixed right-5 bottom-5 bg-[#151515] w-full max-w-[500px] p-6 rounded-[8px] flex justify-between items-center z-50">
+          <div>
+            <h1
+              className="primaryFontRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 6.5vw, 25px)" }}
+            >
+              {isSuccess ? "Formen ble sendt" : "Formen ble ikke sendt"}
+            </h1>
+            <h3
+              className="primaryFontRegular text-[#bcbbbb]"
+              style={{ fontSize: "clamp(10px, 5vw, 15px)" }}
+            >
+              {isSuccess
+                ? "Vi tar kontakt med deg fortløpende"
+                : `Feilmelding: ${errorMessage}`}
+            </h3>
+          </div>
+          <button
+            onClick={() => setShowModal(false)}
+            className="bg-[#ffffff] text-[#111111] px-3 py-2 rounded-full flex items-start gap-1 hover:-translate-y-1 duration-150 ease-out"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+            lukk
+          </button>
+        </div>
+      )}
       <Marquee />
-      <NcNav   />
+      <NcNav />
       <div className="px-[35px]">
         <a href="/NewCreationForms">
           <button
