@@ -28,7 +28,7 @@ export default function CustomForm() {
     googleFormUrl: "",
     fields: [],
   });
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
