@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import YouthNav from "../components/youthNav";
 import YouthFooter from "../components/youthFooter";
-import Marquee from "../components/Marquee"
+import Marquee from "../components/Marquee";
 
 interface FormField {
   id: string;
@@ -29,12 +29,15 @@ export default function CustomForm() {
     googleFormUrl: "",
     fields: [],
   });
+  const [showModal, setShowModal] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const formsData: Record<string, FormConfig> = {
     alphakursYouth: {
       formName: "Alphakurs",
       googleFormUrl:
-        "https://docs.google.com/forms/u/3/d/e/1FAIpQLSdgkW_5l-fHV_GCFWP8vsqH4KOswwYM3TNyhaHPEz-H3SwVaQ/formResponse",
+        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdgkW_5l-fHV_GCFWP8vsqH4KOswwYM3TNyhaHPEz-H3SwVaQ/formResponse",
       fields: [
         {
           id: "entry.843655046",
@@ -83,13 +86,28 @@ export default function CustomForm() {
     connectYouth: {
       formName: "Connect",
       googleFormUrl:
-        "https://docs.google.com/forms/u/3/d/e/1FAIpQLSesbn9kHSXX_Yb5uK5ovpKd9xiZ57p5DGpClDozOTZma3ZgrQ/formResponse",
+        "https://docs.google.com/forms/u/0/d/1ebx6zK0M6Y5UQUp8ohUSFCWm3q_1_vixJb-HV5sPoWw/previewResponse",
       fields: [
         {
           id: "entry.561468072",
           name: "Navn",
-          placeholder: "Navn",
+          placeholder: "Fornavn",
           type: "text",
+          required: true,
+        },
+        {
+          id: "entry.1897819939",
+          name: "Etternavn",
+          placeholder: "Etternavn",
+          type: "text",
+          required: true,
+        },
+        {
+          id: "entry.1668122602",
+          name: "Kjon",
+          placeholder: "Kjønn",
+          type: "radio",
+          choices: ["Gutt", "Jente"],
           required: true,
         },
         {
@@ -127,20 +145,12 @@ export default function CustomForm() {
           type: "text",
           required: true,
         },
-        {
-          id: "entry.363423974",
-          name: "connectStatus",
-          placeholder: "Skal du bli med på connect fysisk eller online?",
-          type: "select",
-          required: true,
-          choices: ["Fysisk", "Online"],
-        },
       ],
     },
     tjenestekurs: {
       formName: "Tjenestekurs",
       googleFormUrl:
-        "https://docs.google.com/forms/u/3/d/e/1FAIpQLSerL_wsSXphDQfwW-WZY9al7T8Ply6C9yRb-DSES4a2Ds0dfA/formResponse",
+        "https://docs.google.com/forms/u/4/d/e/1FAIpQLSerL_wsSXphDQfwW-WZY9al7T8Ply6C9yRb-DSES4a2Ds0dfA/formResponse",
       fields: [
         {
           id: "entry.125316426",
@@ -198,7 +208,7 @@ export default function CustomForm() {
     daapYouth: {
       formName: "Dåp",
       googleFormUrl:
-        "https://docs.google.com/forms/u/3/d/e/1FAIpQLSdWBP7yJddqmqgW5XaienN-GCqKIykNCsh3NPig-9UnIFVbmw/formResponse",
+        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdWBP7yJddqmqgW5XaienN-GCqKIykNCsh3NPig-9UnIFVbmw/formResponse",
       fields: [
         {
           id: "entry.511953395",
@@ -248,7 +258,7 @@ export default function CustomForm() {
     dyperekursYouth: {
       formName: "Dypere kurs",
       googleFormUrl:
-        "https://docs.google.com/forms/u/3/d/e/1FAIpQLSeF2yA2xP0Xib7wzFDvmZpgfE65vgy5k9QHff0xLTGgGhrmPw/formResponse",
+        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeF2yA2xP0Xib7wzFDvmZpgfE65vgy5k9QHff0xLTGgGhrmPw/formResponse",
       fields: [
         {
           id: "entry.1184988661",
@@ -379,9 +389,13 @@ export default function CustomForm() {
         mode: "no-cors",
       })
         .then(() => {
-          alert("Form submitted successfully");
+          setIsSuccess(true);
+          setShowModal(true);
         })
         .catch((error) => {
+          setIsSuccess(false);
+          setErrorMessage(error.message);
+          setShowModal(true);
           console.error("Error submitting form:", error);
         });
     };
@@ -400,6 +414,46 @@ export default function CustomForm() {
 
   return (
     <main className="w-full h-full">
+      {showModal && (
+        <div className="fixed right-5 bottom-5 bg-[#151515] w-full max-w-[500px] p-6 rounded-[8px] flex justify-between items-center z-50">
+          <div>
+            <h1
+              className="primaryFontRegular text-slate-50"
+              style={{ fontSize: "clamp(15px, 6.5vw, 25px)" }}
+            >
+              {isSuccess ? "Formen ble sendt" : "Formen ble ikke sendt"}
+            </h1>
+            <h3
+              className="primaryFontRegular text-[#bcbbbb]"
+              style={{ fontSize: "clamp(10px, 5vw, 15px)" }}
+            >
+              {isSuccess
+                ? "Vi tar kontakt med deg fortløpende"
+                : `Feilmelding: ${errorMessage}`}
+            </h3>
+          </div>
+          <button
+            onClick={() => setShowModal(false)}
+            className="bg-[#ffffff] text-[#111111] px-3 py-2 rounded-full flex items-start gap-1 hover:-translate-y-1 duration-150 ease-out"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+            lukk
+          </button>
+        </div>
+      )}
       <Marquee />
       <YouthNav />
       <div className="px-[35px]">
