@@ -29,7 +29,7 @@ export default function CustomForm() {
     googleFormUrl: "",
     fields: [],
   });
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
