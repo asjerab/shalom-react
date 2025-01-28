@@ -6,34 +6,34 @@ export default function MarqueeSlider() {
       <div className="Marquee fixed top-0 bg-[#f7a52a] w-full  z-50">
         <Marquee className="p-2 flex">
           <h1 className="primaryFontBold px-10 text-slate-50 uppercase">
-           Alle påmeldinger er fikset utenom "Connect"!.{" "}
+           Alle påmeldinger er fikset utenom Connect!.{" "}
           </h1>
           <span className="Kelsi-fill text-slate-50">x</span>
           <h1 className="primaryFontBold px-10 text-slate-50 uppercase ">
             {" "}
-           Alle påmeldinger er fikset utenom "Connect"!.{" "}
+           Alle påmeldinger er fikset utenom Connect!.{" "}
           </h1>
           <span className="Kelsi-fill text-slate-50">x</span>
           <h1 className="primaryFontBold px-10 text-slate-50 uppercase">
-           Alle påmeldinger er fikset utenom "Connect"!.{" "}
+           Alle påmeldinger er fikset utenom Connect!.{" "}
           </h1>
           <span className="Kelsi-fill text-slate-50">x</span>
           <h1 className="primaryFontBold px-10 text-slate-50 uppercase ">
             {" "}
-           Alle påmeldinger er fikset utenom "Connect"!.{" "}
+           Alle påmeldinger er fikset utenom Connect!.{" "}
           </h1>
           <span className="Kelsi-fill text-slate-50">x</span>
           <h1 className="primaryFontBold px-10 text-slate-50 uppercase">
-           Alle påmeldinger er fikset utenom "Connect"!.{" "}
+           Alle påmeldinger er fikset utenom Connect!.{" "}
           </h1>
           <span className="Kelsi-fill text-slate-50">x</span>
           <h1 className="primaryFontBold px-10 text-slate-50 uppercase ">
             {" "}
-           Alle påmeldinger er fikset utenom "Connect"!.{" "}
+           Alle påmeldinger er fikset utenom Connect!.{" "}
           </h1>
           <span className="Kelsi-fill text-slate-50">x</span>
           <h1 className="primaryFontBold px-10 text-slate-50 uppercase">
-           Alle påmeldinger er fikset utenom "Connect"!.{" "}
+           Alle påmeldinger er fikset utenom Connect!.{" "}
           </h1>
           <span className="Kelsi-fill text-slate-50">x</span>
         </Marquee>
