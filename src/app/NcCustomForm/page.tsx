@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import NcNav from "../components/ncNav";
 import NcFooter from "../components/NcFooter";
-import Marquee from "../components/Marquee";
 
 interface FormField {
   id: string;
@@ -86,7 +85,7 @@ export default function CustomForm() {
     connectNewCreation: {
       formName: "Connect",
       googleFormUrl:
-        "https://docs.google.com/forms/u/3/d/e/1FAIpQLSfZN8NrgmXcL07JAg_Ie5k-sWxVrJkmTRdep2ZVcDD3vf6TRQ/formResponse",
+        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfZN8NrgmXcL07JAg_Ie5k-sWxVrJkmTRdep2ZVcDD3vf6TRQ/formResponse",
       fields: [
         {
           id: "entry.1120222945",
@@ -406,46 +405,47 @@ export default function CustomForm() {
   return (
     <main className="w-full h-full">
       {showModal && (
-        <div className="fixed right-5 bottom-5 bg-[#151515] w-full max-w-[500px] p-6 rounded-[8px] flex justify-between items-center z-50">
-          <div>
-            <h1
-              className="primaryFontRegular text-slate-50"
-              style={{ fontSize: "clamp(15px, 6.5vw, 25px)" }}
+        <div className="fixed right-5 bottom-5 w-full max-w-[500px] z-50">
+          <div className="bg-[#151515] rounded-[8px] p-6 flex justify-between items-center w-full">
+            <div>
+              <h1
+                className="primaryFontRegular text-slate-50"
+                style={{ fontSize: "clamp(15px, 6.5vw, 25px)" }}
+              >
+                {isSuccess ? "Formen ble sendt" : "Formen ble ikke sendt"}
+              </h1>
+              <h3
+                className="primaryFontRegular text-[#bcbbbb]"
+                style={{ fontSize: "clamp(10px, 5vw, 15px)" }}
+              >
+                {isSuccess
+                  ? "Vi tar kontakt med deg fortløpende"
+                  : `Feilmelding: ${errorMessage}`}
+              </h3>
+            </div>
+            <button
+              onClick={() => setShowModal(false)}
+              className="bg-[#ffffff] text-[#111111] px-3 py-2 rounded-full flex items-start gap-1 hover:-translate-y-1 duration-150 ease-out"
             >
-              {isSuccess ? "Formen ble sendt" : "Formen ble ikke sendt"}
-            </h1>
-            <h3
-              className="primaryFontRegular text-[#bcbbbb]"
-              style={{ fontSize: "clamp(10px, 5vw, 15px)" }}
-            >
-              {isSuccess
-                ? "Vi tar kontakt med deg fortløpende"
-                : `Feilmelding: ${errorMessage}`}
-            </h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+              lukk
+            </button>
           </div>
-          <button
-            onClick={() => setShowModal(false)}
-            className="bg-[#ffffff] text-[#111111] px-3 py-2 rounded-full flex items-start gap-1 hover:-translate-y-1 duration-150 ease-out"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="size-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18 18 6M6 6l12 12"
-              />
-            </svg>
-            lukk
-          </button>
         </div>
       )}
-      <Marquee />
       <NcNav />
       <div className="px-[35px]">
         <a href="/NewCreationForms">
