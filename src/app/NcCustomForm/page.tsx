@@ -28,7 +28,7 @@ export default function CustomForm() {
     googleFormUrl: "",
     fields: [],
   });
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -405,14 +405,14 @@ export default function CustomForm() {
   return (
     <main className="w-full h-full">
       {showModal && (
-        <div className="fixed right-5 bottom-5 w-full max-w-[500px] z-50">
-          <div className="bg-[#151515] rounded-[8px] p-6 flex justify-between items-center w-full">
+        <div className="fixed right-0 bottom-0 w-full max-w-[500px] z-50">
+          <div className="bg-[#2d6a4f] rounded-[8px] p-6 flex justify-between items-center w-full">
             <div>
               <h1
                 className="primaryFontRegular text-slate-50"
-                style={{ fontSize: "clamp(15px, 6.5vw, 25px)" }}
+                style={{ fontSize: "clamp(15px, 5vw, 25px)" }}
               >
-                {isSuccess ? "Formen ble sendt" : "Formen ble ikke sendt"}
+                {isSuccess ? "Påmelding ble sendt" : "Påmelding ble ikke sendt"}
               </h1>
               <h3
                 className="primaryFontRegular text-[#bcbbbb]"
@@ -425,22 +425,8 @@ export default function CustomForm() {
             </div>
             <button
               onClick={() => setShowModal(false)}
-              className="bg-[#ffffff] text-[#111111] px-3 py-2 rounded-full flex items-start gap-1 hover:-translate-y-1 duration-150 ease-out"
+              className="bg-[#ffffff] cursor-pointer text-[#111111] px-3 py-2 rounded-full flex items-start gap-1 hover:-translate-y-1 duration-150 ease-out"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="size-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
-                />
-              </svg>
               lukk
             </button>
           </div>
