@@ -28,7 +28,7 @@ export default function CustomForm() {
     googleFormUrl: "",
     fields: [],
   });
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -415,13 +415,13 @@ export default function CustomForm() {
     <main className="w-full h-full">
       {showModal && (
         <div className="fixed right-0 bottom-0 w-full max-w-[500px]">
-          <div className="bg-[#151515] rounded-[8px] p-6 flex justify-between items-center w-full">
+          <div className="bg-[#2d6a4f] rounded-[8px] p-6 flex justify-between items-center w-full">
             <div>
               <h1
                 className="primaryFontRegular text-slate-50"
                 style={{ fontSize: "clamp(15px, 5vw, 25px)" }}
               >
-                {isSuccess ? "Formen ble sendt" : "Formen ble ikke sendt"}
+                {isSuccess ? "Påmelding ble sendt" : "Påmelding ble ikke sendt"}
               </h1>
               <h3
                 className="primaryFontRegular text-[#bcbbbb]"
