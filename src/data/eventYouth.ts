@@ -95,7 +95,7 @@ export const eventsYouth = [
     title: "Love in action!",
     description: "Mer info kommer",
     location: "St. Olavs Gate 24, Oslo",
-    clock: "Tid kommer",
+    clock: "14:30",
     date: "15.02.25",
   },
   //Spesielle arrangementer
