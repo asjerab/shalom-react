@@ -92,7 +92,7 @@ export const eventsNc = [
     title: "Love in action!",
     description: "Mer info kommer",
     location: "St. Olavs Gate 24, Oslo",
-    clock: "18:30",
+    clock: "14:30",
     date: "15.02.25",
   },
   //Spesielle arrangementer
