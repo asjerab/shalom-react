@@ -93,7 +93,7 @@ export const eventsYouth = [
   {
     id: "JamesEvent",
     title: "Love in action!",
-    description: "Mer info kommer",
+    description: "Mer info på Instagram https://www.instagram.com/james1.27ministry/",
     location: "St. Olavs Gate 24, Oslo",
     clock: "14:30",
     date: "15.02.25",
