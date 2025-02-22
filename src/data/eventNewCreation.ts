@@ -16,6 +16,7 @@ export const eventsNc = [
       "Velkommen til gudstjeneste sammen med Youth. Ta med en venn eller to og ta del i det Gud har for oss som fellesskap. Velkommen hjem!",
     location: "St. Olavs Gate 24, Oslo",
     clock: "18:30",
+    date: "23.02.25"
   },
   {
     id: "Connect",

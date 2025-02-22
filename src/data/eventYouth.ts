@@ -15,7 +15,7 @@ export const eventsYouth = [
     description:
       "Velkommen til gudstjeneste sammen med New Creation. Ta med en venn eller to og ta del i det Gud har for oss som fellesskap. Velkommen hjem!",
     location: "St. Olavs Gate 24, Oslo",
-    clock: "Tid kommer",
+    clock: "18:30",
     date: "søndag 23.02.25",
   },
   {
