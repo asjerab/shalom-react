@@ -90,10 +90,10 @@ const data = [
   { month: "June", id: "/event/kalenderYouth/Bonnemote", date: 26, image: 'grupperImages/bonnBilde.png'},
   { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 28, image: 'arrangementImages/gudstjenesteBilde.png'},
   // July Seksjon
-  { month: "July", id: "/event/arrangement/ShalomYouthLeir", date: 28, image: 'arrangementImages/ShalomYouthLeirImg.png'},
-  { month: "July", id: "/event/arrangement/ShalomYouthLeir", date: 29, image: 'arrangementImages/ShalomYouthLeirImg.png'},
-  { month: "July", id: "/event/arrangement/ShalomYouthLeir", date: 30, image: 'arrangementImages/ShalomYouthLeirImg.png'},
-  { month: "July", id: "/event/arrangement/ShalomYouthLeir", date: 31, image: 'arrangementImages/ShalomYouthLeirImg.png'},
+  { month: "July", id: "/event/arrangement/ShalomYouthLeir", date: 28, image: 'arrangementImages/shalomYouthLeirImg.png'},
+  { month: "July", id: "/event/arrangement/ShalomYouthLeir", date: 29, image: 'arrangementImages/shalomYouthLeirImg.png'},
+  { month: "July", id: "/event/arrangement/ShalomYouthLeir", date: 30, image: 'arrangementImages/shalomYouthLeirImg.png'},
+  { month: "July", id: "/event/arrangement/ShalomYouthLeir", date: 31, image: 'arrangementImages/shalomYouthLeirImg.png'},
 ];
 
 const Home: React.FC = () => {
