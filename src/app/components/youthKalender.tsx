@@ -52,7 +52,7 @@ const data = [
   { month: "April", id: "/event/kalenderYouth/MultiSondagsArrangement", date: 5, image: 'grupperImages/GudstjenesteAlphaOgDypere.png'},
   { month: "April", id: "/event/kalenderYouth/Connect", date: 9, image: 'grupperImages/connectBilde.png'},
   { month: "April", id: "/event/arrangement/Paaskekonf", date: 11, image: 'arrangementImages/paaskekonf.png'},
-  { month: "April", id: "/event/arrangement/Paaskekonf", date: 12, image: 'arrangementImages/paaskekonf.png'},
+  { month: "April", id: "/event/arrangement/PaaskekonfDagTo", date: 12, image: 'arrangementImages/paaskekonf.png'},
   { month: "April", id: "/event/kalenderYouth/Connect", date: 23, image: 'grupperImages/connectBilde.png'},
   { month: "April", id: "/event/kalenderYouth/Evangelisering", date: 25, image: 'grupperImages/evangeliseringBilde.png'},
   { month: "April", id: "/event/kalenderYouth/Gudstjeneste", date: 26, image: 'arrangementImages/gudstjenesteBilde.png'},
@@ -89,6 +89,11 @@ const data = [
   { month: "June", id: "/event/kalenderYouth/Bibelstudie", date: 24, image: 'grupperImages/bibelStudieBilde.png'},
   { month: "June", id: "/event/kalenderYouth/Bonnemote", date: 26, image: 'grupperImages/bonnBilde.png'},
   { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 28, image: 'arrangementImages/gudstjenesteBilde.png'},
+  // July Seksjon
+  { month: "July", id: "/event/arrangement/ShalomYouthLeir", date: 28, image: 'arrangementImages/ShalomYouthLeirImg.png'},
+  { month: "July", id: "/event/arrangement/ShalomYouthLeir", date: 29, image: 'arrangementImages/ShalomYouthLeirImg.png'},
+  { month: "July", id: "/event/arrangement/ShalomYouthLeir", date: 30, image: 'arrangementImages/ShalomYouthLeirImg.png'},
+  { month: "July", id: "/event/arrangement/ShalomYouthLeir", date: 31, image: 'arrangementImages/ShalomYouthLeirImg.png'},
 ];
 
 const Home: React.FC = () => {

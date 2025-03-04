@@ -60,7 +60,7 @@ const data = [
     { month: "April", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 5, image: 'grupperImages/AlphaOgDypere.png'},
     { month: "April", id: "/event/KalenderNewCreation/Connect", date: 10, image: 'grupperImages/connectBilde.png'},
     { month: "April", id: "/event/arrangementNewCreation/Paaskekonf", date: 11, image: 'arrangementImages/paaskekonf.png'},
-    { month: "April", id: "/event/arrangementNewCreation/Paaskekonf", date: 12, image: 'arrangementImages/paaskekonf.png'},
+    { month: "April", id: "/event/arrangementNewCreation/PaaskekonfDagTo", date: 12, image: 'arrangementImages/paaskekonf.png'},
     { month: "April", id: "/event/KalenderNewCreation/Connect", date: 24, image: 'grupperImages/connectBilde.png'},
     { month: "April", id: "/event/KalenderNewCreation/Evangelisering", date: 25, image: 'grupperImages/evangeliseringBilde.png'},
     { month: "April", id: "/event/KalenderNewCreation/Gudstjeneste", date: 27, image: 'arrangementImages/gudstjenesteBilde.png'},
@@ -107,6 +107,12 @@ const data = [
     { month: "June", id: "/event/KalenderNewCreation/Bibelstudie", date: 24, image: 'grupperImages/bibelStudieBilde.png'},
     { month: "June", id: "/event/KalenderNewCreation/Bonnemote", date: 26, image: 'grupperImages/bonnBilde.png'},
     { month: "June", id: "/event/KalenderNewCreation/Gudstjeneste", date: 29, image: 'arrangementImages/gudstjenesteBilde.png'},
+     // july Seksjon
+     { month: "July", id: "/event/arrangementNewCreation/ShalomNewCreationLeir", date: 31, image: 'arrangementImages/newCreationLeirimg.png'},
+    // August Seksjon
+    { month: "August", id: "/event/arrangementNewCreation/ShalomNewCreationLeir", date: 1, image: 'arrangementImages/newCreationLeirimg.png'},
+    { month: "August", id: "/event/arrangementNewCreation/ShalomNewCreationLeir", date: 2, image: 'arrangementImages/newCreationLeirimg.png'},
+    { month: "August", id: "/event/arrangementNewCreation/ShalomNewCreationLeir", date: 3, image: 'arrangementImages/newCreationLeirimg.png'},
   ];
   
 

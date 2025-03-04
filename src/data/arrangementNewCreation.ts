@@ -75,10 +75,30 @@ export const arrangement = [
     id: "Paaskekonf",
     title: "Påskekonferanse",
     description:
-      "Mer info kommer",
+      "Må han som er så rik på herlegdom, styrkja dykkar indre menneske med kraft ved sin Ande. / Gjestetaler : Pastor Albert",
     location: "St. Olavs Gate 24, Oslo",
+    clock: "16:00",
+    date: "11.07",
+    //
+  },
+  {
+    id: "PaaskekonfDagTo",
+    title: "Påskekonferanse dag to",
+    description:
+      "Må han som er så rik på herlegdom, styrkja dykkar indre menneske med kraft ved sin Ande. / Gjestetaler : Pastor Albert",
+    location: "St. Olavs Gate 24, Oslo",
+    clock: "16:00",
+    date: "12.07",
+    //
+  },
+  {
+    id: "ShalomNewCreationLeir",
+    title: "Shalom New Creation sommerleir",
+    description:
+      "Mer info kommer",
+    location: "Fyresdal leirsted",
     clock: "Tid kommer",
-    date: "11-12.04.25",
+    date: "31.07 - 03.08",
     //
   }
 ];
