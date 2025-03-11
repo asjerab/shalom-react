@@ -89,8 +89,9 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
                           <Image
                             src={"/" + dateData.image}
                             alt={``}
-                            layout="fill"
-                            objectFit="cover"
+                            style={{ objectFit: "cover", width: "100%" }}
+                            width={100}
+                            height={100}
                             className="absolute top-0 left-0 w-full h-full rounded-[4px]"
                           />
                         )}
