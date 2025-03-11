@@ -2,6 +2,7 @@
 
 import NewUserModal from "../components/NcnewUserModal";
 import NcNav from "../components/NcHeroHome";
+import NewCreationEventsSections from "../components/NewCreationEventsSections"
 import NcGrupperHome from "../components/NcGrupperHome";
 import KalenderNc from "../components/NcKalender";
 import YoutubeComp from "../components/youtubeHome";
@@ -30,6 +31,7 @@ export default function ShalomHome() {
     <main>
       <NcNav />
       <NewUserModal showModal={showModal} closeModal={closeModal} />
+      <NewCreationEventsSections />
       <NcGrupperHome />
       <KalenderNc />
       <YoutubeComp />
