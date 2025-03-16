@@ -55,8 +55,7 @@ export const arrangement = [
   {
     id: "Julecup",
     title: "Julecup  Youth & New Creation",
-    description:
-      "Mer info kommer.",
+    description: "Mer info kommer.",
     location: "lokasjon kommer",
     clock: "Tid etter avtale",
     date: "21.12.24",
@@ -65,7 +64,8 @@ export const arrangement = [
   {
     id: "Nyttaarsaften",
     title: "Nyttårsaften feiring",
-    description: "Bli med på en uforglemmelig nyttårsfeiring sammen med Shalom Youth og Shalom New Creation! 🎉🎊 All nødvendig informasjon og lenken til påmelding finner du nedenfor. Vi gleder oss til å se deg der! https://docs.google.com/forms/d/e/1FAIpQLSftAt-iPXwFYcB77a6KTdZI8IgLYGqlSj0P2cY4GRyL5HlsVg/viewform",
+    description:
+      "Bli med på en uforglemmelig nyttårsfeiring sammen med Shalom Youth og Shalom New Creation! 🎉🎊 All nødvendig informasjon og lenken til påmelding finner du nedenfor. Vi gleder oss til å se deg der! https://docs.google.com/forms/d/e/1FAIpQLSftAt-iPXwFYcB77a6KTdZI8IgLYGqlSj0P2cY4GRyL5HlsVg/viewform",
     location: "St. Olavs Gate 24, Oslo",
     clock: "20:00 - 00:15",
     date: "31.12.24",
@@ -95,10 +95,10 @@ export const arrangement = [
     id: "ShalomNewCreationLeir",
     title: "Shalom New Creation sommerleir",
     description:
-      "Mer info kommer",
+      "Påmeldings lenke kommer snart :)",
     location: "Fyresdal leirsted",
-    clock: "Tid kommer",
+    clock: "Klokkslett finner du i lenken",
     date: "31.07 - 03.08",
     //
-  }
+  },
 ];
