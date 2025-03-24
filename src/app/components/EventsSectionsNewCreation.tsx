@@ -7,17 +7,16 @@ import PaasekonfImg from "../../../public/EventSectionImages/PaaskekonfImg.png";
 const images = [
   {
     src: PaasekonfImg.src,
-    link: "/event/arrangement/Paaskekonf",
+    link: "/event/arrangementNewCreation/Paaskekonf",
     alt: "Påske konferanse Img",
-    title: "Påskekonferanse",
   },
   {
     src: YouthLeriImg.src,
     link: "/event/arrangement/ShalomYouthLeir",
     alt: "Shalom Youth Leir bilde",
-    title: "Shalom Youth Leir",
   },
 ];
+
 
 export default function EventsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
