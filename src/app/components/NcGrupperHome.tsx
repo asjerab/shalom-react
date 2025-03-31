@@ -17,10 +17,10 @@ export default function YouthGrupperHome() {
             Grupper
             <span className="Kelsi-fill text-slate-50">x</span>
           </h1>
-          <div className="grupper-wrapper-home grid grid-cols-2 gap-7">
+          <div className="grupper-wrapper-home grid grid-cols-4 gap-3">
             <Link href="/NewCreationGrupper" className="">
               <Image
-                className="w-full max-w-[640px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
+                className="w-full max-w-[640px] rounded-[4px] cursor-pointer hover:scale-[1.020] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
                 src={TheUpperRoom.src}
                 width={640}
                 height={640}
@@ -29,7 +29,7 @@ export default function YouthGrupperHome() {
             </Link>
             <Link href="/NewCreationGrupper" className="">
               <Image
-                className="hidden-grupper-img w-full max-w-[640px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
+                className="w-full max-w-[640px] rounded-[4px] cursor-pointer hover:scale-[1.020] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
                 src={Bonn.src}
                 width={640}
                 height={640}
@@ -38,7 +38,7 @@ export default function YouthGrupperHome() {
             </Link>
             <Link href="/NewCreationGrupper" className="">
               <Image
-                className="w-full max-w-[648px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
+                className="hidden-grupper-img w-full max-w-[648px] rounded-[4px] cursor-pointer hover:scale-[1.020] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
                 src={Evangelisering.src}
                 width={640}
                 height={640}
@@ -47,7 +47,7 @@ export default function YouthGrupperHome() {
             </Link>
             <Link href="/NewCreationGrupper" className="">
               <Image
-                className="hidden-grupper-img w-full max-w-[640px] rounded-[4px] cursor-pointer hover:scale-[1.010] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
+                className="hidden-grupper-img w-full max-w-[640px] rounded-[4px] cursor-pointer hover:scale-[1.020] duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
                 src={tjenesteKursImg.src}
                 width={640}
                 height={640}
