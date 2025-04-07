@@ -87,7 +87,7 @@ export const arrangement = [
     description:
       "Må han som er så rik på herlegdom, styrkja dykkar indre menneske med kraft ved sin Ande. / Gjestetaler : Pastor Albert",
     location: "St. Olavs Gate 24, Oslo",
-    clock: "18:00",
+    clock: "16:00",
     date: "12.07",
     //
   },
