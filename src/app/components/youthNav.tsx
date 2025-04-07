@@ -174,7 +174,7 @@ export default function TestNav() {
                   {navLinks.map((link) => (
                     <div
                       key={link.href} // Ensure the key is added here
-                      className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50 rounded-[8px] p-3"
+                      className="flex justify-between items-center my-2 hover:scale-[99%] duration-150 ease-in-out hover:bg-[#2b80ff] hover:text-slate-50 rounded-[8px] p-3"
                     >
                       <Link
                         className="primaryFontRegular flex items-center gap-2 text-[20px] text-slate-50"
@@ -203,7 +203,7 @@ export default function TestNav() {
 
                   <div className="flex gap-2 mt-3">
                     <button
-                      className="bg-[#ffffff] w-full p-[11px] my-2 rounded-[8px] text-[#111111] hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50"
+                      className="bg-[#ffffff] w-full p-[13px] my-2 rounded-[8px] text-[#111111] hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50"
                       id="button"
                       onClick={() => (window.location.href = "/")}
                     >

@@ -95,7 +95,7 @@ export const arrangement = [
     id: "ShalomNewCreationLeir",
     title: "Shalom New Creation sommerleir",
     description:
-      "Shalom new creation's årlige sommerleir. YOU DONT WANNA MISS OUT! Lenke til påmelding finner du nede. Alt av info befinner seg på lenken har du noen spørsmål kan du ta kontakt med oss på mail som du finner på kontakt siden. Ta med en venn eller ti å opplev hva Gud har i vente for oss denne sommeren! https://event.checkin.no/113782/shalom-new-creation-sommerleir-2025",
+      "Årets leir er desverre full, men det er mulighet for å melde seg på ventelista! https://event.checkin.no/113782/shalom-new-creation-sommerleir-2025",
     location: "Fyresdal leirsted",
     clock: "Klokkslett finner du i lenken",
     date: "31.07 - 03.08",
