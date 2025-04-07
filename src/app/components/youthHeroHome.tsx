@@ -21,14 +21,14 @@ export default function YouthNav() {
           </p>
           <div className="flex items-center">
             <a href="#utforsk-a" className="flex justify-center active:scale-[0.95] duration-150 ease-in-out">
-              <button className="btn w-full primaryFontRegular uppercase scroll-container max-w-[125px] m-5 rounded-[28px] bg-[#111] text-slate-50 border-none hover:bg-[#1a1a1a]">
+              <button className="btn w-full primaryFontRegular uppercase scroll-container max-w-[125px] m-5 rounded-[8px] bg-[#111] text-slate-50 border-none hover:bg-[#1a1a1a]">
                 <div className="scroll-holder">
                   <p>Utforsk</p>
                 </div>
               </button>
             </a>
             <a href="#youth-kalender" className="flex justify-center active:scale-[0.95] duration-150 ease-in-out">
-              <button className="btn w-full primaryFontBold  uppercase scroll-container max-w-[125px] m-5 rounded-[28px] bg-[#ececec] text-[#111] font-[800] border-none hover:bg-[#e4e3e3]">
+              <button className="btn w-full primaryFontRegular  uppercase scroll-container max-w-[125px] m-5 rounded-[8px] bg-[#ececec] text-[#111] font-[800] border-none hover:bg-[#e4e3e3]">
                 <div className="scroll-holder">
                   <p>Kalender</p>
                 </div>

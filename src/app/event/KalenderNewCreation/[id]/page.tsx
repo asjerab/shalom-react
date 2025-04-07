@@ -79,13 +79,13 @@ export default async function EventPage({ params }: EventPageProps) {
             ))}          </p>
         </div>
         <div className="kalender-subInfo flex gap-5">
-          <p className="Sf-pro-font-regular text-[#111] badge py-4 border-none">
+          <p className="Sf-pro-font-regular text-[#fff] bg-[#1f1f1f] badge py-4 border-none">
             {eventData.location}
           </p>
-          <p className="Sf-pro-font-regular text-[#111] badge py-4 border-none">
+          <p className="Sf-pro-font-regular text-[#fff] bg-[#1f1f1f] badge py-4 border-none">
             {eventData.clock}
           </p>
-          <p className="Sf-pro-font-regular text-[#111] badge py-4 border-none">
+          <p className="Sf-pro-font-regular text-[#fff] bg-[#1f1f1f] badge py-4 border-none">
             {eventData.date}
           </p>
         </div>
@@ -107,19 +107,19 @@ export default async function EventPage({ params }: EventPageProps) {
         </div>
         <div className="kalender-subInfo flex gap-5">
           <p
-            className="Sf-pro-font-regular text-[#111] badge py-4 border-none"
+            className="Sf-pro-font-regular text-[#fff] bg-[#1f1f1f] badge py-4 border-none"
             style={{ display: eventData.locationTwo ? "flex" : "none" }}
           >
             {eventData.locationTwo}
           </p>
           <p
-            className="Sf-pro-font-regular text-[#111] badge py-4 border-none"
+            className="Sf-pro-font-regular text-[#fff] bg-[#1f1f1f] badge py-4 border-none"
             style={{ display: eventData.clockTwo ? "flex" : "none" }}
           >
             {eventData.clockTwo}
           </p>
           <p
-            className="Sf-pro-font-regular text-[#111] badge py-4 border-none"
+            className="Sf-pro-font-regular text-[#fff] bg-[#1f1f1f] badge py-4 border-none"
             style={{ display: eventData.dateTwo ? "flex" : "none" }}
           >
             {eventData.dateTwo}
@@ -143,19 +143,19 @@ export default async function EventPage({ params }: EventPageProps) {
         </div>
         <div className="kalender-subInfo flex gap-5">
           <p
-            className="Sf-pro-font-regular text-[#111] badge py-4 border-none"
+            className="Sf-pro-font-regular text-[#fff] bg-[#1f1f1f] badge py-4 border-none"
             style={{ display: eventData.locationThree ? "flex" : "none" }}
           >
             {eventData.locationThree}
           </p>
           <p
-            className="Sf-pro-font-regular text-[#111] badge py-4 border-none"
+            className="Sf-pro-font-regular text-[#fff] bg-[#1f1f1f] badge py-4 border-none"
             style={{ display: eventData.clockThree ? "flex" : "none" }}
           >
             {eventData.clockThree}
           </p>
           <p
-            className="Sf-pro-font-regular text-[#111] badge py-4 border-none"
+            className="Sf-pro-font-regular text-[#fff] bg-[#1f1f1f] badge py-4 border-none"
             style={{ display: eventData.dateThree ? "flex" : "none" }}
           >
             {eventData.dateThree}

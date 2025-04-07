@@ -38,7 +38,7 @@ export default function YouthGrupperHome() {
             </Link>
             <Link href="/youthGrupper" className="">
               <Image
-                className="hidden-grupper-img w-full max-w-[640px] rounded-[4px] cursor-pointer hover:scale-[1.020]  duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
+                className="w-full max-w-[640px] rounded-[4px] cursor-pointer hover:scale-[1.020]  duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
                 src={connectImg.src}
                 width={640}
                 height={640}
@@ -47,7 +47,7 @@ export default function YouthGrupperHome() {
             </Link>
             <Link href="/youthGrupper" className="">
               <Image
-                className="hidden-grupper-img w-full max-w-[640px] rounded-[4px] cursor-pointer hover:scale-[1.020]  duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
+                className="w-full max-w-[640px] rounded-[4px] cursor-pointer hover:scale-[1.020]  duration-150 cubic-bezier(0.4, 0, 0.2, 1)"
                 src={tjenesteKursImg.src}
                 width={640}
                 height={640}
