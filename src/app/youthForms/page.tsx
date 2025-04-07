@@ -36,7 +36,7 @@ export default function youthPåmelding() {
           {youthForm.map((form, index) => (
             <div key={index}>
               <Link href={form.href}>
-                <div className="påmeldingHome flex justify-between items-center bg-[#141414] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
+                <div className="påmeldingHome flex justify-between items-center bg-transparent border-[#262626] border-[0.5px] px-10 py-14 rounded-[18px] my-6 hover:px-9 duration-150 ease-in-out">
                   <h1 className="påmeldingTitle primaryFontRegular font-[600] text-slate-50 text-[25px]">
                     {form.formName}
                   </h1>

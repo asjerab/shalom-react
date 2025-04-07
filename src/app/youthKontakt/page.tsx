@@ -85,7 +85,7 @@ export default function youthKontakt() {
       <div className="kontakt-children p-[50px] max-w-[1325px]">
         {kontaktPersoner.map((person, index) => (
           <div key={index}>
-            <div className="w-full h-[2px] bg-[#67686c] opacity-50 "></div>
+            <div className="w-full h-[2px] bg-[#404040] opacity-50 "></div>
             <div className="py-[65px] flex flex-col gap-5 ">
               <div className="flex row-kontakt justify-between items-center">
                 <h1
@@ -95,7 +95,7 @@ export default function youthKontakt() {
                   {person.name}
                 </h1>
                 <p
-                  className="primaryFontRegular text-slate-50 badge bg-[#131313] border-none p-5"
+                  className="primaryFontRegular text-slate-50 badge bg-[#404040] border-none p-5"
                   style={{ fontSize: "clamp(15px, 2vw, 20px)" }}
                 >
                   {person.title}
