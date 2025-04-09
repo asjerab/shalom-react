@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import YouthLeriImg from "../../../public/EventSectionImages/YouthLeirImg.png";
-import NewCreationLeirImg from "../../../public/EventSectionImages/NewCreationLeirImg.png";
-import PaasekonfImg from "../../../public/EventSectionImages/PaaskekonfImg.png";
+import PaasekonfImg from "../../../public/EventSectionImages/nyttKonfBilde.png";
 
 const images = [
   {
