@@ -5,12 +5,6 @@ import PaasekonfImg from "../../../public/EventSectionImages/nyttKonfBilde.png";
 
 const images = [
   {
-    src: PaasekonfImg.src,
-    link: "/event/arrangement/Paaskekonf",
-    alt: "Påske konferanse Img",
-    title: "Påskekonferanse",
-  },
-  {
     src: YouthLeriImg.src,
     link: "/event/arrangement/ShalomYouthLeir",
     alt: "Shalom Youth Leir bilde",
