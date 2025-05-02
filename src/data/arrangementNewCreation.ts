@@ -101,4 +101,15 @@ export const arrangement = [
     date: "31.07 - 03.08",
     //
   },
+  
+  {
+    id: "JesusISentrum",
+    title: "Jesus i Sentrum",
+    description:
+      "Denne lørdagen delatar vi på Jesus i sentrum sammen med andre felleskap. Mer info på instagram https://www.instagram.com/jesusisentrum/",
+    location: "Spikersuppa i Oslo",
+    clock: "Følg med på insta",
+    date: "03.05",
+    //
+  },
 ];
