@@ -60,7 +60,7 @@ const data = [
   /////////////////
   // Mai Seksjon
   { month: "May", id: "/event/kalenderYouth/Bonnemote", date: 1, image: 'grupperImages/bonnBilde.png'},
-  { month: "May", id: "/event/kalenderYouth/MultiSondagsArrangement", date: 3, image: 'grupperImages/GudstjenesteAlphaOgDypere.png'},
+  { month: "May", id: "/event/arrangement/JesusISentrum", date: 3, image: 'arrangementImages/JesusISentrum.png'},
   { month: "May", id: "/event/kalenderYouth/ConnectOgTjenestekurs", date: 7, image: 'grupperImages/connectOgTjenestekurs.png'},
   { month: "May", id: "/event/kalenderYouth/Evangelisering", date: 9, image: 'grupperImages/evangeliseringBilde.png'},
   { month: "May", id: "/event/kalenderYouth/MultiSondagsArrangement", date: 10, image: 'grupperImages/GudstjenesteAlphaOgDypere.png'},

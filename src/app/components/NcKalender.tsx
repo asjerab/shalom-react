@@ -68,7 +68,7 @@ const data = [
     /////////////////
     // Mai Seksjon
     { month: "May", id: "/event/KalenderNewCreation/Bonnemote", date: 1, image: 'grupperImages/bonnBilde.png'},
-    { month: "May", id: "/event/KalenderNewCreation/AlphaOgDypere", date: 3, image: 'grupperImages/AlphaOgDypere.png'},
+    { month: "May", id: "/event/arrangement/JesusISentrum", date: 3, image: 'arrangementImages/JesusISentrum.png'},
     { month: "May", id: "/event/KalenderNewCreation/Gudstjeneste", date: 4, image: 'arrangementImages/gudstjenesteBilde.png'},
     { month: "May", id: "/event/KalenderNewCreation/Connect", date: 8, image: 'grupperImages/connectBilde.png'},
     { month: "May", id: "/event/KalenderNewCreation/Evangelisering", date: 9, image: 'grupperImages/evangeliseringBilde.png'},
