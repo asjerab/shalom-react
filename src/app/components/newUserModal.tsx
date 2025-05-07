@@ -57,7 +57,7 @@ const Modal: React.FC<ModalProps> = ({ showModal, closeModal }) => {
           onClick={closeModal}
           className="primaryFontRegular btn w-full bg-[#101010] text-[#ffffff] border-none hover:bg-[#131313]"
         >
-          Velkommen Hjem!
+          Velkommen til din fars hus!
         </button>
       </div>
     </div>
@@ -91,8 +91,8 @@ const Modal: React.FC<ModalProps> = ({ showModal, closeModal }) => {
           onClick={closeModal}
           className="bg-[#111111] text-[#ffffff]  my-2 px-4 py-2 rounded-lg hover:bg-[#1f1f1f] hover:text-[#ffffff]"
         >
-          Velkommen Hjem!
-        </button>
+          Velkommen til din fars hus!
+          </button>
       </div>
     </div>
   );

@@ -46,18 +46,18 @@ const Modal: React.FC<ModalProps> = ({ showModal, closeModal }) => {
         </h1>
       </nav>
       <p className="primaryFontRegular font-light px-[2em] text-[#111111]">
-        <strong>Velkommen til Shalom New Creation!</strong> Dette er vår offisielle
-        side, hvor du kan bli bedre kjent med hvem vi er, hva vi gjør, hva vi
-        tilbyr, og hvor du finner oss. Vi holder gudstjenester hver lørdag kl.
-        18:30, og du er hjertelig velkommen til å delta. Må Guds nåde og
-        velsignelse være over deg!{" "}
+        <strong>Velkommen til Shalom New Creation!</strong> Dette er vår
+        offisielle side, hvor du kan bli bedre kjent med hvem vi er, hva vi
+        gjør, hva vi tilbyr, og hvor du finner oss. Vi holder gudstjenester hver
+        lørdag kl. 18:30, og du er hjertelig velkommen til å delta. Må Guds nåde
+        og velsignelse være over deg!{" "}
       </p>
       <div className="p-[2em]">
         <button
           onClick={closeModal}
           className="primaryFontRegular btn w-full bg-[#101010] text-[#ffffff] border-none hover:bg-[#131313]"
         >
-          Velkommen Hjem!
+          Velkommen til din fars hus!
         </button>
       </div>
     </div>
@@ -81,17 +81,17 @@ const Modal: React.FC<ModalProps> = ({ showModal, closeModal }) => {
           Heisan!
         </h2>
         <p className="mb-4 text-[#111111]">
-        <strong>Velkommen til Shalom New Creation!</strong> Dette er vår offisielle
-        side, hvor du kan bli bedre kjent med hvem vi er, hva vi gjør, hva vi
-        tilbyr, og hvor du finner oss. Vi holder gudstjenester hver søndag kl.
-        18:30, og du er hjertelig velkommen til å delta. Må Guds nåde og
-        velsignelse være over deg!{" "}
+          <strong>Velkommen til Shalom New Creation!</strong> Dette er vår
+          offisielle side, hvor du kan bli bedre kjent med hvem vi er, hva vi
+          gjør, hva vi tilbyr, og hvor du finner oss. Vi holder gudstjenester
+          hver søndag kl. 18:30, og du er hjertelig velkommen til å delta. Må
+          Guds nåde og velsignelse være over deg!{" "}
         </p>
         <button
           onClick={closeModal}
           className="bg-[#111111] text-[#ffffff]  my-2 px-4 py-2 rounded-lg hover:bg-[#1f1f1f] hover:text-[#ffffff]"
         >
-          Velkommen Hjem!
+          Velkommen til din fars hus!
         </button>
       </div>
     </div>
