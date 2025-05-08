@@ -92,7 +92,7 @@ export default function YouthGrupper() {
           </p>
         </div>
         <div>
-          <ul className="gupper-page-container grid grid-cols-3 gap-5">
+          <ul className="gupper-page-container grid grid-cols-4 gap-5">
             {grupper.map((gruppe, index) => (
               <li
                 key={index}
