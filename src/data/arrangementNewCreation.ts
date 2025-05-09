@@ -112,4 +112,15 @@ export const arrangement = [
     date: "03.05",
     //
   },
+
+  {
+    id: "LovsangsKveld",
+    title: "Lovsangskveld",
+    description:
+      "Bli med å delta på en kveld hvor vi løfter navnet Jesus sammen i lovsang som søsken i kristus.",
+    location: "St. Olavs gate 24",
+    clock: "18:00",
+    date: "18.05",
+    //
+  },
 ];
