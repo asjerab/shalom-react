@@ -198,7 +198,7 @@ export default function TestNav() {
 
                   <div className="flex gap-2 mt-3">
                     <button
-                      className="bg-[#ffffff] w-full p-[13px] my-2 rounded-[8px] text-[#111111] hover:scale-[99%] duration-150 ease-in-out hover:bg-[#1f1f1f] hover:text-slate-50"
+                      className="my-3.5 w-full bg-[#ffffff]  p-2 rounded-[4px] text-[#111111] Gilroy-Semibold hover:scale-[1.005] duration-150 ease-in-out"
                       id="button"
                       onClick={() => (window.location.href = "/")}
                     >
