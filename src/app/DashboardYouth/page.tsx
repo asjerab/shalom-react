@@ -14,7 +14,7 @@ export default async function PrivatePage() {
     <main className="w-full h-screen p-4">
       <div className="flex justify-between items-center">
         <p>Hello {data.user.email}</p>
-        <form action={logout}>
+        <form onClick={logout}>
           <button 
             type="submit"
             className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"

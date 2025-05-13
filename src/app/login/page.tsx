@@ -2,13 +2,14 @@
 import Link from "next/link";
 import { login, signup } from "./actions";
 import { useState } from "react";
-import YouthNav from "../components/youthNav";
-
 
 export default function LoginPage() {
   const [error, setError] = useState<string | null>(null);
 
-  async function handleLogin(formData: FormData) {
+  async function handleLogin(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault(); // prevent default form submission
+
+    const formData = new FormData(event.currentTarget);
     const result = await login(formData);
     if (result?.error) {
       setError(result.error);
@@ -17,8 +18,8 @@ export default function LoginPage() {
 
   return (
     <main className="w-full h-screen">
-      <section className="h-[100%] flex justify-center items-center">
-        <form className="flex flex-col gap-1.5 items-start">
+      <section className="h-full flex justify-center items-center">
+        <form onSubmit={handleLogin} className="flex flex-col gap-1.5 items-start">
           <div className="my-3.5">
             <h1
               className="Gilroy-Semibold text-slate-50"
@@ -46,8 +47,8 @@ export default function LoginPage() {
           />
           {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
           <button
+            type="submit"
             className="my-3.5 w-full bg-[#2b80ff] p-2 rounded-[4px] text-slate-50 Gilroy-Semibold hover:scale-[1.005] duration-150 ease-in-out"
-            formAction={handleLogin}
           >
             Log in
           </button>
