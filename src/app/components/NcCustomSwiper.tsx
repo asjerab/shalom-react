@@ -46,7 +46,7 @@ const CustomSwiper: React.FC<CustomSwiperProps> = ({
           className="primaryFontHeadings flex flex-row-reverse items-center gap-2 text-slate-50  hover:bg-[#151515] p-3 rounded-[8px]"
           style={{ fontSize: "clamp(15px, 5vw, 25px)" }}
         >
-          <p>Tibake</p>
+          <p>Tilbake</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
