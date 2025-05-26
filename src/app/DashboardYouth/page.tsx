@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { createClient } from "../../../utils/supabase/server";
 import { logout } from "../login/actions";
+import LogoutButton from "../components/logoutButton";
 import YouthNav from "../components/youthNav";
 
 export default async function PrivatePage() {
@@ -31,14 +32,7 @@ export default async function PrivatePage() {
             {data.user.email}
           </p>
         </div>
-        <form onClick={logout}>
-          <button
-            type="submit"
-            className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
-          >
-            Logg ut
-          </button>
-        </form>
+        <LogoutButton />
       </div>
     </main>
   );
