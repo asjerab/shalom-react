@@ -57,7 +57,7 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
           >
             {["Man", "Tir", "Ons", "Tor", "Fre", "Lør", "Søn"].map((day) => (
               <div key={day} className="font-bold w-full text-center pb-5">
-                {day}
+                {day} 
               </div>
             ))}
             {Array.from({ length: getFirstDayOfMonth(month) }).map((_, i) => (
