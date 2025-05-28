@@ -211,18 +211,17 @@ export default function TestNav() {
                     >
                       Felleskap
                     </button>
-                    <button
+                    {/*                     <button
                       className="w-full bg-[#ffffff]  p-2 rounded-[4px] text-[#111111] Gilroy-Semibold hover:scale-[1.005] duration-150 ease-in-out"
                       id="button"
                       onClick={() => (window.location.href = "/login")}
                     >
                       Login
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
             )}
-            
           </div>
         </div>
       </nav>

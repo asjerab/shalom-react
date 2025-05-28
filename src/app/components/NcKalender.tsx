@@ -84,23 +84,22 @@ const data = [
     { month: "May", id: "/event/KalenderNewCreation/Gudstjeneste", date: 25, image: 'arrangementImages/gudstjenesteBilde.png'},
     { month: "May", id: "/event/KalenderNewCreation/Bibelstudie", date: 27, image: 'grupperImages/bibelStudieBilde.png'},
     { month: "May", id: "/event/KalenderNewCreation/Tjenestekurs", date: 28, image: 'grupperImages/tjenestekursBilde.png'},
-    { month: "May", id: "/event/KalenderNewCreation/Bonnemote", date: 29, image: 'grupperImages/bonnBilde.png'},
 
     /////////////////
     // June Seksjon
     { month: "June", id: "/event/KalenderNewCreation/Gudstjeneste", date: 1, image: 'arrangementImages/gudstjenesteBilde.png'},
     { month: "June", id: "/event/KalenderNewCreation/Connect", date: 5, image: 'grupperImages/connectBilde.png'},
     { month: "June", id: "/event/KalenderNewCreation/Evangelisering", date: 6, image: 'grupperImages/evangeliseringBilde.png'},
-    { month: "June", id: "/event/KalenderNewCreation/Gudstjeneste", date: 8, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "June", id: "/event/KalenderNewCreation/Fellesmote", date: 8, image: 'arrangementImages/fellesMoteImage.png'},
     { month: "June", id: "/event/KalenderNewCreation/Bibelstudie", date: 10, image: 'grupperImages/bibelStudieBilde.png'},
     { month: "June", id: "/event/KalenderNewCreation/Bonnemote", date: 12, image: 'grupperImages/bonnBilde.png'},
-    { month: "June", id: "/event/KalenderNewCreation/Gudstjeneste", date: 15, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "June", id: "/event/KalenderNewCreation/Sommeravslutning", date: 14, image: 'arrangementImages/Sommeravslutning.png'},
+    { month: "June", id: "/event/KalenderNewCreation/Fellesmote", date: 15, image: 'arrangementImages/fellesMoteImage.png'},
     { month: "June", id: "/event/KalenderNewCreation/Connect", date: 19, image: 'grupperImages/connectBilde.png'},
     { month: "June", id: "/event/KalenderNewCreation/Evangelisering", date: 20, image: 'grupperImages/evangeliseringBilde.png'},
-    { month: "June", id: "/event/KalenderNewCreation/Gudstjeneste", date: 22, image: 'arrangementImages/gudstjenesteBilde.png'},
+    { month: "June", id: "/event/KalenderNewCreation/Fellesmote", date: 22, image: 'arrangementImages/fellesMoteImage.png'},
     { month: "June", id: "/event/KalenderNewCreation/Bibelstudie", date: 24, image: 'grupperImages/bibelStudieBilde.png'},
     { month: "June", id: "/event/KalenderNewCreation/Bonnemote", date: 26, image: 'grupperImages/bonnBilde.png'},
-    { month: "June", id: "/event/KalenderNewCreation/Gudstjeneste", date: 29, image: 'arrangementImages/gudstjenesteBilde.png'},
      // july Seksjon
      { month: "July", id: "/event/arrangementNewCreation/ShalomNewCreationLeir", date: 31, image: 'arrangementImages/newCreationLeirimg.png'},
     // August Seksjon

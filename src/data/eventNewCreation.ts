@@ -203,4 +203,13 @@ export const eventsNc = [
     date: "08.02.25",
     clock: "Tid etter avtale",
   },
+  {
+    id: "Sommeravslutning",
+    title: "Sommer avslutning!",
+    description:
+      "Mer info kommer",
+    location: "Lokasjon kommer",
+    clock: "Tid kommer",
+    date: "14.05.25",
+  },
 ];

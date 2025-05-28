@@ -73,7 +73,6 @@ const data = [
   { month: "May", id: "/event/kalenderYouth/Gudstjeneste", date: 24, image: 'arrangementImages/gudstjenesteBilde.png'},
   { month: "May", id: "/event/kalenderYouth/Bibelstudie", date: 27, image: 'grupperImages/bibelStudieBilde.png'},
   { month: "May", id: "/event/kalenderYouth/Tjenestekurs", date: 28, image: 'grupperImages/tjenestekursBilde.png'},
-  { month: "May", id: "/event/kalenderYouth/Bonnemote", date: 29, image: 'grupperImages/bonnBilde.png'},
   { month: "May", id: "/event/kalenderYouth/Gudstjeneste", date: 31, image: 'arrangementImages/gudstjenesteBilde.png'},
   /////////////////
   // Juni Seksjon
