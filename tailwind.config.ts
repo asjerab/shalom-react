@@ -19,7 +19,7 @@ const config: Config = {
   daisyui: {
     themes: ["emerald"],
   },
-  purge: {
+  n: {
     enabled: process.env.NODE_ENV === 'production',
     content: [
       './src/**/*.{js,ts,jsx,tsx,mdx}',

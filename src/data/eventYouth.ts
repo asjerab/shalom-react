@@ -243,5 +243,14 @@ export const eventsYouth = [
     clockTwo: "13:30 - 15:00",
     dateTwo: "Lørdager / 7 ukers kurs",
   },  
+  {
+    id: "Sommeravslutning",
+    title: "Sommer avslutning!",
+    description:
+      "Mer info kommer",
+    location: "Lokasjon kommer",
+    clock: "Tid kommer",
+    date: "14.05.25",
+  },
 
 ];

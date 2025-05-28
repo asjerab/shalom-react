@@ -73,22 +73,21 @@ const data = [
   { month: "May", id: "/event/kalenderYouth/Gudstjeneste", date: 24, image: 'arrangementImages/gudstjenesteBilde.png'},
   { month: "May", id: "/event/kalenderYouth/Bibelstudie", date: 27, image: 'grupperImages/bibelStudieBilde.png'},
   { month: "May", id: "/event/kalenderYouth/Tjenestekurs", date: 28, image: 'grupperImages/tjenestekursBilde.png'},
-  { month: "May", id: "/event/kalenderYouth/Bonnemote", date: 29, image: 'grupperImages/bonnBilde.png'},
   { month: "May", id: "/event/kalenderYouth/Gudstjeneste", date: 31, image: 'arrangementImages/gudstjenesteBilde.png'},
   /////////////////
   // Juni Seksjon
   { month: "June", id: "/event/kalenderYouth/Connect", date: 4, image: 'grupperImages/connectBilde.png'},
   { month: "June", id: "/event/kalenderYouth/Evangelisering", date: 6, image: 'grupperImages/evangeliseringBilde.png'},
-  { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 7, image: 'arrangementImages/gudstjenesteBilde.png'},
+  { month: "June", id: "/event/kalenderYouth/Fellesmote", date: 8, image: 'arrangementImages/fellesMoteImage.png'},
   { month: "June", id: "/event/kalenderYouth/Bibelstudie", date: 10, image: 'grupperImages/bibelStudieBilde.png'},
   { month: "June", id: "/event/kalenderYouth/Bonnemote", date: 12, image: 'grupperImages/bonnBilde.png'},
-  { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 14, image: 'arrangementImages/gudstjenesteBilde.png'},
+  { month: "June", id: "/event/kalenderYouth/Sommeravslutning", date: 14, image: 'arrangementImages/Sommeravslutning.png'},
+  { month: "June", id: "/event/kalenderYouth/Fellesmote", date: 15, image: 'arrangementImages/fellesMoteImage.png'},
   { month: "June", id: "/event/kalenderYouth/Connect", date: 18, image: 'grupperImages/connectBilde.png'},
   { month: "June", id: "/event/kalenderYouth/Evangelisering", date: 20, image: 'grupperImages/evangeliseringBilde.png'},
-  { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 21, image: 'arrangementImages/gudstjenesteBilde.png'},
+  { month: "June", id: "/event/kalenderYouth/Fellesmote", date: 22, image: 'arrangementImages/fellesMoteImage.png'},
   { month: "June", id: "/event/kalenderYouth/Bibelstudie", date: 24, image: 'grupperImages/bibelStudieBilde.png'},
   { month: "June", id: "/event/kalenderYouth/Bonnemote", date: 26, image: 'grupperImages/bonnBilde.png'},
-  { month: "June", id: "/event/kalenderYouth/Gudstjeneste", date: 28, image: 'arrangementImages/gudstjenesteBilde.png'},
   // July Seksjon
   { month: "July", id: "/event/arrangement/ShalomYouthLeir", date: 28, image: 'arrangementImages/shalomYouthLeirImg.png'},
   { month: "July", id: "/event/arrangement/ShalomYouthLeir", date: 29, image: 'arrangementImages/shalomYouthLeirImg.png'},
@@ -112,7 +111,7 @@ const Home: React.FC = () => {
             className="primaryFontRegular text-slate-50 w-full max-w-[680px]"
             style={{ fontSize: "clamp(15px, 3.5vw, 25px)" }}
           >
-            Dette er shalom youth sin helt egne kalenderen, her kan du se hva
+            Dette er shalom new creation sin helt egne kalenderen, her kan du se hva
             som skjer i løpet av måneden du har valgt. I tillegg ser du datoene
             for de ulike arrangementene samt dagen det skal være på.
           </p>

@@ -2,6 +2,7 @@
 
 import NewUserModal from "../components/newUserModal";
 import YouthNav from "../components/youthHeroHome";
+import Marquee from "../components/Marquee"
 import EventsSection from "../components/EventsSections";
 import YouthGrupperHome from "../components/youthGrupperHome";
 import KalenderYouth from "../components/youthKalender";
@@ -28,6 +29,7 @@ export default function ShalomHome() {
   return (
     <main>
       <NewUserModal showModal={showModal} closeModal={closeModal} />
+      { /* <Marquee /> */ }
       <YouthNav />
       <EventsSection />
       <YouthGrupperHome />
