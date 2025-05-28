@@ -2,7 +2,6 @@ import { redirect } from "next/navigation";
 import { createClient } from "../../../utils/supabase/server";
 import { logout } from "../login/actions";
 import LogoutButton from "../components/logoutButton";
-import YouthNav from "../components/youthNav";
 
 export default async function PrivatePage() {
   const supabase = await createClient();
@@ -14,8 +13,6 @@ export default async function PrivatePage() {
 
   return (
     <main className="w-full h-screen p-[35px]">
-      {/*       <YouthNav />
-       */}{" "}
       <div className="flex justify-between items-center">
         <div className="flex flex-col">
           <h1
