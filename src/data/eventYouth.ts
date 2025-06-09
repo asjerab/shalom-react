@@ -245,11 +245,11 @@ export const eventsYouth = [
   },  
   {
     id: "Sommeravslutning",
-    title: "Sommer avslutning!",
+    title: "Sommerfest!",
     description:
-      "Mer info kommer",
-    location: "Lokasjon kommer",
-    clock: "Tid kommer",
+      "Det skal være aktiviteter, salg av grillmat og utdeling av «diplom» for de som har fullført vgs, universitetet, fått fagbrev osv. Det finner mer info om dette på lenken https://forms.gle/yEqAdMbiywoD9jENA",
+    location: "Ekebergsletta",
+    clock: "14:00",
     date: "14.05.25",
   },
 
