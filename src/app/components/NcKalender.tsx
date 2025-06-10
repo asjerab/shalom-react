@@ -126,7 +126,7 @@ const Home: React.FC = () => {
             className="primaryFontRegular text-slate-50 w-full max-w-[680px]"
             style={{ fontSize: "clamp(15px, 3.5vw, 25px)" }}
           >
-            Dette er shalom youth sin helt egne kalenderen, her kan du se hva
+            Dette er Shalom New creation sin helt egne kalender. Her kan du se hva
             som skjer i løpet av måneden du har valgt. I tillegg ser du datoene
             for de ulike arrangementene samt dagen det skal være på.
           </p>
@@ -138,3 +138,4 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+
