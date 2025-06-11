@@ -18,6 +18,8 @@ export default function LoginPage() {
 
   return (
     <main className="w-full h-screen">
+      <div>
+      </div>
       <section className="h-full flex justify-center items-center">
         <form
           onSubmit={handleLogin}
