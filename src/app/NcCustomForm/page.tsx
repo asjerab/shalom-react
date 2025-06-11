@@ -28,7 +28,7 @@ export default function CustomForm() {
     googleFormUrl: "",
     fields: [],
   });
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -352,8 +352,9 @@ export default function CustomForm() {
   useEffect(() => {
     const form = document.querySelector("#customForm") as HTMLFormElement;
 
-    const handleSubmit = (event: Event) => {
+    const handleSubmit = async (event: Event) => {
       event.preventDefault();
+      setShowModal(false);
 
       const formData = new FormData();
       formConfig.fields.forEach((field) => {
@@ -374,21 +375,20 @@ export default function CustomForm() {
         }
       });
 
-      fetch(formConfig.googleFormUrl, {
-        method: "POST",
-        body: formData,
-        mode: "no-cors",
-      })
-        .then(() => {
-          setIsSuccess(true);
-          setShowModal(true);
-        })
-        .catch((error) => {
-          setIsSuccess(false);
-          setErrorMessage(error.message);
-          setShowModal(true);
-          console.error("Error submitting form:", error);
+      try {
+        const response = await fetch(formConfig.googleFormUrl, {
+          method: "POST",
+          body: formData,
+          mode: "no-cors",
         });
+        setIsSuccess(true);
+        setShowModal(true);
+      } catch (error) {
+        setIsSuccess(false);
+        setErrorMessage(error instanceof Error ? error.message : "Ukjent feil");
+        setShowModal(true);
+        console.error("Error submitting form:", error);
+      }
     };
 
     if (form) {
