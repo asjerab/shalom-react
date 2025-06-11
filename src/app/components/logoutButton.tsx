@@ -10,7 +10,7 @@ export default function LogoutButton() {
     }}>
       <button
         type="submit"
-        className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
+        className="bg-[#2b80ff] hover:bg-[#4486e9] text-white px-4 py-2 rounded"
       >
         Logg ut
       </button>
