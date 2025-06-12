@@ -248,7 +248,7 @@ export const eventsYouth = [
     title: "Sommerfest!",
     description:
       "Det skal være aktiviteter, salg av grillmat og utdeling av «diplom» for de som har fullført vgs, universitetet, fått fagbrev osv. Det finner mer info om dette på lenken https://forms.gle/yEqAdMbiywoD9jENA",
-    location: "Ekebergsletta",
+    location: "Bølerlia 0688, 0689 Oslo",
     clock: "14:00",
     date: "14.05.25",
   },

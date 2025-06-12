@@ -16,7 +16,7 @@ export const eventsNc = [
       "Velkommen til gudstjeneste sammen med Youth. Ta med en venn eller to og ta del i det Gud har for oss som fellesskap. Velkommen hjem!",
     location: "St. Olavs Gate 24, Oslo",
     clock: "18:30",
-    date: "23.02.25"
+    date: "23.02.25",
   },
   {
     id: "Connect",
@@ -91,7 +91,8 @@ export const eventsNc = [
   {
     id: "JamesEvent",
     title: "Love in action!",
-    description: "Mer info på Instagram https://www.instagram.com/james1.27ministry/",
+    description:
+      "Mer info på Instagram https://www.instagram.com/james1.27ministry/",
     location: "St. Olavs Gate 24, Oslo",
     clock: "14:30",
     date: "15.02.25",
@@ -208,7 +209,7 @@ export const eventsNc = [
     title: "Sommerfest!",
     description:
       "Det skal være aktiviteter, salg av grillmat og utdeling av «diplom» for de som har fullført vgs, universitetet, fått fagbrev osv. Det finner mer info om dette på lenken https://forms.gle/yEqAdMbiywoD9jENA",
-    location: "Ekebergsletta",
+    location: "Bølerlia 0688, 0689 Oslo",
     clock: "14:00",
     date: "14.05.25",
   },
